@@ -3,18 +3,14 @@
 
 class Strategy
 {
-private:
-    /* data */
 public:
-    Strategy(/* args */);
-    ~Strategy();
+    Strategy();
+    virtual ~Strategy() = 0;
+
+    virtual void execute() = 0;
 };
 
-Strategy::Strategy(/* args */)
-{
-}
-
-Strategy::~Strategy()
+Strategy::Strategy() 
 {
 }
 
