@@ -18,6 +18,4 @@ Strategy::~Strategy()
 {
 }
 
-
-
 #endif // STRATEGY_H
