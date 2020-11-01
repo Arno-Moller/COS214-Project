@@ -7,7 +7,7 @@ private:
     /* data */
 public:
     RaceCar(/* args */);
-    RaceCar(RaceCar*);
+    RaceCar(RaceCar&);
     ~RaceCar();
 };
 
@@ -15,7 +15,7 @@ RaceCar::RaceCar(/* args */)
 {
 }
 
-RaceCar::RaceCar(RaceCar*)
+RaceCar::RaceCar(RaceCar&)
 {
 }
 
