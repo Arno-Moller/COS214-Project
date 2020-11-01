@@ -1,20 +1,23 @@
 #ifndef MEMENTO_H
 #define MEMENTO_H
 
-#include "CarState.h"
+#include "TeamState.h"
 #include "RaceCar.h"
+#include "Team.h"
 
 class Memento
 {
 private:
-    CarState* state;
+    TeamState* state;
 
 public:
-    Memento(RaceCar* car);
+    Memento(Team* team);
+    Memento(RaceCar* carOne, RaceCar* carTwo);
     ~Memento();
 
-    RaceCar* getState();
-    void setState(RaceCar* car);
+    TeamState* getState();
+    void setState(Team* team);
+    void setState(RaceCar* carOne, RaceCar* carTwo);
 };
 
 

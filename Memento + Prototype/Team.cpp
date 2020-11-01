@@ -19,12 +19,14 @@ void Team::construct()
 
 Memento* Team::createMemento() 
 {
-    
+    Memento* teamSave = new Memento(carOne, carTwo);
+    return teamSave;
 }
 
 void Team::setMemento(Memento* mem) 
 {
-    
+    this->carOne = mem->getState()->getCarOne();
+    this->carTwo = mem->getState()->getCarTwo();
 }
 
 RaceCar* Team::getCarOne() 

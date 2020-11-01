@@ -1,8 +1,13 @@
 #include "Memento.h"
 
-Memento::Memento(RaceCar* car) 
+Memento::Memento(Team* team) 
 {
-    this->state = new CarState(car);
+    this->state = new TeamState(team->getCarOne(), team->getCarTwo());
+}
+
+Memento::Memento(RaceCar* carOne, RaceCar* carTwo) 
+{
+    this->state = new TeamState(carOne, carTwo);
 }
 
 Memento::~Memento() 
@@ -10,12 +15,17 @@ Memento::~Memento()
     delete this->state;
 }
 
-RaceCar* Memento::getState() 
+TeamState* Memento::getState() 
 {
-    return this->state->getCarState();
+    return this->state;
 }
 
-void Memento::setState(RaceCar* car) 
+void Memento::setState(Team* team) 
 {
-    this->state = new CarState(car);
+    this->state = new TeamState(team->getCarOne(), team->getCarTwo());
+}
+
+void Memento::setState(RaceCar* carOne, RaceCar* carTwo) 
+{
+    this->state = new TeamState(carOne, carTwo);
 }
