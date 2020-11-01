@@ -17,6 +17,7 @@ void TrackBuilder::construct()
     concreteTrack->addS_section(30, 30);
     concreteTrack->addSlightTurn(50, 12);
     concreteTrack->addStraight(39, 11);
+    concreteTrack->addStraight(30, 123);
 }
 
 void TrackBuilder::display()
