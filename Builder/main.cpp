@@ -12,6 +12,18 @@
 #include "TrackBuilder.cpp"
 #include "TrackMaker.cpp"
 
+#include "NinetyDegreeTurn.h"
+#include "Hairpin.h"
+#include "S_Section.h"
+#include "SlightTurn.h"
+#include "Straight.h"
+
+#include "NinetyDegreeTurn.cpp"
+#include "Hairpin.cpp"
+#include "S_Section.cpp"
+#include "SlightTurn.cpp"
+#include "Straight.cpp"
+
 
 
 int main() 
