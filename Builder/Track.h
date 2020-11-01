@@ -5,6 +5,11 @@
 #include <iterator>
 
 #include "TrackSection.h"
+#include "SlightTurn.h"
+#include "Straight.h"
+#include "S_Section.h"
+#include "NinetyDegreeTurn.h"
+#include "Hairpin.h"
 
 using namespace std;
 
@@ -21,7 +26,7 @@ class Track
         int getTrackDistance();
         int getTrackRisk();
 
-        void addSection(string, int, int);
+        void addSection(TrackSection*);
         void showTrack();
 
     private:

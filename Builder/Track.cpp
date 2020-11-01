@@ -24,13 +24,12 @@ int Track::getTrackRisk()
     return trackRisk;
 }
 
-void Track::addSection(string n, int r, int d)
+void Track::addSection(TrackSection* tempSection)
 {
-    TrackSection* tempSection = new TrackSection(n, r, d);
     section.push_back(*tempSection);
 
-    trackRisk += r;
-    trackDistance += d;
+    trackRisk += tempSection->getRiskValue();
+    trackDistance += tempSection->getDistance();
 }
 
 void Track::showTrack()

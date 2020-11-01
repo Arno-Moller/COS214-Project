@@ -18,7 +18,7 @@ class TrackMaker : public ConcreteTrack
         TrackMaker();
         TrackMaker(string);
         
-        void add90Degree(int, int);
+        void addNinetyDegree(int, int);
         void addStraight(int, int);
         void addHairpin(int, int);
         void addS_section(int, int);

@@ -1,21 +1,20 @@
-#include <iostream>
-
 #ifndef TrackSection_h
 #define TrackSection_h
+
+#include <iostream>
 
 using namespace std;
 
 class TrackSection
 {
     public:
-        TrackSection(string, int, int);
-        string getName();
-        int getRiskValue();
-        int getDistance();
+        TrackSection();
+        virtual string getName() = 0;
+        virtual int getRiskValue() = 0;
+        virtual int getDistance() = 0;
 
     private:
-        string name;
-        int riskValue;
-        int distance;
 };
 #endif
+
+
