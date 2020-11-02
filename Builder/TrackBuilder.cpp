@@ -7,17 +7,18 @@ TrackBuilder::TrackBuilder()
 
 TrackBuilder::~TrackBuilder()
 {
-
+    delete concreteTrack;
+    concreteTrack = nullptr;
 }
 
 void TrackBuilder::construct()
 {
-    concreteTrack->addStraight(10, 5);
-    concreteTrack->addHairpin(20, 10);
-    concreteTrack->addS_section(30, 30);
-    concreteTrack->addSlightTurn(50, 12);
-    concreteTrack->addStraight(39, 11);
-    concreteTrack->addStraight(30, 123);
+    concreteTrack->addStraight(5);
+    concreteTrack->addHairpin(10);
+    concreteTrack->addS_section(30);
+    concreteTrack->addSlightTurn(12);
+    concreteTrack->addStraight(11);
+    concreteTrack->addStraight(123);
 }
 
 void TrackBuilder::display()

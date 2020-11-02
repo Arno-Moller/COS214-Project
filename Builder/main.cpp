@@ -25,12 +25,14 @@
 #include "Straight.cpp"
 
 
-
+//THIS IS A TEMPORARY CLASS THAT WILL BE REPLACED, BUT IS USED FOR TESTING AS A CLIENT IN THE BUILDER
 int main() 
 {
     TrackBuilder* test = new TrackBuilder();
     test->construct();
     test->display();
+
+    delete test;
 
     return 0;
 }

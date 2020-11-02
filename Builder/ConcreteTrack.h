@@ -11,11 +11,11 @@ class ConcreteTrack
 {
     public:
         ConcreteTrack(); 
-        virtual void addNinetyDegree(int, int) = 0;
-        virtual void addStraight(int, int) = 0;
-        virtual void addHairpin(int, int) = 0;
-        virtual void addS_section(int, int) = 0;
-        virtual void addSlightTurn(int, int) = 0;
+        virtual void addNinetyDegree(int) = 0;
+        virtual void addStraight(int) = 0;
+        virtual void addHairpin(int) = 0;
+        virtual void addS_section(int) = 0;
+        virtual void addSlightTurn(int) = 0;
         virtual void showTrack() = 0;
 
     private:

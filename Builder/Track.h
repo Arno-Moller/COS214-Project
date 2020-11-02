@@ -34,5 +34,6 @@ class Track
         string trackName;
         int trackDistance;
         int trackRisk;
+        int numSections;
 };
 #endif

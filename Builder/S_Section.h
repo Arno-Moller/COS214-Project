@@ -10,14 +10,10 @@ using namespace std;
 class S_Section : public TrackSection
 {
     public:
-        S_Section(int, int);
-        string getName();
-        int getRiskValue();
-        int getDistance();
+        S_Section(int);
+
 
     private:
-        string name;
-        int riskValue;
-        int distance;
+
 };
 #endif

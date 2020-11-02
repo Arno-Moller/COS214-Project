@@ -10,14 +10,9 @@ using namespace std;
 class SlightTurn : public TrackSection
 {
     public:
-        SlightTurn(int, int);
-        string getName();
-        int getRiskValue();
-        int getDistance();
+        SlightTurn(int);
 
     private:
-        string name;
-        int riskValue;
-        int distance;
+
 };
 #endif

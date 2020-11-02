@@ -1,23 +1,8 @@
 #include "NinetyDegreeTurn.h"
 
-NinetyDegreeTurn::NinetyDegreeTurn(int r, int d) 
+NinetyDegreeTurn::NinetyDegreeTurn(int d) 
 {
     name = "NinetyDegreeTurn"; 
-    riskValue = r;
+    riskValue = 60;
     distance = d;
-}
-
-string NinetyDegreeTurn::getName() 
-{
-    return name;
-}
-
-int NinetyDegreeTurn::getRiskValue() 
-{
-    return riskValue;
-}
-
-int NinetyDegreeTurn::getDistance() 
-{
-    return distance;
 }

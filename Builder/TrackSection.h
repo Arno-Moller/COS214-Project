@@ -8,12 +8,14 @@ using namespace std;
 class TrackSection
 {
     public:
-        TrackSection();
-        virtual string getName() = 0;
-        virtual int getRiskValue() = 0;
-        virtual int getDistance() = 0;
+        string getName();
+        int getRiskValue();
+        int getDistance();
 
-    private:
+    protected:
+        string name;
+        int riskValue;
+        int distance;
 };
 #endif
 

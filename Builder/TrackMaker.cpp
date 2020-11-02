@@ -7,34 +7,50 @@ TrackMaker::TrackMaker(string n)
     track = new Track(n);
 }
 
-void TrackMaker::addNinetyDegree(int r, int d)
+TrackMaker::~TrackMaker()    
 {
-    TrackSection* temp = new NinetyDegreeTurn(r, d);
-    track->addSection(temp);
+    delete track;
+    track = nullptr;
 }
 
-void TrackMaker::addHairpin(int r, int d)
+void TrackMaker::addNinetyDegree(int d)
 {
-    TrackSection* temp = new Hairpin(r, d);
+    TrackSection* temp = new NinetyDegreeTurn(d);
     track->addSection(temp);
+
+    delete temp;
 }
 
-void TrackMaker::addS_section(int r, int d)
+void TrackMaker::addHairpin(int d)
 {
-    TrackSection* temp = new S_Section(r, d);
+    TrackSection* temp = new Hairpin(d);
     track->addSection(temp);
+
+    delete temp;
 }
 
-void TrackMaker::addSlightTurn(int r, int d)
+void TrackMaker::addS_section(int d)
 {
-    TrackSection* temp = new SlightTurn(r, d);
+    TrackSection* temp = new S_Section(d);
     track->addSection(temp);
+
+    delete temp;
 }
 
-void TrackMaker::addStraight(int r, int d)
+void TrackMaker::addSlightTurn(int d)
 {
-    TrackSection* temp = new Straight(r, d);
+    TrackSection* temp = new SlightTurn(d);
     track->addSection(temp);
+
+    delete temp;
+}
+
+void TrackMaker::addStraight(int d)
+{
+    TrackSection* temp = new Straight(d);
+    track->addSection(temp);
+
+    delete temp;
 }
 
 void TrackMaker::showTrack()

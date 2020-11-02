@@ -1,23 +1,8 @@
 #include "Hairpin.h"
 
-Hairpin::Hairpin(int r, int d) 
+Hairpin::Hairpin(int d) 
 {
     name = "Hairpin"; 
-    riskValue = r;
+    riskValue = 75;
     distance = d;
-}
-
-string Hairpin::getName() 
-{
-    return name;
-}
-
-int Hairpin::getRiskValue() 
-{
-    return riskValue;
-}
-
-int Hairpin::getDistance() 
-{
-    return distance;
 }

@@ -1,23 +1,8 @@
 #include "S_Section.h"
 
-S_Section::S_Section(int r, int d) 
+S_Section::S_Section(int d) 
 {
     name = "S_Section"; 
-    riskValue = r;
+    riskValue = 65;
     distance = d;
-}
-
-string S_Section::getName() 
-{
-    return name;
-}
-
-int S_Section::getRiskValue() 
-{
-    return riskValue;
-}
-
-int S_Section::getDistance() 
-{
-    return distance;
 }

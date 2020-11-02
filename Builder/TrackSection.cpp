@@ -1,4 +1,18 @@
 #include "TrackSection.h"
 
-TrackSection::TrackSection()  {}
+
+string TrackSection::getName() 
+{
+    return name;
+}
+
+int TrackSection::getRiskValue() 
+{
+    return riskValue;
+}
+
+int TrackSection::getDistance() 
+{
+    return distance;
+}
 

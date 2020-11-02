@@ -7,6 +7,7 @@ Track::Track(string n)
     trackName = n;
     trackDistance = 0;
     trackRisk = 0;
+    numSections = 0;
 }
 
 string Track::getTrackName()
@@ -30,6 +31,8 @@ void Track::addSection(TrackSection* tempSection)
 
     trackRisk += tempSection->getRiskValue();
     trackDistance += tempSection->getDistance();
+
+    numSections++;
 }
 
 void Track::showTrack()
@@ -39,7 +42,7 @@ void Track::showTrack()
 
     cout << "This is the " << trackName << " track" << endl;
     cout << endl;
-    cout << "Track risk is: " << trackRisk << endl;
+    cout << "Track risk average of of 100 is: " << trackRisk/numSections << endl;
     cout << "Track distance is: " << trackDistance << endl;
     cout << endl;
     cout << "Track Sections: " << endl;
@@ -48,7 +51,7 @@ void Track::showTrack()
     {
         cout << "Section " << sectionCount << ":" 
                 << "\n\tSection type: " << it->getName() 
-                << "\n\tRisk of section: " << it->getRiskValue() 
+                << "\n\tRisk of section: " << it->getRiskValue()
                 << "\n\tDistance of section: " << it->getDistance() 
                 << "\n" << endl;
         sectionCount++;

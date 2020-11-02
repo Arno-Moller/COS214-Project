@@ -1,23 +1,8 @@
 #include "Straight.h"
 
-Straight::Straight(int r, int d) 
+Straight::Straight(int d) 
 {
     name = "Straight"; 
-    riskValue = r;
+    riskValue = 10;
     distance = d;
-}
-
-string Straight::getName() 
-{
-    return name;
-}
-
-int Straight::getRiskValue() 
-{
-    return riskValue;
-}
-
-int Straight::getDistance() 
-{
-    return distance;
 }
