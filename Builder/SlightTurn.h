@@ -5,7 +5,6 @@
 
 #include "TrackSection.h"
 
-
 using namespace std;
 
 class SlightTurn : public TrackSection
