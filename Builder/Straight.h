@@ -6,11 +6,11 @@
 #include "TrackSection.h"
 
 using namespace std;
-
+//This is the leaf participant of the Composite Design Pattern 
 class Straight : public TrackSection
 {
     public:
-        Straight(int);
+        Straight(int); // the distance of straight track you would like to add
 
     private:
         

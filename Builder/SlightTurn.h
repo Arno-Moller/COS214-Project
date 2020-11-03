@@ -6,11 +6,11 @@
 #include "TrackSection.h"
 
 using namespace std;
-
+ //This is the leaf participant of the Composite Design Pattern
 class SlightTurn : public TrackSection
 {
     public:
-        SlightTurn(int);
+        SlightTurn(int);// the distance of a slight turn you would like to add
 
     private:
 

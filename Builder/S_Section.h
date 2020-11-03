@@ -6,11 +6,11 @@
 #include "TrackSection.h"
 
 using namespace std;
-
+//This is the leaf participant of the Composite Design Pattern
 class S_Section : public TrackSection
 {
     public:
-        S_Section(int);
+        S_Section(int);//the distance of the S section you would like to add. 
 
 
     private:

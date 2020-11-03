@@ -6,11 +6,11 @@
 #include "TrackSection.h"
 
 using namespace std;
-
+//This is the leaf participant of the Composite Design Pattern
 class NinetyDegreeTurn : public TrackSection
 {
     public:
-        NinetyDegreeTurn(int);
+        NinetyDegreeTurn(int);// the distance of the ninety degree turn you would like to add
 
     private:
 
