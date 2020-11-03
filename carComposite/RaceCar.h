@@ -4,21 +4,21 @@
 #include <iostream>
 
 using namespace std;
-
+//This class is the product participant of the Builder Design pattern 
 class RaceCar
 {
     public:
-        RaceCar();
-        ~RaceCar();
+        RaceCar();//constructor
+        ~RaceCar();//destructor
     
         void notify();
         void attach();
         void detach();
 	void request();
-	virtual void lap();
-	RaceCar* getChild();
-	virtual void degrade();
-	virtual void addPart(RaceCar* car);
+	virtual void lap();//the method to do a lap 
+	RaceCar* getChild(); // returns the child of the race car
+	virtual void degrade();//the degrade method 
+	virtual void addPart(RaceCar* car);// method to add parts to the race car 
     
 	//~ virtual void addPart(RaceCar* part) = 0;
 
