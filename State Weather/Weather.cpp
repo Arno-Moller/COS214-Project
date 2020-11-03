@@ -1,6 +1,13 @@
 #include "Weather.h"
 
-Weather::~Weather() 
+Weather::Weather()  {}
+
+string Weather::getWeather() 
 {
-    cout << "Weather Destructor called" << endl;
+    return weather;
+}
+
+void Weather::setWeather(string w) 
+{
+    weather = w;
 }

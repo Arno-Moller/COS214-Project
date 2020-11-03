@@ -10,15 +10,17 @@
 #include "Rainy.cpp"
 #include "Cloudy.cpp"
 
+using namespace std;
+
 int main()
 {
     
-    Race* race = new Race();
+    Race* race = new Race("Europe");
 
     for (int i = 0; i < 10; i++) 
     {
-        string currentTLcolour = race->getWeather();
-        cout << "Traffic light is currently: " << currentTLcolour << endl;
+        string weather = race->getWeather();
+        cout << "Weather is currently: " << weather << endl;
         race->change();
     }
     delete race;

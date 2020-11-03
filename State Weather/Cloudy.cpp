@@ -1,11 +1,24 @@
 #include "Cloudy.h"
 
-void Cloudy::changeWeather(Race* r) 
+Cloudy::Cloudy()
 {
-    r->setWeather(new Cloudy());
-} 
-
-string Cloudy::getWeather() 
-{
-    return "Cloudy";
+    this->setWeather("Cloudy");
 }
+
+Weather* Cloudy::changeWeather() 
+{
+    int chance = rand() % 100 + 1;
+
+    if(chance < 50)
+    {
+        Weather* w = new Sunny();
+        w->setWeather("Sunny");
+        return w;
+    }
+    else
+    {
+        Weather* w = new Rainy();
+        w->setWeather("Rainy");
+        return w;
+    }
+} 

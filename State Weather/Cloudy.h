@@ -3,9 +3,8 @@
 
 #include <iostream>
 
-#include "Race.h"
-
 #include "Weather.h"
+#include "Race.h"
 
 #include "Sunny.h"
 #include "Rainy.h"
@@ -15,11 +14,8 @@ using namespace std;
 class Cloudy : public Weather
 {
     public:
-        virtual void changeWeather(Race* r) ; 
-        virtual string getWeather();
-
-    private:
-
+        Cloudy();
+        virtual Weather* changeWeather(); 
 };
 
 #endif

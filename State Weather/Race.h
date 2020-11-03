@@ -4,13 +4,16 @@
 #include <iostream>
 
 #include "Weather.h"
+#include "Sunny.h"
+#include "Rainy.h"
+#include "Cloudy.h"
 
 using namespace std;
 
 class Race
 {
     public:
-        Race();
+        Race(string Location);
         ~Race();
         void change();
         string getWeather();
@@ -18,6 +21,6 @@ class Race
 
     private:
         Weather* weather;
-
+        string location;
 };
 #endif

@@ -1,8 +1,23 @@
 #include "Race.h"
 
-Race::Race() 
+Race::Race(string l) 
 {   
-    weather = new Sunny();
+    location = l;
+    
+    int chance = rand() % 100 + 1;
+
+    if(chance < 33)
+    {
+        weather = new Sunny();
+    }
+    else if(chance < 66)
+    {
+        weather = new Cloudy();
+    }
+    else
+    {
+        weather = new Rainy();
+    }
 }
 
 Race::~Race() 
@@ -13,7 +28,12 @@ Race::~Race()
 
 void Race::change() 
 {
-    weather->changeWeather(this);
+    int chance = rand() % 100 + 1;
+
+    if(chance < 30)
+    {
+        weather = weather->changeWeather();
+    }
 }
 
 string Race::getWeather() 
