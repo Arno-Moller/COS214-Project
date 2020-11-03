@@ -8,13 +8,13 @@ class Tire;
 
 using namespace std;
 
-//State
+//The state participant of the State design pattern 
 class TireState
 {
     public:
-        TireState();
-        virtual ~TireState();
-        virtual void handle(Tire* types) = 0;
+        TireState();// onstructor 
+        virtual ~TireState(); // destructor 
+        virtual void handle(Tire* types) = 0;// abstract interface to check the state of the tires
 };
 
 #include "Tire.h"

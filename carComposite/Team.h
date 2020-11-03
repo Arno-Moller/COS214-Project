@@ -6,22 +6,22 @@
 
 using namespace std;
 
-///Director
+//The director participant of the Builder Design Pattern 
 class Team
 {
     public:
-        Team();
-        Team(string tireCompound);
-        ~Team();
-	void buildCar();
-	void lap();
-	void setTireCompound(string tireCompound);
+        Team();// default constructor 
+        Team(string tireCompound);// constructor taking a tire compound object in 
+        ~Team();// destructor 
+	void buildCar(); // method to build a car 
+	void lap(); // method to do a lap 
+	void setTireCompound(string tireCompound);// set the tire compound 
     
     private:
-	CarBuilder* builder;
-	RaceCar* car1;
-	RaceCar* car2;
-	string tireCompound;
+	CarBuilder* builder; // the builder object to build the cars 
+	RaceCar* car1;// the first car that the car has 
+	RaceCar* car2;//the second car that the team has 
+	string tireCompound; // the tire compound 
         
 };
 

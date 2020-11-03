@@ -5,13 +5,13 @@
 #include "RaceCar.h"
 
 using namespace std;
-
+//This is the leaf participant of the Composite design Pattern 
 class Wing : public RaceCar
 {
     public:
-        Wing();
-        ~Wing();
-        void degrade();
+        Wing();//constructor 
+        ~Wing();// destructor 
+        void degrade();// how the wings degrade 
 
 };
 
