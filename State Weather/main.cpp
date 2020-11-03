@@ -14,7 +14,6 @@ using namespace std;
 
 int main()
 {
-    
     Race* race = new Race("Europe");
 
     for (int i = 0; i < 10; i++) 
