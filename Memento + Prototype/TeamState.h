@@ -6,16 +6,16 @@
 class TeamState
 {
 private:
-    RaceCar* carOne;
-    RaceCar* carTwo;
+    RaceCar* carOne; // the first car for he team 
+    RaceCar* carTwo; // the second car for the team 
 public:
-    TeamState(RaceCar* carOne, RaceCar* carTwo);
-    ~TeamState();
+    TeamState(RaceCar* carOne, RaceCar* carTwo); // constructor to initialize the state of the team 
+    ~TeamState();//destructor
 
-    TeamState* getTeamState();
+    TeamState* getTeamState();//returns the state of the team 
 
-    RaceCar* getCarOne();
-    RaceCar* getCarTwo();
+    RaceCar* getCarOne();//returns car one 
+    RaceCar* getCarTwo(); // returns car two 
 };
 
 
