@@ -7,13 +7,13 @@
 
 using namespace std;
 
-//Concrete State
+//the concrete state participant of the State design Pattern 
 class GoodCondition : public TireState
 {
     public:
-        GoodCondition();
-        ~GoodCondition();
-        virtual void handle(Tire* t);
+        GoodCondition();// constructor
+        ~GoodCondition();//destructor
+        virtual void handle(Tire* t);//method to handle the change of the state of the tires
 
 };
 

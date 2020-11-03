@@ -5,13 +5,13 @@
 #include "RaceCar.h"
 
 using namespace std;
-
+//leaf participant of the Composite Design pattern 
 class Hub : public RaceCar
 {
     public:
-        Hub();
-        ~Hub();
-        void degrade();
+        Hub();//constructor
+        ~Hub();//destructor
+        void degrade();//degrade method 
 
 };
 

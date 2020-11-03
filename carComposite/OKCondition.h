@@ -7,13 +7,13 @@
 
 using namespace std;
 
-//Concrete State
+//The concrete state participant of the State design Pattern 
 class OKCondition: public TireState
 {
     public:
-        OKCondition();
-        ~OKCondition();
-        virtual void handle(Tire* t);
+        OKCondition();//constructor 
+        ~OKCondition();//destructor
+        virtual void handle(Tire* t);//method to handle the change of the state of the tires
 };
 
 #endif
