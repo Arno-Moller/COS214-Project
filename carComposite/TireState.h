@@ -22,11 +22,6 @@ class TireState
         Tire* tires;
 };
 
-TireState::TireState(Tire* tires) 
-{
-    this->tires = tires;
-}
-
 #include "Tire.h"
 
 

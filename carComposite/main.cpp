@@ -3,7 +3,6 @@
 
 #include "Team.h"
 
-
 using namespace std;
 
 int main(){
@@ -20,4 +19,6 @@ int main(){
 	delete t;
 	return 0;
 }
+
+
 

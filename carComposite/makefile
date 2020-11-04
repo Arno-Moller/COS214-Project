@@ -1,4 +1,4 @@
-FILES = BadCondition.o CarBuilder.o CarPart.o Chassie.o Engine.o GoodCondition.o Hub.o main.o OKCondition.o RaceCar.o RaceCarBuilder.o Suspension.o Team.o Tire.o Wing.o 
+FILES = BadCondition.o CarBuilder.o CarPart.o Chassie.o Engine.o GoodCondition.o Hub.o main.o OKCondition.o RaceCar.o RaceCarBuilder.o Suspension.o Team.o Tire.o TireState.o Wing.o 
 
 main: $(FILES)
 	g++ -o main $(FILES)
@@ -44,6 +44,9 @@ Team.o:
 
 Tire.o:
 	g++ -c -g Tire.cpp
+
+TireState.o:
+	g++ -c -g TireState.cpp
 
 Wing.o:
 	g++ -c -g Wing.cpp
