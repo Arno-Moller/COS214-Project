@@ -4,7 +4,7 @@
 #include "PitStop.h"
 #include "Tire.h"
 
-class ChangeTires
+class ChangeTires: public PitStop
 {
 private:
     Tire* carTire;
