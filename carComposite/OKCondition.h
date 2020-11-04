@@ -12,8 +12,10 @@ class OKCondition: public TireState
 {
     public:
         OKCondition();//constructor 
+        OKCondition(Tire* tires);
         ~OKCondition();//destructor
-        virtual void handle(Tire* t);//method to handle the change of the state of the tires
+        void handle(Tire* t);//method to handle the change of the state of the tires
+        void changeTireState();
 };
 
 #endif

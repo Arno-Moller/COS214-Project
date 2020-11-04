@@ -30,7 +30,7 @@ void Tire::degrade()
 	
 	//~ cout << getRate()<< endl;
 	
-	state->handle(this);
+	state->changeTireState();
 }
 
 void Tire::setState(TireState *tState)
@@ -49,27 +49,27 @@ void Tire::setType(string type)
     this->type = type;
     if(type == "w")
     {
-	setGrip(100);
-	setWear(0.0);
-	setRate(1.4);
+        setGrip(100);
+        setWear(0.0);
+        setRate(1.4);
     }
     else if (type == "s")
     {
         setGrip(80);
         setWear(0.0);
-	setRate(2.1);
+	    setRate(2.1);
     }
     else if (type == "m")
     {
         setGrip(70);
         setWear(0.0);
-	setRate(1.6);
+	    setRate(1.6);
     }
     else if (type == "h")
     {
         setGrip(60);
         setWear(0.0);
-	setRate(1.2);
+	    setRate(1.2);
     }
 
 }

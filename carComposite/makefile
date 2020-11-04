@@ -1,58 +1,57 @@
-ofiles = main.o Tire.o TireState.o OKCondition.o GoodCondition.o BadCondition.o RaceCarBuilder.o CarBuilder.o RaceCar.o CarPart.o Chassie.o Engine.o Hub.o Suspension.o Wing.o Team.o
-gpp_o = g++ -c -std=c++11 -static
+FILES = BadCondition.o CarBuilder.o CarPart.o Chassie.o Engine.o GoodCondition.o Hub.o main.o OKCondition.o RaceCar.o RaceCarBuilder.o Suspension.o Team.o Tire.o Wing.o 
 
-main: $(ofiles)
-	g++ -std=c++11 -static $(ofiles) -o main
+main: $(FILES)
+	g++ -o main $(FILES)
 
-main.o: main.o Tire.o TireState.o OKCondition.o GoodCondition.o BadCondition.o RaceCarBuilder.o CarBuilder.o RaceCar.o CarPart.o Chassie.o Engine.o Hub.o Suspension.o Wing.o Team.o
+BadCondition.o:
+	g++ -c -g BadCondition.cpp
 
-Team.o: Team.cpp Team.h
-	$(gpp_o) Team.cpp
+CarBuilder.o:
+	g++ -c -g CarBuilder.cpp
 
-RaceCarBuilder.o: RaceCarBuilder.cpp RaceCarBuilder.h
-	$(gpp_o) RaceCarBuilder.cpp
+CarPart.o:
+	g++ -c -g CarPart.cpp
 
-CarBuilder.o: CarBuilder.cpp CarBuilder.h
-	$(gpp_o) CarBuilder.cpp
-	
-RaceCar.o: RaceCar.cpp RaceCar.h
-	$(gpp_o) RaceCar.cpp
+Chassie.o:
+	g++ -c -g Chassie.cpp
 
-CarPart.o: CarPart.cpp CarPart.h
-	$(gpp_o) CarPart.cpp
-	
-Chassie.o: Chassie.cpp Chassie.h
-	$(gpp_o) Chassie.cpp
-	
-Engine.o: Engine.cpp Engine.h
-	$(gpp_o) Engine.cpp
-	
-Hub.o: Hub.cpp Hub.h
-	$(gpp_o) Hub.cpp
-	
-Suspension.o: Suspension.cpp Suspension.h
-	$(gpp_o) Suspension.cpp
-	
-Wing.o: Wing.cpp Wing.h
-	$(gpp_o) Wing.cpp
+Engine.o:
+	g++ -c -g Engine.cpp
 
-Tire.o: Tire.cpp Tire.h
-	$(gpp_o) Tire.cpp
-	
-TireState.o: TireState.cpp TireState.h
-	$(gpp_o) TireState.cpp
-	
-OKCondition.o: OKCondition.cpp OKCondition.h
-	$(gpp_o) OKCondition.cpp
-	
-GoodCondition.o: GoodCondition.cpp GoodCondition.h
-	$(gpp_o) GoodCondition.cpp
-	
-BadCondition.o: BadCondition.cpp BadCondition.h
-	$(gpp_o) BadCondition.cpp
+GoodCondition.o:
+	g++ -c -g GoodCondition.cpp
+
+Hub.o:
+	g++ -c -g Hub.cpp
+
+main.o:
+	g++ -c -g main.cpp
+
+OKCondition.o:
+	g++ -c -g OKCondition.cpp
+
+RaceCar.o:
+	g++ -c -g RaceCar.cpp
+
+RaceCarBuilder.o:
+	g++ -c -g RaceCarBuilder.cpp
+
+Suspension.o:
+	g++ -c -g Suspension.cpp
+
+Team.o:
+	g++ -c -g Team.cpp
+
+Tire.o:
+	g++ -c -g Tire.cpp
+
+Wing.o:
+	g++ -c -g Wing.cpp
 
 run: main
 	./main
 
 clean:
-	rm *.o main
+	rm main *.o
+	clear
+

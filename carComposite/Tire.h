@@ -4,9 +4,8 @@
 #include <iostream>
 
 #include "RaceCar.h"
+// #include "TireState.h"
 #include "GoodCondition.h"
-
-//~ class TireState;
 
 using namespace std;
 
@@ -26,7 +25,7 @@ class Tire: public RaceCar
         int getGrip()const; // returns the grip of the tires
         void setWear(float wear);// sets the wear 
         float getWear()const;// returns the wear of the tires
-	void setRate(float grip);// sets the rate for the tires 
+	    void setRate(float grip);// sets the rate for the tires 
         float getRate()const; // get the rate at wich the tires degrade
 
     protected:
@@ -38,7 +37,7 @@ class Tire: public RaceCar
         string type; // The type of tires
         int grip; // the grip of the tires 
         float wear; 		//100%
-	float degradeRate;	//rate at which the tires degrade
+	    float degradeRate;	//rate at which the tires degrade
 };
 
 //~ #include "TireState.h"

@@ -12,8 +12,10 @@ class GoodCondition : public TireState
 {
     public:
         GoodCondition();// constructor
+        GoodCondition(Tire* tires);
         ~GoodCondition();//destructor
-        virtual void handle(Tire* t);//method to handle the change of the state of the tires
+        void handle(Tire* t);//method to handle the change of the state of the tires
+        void changeTireState();
 
 };
 
