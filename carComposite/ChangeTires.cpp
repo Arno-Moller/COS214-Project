@@ -18,7 +18,7 @@ void ChangeTires::update()
 
     if (state->handle() == true || (rand()%100) > 75) 
     {   
-        // carTire->setType();
+        // carTire->setType(); // need to get next tires from strategy
         state->changeTireState();
     }
 }
