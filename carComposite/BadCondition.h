@@ -13,7 +13,7 @@ class BadCondition: public TireState
         BadCondition();
         BadCondition(Tire* tires);
         ~BadCondition();
-        void handle(Tire* t);
+        bool handle();
         void changeTireState();
 };
 

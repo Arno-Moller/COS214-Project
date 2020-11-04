@@ -15,10 +15,9 @@ OKCondition::~OKCondition()
 	delete tires;
 }
 
-void OKCondition::handle(Tire* t)
+bool OKCondition::handle()
 {
-	if(t->getWear() > 60)
-		t->setState(new BadCondition());
+	return false;
 }
 
 void OKCondition::changeTireState() 

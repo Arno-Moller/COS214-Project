@@ -14,7 +14,7 @@ class OKCondition: public TireState
         OKCondition();//constructor 
         OKCondition(Tire* tires);
         ~OKCondition();//destructor
-        void handle(Tire* t);//method to handle the change of the state of the tires
+        bool handle();//method to handle the change of the state of the tires
         void changeTireState();
 };
 

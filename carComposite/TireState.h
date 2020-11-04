@@ -15,7 +15,7 @@ class TireState
         TireState();//constructor
         TireState(Tire* tires);//constructor 
         virtual ~TireState(); // destructor 
-        virtual void handle(Tire* types) = 0;// abstract interface to check the state of the tires
+        virtual bool handle() = 0;// abstract interface to check the state of the tires
         virtual void changeTireState() = 0;
 
     protected:

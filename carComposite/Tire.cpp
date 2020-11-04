@@ -25,7 +25,7 @@ Tire::~Tire()
 
 TireState* Tire::getState()
 {
-    return nullptr;
+    return this->state;
 }
 
 void Tire::setState(TireState *tState)
@@ -66,8 +66,7 @@ void Tire::degrade()
 	compound->setWear(compound->getWear() + compound->getRate());
 	
 	//~ cout << getRate()<< endl;
-	
-	state->changeTireState();
+    notify();
 }
 
 int Tire::getGrip() 

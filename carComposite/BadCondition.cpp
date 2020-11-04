@@ -15,10 +15,15 @@ BadCondition::~BadCondition()
 	delete tires;
 }
 
-void BadCondition::handle(Tire* t)
+bool BadCondition::handle()
 {
-	if(t->getWear() >= 100)
-		cout << "Need to pit" << endl;
+	if (tires->getWear() >= 100)
+	{
+		return true; // needs to pit
+	}
+	
+	return false;
+
 }
 
 void BadCondition::changeTireState() 
