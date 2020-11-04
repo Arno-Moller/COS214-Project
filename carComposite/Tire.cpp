@@ -5,32 +5,27 @@ Tire::Tire(): RaceCar()
 	cout << "Tire" << endl;
 }
 
+Tire::Tire(TireState *tState, TireCompound* type)
+{
+	this->setState(tState);
+	setType(type);
+}
+
 Tire::Tire(string type)
 {
 	this->setState(new GoodCondition());
 	setType(type);
 }
 
-Tire::Tire(TireState *tState, string type)
-{
-	this->setState(tState);
-	setType(type);
-}
-
 Tire::~Tire()
 {
-
+    delete state;
+    delete compound;
 }
 
-///Function to call each lap that degrades the tires
-void Tire::degrade()
+TireState* Tire::getState()
 {
-	setGrip(getGrip() - getRate());
-	setWear(getWear() + getRate());
-	
-	//~ cout << getRate()<< endl;
-	
-	state->changeTireState();
+    return nullptr;
 }
 
 void Tire::setState(TireState *tState)
@@ -39,72 +34,68 @@ void Tire::setState(TireState *tState)
 	this->state = tState;
 }
 
-TireState *Tire::getState()
-{
-    return nullptr;
-}
+void Tire::setType(string type) 
+{   
+    delete compound;
 
-void Tire::setType(string type)
-{
-    this->type = type;
-    if(type == "w")
+    if (type == "soft" || type == "s")
     {
-        setGrip(100);
-        setWear(0.0);
-        setRate(1.4);
+        this->compound = new SoftCompound();
     }
-    else if (type == "s")
+    else if (type == "medium" || type == "m")
     {
-        setGrip(80);
-        setWear(0.0);
-	    setRate(2.1);
+        this->compound = new MediumCompound();
     }
-    else if (type == "m")
+    else
     {
-        setGrip(70);
-        setWear(0.0);
-	    setRate(1.6);
+        this->compound = new HardCompound();
     }
-    else if (type == "h")
-    {
-        setGrip(60);
-        setWear(0.0);
-	    setRate(1.2);
-    }
-
+    
 }
 
-string Tire::getType() const
+void Tire::setType(TireCompound* type) 
 {
-    return this->type;
+    delete compound;
+    this->compound = type;
 }
 
-void Tire::setGrip(int grip)
+///Function to call each lap that degrades the tires
+void Tire::degrade()
 {
-    this->grip = grip;
+	compound->setGrip(compound->getGrip() - compound->getRate());
+	compound->setWear(compound->getWear() + compound->getRate());
+	
+	//~ cout << getRate()<< endl;
+	
+	state->changeTireState();
 }
 
-int Tire::getGrip() const
+int Tire::getGrip() 
 {
-    return this->grip;
+    return this->compound->getGrip();
 }
 
-void Tire::setWear(float wear)
+void Tire::setGrip(int grip) 
 {
-    this->wear = wear;
+    this->compound->setGrip(grip);
 }
 
-float Tire::getWear() const
+int Tire::getWear() 
 {
-    return this->wear;
+    return this->compound->getWear();
 }
 
-void Tire::setRate(float rate)
+void Tire::setWear(int wear) 
 {
-    this->degradeRate = rate;
+    this->compound->setWear(wear);
 }
 
-float Tire::getRate() const
+int Tire::getRate() 
 {
-    return this->degradeRate;
+    return this->compound->getRate();
+}
+
+void Tire::setRate(int rate) 
+{
+    this->compound->setRate(rate);
 }
