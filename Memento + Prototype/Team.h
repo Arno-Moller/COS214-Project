@@ -2,7 +2,7 @@
 #define TEAM_H
 
 #include "Memento.h"
-
+//the originator participant of the meneto design pattern 
 class Team
 {
 protected:
