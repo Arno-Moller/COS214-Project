@@ -4,20 +4,47 @@
 #include "TeamState.h"
 #include "../CarComposite/RaceCar.h"
 #include "../Prototype/Team.h"
-//the memnto participant of the memento design pattern 
+///the memnto participant of the memento design pattern 
 class Memento
 {
 private:
-    TeamState* state; // a state of the teams to store 
+    TeamState* state; /**< The state of the teams that is stored   */ 
 
 public:
-    Memento(Team* team); // a constructor that takes in a team 
-    Memento(RaceCar* carOne, RaceCar* carTwo);// a constructor that takes in two race car objects 
-    ~Memento();// destructor 
 
-    TeamState* getState();//returns the state of the team 
+    /**
+     *  Constructor to set the team 
+     * @param Team object to store in the memento 
+     */
+    Memento(Team* team); 
+
+    /**
+     *  Constructor that sets the cars of the team 
+     * @param carOne the first car of the team 
+     * @param carTwo the second car of the team 
+     */
+    Memento(RaceCar* carOne, RaceCar* carTwo);
+   
+    ~Memento();/// destructor 
+
+     /**
+     *  Returns the state of the team 
+     * @return TeamState pointer that is stored
+     */
+    TeamState* getState();
+
+     /**
+     *  Sets the team to store
+     * @param Team object to store in the memento 
+     */
     void setState(Team* team);// sets the state of the team 
-    void setState(RaceCar* carOne, RaceCar* carTwo);// sets the state of the team 
+
+    /**
+     *  Sets the cars in the teams 
+     * @param carOne the first car of the team 
+     * @param carTwo the second car of the team 
+     */
+    void setState(RaceCar* carOne, RaceCar* carTwo);
 };
 
 

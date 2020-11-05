@@ -2,20 +2,40 @@
 #define TEAMSTATE_H
 
 #include "../CarComposite/RaceCar.h"
-//????????
+/// Originator participant of the Memento Design Pattern 
 class TeamState
 {
 private:
-    RaceCar* carOne; // the first car for he team 
-    RaceCar* carTwo; // the second car for the team 
+    RaceCar* carOne; /**< The first car of the team    */ 
+    RaceCar* carTwo; /**< The second car of the team   */ 
 public:
-    TeamState(RaceCar* carOne, RaceCar* carTwo); // constructor to initialize the state of the team 
+
+    /**
+     *  Constructor that sets the cars of the team 
+     * @param carOne the first car of the team 
+     * @param carTwo the second car of the team 
+     */
+    TeamState(RaceCar* carOne, RaceCar* carTwo);
+
     ~TeamState();//destructor
 
+     /**
+     *  Returns the state of the team 
+     * @return TeamState pointer that is stored
+     */
     TeamState* getTeamState();//returns the state of the team 
 
-    RaceCar* getCarOne();//returns car one 
-    RaceCar* getCarTwo(); // returns car two 
+     /**
+     *  Returns the first race car of the team 
+     * @return CarOne of the team 
+     */
+    RaceCar* getCarOne();
+
+     /**
+     *  Returns the second race car of team 
+     * @return Car two of the team 
+     */
+    RaceCar* getCarTwo(); 
 };
 
 
