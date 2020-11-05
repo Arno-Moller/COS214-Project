@@ -22,7 +22,8 @@ class Team
 		RaceCar* getCarTwo(); // returns the second race car of the team 
 		void setCarOne(RaceCar* car1); // sets the first race car of the team 
 		void setCarTwo(RaceCar* car2); // sets the seconds race car of the team 
-    
+
+		virtual void clone() = 0;
     protected:
 		CarBuilder* builder; // the builder object to build the cars 
 		RaceCar* car1;// the first car that the car has 
