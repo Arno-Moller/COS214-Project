@@ -59,6 +59,11 @@ void Tire::setType(TireCompound* type)
     this->compound = type;
 }
 
+void Tire::lap() 
+{
+    degrade();
+}
+
 ///Function to call each lap that degrades the tires
 void Tire::degrade()
 {
