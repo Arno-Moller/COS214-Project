@@ -5,15 +5,6 @@
 #include "RaceCar.h"
 
 using namespace std;
-<<<<<<< HEAD
-
-class RaceCarBuilder
-{
-    public:
-        RaceCarBuilder();
-        ~RaceCarBuilder();
-        RaceCar* buildeCar();
-=======
 //The Builder participant of The BUilder Design Pattern 
 class RaceCarBuilder
 {
@@ -29,7 +20,6 @@ class RaceCarBuilder
     
 	virtual RaceCar* getCar() = 0; // returns the Race CAr
     
->>>>>>> theo-branch
 };
 
 #endif

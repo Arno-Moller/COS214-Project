@@ -3,18 +3,6 @@
 
 #include <iostream>
 #include "TireState.h"
-<<<<<<< HEAD
-
-using namespace std;
-
-//Concrete State
-class GoodCondition : public TireState
-{
-    public:
-        GoodCondition();
-        ~GoodCondition();
-        virtual void handle(Tire* t);
-=======
 #include "OKCondition.h"
 
 using namespace std;
@@ -28,7 +16,6 @@ class GoodCondition : public TireState
         ~GoodCondition();//destructor
         bool handle();//method to handle the change of the state of the tires
         void changeTireState();
->>>>>>> theo-branch
 
 };
 

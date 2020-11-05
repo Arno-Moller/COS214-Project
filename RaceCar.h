@@ -2,24 +2,6 @@
 #define RACECAR_H
 
 #include <iostream>
-<<<<<<< HEAD
-
-using namespace std;
-
-class RaceCar
-{
-    public:
-        RaceCar();
-        ~RaceCar();
-        void request();
-        void addChild(RaceCar* car);
-        RaceCar* getChild();
-        void opertation();
-        void notify();
-        void attach();
-        void detach();
-        void opertation2();
-=======
 #include "PitStop.h"
 
 using namespace std;
@@ -41,7 +23,6 @@ class RaceCar
         void notify();// notify observer
 
 	    //~ virtual void addPart(RaceCar* part) = 0;
->>>>>>> theo-branch
 
         //Strategy* getStrategy() const;
         //void setStrategy(Strategy* strat);
@@ -49,11 +30,7 @@ class RaceCar
         //void setPitStop(PitStop* pitstop);
     private:
         // Strategy* strategy;
-<<<<<<< HEAD
-        // PitStop* pitStops;
-=======
         PitStop* pitCrew;
->>>>>>> theo-branch
 
 };
 

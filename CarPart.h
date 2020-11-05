@@ -2,22 +2,6 @@
 #define CARPART_H
 
 #include <iostream>
-<<<<<<< HEAD
-#include "RaceCar.h"
-
-using namespace std;
-
-class CarPart
-{
-    public:
-        CarPart();
-        ~CarPart();
-        void addPart(RaceCar* car);
-        void removePart(RaceCar* car);
-        RaceCar* getPart();
-    private:
-        RaceCar* children;
-=======
 #include <list>
 #include "RaceCar.h"
 
@@ -35,7 +19,6 @@ class CarPart: public RaceCar
     
     private:
         list<RaceCar*> parts;// a list of all the Race Car parts
->>>>>>> theo-branch
 
 };
 

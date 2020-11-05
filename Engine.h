@@ -5,15 +5,6 @@
 #include "RaceCar.h"
 
 using namespace std;
-<<<<<<< HEAD
-
-class Engine : public RaceCar
-{
-    public:
-        Engine();
-        ~Engine();
-        void operation();
-=======
 // leaf participant of the Composite design Pattern 
 class Engine : public RaceCar
 {
@@ -21,7 +12,6 @@ class Engine : public RaceCar
         Engine();//constructor 
         ~Engine();//destructor
         void degrade();//degrade method 
->>>>>>> theo-branch
 
 };
 

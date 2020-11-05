@@ -4,24 +4,6 @@
 #include <iostream>
 #include <string>
 
-<<<<<<< HEAD
-#include "OKCondition.h"
-#include "GoodCondition.h"
-#include "BadCondition.h"
-
-using namespace std;
-#include "Tire.h";
-
-//State
-class TireState
-{
-    public:
-        TireState();
-        virtual ~TireState();
-        virtual void handle(Tire* types) = 0;
-};
-
-=======
 class Tire;
 
 using namespace std;
@@ -43,5 +25,4 @@ class TireState
 #include "Tire.h"
 
 
->>>>>>> theo-branch
 #endif

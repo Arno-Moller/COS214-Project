@@ -1,19 +1,5 @@
 #include "TireState.h"
 
-<<<<<<< HEAD
-TireState::TireState()
-{
-
-}
-
-TireState::~TireState()
-{
-
-}
-
-
-
-=======
 TireState::TireState() 
 {
     
@@ -28,4 +14,3 @@ TireState::~TireState()
 {
     delete tires;
 }
->>>>>>> theo-branch
