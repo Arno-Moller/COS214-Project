@@ -12,10 +12,10 @@ class GoodCondition : public TireState
 {
     public:
         GoodCondition();// constructor
-        GoodCondition(Tire* tires);
+        GoodCondition(Tire* tires);// constructor that takes in a tire object 
         ~GoodCondition();//destructor
-        bool handle();//method to handle the change of the state of the tires
-        void changeTireState();
+        bool handle();//method to check if a pit stop is needed 
+        void changeTireState();// method to change tire state 
 
 };
 

@@ -4,20 +4,20 @@
 #include "TireCompound.h"
 
 using namespace std;
-
+// concrete strategy participant from the strategy design pattern 
 class MediumCompound: public TireCompound
 {
 private:
     /* data */
 public:
-    MediumCompound();
-    ~MediumCompound();
+    MediumCompound();//constructor 
+    ~MediumCompound(); // destructor 
 
-    int getGrip();
-    void setGrip(int grip);
-    int getWear();
-    void setWear(int wear);
-    int getRate();
-    void setRate(int rate);
+    int getGrip(); // returns  the grip of the tire 
+    void setGrip(int grip); // sets the grip of the tir e
+    int getWear();// returns the wear of the tire 
+    void setWear(int wear); // sets the wear of the tire 
+    int getRate(); // returns the rate at wich the tire wears 
+   
 };
 #endif // MEDIUMCOMPOUND_H

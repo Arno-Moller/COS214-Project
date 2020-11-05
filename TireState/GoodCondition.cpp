@@ -22,6 +22,9 @@ bool GoodCondition::handle()
 
 void GoodCondition::changeTireState() 
 {
-	TireState* ok = new OKCondition();
-	tires->setState(ok);
+	if (tires->getWear() >= 30)
+	{
+		TireState* ok = new OKCondition();
+		tires->setState(ok);
+	}
 }

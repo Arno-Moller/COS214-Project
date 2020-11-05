@@ -16,10 +16,10 @@ class TireState
         TireState(Tire* tires);//constructor 
         virtual ~TireState(); // destructor 
         virtual bool handle() = 0;// abstract interface to check the state of the tires
-        virtual void changeTireState() = 0;
+        virtual void changeTireState() = 0; // abstrackt interface to change the tire state
 
     protected:
-        Tire* tires;
+        Tire* tires;//This is the tire object 
 };
 
 #include "../CarComposite/Tire.h"

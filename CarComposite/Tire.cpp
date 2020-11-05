@@ -98,3 +98,8 @@ void Tire::setRate(int rate)
 {
     this->compound->setRate(rate);
 }
+
+string Tire::getNextTireCompound() 
+{
+    return getStrategy()->execute();
+}

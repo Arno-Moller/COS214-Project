@@ -21,13 +21,15 @@ bool BadCondition::handle()
 	{
 		return true; // needs to pit
 	}
-	
 	return false;
 
 }
 
 void BadCondition::changeTireState() 
-{
-	TireState* good = new GoodCondition();
-	tires->setState(good);
+{	
+	if (tires->getWear() >= 100)
+	{
+		TireState* good = new GoodCondition();
+		tires->setState(good);
+	}
 }
