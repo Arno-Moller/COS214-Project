@@ -22,7 +22,7 @@ class TireState
         Tire* tires;
 };
 
-#include "Tire.h"
+#include "../CarComposite/Tire.h"
 
 
 #endif

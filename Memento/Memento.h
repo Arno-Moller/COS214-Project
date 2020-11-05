@@ -2,8 +2,8 @@
 #define MEMENTO_H
 
 #include "TeamState.h"
-#include "RaceCar.h"
-#include "Team.h"
+#include "../CarComposite/RaceCar.h"
+#include "../Prototype/Team.h"
 //the memnto participant of the memento design pattern 
 class Memento
 {

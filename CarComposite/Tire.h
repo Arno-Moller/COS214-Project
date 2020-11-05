@@ -4,10 +4,10 @@
 #include <iostream>
 
 #include "RaceCar.h"
-#include "SoftCompound.h"
-#include "MediumCompound.h"
-#include "HardCompound.h"
-#include "GoodCondition.h"
+#include "../TireCompoundStrategy/SoftCompound.h"
+#include "../TireCompoundStrategy/MediumCompound.h"
+#include "../TireCompoundStrategy/HardCompound.h"
+#include "../TireState/GoodCondition.h"
 
 using namespace std;
 
