@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "../Observer/PitStop.h"
+#include "../Strategy/Strategy.h"
 
 using namespace std;
 //This class is the product participant of the Builder Design pattern 
@@ -24,12 +25,12 @@ class RaceCar
 
 	    //~ virtual void addPart(RaceCar* part) = 0;
 
-        //Strategy* getStrategy() const;
-        //void setStrategy(Strategy* strat);
-        //PitStop* getPitStops() const;
-        //void setPitStop(PitStop* pitstop);
+        Strategy* getStrategy() const;
+        void setStrategy(Strategy* strat);
+        PitStop* getPitStops() const;
+        void setPitStop(PitStop* pitstop);
     private:
-        // Strategy* strategy;
+        Strategy* strategy;
         PitStop* pitCrew;
 
 };
