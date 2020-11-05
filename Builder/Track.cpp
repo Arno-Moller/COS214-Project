@@ -40,6 +40,11 @@ list<TrackSection> Track::getTrack()
     return trackSection;
 }
 
+int Track::getTrackSection()
+{
+    return numSections;
+}
+
 void Track::showTrack()
 {
     list <TrackSection> :: iterator it;

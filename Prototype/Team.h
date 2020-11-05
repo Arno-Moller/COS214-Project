@@ -17,7 +17,7 @@ class Team
 		void buildCar(); // method to build a car 
 		void lap(); // method to do a lap 
 		void setTireCompound(string tireCompound);// set the tire compound 
-
+		virtual Team* clone() = 0;
 		RaceCar* getCarOne();
 		RaceCar* getCarTwo();
 		void setCarOne(RaceCar* car1);
