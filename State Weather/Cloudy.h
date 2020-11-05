@@ -10,12 +10,12 @@
 #include "Rainy.h"
 
 using namespace std;
-
+//concrete state participant of the state participant 
 class Cloudy : public Weather
 {
     public:
-        Cloudy();
-        virtual Weather* changeWeather(); 
+        Cloudy();//constructor 
+        virtual Weather* changeWeather(); // method to change the state of the weather 
 };
 
 #endif
