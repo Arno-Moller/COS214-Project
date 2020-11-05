@@ -34,7 +34,7 @@ void MediumCompound::setWear(int wear)
 
 int MediumCompound::getRate() 
 {
-    return rate;
+    return rate*getWear();
 }
 
 void MediumCompound::setRate(int rate) 

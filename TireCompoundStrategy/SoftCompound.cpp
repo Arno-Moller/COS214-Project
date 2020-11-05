@@ -34,7 +34,7 @@ void SoftCompound::setWear(int wear)
 
 int SoftCompound::getRate() 
 {
-    return rate;
+    return rate*getWear();
 }
 
 void SoftCompound::setRate(int rate) 

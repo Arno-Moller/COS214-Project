@@ -34,7 +34,7 @@ void HardCompound::setWear(int wear)
 
 int HardCompound::getRate() 
 {
-    return rate;
+    return rate*getWear();
 }
 
 void HardCompound::setRate(int rate) 
