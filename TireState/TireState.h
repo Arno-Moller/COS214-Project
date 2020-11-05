@@ -13,14 +13,19 @@ class TireState
 {   
     public:
         TireState();///constructor
+        
+        /**
+        * Constructor 
+        * @param Tire pointer object 
+        */
         TireState(Tire* tires);///constructor 
+        
         virtual ~TireState(); /// destructor 
-     /**
-     * .
-     * Checks if the race car should pit 
-     * 
-     * @return true if the race car should pit and false otherwise 
-     */
+        
+        /**
+        * Checks if the race car should pit 
+        * @return true if the race car should pit and false otherwise 
+        */
         virtual bool handle() = 0;/// abstract interface to check the state of the tires
    
         virtual void changeTireState() = 0; /// abstrackt interface to change the tire state
