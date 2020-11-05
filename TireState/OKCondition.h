@@ -12,10 +12,10 @@ class OKCondition: public TireState
 {
     public:
         OKCondition();//constructor 
-        OKCondition(Tire* tires);
+        OKCondition(Tire* tires); // constructor that takes in a tire object 
         ~OKCondition();//destructor
-        bool handle();//method to handle the change of the state of the tires
-        void changeTireState();
+        bool handle();//method to check if you should pit stop or not 
+        void changeTireState();//method tochange the state of the tires 
 };
 
 #endif

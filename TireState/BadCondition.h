@@ -6,15 +6,15 @@
 #include "GoodCondition.h"
 
 using namespace std;
-
+//The concrete state participant of the State design Pattern 
 class BadCondition: public TireState
 {
     public:
-        BadCondition();
-        BadCondition(Tire* tires);
-        ~BadCondition();
-        bool handle();
-        void changeTireState();
+        BadCondition();// constructor
+        BadCondition(Tire* tires);// constructor that takes in a tire object
+        ~BadCondition();//destructor
+        bool handle();//method to check if you should pit stop or not
+        void changeTireState();// method to change tire state 
 };
 
 #endif // BADCONDITION_H
