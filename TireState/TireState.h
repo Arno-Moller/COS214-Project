@@ -19,7 +19,7 @@ class TireState
         virtual void changeTireState() = 0;
 
     protected:
-        Tire* tires;
+        Tire* tires; 
 };
 
 #include "../CarComposite/Tire.h"
