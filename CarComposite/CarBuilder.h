@@ -20,11 +20,11 @@ class CarBuilder: public RaceCarBuilder
         ~CarBuilder();// destructor 
     
         void addChassis();//adds a Chassis to the car 
-	void addSuspension();// adds Suspension to the car 
-	void addWing();// adds wing to the car 
-	void addHub();// adds hub to the car 
-	void addEngine();// adds engine to the car 
-	void addTire(string compound);// adds tire to the car 
+		void addSuspension();// adds Suspension to the car 
+		void addWing();// adds wing to the car 
+		void addHub();// adds hub to the car 
+		void addEngine();// adds engine to the car 
+		void addTire(string compound);// adds tire to the car 
     
 	RaceCar* getCar(); // returns the car 
     

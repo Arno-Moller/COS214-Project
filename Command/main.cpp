@@ -26,18 +26,57 @@
 
 #include "Command.h"
 #include "BuildTrackCommand.h"
-#include "TestSimulate.h"
 
 #include "BuildTrackCommand.cpp"
-#include "TestSimulate.cpp"
 
+#include "../CarComposite/CarBuilder.h"
+#include "../CarComposite/CarPart.h"
+#include "../CarComposite/Chassie.h"
+#include "../CarComposite/Engine.h"
+#include "../CarComposite/Hub.h"
+#include "../CarComposite/RaceCar.h"
+#include "../CarComposite/RaceCarBuilder.h"
+#include "../CarComposite/Suspension.h"
+#include "../CarComposite/Tire.h"
+#include "../CarComposite/Wing.h"
+
+#include "../CarComposite/CarBuilder.cpp"
+#include "../CarComposite/CarPart.cpp"
+#include "../CarComposite/Chassie.cpp"
+#include "../CarComposite/Engine.cpp"
+#include "../CarComposite/Hub.cpp"
+#include "../CarComposite/RaceCar.cpp"
+#include "../CarComposite/RaceCarBuilder.cpp"
+#include "../CarComposite/Suspension.cpp"
+#include "../CarComposite/Tire.cpp"
+#include "../CarComposite/Wing.cpp"
 
 int main() 
 {
-    Command* test = new BuildTrackCommand();
-    test->execute();
+    RaceCarBuilder* car = new CarBuilder();
+    car->addChassis();
+    car->addSuspension();
+    car->addWing();
+    car->addHub();
+    car->addEngine();
+    car->addTire("soft");
 
-    delete test;
+    BuildTrackCommand* tmp = new BuildTrackCommand();
+    tmp->execute();
+    list <TrackSection> track = tmp->getTrack()->getTrack();
+
+    list <TrackSection> :: iterator it;
+    int sectionCount = 1;
+
+    for(it = track.begin(); it != track.end(); ++it)
+    {
+        cout << "Track Section " << sectionCount << ":" 
+                << "\n\tSection type: " << it->getName() 
+                << "\n\tRisk of trackSection: " << it->getRiskValue()
+                << "\n\tDistance of trackSection: " << it->getDistance() 
+                << "\n" << endl;
+        sectionCount++;
+    }
 
     return 0;
 }

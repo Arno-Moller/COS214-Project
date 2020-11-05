@@ -12,13 +12,13 @@ class RaceCarBuilder
         RaceCarBuilder();//Constructor 
         ~RaceCarBuilder();//Destructor
     
-	virtual void addChassis() = 0;//abstarct interface for the builder of the cars 
-	virtual void addSuspension() = 0; // adds suspension to the Race Car 
-	virtual void addWing() = 0; //adds wing to the Race Car
-	virtual void addHub() = 0; // adds a hub to the Race car
-	virtual void addEngine() = 0; // adds a Engine to the Race Car
-    
-	virtual RaceCar* getCar() = 0; // returns the Race CAr
+		virtual void addChassis() = 0;//abstarct interface for the builder of the cars 
+		virtual void addSuspension() = 0; // adds suspension to the Race Car 
+		virtual void addWing() = 0; //adds wing to the Race Car
+		virtual void addHub() = 0; // adds a hub to the Race car
+		virtual void addEngine() = 0; // adds a Engine to the Race Car
+		virtual void addTire(string) = 0; // adds Tires
+		virtual RaceCar* getCar() = 0; // returns the Race CAr
     
 };
 
