@@ -3,13 +3,15 @@
 
 #include "Strategy.h"
 
+using namespace std;
+
 class Aggresive: public Strategy
 {
 public:
     Aggresive();
     ~Aggresive();
 
-    void execute();
+    string execute();
 };
 
 #endif // AGGRESIVE_H

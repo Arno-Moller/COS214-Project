@@ -1,7 +1,13 @@
 {
-    "files.associations": {
+    "files.associations": 
+    {
+        "*.java": "java",
         "list": "cpp",
         "ostream": "cpp",
+<<<<<<< HEAD
+=======
+        "string": "cpp",
+>>>>>>> ae88718d4101b8cb48f830ef7f055a8fc684b860
         "xstring": "cpp"
     }
 }

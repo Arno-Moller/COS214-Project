@@ -1,7 +1,10 @@
 #ifndef SENSIBLE_H
 #define SENSIBLE_H
 
+
 #include "Strategy.h"
+
+using namespace std;
 
 class Sensible: public Strategy
 {
@@ -9,7 +12,7 @@ public:
     Sensible();
     ~Sensible();
 
-    void execute();
+    string execute();
 };
 
 
