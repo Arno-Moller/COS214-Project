@@ -6,7 +6,7 @@
 #include "../CarComposite/RaceCar.h"
 
 using namespace std;
-
+// prototype participant of the prototype design pattern 
 //The director participant of the Builder Design Pattern 
 class Team
 {
@@ -23,7 +23,7 @@ class Team
 		void setCarOne(RaceCar* car1); // sets the first race car of the team 
 		void setCarTwo(RaceCar* car2); // sets the seconds race car of the team 
 
-		virtual void clone() = 0;
+		virtual Team* clone() = 0; // abstract interface to clone a team 
     protected:
 		CarBuilder* builder; // the builder object to build the cars 
 		RaceCar* car1;// the first car that the car has 
