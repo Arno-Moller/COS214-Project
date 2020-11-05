@@ -2,7 +2,7 @@
 
 MediumCompound::MediumCompound() 
 {
-    setGrip(80);
+    setGrip(100);
     setWear(0);
     rate = 2;
 }
@@ -14,7 +14,7 @@ MediumCompound::~MediumCompound()
 
 int MediumCompound::getGrip() 
 {
-    return grip;
+    return grip*rate;
 }
 
 void MediumCompound::setGrip(int grip) 
