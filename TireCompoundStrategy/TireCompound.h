@@ -23,5 +23,4 @@ public:
 
 };
 
-
 #endif // TIRECOMPOUND_H

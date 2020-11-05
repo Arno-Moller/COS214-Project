@@ -49,3 +49,23 @@ void RaceCar::notify()
 {
     this->pitCrew->update();
 }
+
+Strategy* RaceCar::getStrategy() const
+{
+    return this->strategy;
+}
+
+void RaceCar::setStrategy(Strategy* strat) 
+{
+    this->strategy = strat;
+}
+
+PitStop* RaceCar::getPitStops() const
+{
+    return this->pitCrew;
+}
+
+void RaceCar::setPitStop(PitStop* pitstop) 
+{
+    this->pitCrew = pitstop;
+}
