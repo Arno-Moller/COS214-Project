@@ -33,7 +33,8 @@ class Tire: public RaceCar
         void setWear(int wear);
         int getRate();
         void setRate(int rate);
-          
+
+        string getNextTireCompound();
 
     private:
         TireState* state; // The state of the tires object to check the tires condition 
