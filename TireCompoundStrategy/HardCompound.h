@@ -17,7 +17,7 @@ public:
     void setGrip(int grip); // sets the grip of the tire 
     int getWear(); // returns the wear of the tires 
     void setWear(int wear);// set the wear of the tire 
-    int getRate(); // returns the rate at wich the tire wears 
+    double getRate(); // returns the rate at wich the tire wears 
     
 };
 

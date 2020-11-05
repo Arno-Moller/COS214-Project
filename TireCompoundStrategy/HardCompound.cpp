@@ -4,7 +4,7 @@ HardCompound::HardCompound()
 {
     setGrip(60);
     setWear(0);
-    //setRate(1);
+    rate = 1;
 }
 
 HardCompound::~HardCompound() 
@@ -32,7 +32,7 @@ void HardCompound::setWear(int wear)
     this->wear = wear;
 }
 
-int HardCompound::getRate() 
+double HardCompound::getRate() 
 {
     return rate*getWear();
 }

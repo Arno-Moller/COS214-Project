@@ -2,9 +2,9 @@
 
 SoftCompound::SoftCompound() 
 {
-    setGrip(80);
+    setGrip(100);
     setWear(0);
-    
+    rate = 3;
 }
 
 SoftCompound::~SoftCompound() 
@@ -32,7 +32,7 @@ void SoftCompound::setWear(int wear)
     this->wear = wear;
 }
 
-int SoftCompound::getRate() 
+double SoftCompound::getRate() 
 {
     return rate*getWear();
 }

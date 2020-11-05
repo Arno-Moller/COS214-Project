@@ -31,8 +31,7 @@ class Tire: public RaceCar
         void setGrip(int grip);
         int getWear();
         void setWear(int wear);
-        int getRate();
-        void setRate(int rate);
+        double getRate();
 
         string getNextTireCompound();
 

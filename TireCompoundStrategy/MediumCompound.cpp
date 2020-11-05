@@ -2,9 +2,9 @@
 
 MediumCompound::MediumCompound() 
 {
-    setGrip(70);
+    setGrip(80);
     setWear(0);
-    //setRate(2);
+    rate = 2;
 }
 
 MediumCompound::~MediumCompound() 
@@ -32,7 +32,7 @@ void MediumCompound::setWear(int wear)
     this->wear = wear;
 }
 
-int MediumCompound::getRate() 
+double MediumCompound::getRate() 
 {
     return rate*getWear();
 }
