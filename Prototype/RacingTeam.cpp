@@ -11,6 +11,11 @@ RacingTeam::RacingTeam(RacingTeam& racingTeam)
     this->car2 = new RaceCar(*racingTeam.getCarTwo());
 }
 
+RacingTeam::RacingTeam(string tireCompound): Team(tireCompound)
+{
+    
+}
+
 RacingTeam::~RacingTeam() 
 {
     delete this->car1;
@@ -20,4 +25,25 @@ RacingTeam::~RacingTeam()
 Team* RacingTeam::clone() 
 {
     return new RacingTeam(*this);
+}
+
+int RacingTeam::getTeamPoints() 
+{
+    return teamPoints;
+}
+
+void RacingTeam::setTeamPoints() 
+{
+    teamPoints = getCarOne()->getPoints() + getCarTwo()->getPoints();
+
+}
+
+string RacingTeam::getTeamName() 
+{
+    return teamName;
+}
+
+void RacingTeam::setTeamName(string name) 
+{
+    teamName = name;
 }

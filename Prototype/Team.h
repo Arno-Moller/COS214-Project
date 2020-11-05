@@ -24,11 +24,19 @@ class Team
 		void setCarTwo(RaceCar* car2); // sets the seconds race car of the team 
 
 		virtual Team* clone() = 0; // abstract interface to clone a team 
+		virtual int getTeamPoints() = 0;
+		virtual void setTeamPoints() = 0;
+		virtual string getTeamName() = 0;
+		virtual void setTeamName(string name) = 0;
+
+
     protected:
 		CarBuilder* builder; // the builder object to build the cars 
 		RaceCar* car1;// the first car that the car has 
 		RaceCar* car2;//the second car that the team has 
 		string tireCompound; // the tire compound 
+		int teamPoints;
+		string teamName;
         
 };
 

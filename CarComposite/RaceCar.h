@@ -25,6 +25,9 @@ class RaceCar
 
 	    //~ virtual void addPart(RaceCar* part) = 0;
 
+        int getPoints();
+        void setPoints(int points);
+
         Strategy* getStrategy() const;
         void setStrategy(Strategy* strat);
         PitStop* getPitStops() const;
@@ -32,6 +35,7 @@ class RaceCar
     private:
         Strategy* strategy;
         PitStop* pitCrew;
+        int points = 0;
 
 };
 

@@ -9,11 +9,17 @@ private:
     
 public:
     RacingTeam();//constructor
+    RacingTeam(string tireCompound);
     RacingTeam(RacingTeam&);//constructor 
     
     ~RacingTeam();//destructor 
 
     Team* clone();//the clone method for the team 
+    int getTeamPoints();
+    void setTeamPoints();
+    string getTeamName();
+    void setTeamName(string name);
+
 };
 
 #endif // RACINGTEAM_H
