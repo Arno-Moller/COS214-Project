@@ -51,15 +51,27 @@
 #include "../CarComposite/Tire.cpp"
 #include "../CarComposite/Wing.cpp"
 
+
+#include "../Prototype/Team.h"
+#include "../Prototype/RacingTeam.h"
+
+#include "../Prototype/Team.cpp"
+#include "../Prototype/RacingTeam.cpp"
+
 int main() 
 {
-    RaceCarBuilder* car = new CarBuilder();
-    car->addChassis();
-    car->addSuspension();
-    car->addWing();
-    car->addHub();
-    car->addEngine();
-    car->addTire("soft");
+    Team* team1 = new RacingTeam();
+    Team* teams = new RacingTeam[10];
+    
+    teams[0] = *team1;
+    //double time = new double[10];
+
+    for(int i = 1; i < 10; i++)
+    {
+        teams[i] = *team1->clone();
+    }
+
+
 
     BuildTrackCommand* tmp = new BuildTrackCommand();
     tmp->execute();

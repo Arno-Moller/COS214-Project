@@ -15,14 +15,18 @@ class Team
         ~Team();// destructor 
 		void buildCar(); // method to build a car 
 		void lap(); // method to do a lap 
+		RaceCar* getCarOne();
+		RaceCar* getCarTwo();
+		void setCarOne(RaceCar*);
+		void setCarTwo(RaceCar*);
 		void setTireCompound(string tireCompound);// set the tire compound 
+		virtual Team* clone() = 0;
     
-    private:
+    protected:
 		CarBuilder* builder; // the builder object to build the cars 
 		RaceCar* car1;// the first car that the car has 
 		RaceCar* car2;//the second car that the team has 
 		string tireCompound; // the tire compound 
         
 };
-
 #endif

@@ -7,14 +7,14 @@ RacingTeam::RacingTeam()
 
 RacingTeam::RacingTeam(RacingTeam& racingTeam) 
 {
-    this->carOne = new RaceCar(*racingTeam.getCarOne());
-    this->carTwo = new RaceCar(*racingTeam.getCarTwo());
+    this->car1 = new RaceCar(*racingTeam.getCarOne());
+    this->car2 = new RaceCar(*racingTeam.getCarTwo());
 }
 
 RacingTeam::~RacingTeam() 
 {
-    delete this->carOne;
-    delete this->carTwo;
+    delete this->car1;
+    delete this->car2;
 }
 
 Team* RacingTeam::clone() 

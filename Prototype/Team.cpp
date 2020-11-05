@@ -38,7 +38,28 @@ void Team::lap()
 	car2->lap();
 }
 
+RaceCar* Team::getCarOne() 
+{
+	return car1;
+}
+
+RaceCar* Team::getCarTwo() 
+{
+	return car2;
+}
+
+void Team::setCarOne(RaceCar* c) 
+{
+	RaceCar* car1 = c;
+}
+
+void Team::setCarTwo(RaceCar* c) 
+{
+	RaceCar* car2 = c;
+}
+
 void Team::setTireCompound(string tireCompound)
 {
 	this->tireCompound = tireCompound;
 }
+
