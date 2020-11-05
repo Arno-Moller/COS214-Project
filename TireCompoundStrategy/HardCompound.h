@@ -4,21 +4,21 @@
 #include "TireCompound.h"
 
 using namespace std;
-
+//concrete strategy participant of the strategy design pattern 
 class HardCompound: public TireCompound
 {
 private:
     /* data */
 public:
-    HardCompound();
-    ~HardCompound();
+    HardCompound();// constructor 
+    ~HardCompound(); // destructor 
 
-    int getGrip();
-    void setGrip(int grip);
-    int getWear();
-    void setWear(int wear);
-    int getRate();
-    void setRate(int rate);
+    int getGrip(); // returns the grips of the tire 
+    void setGrip(int grip); // sets the grip of the tire 
+    int getWear(); // returns the wear of the tires 
+    void setWear(int wear);// set the wear of the tire 
+    int getRate(); // returns the rate at wich the tire wears 
+    void setRate(int rate); // sets the rate at wich the tire wears 
 };
 
 #endif // HARDCOMPOUND_H
