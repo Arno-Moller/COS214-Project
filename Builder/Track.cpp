@@ -27,12 +27,17 @@ int Track::getTrackRisk()
 
 void Track::addSection(TrackSection* tempSection)
 {
-    section.push_back(*tempSection);
+    trackSection.push_back(*tempSection);
 
     trackRisk += tempSection->getRiskValue();
     trackDistance += tempSection->getDistance();
 
     numSections++;
+}
+
+list<TrackSection> Track::getTrack()
+{
+    return trackSection;
 }
 
 void Track::showTrack()
@@ -47,12 +52,12 @@ void Track::showTrack()
     cout << endl;
     cout << "Track Sections: " << endl;
 
-    for(it = section.begin(); it != section.end(); ++it)
+    for(it = trackSection.begin(); it != trackSection.end(); ++it)
     {
-        cout << "Section " << sectionCount << ":" 
+        cout << "Track Section " << sectionCount << ":" 
                 << "\n\tSection type: " << it->getName() 
-                << "\n\tRisk of section: " << it->getRiskValue()
-                << "\n\tDistance of section: " << it->getDistance() 
+                << "\n\tRisk of trackSection: " << it->getRiskValue()
+                << "\n\tDistance of trackSection: " << it->getDistance() 
                 << "\n" << endl;
         sectionCount++;
     }

@@ -28,9 +28,10 @@ class Track
 
         void addSection(TrackSection*); // function to add a Track Section to the track 
         void showTrack(); // display the track 
+        list<TrackSection> getTrack(); //return track list
 
     private:
-        list <TrackSection> section; // a list containing all the different track section making up the track 
+        list <TrackSection> trackSection; // a list containing all the different track section making up the track 
         string trackName; // the name of the track 
         int trackDistance; // the distance of the track 
         int trackRisk; // the risk of the track 
