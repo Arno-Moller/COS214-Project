@@ -32,7 +32,7 @@ void RaceCar::lap()
 
 void RaceCar::degrade()
 {
-
+    
 }
 
 void RaceCar::addPitcrew(PitStop* pitcrew) 

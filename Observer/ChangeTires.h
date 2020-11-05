@@ -2,8 +2,8 @@
 #define CHANGETIRES_H
 
 #include "PitStop.h"
-#include "Tire.h"
-#include "TireState.h"
+#include "../CarComposite/Tire.h"
+#include "../TireState/TireState.h"
 // #include "Strategy.h"
 
 

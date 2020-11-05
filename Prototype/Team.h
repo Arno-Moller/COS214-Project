@@ -2,7 +2,8 @@
 #define TEAM_H
 
 #include <iostream>
-#include "CarBuilder.h"
+#include "../CarComposite/CarBuilder.h"
+#include "../CarComposite/RaceCar.h"
 
 using namespace std;
 
@@ -16,6 +17,11 @@ class Team
 		void buildCar(); // method to build a car 
 		void lap(); // method to do a lap 
 		void setTireCompound(string tireCompound);// set the tire compound 
+
+		RaceCar* getCarOne();
+		RaceCar* getCarTwo();
+		void setCarOne(RaceCar* car1);
+		void setCarTwo(RaceCar* car2);
     
     private:
 		CarBuilder* builder; // the builder object to build the cars 
