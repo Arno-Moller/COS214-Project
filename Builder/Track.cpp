@@ -40,7 +40,7 @@ list<TrackSection> Track::getTrack()
     return trackSection;
 }
 
-int Track::getTrackSection()
+int Track::getSectionCount()
 {
     return numSections;
 }

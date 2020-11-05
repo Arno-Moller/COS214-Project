@@ -59,6 +59,11 @@ list<TrackSection> TrackMaker::getTrack()
     return track->getTrack();
 }
 
+int TrackMaker::getNumSections()
+{
+    return track->getSectionCount();
+}
+
 void TrackMaker::showTrack()
 {
     track->showTrack();

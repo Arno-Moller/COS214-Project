@@ -18,6 +18,7 @@ class ConcreteTrack
         virtual void addHairpin(int) = 0;
         virtual void addS_section(int) = 0;
         virtual void addSlightTurn(int) = 0;
+        virtual int getNumSections() = 0;
         virtual list<TrackSection> getTrack() = 0; //return track list
         virtual void showTrack() = 0;
 

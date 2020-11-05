@@ -25,7 +25,7 @@ class Track
         string getTrackName(); // get method for retrieving the name of the track 
         int getTrackDistance();// get method for retrieving the distance of the track 
         int getTrackRisk(); // get method for retrieving the risk of the track 
-        int getTrackSection(); // get method for retrieving the number of section of the track
+        int getSectionCount(); // get method for retrieving the number of section of the track
 
         void addSection(TrackSection*); // function to add a Track Section to the track 
         void showTrack(); // display the track 

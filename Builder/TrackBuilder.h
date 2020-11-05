@@ -13,7 +13,7 @@ class TrackBuilder
         void display();//this displays the track 
         ConcreteTrack* getTrack();//returns this track
     private:
-        ConcreteTrack* concreteTrack;//Concrete Track object wich is the builder participant in the Builder Design Pattern 
+        ConcreteTrack* concreteTrack;//Concrete Track object which is the builder participant in the Builder Design Pattern 
     
 };
 #endif
