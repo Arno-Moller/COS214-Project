@@ -25,6 +25,7 @@ class Tire: public RaceCar
         void setType(string type);
         void setType(TireCompound* type);
 
+        void lap();
         void degrade();// degrades the tires
 
         int getGrip();

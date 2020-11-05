@@ -9,14 +9,12 @@ using namespace std;
 class Strategy
 {
 public:
-    Strategy();
+    Strategy(){};
     virtual ~Strategy() = 0;
 
     virtual string execute() = 0;
 };
 
-Strategy::Strategy() 
-{
-}
+
 
 #endif // STRATEGY_H
