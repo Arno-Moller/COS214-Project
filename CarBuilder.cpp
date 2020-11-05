@@ -1,32 +1,12 @@
 #include "CarBuilder.h"
 
-<<<<<<< HEAD
-CarBuilder::CarBuilder()
-{
-
-=======
 CarBuilder::CarBuilder(): RaceCarBuilder()
 {
 	car = new CarPart();
->>>>>>> theo-branch
 }
 
 CarBuilder::~CarBuilder()
 {
-<<<<<<< HEAD
-
-}
-
-RaceCar *CarBuilder::buildCar()
-{
-    return nullptr;
-}
-
-RaceCar *CarBuilder::getResult()
-{
-    return nullptr;
-}
-=======
 	//cars get deleted in team
 }
 
@@ -65,4 +45,3 @@ RaceCar* CarBuilder::getCar()
 {
 	return this->car;
 }
->>>>>>> theo-branch

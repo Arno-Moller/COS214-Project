@@ -3,18 +3,6 @@
 
 #include <iostream>
 #include "RaceCarBuilder.h"
-<<<<<<< HEAD
-
-using namespace std;
-
-class CarBuilder: public RaceCarBuilder
-{
-    public:
-        CarBuilder();
-        ~CarBuilder();
-        RaceCar* buildCar();
-        RaceCar* getResult();
-=======
 #include "Tire.h"
 #include "Chassie.h"
 #include "Engine.h"
@@ -42,7 +30,6 @@ class CarBuilder: public RaceCarBuilder
     
 	private:
 		CarPart* car; // an object of the car 
->>>>>>> theo-branch
 };
 
 #endif
