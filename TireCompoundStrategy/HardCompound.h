@@ -18,7 +18,7 @@ public:
     int getWear(); // returns the wear of the tires 
     void setWear(int wear);// set the wear of the tire 
     int getRate(); // returns the rate at wich the tire wears 
-    void setRate(int rate); // sets the rate at wich the tire wears 
+    
 };
 
 #endif // HARDCOMPOUND_H

@@ -19,7 +19,7 @@ public:
     virtual int getWear() = 0; // abstract interface to get the wear of the tires 
     virtual void setWear(int wear) = 0; // abstract interface to set the wear of the tires
     virtual int getRate() = 0; // abstract interface to get the rate 
-    virtual void setRate(int wear) = 0; // abstract interface to set the rate 
+     
 
 };
 

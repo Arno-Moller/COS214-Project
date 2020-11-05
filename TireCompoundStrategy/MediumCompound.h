@@ -18,6 +18,6 @@ public:
     int getWear();// returns the wear of the tire 
     void setWear(int wear); // sets the wear of the tire 
     int getRate(); // returns the rate at wich the tire wears 
-    void setRate(int rate); // sets the rate at wich the tire wears 
+   
 };
 #endif // MEDIUMCOMPOUND_H
