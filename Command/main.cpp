@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 #include "../Builder/Track.h"
 #include "../Builder/TrackSection.h"
 #include "../Builder/ConcreteTrack.h"
@@ -12,22 +13,22 @@
 #include "../Builder/SlightTurn.h"
 #include "../Builder/Straight.h"
 
-#include "../Builder/Track.cpp"
-#include "../Builder/TrackSection.cpp"
-#include "../Builder/ConcreteTrack.cpp"
-#include "../Builder/TrackBuilder.cpp"
-#include "../Builder/TrackMaker.cpp"
+// #include "../Builder/Track.cpp"
+// #include "../Builder/TrackSection.cpp"
+// #include "../Builder/ConcreteTrack.cpp"
+// #include "../Builder/TrackBuilder.cpp"
+// #include "../Builder/TrackMaker.cpp"
 
-#include "../Builder/NinetyDegreeTurn.cpp"
-#include "../Builder/Hairpin.cpp"
-#include "../Builder/S_Section.cpp"
-#include "../Builder/SlightTurn.cpp"
-#include "../Builder/Straight.cpp"
+// #include "../Builder/NinetyDegreeTurn.cpp"
+// #include "../Builder/Hairpin.cpp"
+// #include "../Builder/S_Section.cpp"
+// #include "../Builder/SlightTurn.cpp"
+// #include "../Builder/Straight.cpp"
 
 #include "Command.h"
 #include "BuildTrackCommand.h"
 
-#include "BuildTrackCommand.cpp"
+// #include "BuildTrackCommand.cpp"
 
 #include "../CarComposite/CarBuilder.h"
 #include "../CarComposite/CarPart.h"
@@ -40,16 +41,16 @@
 #include "../CarComposite/Tire.h"
 #include "../CarComposite/Wing.h"
 
-#include "../CarComposite/CarBuilder.cpp"
-#include "../CarComposite/CarPart.cpp"
-#include "../CarComposite/Chassie.cpp"
-#include "../CarComposite/Engine.cpp"
-#include "../CarComposite/Hub.cpp"
-#include "../CarComposite/RaceCar.cpp"
-#include "../CarComposite/RaceCarBuilder.cpp"
-#include "../CarComposite/Suspension.cpp"
-#include "../CarComposite/Tire.cpp"
-#include "../CarComposite/Wing.cpp"
+// #include "../CarComposite/CarBuilder.cpp"
+// #include "../CarComposite/CarPart.cpp"
+// #include "../CarComposite/Chassie.cpp"
+// #include "../CarComposite/Engine.cpp"
+// #include "../CarComposite/Hub.cpp"
+// #include "../CarComposite/RaceCar.cpp"
+// #include "../CarComposite/RaceCarBuilder.cpp"
+// #include "../CarComposite/Suspension.cpp"
+// #include "../CarComposite/Tire.cpp"
+// #include "../CarComposite/Wing.cpp"
 
 int main() 
 {
