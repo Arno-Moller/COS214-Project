@@ -1,6 +1,9 @@
 {
     "files.associations": {
+        "*.java": "java",
         "list": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "string": "cpp",
+        "xstring": "cpp"
     }
 }

@@ -3,13 +3,15 @@
 
 #include "Strategy.h"
 
+using namespace std;
+
 class Cautious: public Strategy
 {
 public:
     Cautious();
     ~Cautious();
 
-    void execute();
+    string execute();
 };
 
 #endif // CAUTIOUS_H
