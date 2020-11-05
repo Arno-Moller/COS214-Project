@@ -59,11 +59,16 @@ void Tire::setType(TireCompound* type)
     this->compound = type;
 }
 
+void Tire::lap() 
+{
+    degrade();
+}
+
 ///Function to call each lap that degrades the tires
 void Tire::degrade()
 {
-	compound->setGrip(compound->getGrip() - compound->getRate());
 	compound->setWear(compound->getWear() + compound->getRate());
+    compound->setGrip(compound->getGrip() - compound->getRate());
 	
 	//~ cout << getRate()<< endl;
     notify();
@@ -89,14 +94,9 @@ void Tire::setWear(int wear)
     this->compound->setWear(wear);
 }
 
-int Tire::getRate() 
+double Tire::getRate() 
 {
     return this->compound->getRate();
-}
-
-void Tire::setRate(int rate) 
-{
-    this->compound->setRate(rate);
 }
 
 string Tire::getNextTireCompound() 

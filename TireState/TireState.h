@@ -8,18 +8,30 @@ class Tire;
 
 using namespace std;
 
-//The state participant of the State design pattern 
+///The state participant of the State design pattern 
 class TireState
 {   
     public:
-        TireState();//constructor
-        TireState(Tire* tires);//constructor 
-        virtual ~TireState(); // destructor 
-        virtual bool handle() = 0;// abstract interface to check the state of the tires
-        virtual void changeTireState() = 0; // abstrackt interface to change the tire state
+        TireState();///constructor
+        
+        /**
+        * Constructor 
+        * @param Tire pointer object 
+        */
+        TireState(Tire* tires);///constructor 
+        
+        virtual ~TireState(); /// destructor 
+        
+        /**
+        * Checks if the race car should pit 
+        * @return true if the race car should pit and false otherwise 
+        */
+        virtual bool handle() = 0;/// abstract interface to check the state of the tires
+   
+        virtual void changeTireState() = 0; /// abstrackt interface to change the tire state
 
     protected:
-        Tire* tires;//This is the tire object 
+        Tire* tires; /**< a tire object of  */ 
 };
 
 #include "../CarComposite/Tire.h"
