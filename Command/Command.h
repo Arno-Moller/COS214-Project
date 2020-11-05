@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Command 
+class Command
 {
     public:
         virtual void execute() = 0;

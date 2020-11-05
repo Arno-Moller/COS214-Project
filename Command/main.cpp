@@ -26,8 +26,11 @@
 
 #include "Command.h"
 #include "BuildTrackCommand.h"
+#include "TestSimulate.h"
 
 #include "BuildTrackCommand.cpp"
+#include "TestSimulate.cpp"
+
 
 int main() 
 {

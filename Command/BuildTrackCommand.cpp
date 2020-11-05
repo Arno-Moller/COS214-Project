@@ -5,7 +5,6 @@ BuildTrackCommand::BuildTrackCommand()
     trackBuilder = new TrackBuilder();
 }
 
-
 BuildTrackCommand::~BuildTrackCommand()
 {
     delete trackBuilder;
@@ -16,4 +15,9 @@ void BuildTrackCommand::execute()
 {
     trackBuilder->construct();
     trackBuilder->display();
+}
+
+ConcreteTrack* BuildTrackCommand::getTrack()
+{
+    return trackBuilder->getTrack();
 }

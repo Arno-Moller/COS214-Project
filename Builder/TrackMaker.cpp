@@ -53,6 +53,12 @@ void TrackMaker::addStraight(int d)
     delete temp;
 }
 
+list<TrackSection> TrackMaker::getTrack()
+{
+   
+    return track->getTrack();
+}
+
 void TrackMaker::showTrack()
 {
     track->showTrack();

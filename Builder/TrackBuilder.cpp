@@ -25,3 +25,8 @@ void TrackBuilder::display()
 {
     concreteTrack->showTrack();
 }
+
+ConcreteTrack* TrackBuilder::getTrack()
+{
+    return concreteTrack;
+}

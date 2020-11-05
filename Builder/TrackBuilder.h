@@ -10,7 +10,8 @@ class TrackBuilder
         ~TrackBuilder();//destrucor 
 
         void construct(); // this builds the track or constructs the track consisting of the section we would want 
-        void display();//thid displays the track 
+        void display();//this displays the track 
+        ConcreteTrack* getTrack();//returns this track
     private:
         ConcreteTrack* concreteTrack;//Concrete Track object wich is the builder participant in the Builder Design Pattern 
     
