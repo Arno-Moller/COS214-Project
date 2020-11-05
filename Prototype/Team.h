@@ -18,10 +18,10 @@ class Team
 		void lap(); // method to do a lap 
 		void setTireCompound(string tireCompound);// set the tire compound 
 
-		RaceCar* getCarOne();
-		RaceCar* getCarTwo();
-		void setCarOne(RaceCar* car1);
-		void setCarTwo(RaceCar* car2);
+		RaceCar* getCarOne(); // returns the first race car of the team 
+		RaceCar* getCarTwo(); // returns the second race car of the team 
+		void setCarOne(RaceCar* car1); // sets the first race car of the team 
+		void setCarTwo(RaceCar* car2); // sets the seconds race car of the team 
     
     protected:
 		CarBuilder* builder; // the builder object to build the cars 

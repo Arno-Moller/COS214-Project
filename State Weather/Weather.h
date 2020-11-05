@@ -9,14 +9,14 @@ using namespace std;
 class Weather
 {
     public:
-        Weather();
-        virtual Weather* changeWeather() = 0; 
-        string getWeather();
-        void setWeather(string);
+        Weather();//constructor
+        virtual Weather* changeWeather() = 0; //abstract interface to change the weather state 
+        string getWeather(); // returns the weather 
+        void setWeather(string); // sets the weather 
 
     private:
-        string weather;
-        int riskValue;
+        string weather; // the weather 
+        int riskValue; // teh risk value associated with the weather 
 };
 
 #endif
