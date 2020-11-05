@@ -23,7 +23,7 @@ class Team
 		void setCarOne(RaceCar* car1);
 		void setCarTwo(RaceCar* car2);
     
-    private:
+    protected:
 		CarBuilder* builder; // the builder object to build the cars 
 		RaceCar* car1;// the first car that the car has 
 		RaceCar* car2;//the second car that the team has 

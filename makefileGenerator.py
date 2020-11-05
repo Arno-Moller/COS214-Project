@@ -49,10 +49,10 @@ def getFiles():
             i = 0
             for l in lines:
 
-                if l.find("include") >= 0 and (l.find("/") >= 0 or l.find("\\") >= 0) and not l.find("//") >= 0:
-                    if l.find("include") and l.rfind("/") >= 0:
+                if l.find("#include") >= 0 and (l.find("/") >= 0) and not l.find("//") >= 0:
+                    if l.find("#include")>= 0 and l.rfind("/") >= 0:
                         lines[i] = "#include \"" + l[(l.rindex("/") + 1): -1] + "\n"
-                            
+                        
                 
                 i = i + 1 
             
@@ -96,6 +96,12 @@ def copyFiles(files, folderName):
 
 
 def makeMakefile(main):
+
+    print(os.getcwd())
+    # makebuild = open(ogPath + "\\makefile", "w")
+    # lines = ["build:", "\tpython3 main.py"]
+    # makebuild.writelines(lines)
+    # makebuild.close()
 
     print ("Making makefile...")
 
