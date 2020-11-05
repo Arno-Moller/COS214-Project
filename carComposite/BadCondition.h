@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "TireState.h"
+<<<<<<< HEAD
 
 using namespace std;
 
@@ -16,3 +17,20 @@ class BadCondition : public TireState
 };
 
 #endif
+=======
+#include "GoodCondition.h"
+
+using namespace std;
+
+class BadCondition: public TireState
+{
+    public:
+        BadCondition();
+        BadCondition(Tire* tires);
+        ~BadCondition();
+        bool handle();
+        void changeTireState();
+};
+
+#endif // BADCONDITION_H
+>>>>>>> theo-branch
