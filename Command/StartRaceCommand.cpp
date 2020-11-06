@@ -60,23 +60,24 @@ void StartRaceCommand::execute()
         for(int j = 0; j < laps; j++)
         {
             double d = 0;
+            double temp = 0;
 
             for(TrackSection it:track)
             {
                 d = it.getDistance();
-                time[i][j] += d*(double)5;
-                // time[i][j] += d*(double)drivers[j]->getTireGrip();
-                // drivers[j]->lap();
+                temp += d*(double)5;//drivers[j]->getGrip();
+                //drivers[j]->lap();
             }
+            time[i][j] = temp;
         }
     }
 
     for(int i = 0; i < 20; i++)
     {
-        cout << "Driver" << i << " :" << endl;
+        cout << "Driver" << i+1 << " :" << endl;
         for(int j = 0; j < laps; j++)
         {
-            cout << "\tlap" << j << "\t time: " << time[i][j] << endl;
+            cout << "\tlap" << j+1 << "\t time: " << time[i][j] << endl;
         }
         cout << "*****************************************" << endl;
         cout << endl;
