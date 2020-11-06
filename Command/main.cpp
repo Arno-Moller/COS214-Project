@@ -104,55 +104,14 @@ using namespace std;
 
 int main() 
 {
-    //CreateTeamCommand* teamCom = new CreateTeamCommand();
-    //teamCom->execute();
-    //Team** teams = teamCom->getTeams();
+    CreateTeamCommand* teamCom = new CreateTeamCommand();
+    teamCom->execute();
+    Team** teams = teamCom->getTeams();
 
     BuildTrackCommand* tmp = new BuildTrackCommand();
-    tmp ->execute();
-    //Command* race = new StartRaceCommand(teams, tmp);
-    //Command* race = new StartRaceCommand();
-    //race->execute();
+    Command* race = new StartRaceCommand(teams, tmp);
+    race->execute();
 
-    int laps = tmp->getTrackBuilder()->getLaps();
-    vector<TrackSection> track = tmp->getTrack()->getTrack();
-    cout << track.size() << endl;
-
-    double** time = new double*[10];
-
-    for(int i = 0; i < 10; i++)
-    {
-        time[i] = new double[laps];
-    }
-
-    for(int i = 0; i < 10; i++)
-    {
-        for(int j = 0; j < laps; j++)
-        {
-            double d = 0;
-            double temp = 0;
-
-            for(TrackSection it:track)
-            {
-                //d = it.getDistance();
-                temp += 5.0;//drivers[j]->getGrip();
-                //drivers[j]->lap();
-                //cout << "run" << endl;
-            }
-            time[i][j] = j;
-        }
-    }
-
-    for(int i = 0; i < 10; i++)
-    {
-        cout << "Driver " << i+1 << " :" << endl;
-        for(int j = 0; j < laps; j++)
-        {
-            cout << "\tlap" << j << "\t time: " << time[i][j] << endl;
-        }
-        cout << "*****************************************" << endl;
-        cout << endl;
-    }
 
     return 0;
 }
