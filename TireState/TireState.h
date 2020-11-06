@@ -18,7 +18,7 @@ class TireState
         * Constructor 
         * @param Tire pointer object 
         */
-        TireState(Tire* tires);///constructor 
+        TireState(Tire* tires);
         
         virtual ~TireState(); /// destructor 
         

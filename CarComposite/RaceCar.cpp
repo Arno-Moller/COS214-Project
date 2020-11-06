@@ -50,6 +50,16 @@ void RaceCar::notify()
     this->pitCrew->update();
 }
 
+int RaceCar::getPoints() 
+{
+    return points;
+}
+
+void RaceCar::setPoints(int points) 
+{
+    this->points = points;
+}
+
 Strategy* RaceCar::getStrategy() const
 {
     return this->strategy;
