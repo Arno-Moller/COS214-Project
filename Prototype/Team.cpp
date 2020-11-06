@@ -42,7 +42,7 @@ void Team::setTireCompound(string tireCompound)
 {
 	this->tireCompound = tireCompound;
 }
-
+/*
 RaceCar* Team::getCarOne() 
 {
 	return this->car1;
@@ -62,3 +62,4 @@ void Team::setCarTwo(RaceCar* car2)
 {
 	this->car2 = car2;
 }
+*/

@@ -36,7 +36,7 @@ void RaceConditionCommand::execute()
 
     int chanceOfChanging = rand() % 100;
 
-    if (chanceOfChanging > 75)
+    if (chanceOfChanging > 0)
     {
         weather->change();
     }

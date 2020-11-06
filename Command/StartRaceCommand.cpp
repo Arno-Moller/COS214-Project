@@ -5,7 +5,8 @@ StartRaceCommand::StartRaceCommand()
 {
     constructors = new Team*[10];
     drivers = new RaceCar*[20];
-    race = new LapCommand();
+    lap = new LapCommand();
+    trackBuilder = new BuildTrackCommand();
 
     for (int i = 0; i < 10 ; i++)
     {
@@ -16,17 +17,16 @@ StartRaceCommand::StartRaceCommand()
     {
         drivers[i] = nullptr;
     }
-    
-    
 }
 
-StartRaceCommand::StartRaceCommand(Team** teams) 
+StartRaceCommand::StartRaceCommand(Team** teams, BuildTrackCommand* t) 
 {
+    setTrackBuilder(t); 
+
     if (teams != nullptr)
     {
         this->constructors = teams;
         drivers = new RaceCar*[20];
-        
 
         int j = 0;
         for (int i = 0; i < 10; i++)
@@ -37,18 +37,21 @@ StartRaceCommand::StartRaceCommand(Team** teams)
             j++;
         }
 
-        race = new LapCommand(drivers);
+        lap = new LapCommand(drivers);
     }
 }
 
 StartRaceCommand::~StartRaceCommand() 
 {
-    
+
 }
 
 void StartRaceCommand::execute() 
 {
-    
+    trackBuilder->execute();
+    vector<TrackSection> track = trackBuilder->getTrack()->getTrack();
+
+    lap->execute();
 }
 
 Team** StartRaceCommand::getTeams() 
@@ -71,10 +74,8 @@ void StartRaceCommand::setTeams(Team** teams)
             j++;
         }
 
-        this->race->setCars(drivers);
+        this->lap->setCars(drivers);
     }
-
-
 }
 
 RaceCar** StartRaceCommand::getCars() 
@@ -85,4 +86,26 @@ RaceCar** StartRaceCommand::getCars()
 void StartRaceCommand::setCars(RaceCar** cars) 
 {
     this->drivers = cars;
+}
+
+BuildTrackCommand* StartRaceCommand::getTrackBuilder() 
+{
+    return trackBuilder;
+}
+
+void StartRaceCommand::setTrackBuilder(BuildTrackCommand* t) 
+{
+    trackBuilder = t;
+    trackBuilder->execute();
+    track = trackBuilder->getTrack()->getTrack();
+}
+
+vector<TrackSection> StartRaceCommand::getTrack() 
+{
+    return track;
+}
+
+void StartRaceCommand::setTrack(vector<TrackSection> t) 
+{
+    track = t;
 }

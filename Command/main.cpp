@@ -1,4 +1,5 @@
 #include <iostream>
+#include <new>
 
 
 #include "../Builder/Track.h"
@@ -72,26 +73,38 @@
 #include "../TireCompoundStrategy/MediumCompound.cpp"
 #include "../TireCompoundStrategy/HardCompound.cpp"
 
-#include "../Prototype/RacingTeam.h"
-#include "../Prototype/Team.h"
+// #include "../Prototype/Team.h"
+// #include "../Prototype/RacingTeam.h"
 
-#include "../Prototype/RacingTeam.cpp"
-#include "../Prototype/Team.cpp"
+// #include "../Prototype/Team.cpp"
+// #include "../Prototype/RacingTeam.cpp"
+
+#include "../Strategy/Strategy.h"
+
+//#include "../Strategy/Strategy.cpp"
+
+#include "../Strategy/Sensible.h"
+#include "../Strategy/Cautious.h"
+#include "../Strategy/Aggressive.h"
+
+#include "../Strategy/Sensible.cpp"
+#include "../Strategy/Cautious.cpp"
+#include "../Strategy/Aggressive.cpp"
 
 using namespace std;
 
 int main() 
 {
-    RaceCarBuilder* car = new CarBuilder();
-    
-    Team* team1 = new RacingTeam();
-    Team** teams = new Team*[10];
-    teams[0] = team1;
+    // RaceCarBuilder* car = new CarBuilder();
 
-    for(int i = 1; i < 10; i++)
-    {
-        teams[i] = team1->clone();
-    }
+    // Team* team1 = new RacingTeam();
+    // Team** teams = new Team*[10];
+    // teams[0] = team1;
+
+    // for(int i = 1; i < 10; i++)
+    // {
+    //     teams[i] = team1->clone();
+    // }
 
     BuildTrackCommand* tmp = new BuildTrackCommand();
     tmp->execute();
@@ -99,24 +112,29 @@ int main()
 
     int sectionCount = tmp->getTrack()->getNumSections();
 
-    int* time = new int[sectionCount];
+    double* time = new double[10];
 
     for(int i = 0; i < 10; i++)
     {
         int j = 0;
+        double t = 0;
 
-        int time = 0;
         for(TrackSection it:track)
         {
-            cout << i <<" : " << j << endl;
-            time[i] += it.getDistance();
-            //cout << time[&i] << endl;
-            cout << it.getDistance() << endl;
+            // /cout << i <<" : " << j << endl;
+            t += it.getDistance();
+            
+            time[i] = t*5.5;
+            
+            //cout << it.getDistance() << endl;
             j++;
         }
     }
 
-    cout << "Helloooo" << endl;
+    for(int i = 0; i < 10; i++)
+    {
+        cout << time[i] << endl;
+    }
 
     return 0;
 }

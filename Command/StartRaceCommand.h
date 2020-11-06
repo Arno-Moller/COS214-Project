@@ -6,30 +6,38 @@
 #include "../Prototype/RacingTeam.h"
 #include "../CarComposite/RaceCar.h"
 #include "LapCommand.h"
+#include "BuildTrackCommand.h"
 
 using  namespace std;
 
 class StartRaceCommand: public Command
 {
-private:
-    Team** constructors;
-    RaceCar** drivers;
-    LapCommand* race;
-    // ADD TRACK TO RACE ON!!!!!
-public:
-    StartRaceCommand();
-    StartRaceCommand(Team** teams);
-    ~StartRaceCommand();
+    private:
+        Team** constructors;
+        RaceCar** drivers;
+        LapCommand* lap;
+        BuildTrackCommand* trackBuilder;
+        vector<TrackSection> track;
+        // ADD TRACK TO RACE ON!!!!!
+    public:
+        StartRaceCommand();
+        StartRaceCommand(Team** teams, BuildTrackCommand*);
+        ~StartRaceCommand();
 
-    void execute();
+        void execute();
 
-    Team** getTeams();
-    void setTeams(Team** teams);
+        Team** getTeams();
+        void setTeams(Team** teams);
 
-    RaceCar** getCars();
-    void setCars(RaceCar** cars); 
+        RaceCar** getCars();
+        void setCars(RaceCar** cars);
+        
+        BuildTrackCommand* getTrackBuilder();
+        void setTrackBuilder(BuildTrackCommand*);
 
-
+        vector<TrackSection> getTrack();
+        void setTrack(vector<TrackSection>);
+         
 };
 
 

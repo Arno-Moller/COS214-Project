@@ -9,8 +9,7 @@ using namespace std;
 class Strategy
 {
 public:
-    Strategy(){};
-    virtual ~Strategy() = 0;
+    Strategy()  {};
 
     virtual string execute() = 0;
 };

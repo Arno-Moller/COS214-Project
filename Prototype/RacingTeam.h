@@ -2,7 +2,7 @@
 #define RACINGTEAM_H
 
 #include "Team.h"
-//concrete protorype of the prototype design pattern 
+//concrete prototype of the prototype design pattern 
 class RacingTeam: public Team
 {
 private:
