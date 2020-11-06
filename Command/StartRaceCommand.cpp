@@ -48,16 +48,16 @@ StartRaceCommand::~StartRaceCommand()
 
 void StartRaceCommand::execute() 
 {
-    double** time = new double*[laps];
+    double** time = new double*[20];
 
     for(int i = 0; i < 20; i++)
     {
-        time[i] = new double;
+        time[i] = new double[laps];
     }
 
-    for(int i = 0; i < laps; i++)
+    for(int i = 0; i < 20; i++)
     {
-        for(int j = 0; j < 20; j++)
+        for(int j = 0; j < laps; j++)
         {
             double d = 0;
 
@@ -70,10 +70,10 @@ void StartRaceCommand::execute()
         }
     }
 
-    for(int i = 0; i < laps; i++)
+    for(int i = 0; i < 20; i++)
     {
         cout << "Driver" << i << " :" << endl;
-        for(int j = 0; j < 20; j++)
+        for(int j = 0; j < laps; j++)
         {
             cout << "\tlap" << j << "\t time: " << time[j][i] << endl;
         }
