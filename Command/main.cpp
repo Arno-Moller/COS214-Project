@@ -73,11 +73,11 @@
 #include "../TireCompoundStrategy/MediumCompound.cpp"
 #include "../TireCompoundStrategy/HardCompound.cpp"
 
-// #include "../Prototype/Team.h"
-// #include "../Prototype/RacingTeam.h"
+#include "../Prototype/Team.h"
+#include "../Prototype/RacingTeam.h"
 
-// #include "../Prototype/Team.cpp"
-// #include "../Prototype/RacingTeam.cpp"
+#include "../Prototype/Team.cpp"
+#include "../Prototype/RacingTeam.cpp"
 
 #include "../Strategy/Strategy.h"
 
@@ -95,11 +95,12 @@ using namespace std;
 
 int main() 
 {
-    // RaceCarBuilder* car = new CarBuilder();
+    //RaceCarBuilder* car = new CarBuilder();
 
-    // Team* team1 = new RacingTeam();
-    // Team** teams = new Team*[10];
-    // teams[0] = team1;
+    Team* team1 = new RacingTeam();
+    team1->buildCar();
+    //Team** teams = new Team*[10];
+    //teams[0] = team1;
 
     // for(int i = 1; i < 10; i++)
     // {
@@ -117,14 +118,14 @@ int main()
     for(int i = 0; i < 10; i++)
     {
         int j = 0;
-        double t = 0;
+        double d = 0;
 
         for(TrackSection it:track)
         {
             // /cout << i <<" : " << j << endl;
-            t += it.getDistance();
+            d += it.getDistance();
             
-            time[i] = t*5.5;
+            time[i] = 2*(double)(5);
             
             //cout << it.getDistance() << endl;
             j++;

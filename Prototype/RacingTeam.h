@@ -14,6 +14,10 @@ public:
     
     ~RacingTeam();//destructor 
 
+    void buildCar(); // method to build a car 
+    void lap(); // method to do a lap 
+    void setTireCompound(string tireCompound);// set the tire compound
+
     RaceCar* getCarOne(); // returns the first race car of the team 
     RaceCar* getCarTwo(); // returns the second race car of the team 
     void setCarOne(RaceCar* car1); // sets the first race car of the team 

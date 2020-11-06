@@ -48,7 +48,7 @@ class RaceCar
         string driverName;
     
     protected:
-        int tireGrip;
+        int tireGrip = 5;
 
 };
 

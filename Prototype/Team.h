@@ -14,9 +14,9 @@ class Team
         Team();// default constructor 
         Team(string tireCompound);// constructor taking a tire compound object in 
         ~Team();// destructor 
-		void buildCar(); // method to build a car 
-		void lap(); // method to do a lap 
-		void setTireCompound(string tireCompound);// set the tire compound 
+		virtual void buildCar() = 0; // method to build a car 
+		virtual void lap() = 0; // method to do a lap 
+		virtual void setTireCompound(string tireCompound) = 0;// set the tire compound 
 
 		virtual RaceCar* getCarOne() = 0; // returns the first race car of the team 
 		virtual RaceCar* getCarTwo() = 0; // returns the second race car of the team 
