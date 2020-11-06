@@ -39,7 +39,7 @@ class RaceCar
         string getDriverName();
         void setDriverName(string name);
 
-        int getGrip();
+        int getTireGrip();
 
     private:
         Strategy* strategy;

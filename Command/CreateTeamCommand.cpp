@@ -21,7 +21,7 @@ CreateTeamCommand::~CreateTeamCommand()
 
 void CreateTeamCommand::execute() 
 {   
-    teams[0] = new RacingTeam();
+    teams[0] = new RacingTeam("m");
     teams[0]->buildCar();
     teams[0]->setTeamName(names[0]);
     
