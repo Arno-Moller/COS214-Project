@@ -3,6 +3,7 @@
 #include <cstring>
 #include <list>
 #include <iterator>
+#include <vector>
 
 #include "TrackSection.h"
 #include "SlightTurn.h"
@@ -29,12 +30,12 @@ class Track
 
         void addSection(TrackSection*); // function to add a Track Section to the track 
         void showTrack(); // display the track 
-        list<TrackSection> getTrack(); //return track list
+        vector<TrackSection> getTrack(); //return track list
 
     private:
-        list <TrackSection> trackSection; // a list containing all the different track section making up the track 
+        vector<TrackSection> trackSection; // a list containing all the different track section making up the track 
         string trackName; // the name of the track 
-        int trackDistance; // the distance of the track 
+        int trackDistance = 0; // the distance of the track 
         int trackRisk; // the risk of the track 
         int numSections; // the number of Track Sections that the track consists of 
 };

@@ -25,7 +25,7 @@ class TrackMaker : public ConcreteTrack
         void addHairpin(int);// adds a Hairpin section to the track object 
         void addS_section(int);// adds a S section to the track object 
         void addSlightTurn(int);//adds a slight turn to the track object 
-        list<TrackSection> getTrack(); //return track list
+        vector<TrackSection> getTrack(); //return track list
         int getNumSections();
         void showTrack();//prints out how the track currently looks like. eg the amount of straights or hairpins 
 

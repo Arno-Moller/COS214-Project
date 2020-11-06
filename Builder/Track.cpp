@@ -35,7 +35,7 @@ void Track::addSection(TrackSection* tempSection)
     numSections++;
 }
 
-list<TrackSection> Track::getTrack()
+vector<TrackSection> Track::getTrack()
 {
     return trackSection;
 }
@@ -47,7 +47,6 @@ int Track::getSectionCount()
 
 void Track::showTrack()
 {
-    list <TrackSection> :: iterator it;
     int sectionCount = 1;
 
     cout << "This is the " << trackName << " track" << endl;
@@ -55,16 +54,17 @@ void Track::showTrack()
     cout << "Track risk average of of 100 is: " << trackRisk/numSections << endl;
     cout << "Track distance is: " << trackDistance << endl;
     cout << endl;
-    cout << "Track Sections: " << endl;
+    cout << "Track Sections: " << trackSection.size() << endl;
 
-    for(it = trackSection.begin(); it != trackSection.end(); ++it)
+    for(TrackSection it:trackSection)
     {
         cout << "Track Section " << sectionCount << ":" 
-                << "\n\tSection type: " << it->getName() 
-                << "\n\tRisk of trackSection: " << it->getRiskValue()
-                << "\n\tDistance of trackSection: " << it->getDistance() 
+                << "\n\tSection type: " << it.getName() 
+                << "\n\tRisk of trackSection: " << it.getRiskValue()
+                << "\n\tDistance of trackSection: " << it.getDistance() 
                 << "\n" << endl;
         sectionCount++;
+        cout << "count" << endl;
     }
 
     cout << '\n';

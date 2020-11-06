@@ -53,9 +53,8 @@ void TrackMaker::addStraight(int d)
     delete temp;
 }
 
-list<TrackSection> TrackMaker::getTrack()
+vector<TrackSection> TrackMaker::getTrack()
 {
-   
     return track->getTrack();
 }
 

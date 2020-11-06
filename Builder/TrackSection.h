@@ -10,7 +10,7 @@ class TrackSection
     public:
         string getName(); //a get method to get the name of the piece of track
         int getRiskValue(); // a get method to get the risk value of the piece of track 
-        int getDistance(); // a get method to get the distance of the piece of track 
+        int getDistance(); // a get method to get the distance of the piece of track
 
     protected:
         string name; //The name of the piece of track eg hairpin or straight 

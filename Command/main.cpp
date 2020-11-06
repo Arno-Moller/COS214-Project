@@ -85,31 +85,35 @@ int main()
     RaceCarBuilder* car = new CarBuilder();
     
     Team* team1 = new RacingTeam();
-    Team* teams = new RacingTeam[10];
-    teams[0] = *team1;
+    Team** teams = new Team*[10];
+    teams[0] = team1;
 
     for(int i = 1; i < 10; i++)
     {
-        // teams[i] = *team1->clone();
+        teams[i] = team1->clone();
     }
 
     BuildTrackCommand* tmp = new BuildTrackCommand();
     tmp->execute();
-    list <TrackSection> track = tmp->getTrack()->getTrack();
+    vector<TrackSection> track = tmp->getTrack()->getTrack();
 
-    list <TrackSection> :: iterator it;
-    int sectionCount = 1;
+    int sectionCount = tmp->getTrack()->getNumSections();
 
-    //double time[tmp->getNumSections()];
+    int* time = new int[sectionCount];
 
-    for(it = track.begin(); it != track.end(); ++it)
+    for(int i = 0; i < 10; i++)
     {
-        cout << "Track Section " << sectionCount << ":" 
-                << "\n\tSection type: " << it->getName() 
-                << "\n\tRisk of trackSection: " << it->getRiskValue()
-                << "\n\tDistance of trackSection: " << it->getDistance() 
-                << "\n" << endl;
-        sectionCount++;
+        int j = 0;
+
+        int time = 0;
+        for(TrackSection it:track)
+        {
+            cout << i <<" : " << j << endl;
+            time[i] += it.getDistance();
+            //cout << time[&i] << endl;
+            cout << it.getDistance() << endl;
+            j++;
+        }
     }
 
     cout << "Helloooo" << endl;
