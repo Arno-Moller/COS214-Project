@@ -27,7 +27,32 @@ RaceCar *RaceCar::getChild()
 
 void RaceCar::lap()
 {
-	cout << "lapping" << endl;
+    degrade(); // check net of hy actually degrade call van tires
+    
+	int chanceStrategyOdds = rand() % 100;
+
+    if (chanceStrategyOdds >= 75)
+    {
+        int nextStrategy = rand() % 3;
+        switch (nextStrategy)
+        {
+        case 0:
+            setStrategy(new Sensible());
+            break;
+
+        case 1:
+            setStrategy(new Cautious());
+            break;
+            
+        case 2:
+            setStrategy(new Aggresive());
+            break;
+        
+        default:
+            break;
+        }
+    }
+    
 }
 
 void RaceCar::degrade()
@@ -78,4 +103,14 @@ PitStop* RaceCar::getPitStops() const
 void RaceCar::setPitStop(PitStop* pitstop) 
 {
     this->pitCrew = pitstop;
+}
+
+string RaceCar::getDriverName() 
+{
+    return driverName;
+}
+
+void RaceCar::setDriverName(string name) 
+{
+    this->driverName = name;
 }

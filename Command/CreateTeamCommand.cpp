@@ -20,12 +20,15 @@ CreateTeamCommand::~CreateTeamCommand()
 }
 
 void CreateTeamCommand::execute() 
-{
-    for (int i = 0; i < 10; i++)
+{   
+    teams[0] = new RacingTeam();
+    teams[0]->buildCar();
+    teams[0]->setTeamName(names[0]);
+    
+    for (int i = 1; i < 10; i++)
     {
-        teams[i] = new RacingTeam();
+        teams[i] = teams[0]->clone();
         teams[i]->setTeamName(names[i]);
-        teams[i]->buildCar();
     }
     doesTheTeamsExist = true;
 }

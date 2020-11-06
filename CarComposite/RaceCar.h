@@ -4,6 +4,9 @@
 #include <iostream>
 #include "../Observer/PitStop.h"
 #include "../Strategy/Strategy.h"
+#include "../Strategy/Sensible.h"
+#include "../Strategy/Cautious.h"
+#include "../Strategy/Aggressive.h"
 
 using namespace std;
 //This class is the product participant of the Builder Design pattern 
@@ -32,10 +35,15 @@ class RaceCar
         void setStrategy(Strategy* strat);
         PitStop* getPitStops() const;
         void setPitStop(PitStop* pitstop);
+
+        string getDriverName();
+        void setDriverName(string name);
+
     private:
         Strategy* strategy;
         PitStop* pitCrew;
         int points = 0;
+        string driverName;
 
 };
 
