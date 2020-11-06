@@ -39,11 +39,16 @@ class RaceCar
         string getDriverName();
         void setDriverName(string name);
 
+        int getGrip();
+
     private:
         Strategy* strategy;
         PitStop* pitCrew;
         int points = 0;
         string driverName;
+    
+    protected:
+        int tireGrip;
 
 };
 

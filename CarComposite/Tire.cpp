@@ -72,6 +72,8 @@ void Tire::degrade()
 	
 	//~ cout << getRate()<< endl;
     notify();
+    
+    tireGrip = getGrip();
 }
 
 int Tire::getGrip() 

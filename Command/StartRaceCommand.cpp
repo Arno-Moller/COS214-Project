@@ -74,7 +74,6 @@ void StartRaceCommand::setTeams(Team** teams)
         this->race->setCars(drivers);
     }
 
-
 }
 
 RaceCar** StartRaceCommand::getCars() 
