@@ -114,3 +114,8 @@ void RaceCar::setDriverName(string name)
 {
     this->driverName = name;
 }
+
+int RaceCar::getGrip() 
+{
+    return tireGrip;
+}
