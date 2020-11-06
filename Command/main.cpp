@@ -91,14 +91,17 @@
 #include "../Strategy/Cautious.cpp"
 #include "../Strategy/Aggressive.cpp"
 
+#include "CreateTeamCommand.h"
+#include "CreateTeamCommand.cpp"
+
 using namespace std;
 
 int main() 
 {
     //RaceCarBuilder* car = new CarBuilder();
 
-    Team* team1 = new RacingTeam();
-    team1->buildCar();
+    // Team* team1 = new RacingTeam();
+    // team1->buildCar();
     //Team** teams = new Team*[10];
     //teams[0] = team1;
 
@@ -106,6 +109,13 @@ int main()
     // {
     //     teams[i] = team1->clone();
     // }
+    
+    CreateTeamCommand* teamCom = new CreateTeamCommand();
+    
+    teamCom->execute();
+
+    Team** teams = teamCom->getTeams();
+
 
     BuildTrackCommand* tmp = new BuildTrackCommand();
     tmp->execute();
@@ -125,7 +135,7 @@ int main()
             // /cout << i <<" : " << j << endl;
             d += it.getDistance();
             
-            time[i] = 2*(double)(5);
+            time[i] = 2*(double)teams[i]->getCarOne()->getGrip();
             
             //cout << it.getDistance() << endl;
             j++;
