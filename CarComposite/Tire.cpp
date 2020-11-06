@@ -9,6 +9,7 @@ Tire::Tire(TireState *tState, TireCompound* type)
 {
 	this->setState(tState);
 	setType(type);
+    tireGrip = getGrip();
 }
 
 Tire::Tire(string type)
@@ -26,6 +27,8 @@ Tire::Tire(string type)
     {
         this->compound = new HardCompound();
     }
+
+    tireGrip = getGrip();
 }
 
 Tire::~Tire()
@@ -88,7 +91,7 @@ void Tire::lap()
 
 ///Function to call each lap that degrades the tires
 void Tire::degrade()
-{
+{   
 	compound->setWear(compound->getWear() + compound->getRate());
     compound->setGrip(compound->getGrip() - compound->getRate());
 	
@@ -106,6 +109,7 @@ int Tire::getGrip()
 void Tire::setGrip(int grip) 
 {
     this->compound->setGrip(grip);
+    tireGrip = grip;
 }
 
 int Tire::getWear() 

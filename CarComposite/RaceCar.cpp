@@ -29,29 +29,29 @@ void RaceCar::lap()
 {
     degrade(); // check net of hy actually degrade call van tires
     
-	int chanceStrategyOdds = rand() % 100;
+	// int chanceStrategyOdds = rand() % 100;
 
-    if (chanceStrategyOdds >= 75)
-    {
-        int nextStrategy = rand() % 3;
-        switch (nextStrategy)
-        {
-        case 0:
-            setStrategy(new Sensible());
-            break;
+    // if (chanceStrategyOdds >= 75)
+    // {
+    //     int nextStrategy = rand() % 3;
+    //     switch (nextStrategy)
+    //     {
+    //     case 0:
+    //         setStrategy(new Sensible());
+    //         break;
 
-        case 1:
-            setStrategy(new Cautious());
-            break;
+    //     case 1:
+    //         setStrategy(new Cautious());
+    //         break;
             
-        case 2:
-            setStrategy(new Aggresive());
-            break;
+    //     case 2:
+    //         setStrategy(new Aggresive());
+    //         break;
         
-        default:
-            break;
-        }
-    }
+    //     default:
+    //         break;
+    //     }
+    // }
     
 }
 
@@ -117,6 +117,6 @@ void RaceCar::setDriverName(string name)
 
 int RaceCar::getTireGrip() 
 {
-//    return this->compound->getGrip();
-    return 5;
+    // return this->compound->getGrip();
+    return tireGrip;
 }

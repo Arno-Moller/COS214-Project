@@ -65,8 +65,10 @@ void StartRaceCommand::execute()
             for(TrackSection it:track)
             {
                 d = it.getDistance();
-                temp += d*(double)5;//drivers[j]->getGrip();
-                //drivers[j]->lap();
+                // temp += d*(double)5;//drivers[j]->getGrip();
+                temp += d*(double)drivers[j]->getTireGrip();
+                drivers[j]->lap();
+                
             }
             time[i][j] = temp;
         }

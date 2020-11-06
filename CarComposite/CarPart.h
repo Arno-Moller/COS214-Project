@@ -15,8 +15,9 @@ class CarPart: public RaceCar
         void addPart(RaceCar* part);// adds a part to the race car 
         void removePart(RaceCar* part);// removes a part from the race car 
         RaceCar* getPart(); // returns the race car 
-	void lap();// does a lap 
-    
+	    void lap();// does a lap 
+
+        
     private:
         list<RaceCar*> parts;// a list of all the Race Car parts
 
