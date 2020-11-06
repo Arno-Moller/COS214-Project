@@ -14,7 +14,18 @@ Tire::Tire(TireState *tState, TireCompound* type)
 Tire::Tire(string type)
 {
 	this->setState(new GoodCondition());
-	setType(type);
+	if (type == "soft" || type == "s")
+    {
+        this->compound = new SoftCompound();
+    }
+    else if (type == "medium" || type == "m")
+    {
+        this->compound = new MediumCompound();
+    }
+    else
+    {
+        this->compound = new HardCompound();
+    }
 }
 
 Tire::~Tire()
@@ -38,19 +49,30 @@ void Tire::setType(string type)
 {   
     delete compound;
 
+    string newCompound = "";
+
     if (type == "soft" || type == "s")
     {
         this->compound = new SoftCompound();
+        newCompound = "Soft Compound";
     }
     else if (type == "medium" || type == "m")
     {
         this->compound = new MediumCompound();
+        newCompound = "Medium Compound";
     }
     else
     {
         this->compound = new HardCompound();
+        newCompound = "Hard Compound";
+    }
+
+    if (currentCompound != "")
+    {
+        printf("The tyres have been changed from %s to %s on car %s", currentCompound, newCompound, getDriverName());
     }
     
+    currentCompound = newCompound;
 }
 
 void Tire::setType(TireCompound* type) 
