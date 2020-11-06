@@ -7,6 +7,9 @@
 #include "../Strategy/Sensible.h"
 #include "../Strategy/Cautious.h"
 #include "../Strategy/Aggressive.h"
+#include "../TireCompoundStrategy/SoftCompound.h"
+#include "../TireCompoundStrategy/MediumCompound.h"
+#include "../TireCompoundStrategy/HardCompound.h"
 
 using namespace std;
 //This class is the product participant of the Builder Design pattern 
@@ -49,6 +52,7 @@ class RaceCar
     
     protected:
         int tireGrip = 5;
+        TireCompound* compound; 
 
 };
 

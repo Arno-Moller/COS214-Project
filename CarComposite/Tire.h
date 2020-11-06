@@ -39,7 +39,7 @@ class Tire: public RaceCar
 
     private:
         TireState* state; // The state of the tires object to check the tires condition 
-        TireCompound* compound; 
+        
         string currentCompound = "";
 };
 
