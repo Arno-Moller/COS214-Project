@@ -21,3 +21,8 @@ ConcreteTrack* BuildTrackCommand::getTrack()
 {
     return trackBuilder->getTrack();
 }
+
+TrackBuilder* BuildTrackCommand::getTrackBuilder()
+{
+    return trackBuilder;
+}

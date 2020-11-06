@@ -18,6 +18,7 @@ class BuildTrackCommand : public Command
         ~BuildTrackCommand();
         void execute();
         ConcreteTrack* getTrack();
+        TrackBuilder* getTrackBuilder();
     
     private:
         TrackBuilder* trackBuilder;

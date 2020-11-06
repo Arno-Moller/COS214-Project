@@ -18,6 +18,7 @@ class StartRaceCommand: public Command
         LapCommand* lap;
         BuildTrackCommand* trackBuilder;
         vector<TrackSection> track;
+        int laps = 0;
         // ADD TRACK TO RACE ON!!!!!
     public:
         StartRaceCommand();

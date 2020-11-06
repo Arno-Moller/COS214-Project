@@ -3,6 +3,15 @@
 TrackBuilder::TrackBuilder()  
 {
     concreteTrack = new TrackMaker("Test");
+    laps = 10;
+    name = "Test";
+}
+
+TrackBuilder::TrackBuilder(string n, int l)  
+{
+    name = n;
+    laps = l;
+    concreteTrack = new TrackMaker(n);
 }
 
 TrackBuilder::~TrackBuilder()
@@ -29,4 +38,14 @@ void TrackBuilder::display()
 ConcreteTrack* TrackBuilder::getTrack()
 {
     return concreteTrack;
+}
+
+int TrackBuilder::getLaps()
+{
+    return laps;
+}
+
+string TrackBuilder::getName()
+{
+    return name;
 }

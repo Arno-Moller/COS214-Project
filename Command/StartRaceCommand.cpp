@@ -48,10 +48,38 @@ StartRaceCommand::~StartRaceCommand()
 
 void StartRaceCommand::execute() 
 {
-    trackBuilder->execute();
-    vector<TrackSection> track = trackBuilder->getTrack()->getTrack();
+    double** time = new double*[laps];
 
-    lap->execute();
+    for(int i = 0; i < 20; i++)
+    {
+        time[i] = new double;
+    }
+
+    for(int i = 0; i < laps; i++)
+    {
+        for(int j = 0; j < 20; j++)
+        {
+            double d = 0;
+
+            for(TrackSection it:track)
+            {
+                d = it.getDistance();
+                time[i][j] += d*(double)5;//drivers[j]->getGrip();
+                //drivers[j]->lap();
+            }
+        }
+    }
+
+    for(int i = 0; i < laps; i++)
+    {
+        cout << "Driver" << i << " :" << endl;
+        for(int j = 0; j < 20; j++)
+        {
+            cout << "\tlap" << j << "\t time: " << time[j][i] << endl;
+        }
+        cout << "*****************************************" << endl;
+        cout << endl;
+    }
 }
 
 Team** StartRaceCommand::getTeams() 
@@ -97,6 +125,7 @@ void StartRaceCommand::setTrackBuilder(BuildTrackCommand* t)
 {
     trackBuilder = t;
     trackBuilder->execute();
+    laps = trackBuilder->getTrackBuilder()->getLaps();
     track = trackBuilder->getTrack()->getTrack();
 }
 
