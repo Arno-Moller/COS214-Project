@@ -28,6 +28,7 @@ void CreateTeamCommand::execute()
     for (int i = 1; i < 10; i++)
     {
         teams[i] = teams[0]->clone();
+        // teams[i]->buildCar();
         teams[i]->setTeamName(names[i]);
     }
     doesTheTeamsExist = true;

@@ -65,12 +65,14 @@ void StartRaceCommand::execute()
             for(TrackSection it:track)
             {
                 d = it.getDistance();
-                //temp += d*(double)5;//drivers[j]->getGrip();
-                temp += d*(double)drivers[j]->getTireGrip();
-                drivers[j]->lap();
-                
+                // temp += d*(double)5;//drivers[j]->getGrip();
+                temp += (double)drivers[i]->getTireGrip();
+                // drivers[j]->lap();
+                // cout << "b " << drivers[j]->getTireGrip() << endl;
             }
-            time[i][j] = d;
+            time[i][j] = temp;
+            // time[i][j] = drivers[j]->getTireGrip();
+            // cout << j << " - " << drivers[j]->getTireGrip() << endl;
         }
     }
 

@@ -6,9 +6,9 @@ RacingTeam::RacingTeam()
 }
 
 RacingTeam::RacingTeam(RacingTeam& racingTeam) 
-{
-    this->car1 = new RaceCar(*racingTeam.getCarOne());
-    this->car2 = new RaceCar(*racingTeam.getCarTwo());
+{	
+	tireCompound = racingTeam.tireCompound;
+    buildCar();
 }
 
 RacingTeam::RacingTeam(string tireCompound)
