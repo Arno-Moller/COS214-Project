@@ -2,30 +2,31 @@
 
 Memento::Memento(Team* team) 
 {
-    this->state = new TeamState(team->getCarOne(), team->getCarTwo());
+    state = new TeamState(team->getCarOne(), team->getCarTwo());
 }
 
 Memento::Memento(RaceCar* carOne, RaceCar* carTwo) 
 {
-    this->state = new TeamState(carOne, carTwo);
+    state = new TeamState(carOne, carTwo);
 }
 
 Memento::~Memento() 
 {
-    delete this->state;
+    delete state;
+    state = nullptr;
 }
 
 TeamState* Memento::getState() 
 {
-    return this->state;
+    return state;
 }
 
 void Memento::setState(Team* team) 
 {
-    this->state = new TeamState(team->getCarOne(), team->getCarTwo());
+    state = new TeamState(team->getCarOne(), team->getCarTwo());
 }
 
 void Memento::setState(RaceCar* carOne, RaceCar* carTwo) 
 {
-    this->state = new TeamState(carOne, carTwo);
+    state = new TeamState(carOne, carTwo);
 }

@@ -1,15 +1,15 @@
-#ifndef AGGRESIVE_H
-#define AGGRESIVE_H
+#ifndef AGGRESSIVE_H
+#define AGGRESSIVE_H
 
 #include "Strategy.h"
 
 using namespace std;
 ///Concrete Strategy Participant of the Strategy design pattern 
-class Aggresive: public Strategy
+class Aggressive: public Strategy
 {
 public:
-    Aggresive();///Constructor
-    ~Aggresive();///Destructor 
+    Aggressive();///Constructor
+    ~Aggressive();///Destructor 
 
     /**
     * Execute the strategy of the way the driver wants to race. 

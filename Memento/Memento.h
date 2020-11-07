@@ -5,11 +5,11 @@
 #include "../CarComposite/RaceCar.h"
 #include "../Prototype/Team.h"
 #include "../Prototype/RacingTeam.h"
-///the memnto participant of the memento design pattern 
+///the memento participant of the memento design pattern 
 class Memento
 {
 private:
-    TeamState* state; /**< The state of the teams that is stored   */ 
+    TeamState* state = 0; /**< The state of the teams that is stored   */ 
 
 public:
 

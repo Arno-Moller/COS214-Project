@@ -140,8 +140,6 @@
 #include "Template/ConstructorsChampionship.cpp"
 
 
-
-
 using namespace std;
 
 int main()

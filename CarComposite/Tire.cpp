@@ -47,7 +47,7 @@ Tire::Tire(string type)
             break;
             
         case 2:
-            setStrategy(new Aggresive());
+            setStrategy(new Aggressive());
             break;
         
         default:
@@ -148,7 +148,7 @@ void Tire::degrade()
             break;
             
         case 2:
-            setStrategy(new Aggresive());
+            setStrategy(new Aggressive());
             break;
         
         default:

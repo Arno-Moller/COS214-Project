@@ -1,16 +1,16 @@
 #include "Aggressive.h"
 
-Aggresive::Aggresive() 
+Aggressive::Aggressive() 
 {
     
 }
 
-Aggresive::~Aggresive() 
+Aggressive::~Aggressive() 
 {
     
 }
 
-string Aggresive::execute() 
+string Aggressive::execute() 
 {
     int tireOdds = rand()%100;
 
@@ -28,7 +28,7 @@ string Aggresive::execute()
     }
 }
 
-string Aggresive::type() 
+string Aggressive::type() 
 {
     return "Aggressive";
 }
