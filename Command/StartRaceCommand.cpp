@@ -75,13 +75,13 @@ StartRaceCommand::~StartRaceCommand()
 void StartRaceCommand::execute() 
 {
     cout << "Race STARTED!!!" << endl << endl;
-    // weather->execute();
+    weather->execute();
 
-    double** time = new double*[laps];
+    double** time = new double*[20];
 
     for(int i = 0; i < 20; i++)
     {
-        time[i] = new double[20];
+        time[i] = new double[laps];
     }
 
     for(int i = 0; i < laps; i++)
@@ -104,9 +104,9 @@ void StartRaceCommand::execute()
             }
             
 
-            time[j][i] = temp;
+            time[i][j] = temp;
             
-            cout <<"Time: " << time[j][i] << endl;
+            cout <<"Time: " << time[i][j] << endl;
             cout << endl;
         }
         cout << "*****************************************" << endl;
