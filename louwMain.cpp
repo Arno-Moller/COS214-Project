@@ -4,6 +4,11 @@
 #include <iostream>
 #include <new>
 
+#include "Observer/PitStop.h"
+#include "Observer/ChangeTires.h"
+
+#include "Observer/ChangeTires.cpp"
+
 #include "Builder/Track.h"
 #include "Builder/TrackSection.h"
 #include "Builder/ConcreteTrack.h"
