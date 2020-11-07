@@ -37,8 +37,10 @@ void CarBuilder::addEngine()
 }
 
 void CarBuilder::addTire(string compound)
-{
-	car->addPart(new Tire(compound));
+{	
+	RaceCar* part = new Tire(compound);
+	car->addPart(part);
+	car->addCarTire(part);
 }
     
 RaceCar* CarBuilder::getCar()

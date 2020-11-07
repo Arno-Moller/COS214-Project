@@ -117,6 +117,5 @@ void RaceCar::setDriverName(string name)
 
 int RaceCar::getTireGrip() 
 {
-    // return this->compound->getGrip();
-    return tireGrip;
+    return this->compound->getGrip();
 }
