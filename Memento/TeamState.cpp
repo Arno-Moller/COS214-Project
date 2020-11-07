@@ -1,6 +1,6 @@
 #include "TeamState.h"
 
-TeamState::TeamState(RaceCar* carOne, RaceCar* carTwo) 
+TeamState::TeamState(RaceCar* car1, RaceCar* car2) 
 {   
     CarBuilder* builder1 = new CarBuilder();
     builder1->addChassis();
@@ -11,7 +11,7 @@ TeamState::TeamState(RaceCar* carOne, RaceCar* carTwo)
 	builder1->addTire("m");
 	
 	this->carOne = builder1->getCar();
-	this->carOne->setDriverName(carOne->getDriverName());
+	this->carOne->setDriverName(car1->getDriverName());
 
 	CarBuilder* builder2 = new CarBuilder();
 	builder2->addChassis();
@@ -22,11 +22,14 @@ TeamState::TeamState(RaceCar* carOne, RaceCar* carTwo)
 	builder2->addTire("m");
 	
 	this->carTwo = builder2->getCar();
-	this->carTwo->setDriverName(carTwo->getDriverName());
+	this->carTwo->setDriverName(car2->getDriverName());
+
+	delete builder1;
+	delete builder2;
 }
 
 TeamState::~TeamState() 
-{
+{	
     delete carOne;
     delete carTwo;
 }

@@ -62,7 +62,6 @@ Tire::Tire(string type)
 Tire::~Tire()
 {
     delete state;
-    delete compound;
 }
 
 TireState* Tire::getState()
@@ -72,7 +71,9 @@ TireState* Tire::getState()
 
 void Tire::setState(TireState *tState)
 {   
+    delete state;
     this->state = tState;
+    
 }
 
 void Tire::setType(string type) 
@@ -83,7 +84,8 @@ void Tire::setType(string type)
         {
             hasPitted = true;
         }
-        
+        delete compound;
+
         string newCompound = "";
         setState(new GoodCondition());
 

@@ -7,7 +7,9 @@ RaceCar::RaceCar()
 
 RaceCar::~RaceCar()
 {
-
+    delete strategy;
+    delete pitCrew;
+    delete compound;
 }
 
 void RaceCar::request()
@@ -71,8 +73,9 @@ void RaceCar::setStrategy(Strategy* strat)
     if (strategy != nullptr && getDriverName() != "" && strategy->type() != strat->type())
     {   
         cout << "The Strategy have been changed from " << strategy->type() << " to " << strat->type() << " on car " << getDriverName() << endl;
+        
     }
-    
+    delete strategy;
     this->strategy = strat;
 }
 
