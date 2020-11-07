@@ -73,6 +73,22 @@
 #include "../TireCompoundStrategy/MediumCompound.cpp"
 #include "../TireCompoundStrategy/HardCompound.cpp"
 
+
+#include "RaceConditionCommand.h"
+#include "RaceConditionCommand.cpp"
+
+#include "../StateWeather/Cloudy.h"
+#include "../StateWeather/Rainy.h"
+#include "../StateWeather/Sunny.h"
+#include "../StateWeather/Weather.h"
+#include "../StateWeather/Race.h"
+
+#include "../StateWeather/Cloudy.cpp"
+#include "../StateWeather/Rainy.cpp"
+#include "../StateWeather/Sunny.cpp"
+#include "../StateWeather/Weather.cpp"
+#include "../StateWeather/Race.cpp"
+
 #include "../Prototype/Team.h"
 #include "../Prototype/RacingTeam.h"
 

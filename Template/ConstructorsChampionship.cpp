@@ -57,8 +57,8 @@ void ConstructorsChampionship::calculate()
             driversResults[i].TeamTime = teamtime;
             driversResults[i+1].TeamTime= teamtime;
 
-            cout<<"Team " + driversResults[i].team <<endl;
-            cout<<"Time: "+ static_cast<int>(teamtime)<<endl;
+            // cout<<"Team " + driversResults[i].team <<endl;
+            // cout<<"Time: "+ static_cast<int>(teamtime)<<endl;
         }
     }
    //sort the teams 
@@ -71,16 +71,16 @@ void ConstructorsChampionship::calculate()
 
    for(int i = 0 ; i < numDrivers ; i++)
    {
-       cout<<(i+1) + "Place is:"<<endl;
-       cout<<"Team " + driversResults[i].team <<endl;
-       cout<<"Time: "+ static_cast<int>(driversResults[i].TeamTime)<<endl;
+       cout<<(i+1) << "Place is:"<<endl;
+       cout<<"Team " << driversResults[i].team <<endl;
+       cout<<"Time: "<< static_cast<int>(driversResults[i].TeamTime)<<endl;
        i++;
    }
 
 
 }
 
-void swap(double **xp, double **yp)  
+void ConstructorsChampionship::swap(double **xp, double **yp)  
 {  
     double temp = **xp;  
     **xp = **yp;  

@@ -52,11 +52,11 @@ void StartRaceCommand::execute()
     cout << "Race STARTED!!!" << endl << endl;
     weather->execute();
 
-    double** time = new double*[20];
+    double** time = new double*[laps];
 
     for(int i = 0; i < 20; i++)
     {
-        time[i] = new double[laps];
+        time[i] = new double[20];
     }
 
     for(int i = 0; i < laps; i++)
@@ -82,6 +82,7 @@ void StartRaceCommand::execute()
     }
     
     Championship* champ = new ConstructorsChampionship(time, 20, laps);
+    champ->calculate();
 
 
     

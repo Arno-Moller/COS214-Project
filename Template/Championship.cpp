@@ -1,5 +1,13 @@
 #include "Championship.h"
 
+struct Results
+{
+    int team ; 
+    int driver;
+    double time;
+    double TeamTime;
+};
+
 
 Championship::Championship(double** array , int drivers , int laps) 
 {

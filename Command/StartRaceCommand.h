@@ -13,10 +13,6 @@
 #include "../Template/Championship.h"
 #include "../Template/ConstructorsChampionship.h"
 
-#include "../Template/Championship.cpp"
-#include "../Template/ConstructorsChampionship.cpp"
-
-
 using  namespace std;
 
 class StartRaceCommand: public Command
