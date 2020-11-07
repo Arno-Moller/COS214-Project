@@ -10,12 +10,12 @@ TeamStateCaretaker::~TeamStateCaretaker()
     delete backupTeam;
 }
 
-Memento* TeamStateCaretaker::getBackupCar() 
+Memento* TeamStateCaretaker::getBackupTeam()
 {
     return backupTeam;
 }
 
-void TeamStateCaretaker::setBackupCar(Memento* backupTeam) 
+void TeamStateCaretaker::setBackupTeam(Memento* backupTeam) 
 {
     this->backupTeam = backupTeam;
 }

@@ -23,9 +23,10 @@ void SingletonChampionship::StartChampionship()
 
     CreateTeamCommand* teamCom = new CreateTeamCommand();
     teamCom->execute();
-    Team** teams = teamCom->getTeams();
-    StartRaceCommand* race = new StartRaceCommand(teams, tracks[0]);
+    // Team** teams = teamCom->getTeams();
+    // StartRaceCommand* race = new StartRaceCommand(teams, tracks[0]);
 
+    StartRaceCommand* race = new StartRaceCommand(teamCom, tracks[0]);
     for(int i = 0; i < 5; i++)
     {
         race->setTrackBuilder(tracks[i]);

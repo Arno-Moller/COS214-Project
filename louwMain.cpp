@@ -4,6 +4,14 @@
 #include <iostream>
 #include <new>
 
+#include "Memento/TeamStateCaretaker.h"
+#include "Memento/Memento.h"
+#include "Memento/TeamState.h"
+
+#include "Memento/TeamStateCaretaker.cpp"
+#include "Memento/Memento.cpp"
+#include "Memento/TeamState.cpp"
+
 #include "Observer/PitStop.h"
 #include "Observer/ChangeTires.h"
 
@@ -130,6 +138,9 @@
 
 #include "Template/Championship.cpp"
 #include "Template/ConstructorsChampionship.cpp"
+
+
+
 
 using namespace std;
 

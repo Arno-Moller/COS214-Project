@@ -72,6 +72,22 @@ void RacingTeam::setTeamName(string name)
     teamName = name;
 }
 
+Memento* RacingTeam::createMemento() 
+{
+	return new Memento(this);
+}
+
+void RacingTeam::loadMemento(Memento* m) 
+{
+	delete car1;
+	delete car2;
+
+	this->car1 = m->getState()->getCarOne();
+	this->car2 = m->getState()->getCarTwo();
+}
+
+
+
 void RacingTeam::buildCar()
 {
 	builder1->addChassis();

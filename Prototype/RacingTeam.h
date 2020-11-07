@@ -2,6 +2,11 @@
 #define RACINGTEAM_H
 
 #include "Team.h"
+#include "../CarComposite/CarBuilder.h"
+#include "../CarComposite/RaceCar.h"
+#include "../Memento/Memento.h"
+#include "../Memento/TeamState.h"
+#include "../Memento/TeamStateCaretaker.h"
 ///concrete prototype of the prototype design pattern 
 class RacingTeam: public Team
 {
@@ -82,6 +87,9 @@ public:
     void setTeamPoints();
     string getTeamName();
     void setTeamName(string name);
+
+    Memento* createMemento();
+	void loadMemento(Memento* m);
 
 };
 

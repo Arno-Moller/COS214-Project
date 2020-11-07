@@ -4,6 +4,7 @@
 #include "TeamState.h"
 #include "../CarComposite/RaceCar.h"
 #include "../Prototype/Team.h"
+#include "../Prototype/RacingTeam.h"
 ///the memnto participant of the memento design pattern 
 class Memento
 {

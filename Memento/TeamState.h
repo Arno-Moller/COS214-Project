@@ -2,6 +2,7 @@
 #define TEAMSTATE_H
 
 #include "../CarComposite/RaceCar.h"
+#include "../CarComposite/CarBuilder.h"
 /// Originator participant of the Memento Design Pattern 
 class TeamState
 {

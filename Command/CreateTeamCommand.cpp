@@ -8,6 +8,7 @@ CreateTeamCommand::CreateTeamCommand()
         teams[i] = nullptr;
     }
 
+    this->teamSaves = new TeamStateCaretaker*[10];
 }
 
 CreateTeamCommand::~CreateTeamCommand() 
@@ -43,6 +44,12 @@ void CreateTeamCommand::execute()
         teams[i]->getCarTwo()->setName(driver2);
     }
     doesTheTeamsExist = true;
+
+    for (int i = 0; i < 10; i++)
+    {
+        teamSaves[i] = new TeamStateCaretaker(new Memento(teams[i]));
+    }
+    
 }
 
 Team** CreateTeamCommand::getTeams() 
@@ -54,5 +61,21 @@ Team** CreateTeamCommand::getTeams()
     
     cout << "The teams have not been created" << endl;
     return nullptr;
+}
+
+void CreateTeamCommand::restoreTeams() 
+{
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     delete teams[i];
+    // }
+
+    for (int i = 0; i < 10; i++)
+    {
+        teams[i] = new RacingTeam();
+        teams[i]->setCarOne(teamSaves[i]->getBackupTeam()->getState()->getCarOne());
+        teams[i]->setCarTwo(teamSaves[i]->getBackupTeam()->getState()->getCarTwo());
+    }
+    
 }
 

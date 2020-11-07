@@ -42,6 +42,31 @@ StartRaceCommand::StartRaceCommand(Team** teams, BuildTrackCommand* t)
     }
 }
 
+StartRaceCommand::StartRaceCommand(CreateTeamCommand* teamCom, BuildTrackCommand* t) 
+{
+    this->teamCom = teamCom;
+    setTrackBuilder(t); 
+    teamCom->execute();
+    Team** teams = teamCom->getTeams();
+
+    if (teams != nullptr)
+    {
+        this->constructors = teams;
+        drivers = new RaceCar*[20];
+
+        int j = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            drivers[j] = constructors[i]->getCarOne();
+            j++;
+            drivers[j] = constructors[i]->getCarTwo();
+            j++;
+        }
+
+        lap = new LapCommand(drivers);
+    }
+}
+
 StartRaceCommand::~StartRaceCommand() 
 {
 
@@ -106,8 +131,8 @@ void StartRaceCommand::execute()
     // }
     
 
-   cout << "Race END!!!" << endl << endl;
-    
+    cout << "Race END!!!" << endl << endl;
+    teamCom->restoreTeams();
 }
 
 Team** StartRaceCommand::getTeams() 

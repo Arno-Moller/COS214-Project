@@ -2,6 +2,10 @@
 #define STARTRACECOMMAND_H
 
 #include "Command.h"
+#include "../Memento/Memento.h"
+#include "../Memento/TeamState.h"
+#include "../Memento/TeamStateCaretaker.h"
+
 #include "../Prototype/Team.h"
 #include "../Prototype/RacingTeam.h"
 #include "../CarComposite/RaceCar.h"
@@ -9,6 +13,7 @@
 #include "LapCommand.h"
 #include "BuildTrackCommand.h"
 #include "RaceConditionCommand.h"
+#include "CreateTeamCommand.h"
 
 #include "../Template/Championship.h"
 #include "../Template/ConstructorsChampionship.h"
@@ -25,10 +30,11 @@ class StartRaceCommand: public Command
         vector<TrackSection> track;
         int laps = 0;
         RaceConditionCommand* weather;
-        // ADD TRACK TO RACE ON!!!!!
+        CreateTeamCommand* teamCom;
     public:
         StartRaceCommand();
         StartRaceCommand(Team** teams, BuildTrackCommand*);
+        StartRaceCommand(CreateTeamCommand* , BuildTrackCommand*);
         ~StartRaceCommand();
 
         void execute();

@@ -2,8 +2,12 @@
 #define TEAM_H
 
 #include <iostream>
+#include "../Memento/Memento.h"
+#include "../Memento/TeamState.h"
+#include "../Memento/TeamStateCaretaker.h"
 #include "../CarComposite/CarBuilder.h"
 #include "../CarComposite/RaceCar.h"
+
 
 using namespace std;
 /// prototype participant of the prototype design pattern 
@@ -78,6 +82,9 @@ class Team
 		virtual void setTeamPoints() = 0;
 		virtual string getTeamName() = 0;
 		virtual void setTeamName(string name) = 0;
+
+		virtual Memento* createMemento() = 0;
+		virtual void loadMemento(Memento* m) = 0;
 
 
     protected:
