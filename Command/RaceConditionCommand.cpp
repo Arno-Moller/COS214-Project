@@ -9,6 +9,9 @@ RaceConditionCommand::RaceConditionCommand(string location)
 {
     weather = new Race(location);
     this->location = location;
+
+    cout << "Current weather forcast is: "
+            << weather->getWeather() << endl;
 }
 
 RaceConditionCommand::~RaceConditionCommand() 
@@ -20,25 +23,18 @@ void RaceConditionCommand::execute()
 {
     string currentWeather = weather->getWeather();
 
-    if (currentWeather != previousWeather)
+    weather->change();
+
+    if (currentWeather != weather->getWeather())
     {
         if (previousWeather.empty())
         {
-            printf("The Weather at the moment is %s!", currentWeather);
-        }
-        else
-        {
-            printf("The Weather has changed from %s to %s!", previousWeather, currentWeather);
+            cout << "The Weather changed from forcast: " << weather->getWeather() << endl << endl;
         }
     }
-    
-    previousWeather = currentWeather;
-
-    int chanceOfChanging = rand() % 100;
-
-    if (chanceOfChanging > 0)
+    else
     {
-        weather->change();
+        cout << "Weather went according to forcast: " << weather->getWeather() << endl << endl;
     }
 }
 

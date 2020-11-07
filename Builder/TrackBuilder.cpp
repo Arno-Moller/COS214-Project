@@ -5,6 +5,7 @@ TrackBuilder::TrackBuilder()
     concreteTrack = new TrackMaker("Test");
     laps = 10;
     name = "Test";
+    location = "Test location";
 }
 
 TrackBuilder::TrackBuilder(string n, int l)  
@@ -12,6 +13,7 @@ TrackBuilder::TrackBuilder(string n, int l)
     name = n;
     laps = l;
     concreteTrack = new TrackMaker(n);
+    location = "Europe";
 }
 
 TrackBuilder::~TrackBuilder()
@@ -48,4 +50,9 @@ int TrackBuilder::getLaps()
 string TrackBuilder::getName()
 {
     return name;
+}
+
+string TrackBuilder::getLocation()
+{
+    return location;
 }

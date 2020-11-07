@@ -7,6 +7,7 @@ StartRaceCommand::StartRaceCommand()
     drivers = new RaceCar*[20];
     lap = new LapCommand();
     trackBuilder = new BuildTrackCommand();
+    weather = new RaceConditionCommand();
 
     for (int i = 0; i < 10 ; i++)
     {
@@ -48,6 +49,9 @@ StartRaceCommand::~StartRaceCommand()
 
 void StartRaceCommand::execute() 
 {
+    cout << "Race STARTED!!!" << endl << endl;
+    weather->execute();
+
     double** time = new double*[20];
 
     for(int i = 0; i < 20; i++)
@@ -65,17 +69,13 @@ void StartRaceCommand::execute()
             for(TrackSection it:track)
             {
                 d = it.getDistance();
-                // temp += d*(double)5;//drivers[j]->getGrip();
-                temp += (double)drivers[i]->getTireGrip();
-                // drivers[j]->lap();
-                // cout << "b " << drivers[j]->getTireGrip() << endl;
+                temp += d*(double)drivers[i]->getTireGrip();
             }
             time[i][j] = temp;
-            // time[i][j] = drivers[j]->getTireGrip();
-            // cout << j << " - " << drivers[j]->getTireGrip() << endl;
         }
     }
 
+    /*
     for(int i = 0; i < 20; i++)
     {
         cout << "Driver" << i+1 << " :" << endl;
@@ -86,6 +86,10 @@ void StartRaceCommand::execute()
         cout << "*****************************************" << endl;
         cout << endl;
     }
+    */
+
+   cout << "Race END!!!" << endl << endl;
+    
 }
 
 Team** StartRaceCommand::getTeams() 
@@ -133,6 +137,13 @@ void StartRaceCommand::setTrackBuilder(BuildTrackCommand* t)
     trackBuilder->execute();
     laps = trackBuilder->getTrackBuilder()->getLaps();
     track = trackBuilder->getTrack()->getTrack();
+    
+    cout << "Next track: " << trackBuilder->getTrackBuilder()->getName() << endl;
+    cout << "Location: " << trackBuilder->getTrackBuilder()->getLocation() << endl;
+
+    weather = new RaceConditionCommand(trackBuilder->getTrackBuilder()->getLocation());
+
+    cout << endl;
 }
 
 vector<TrackSection> StartRaceCommand::getTrack() 
