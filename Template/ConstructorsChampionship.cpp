@@ -74,6 +74,7 @@ void ConstructorsChampionship::calculate()
        cout<<(i+1) + "Place is:"<<endl;
        cout<<"Team " + driversResults[i].team <<endl;
        cout<<"Time: "+ static_cast<int>(driversResults[i].TeamTime)<<endl;
+       i++;
    }
 
 
