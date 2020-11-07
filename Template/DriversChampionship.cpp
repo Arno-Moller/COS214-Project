@@ -1,7 +1,7 @@
 #include "DriversChampionship.h"
 
 
-DriversChampionship::DriversChampionship() 
+DriversChampionship::DriversChampionship(double** array , int drivers , int laps ):Championship(array , drivers , laps)
 {
     
 }
@@ -11,17 +11,10 @@ DriversChampionship::~DriversChampionship()
     
 }
 
-void DriversChampionship::start() 
+void DriversChampionship::calculate() 
 {
+    
     
 }
 
-void DriversChampionship::restart() 
-{
-    
-}
 
-void DriversChampionship::stop() 
-{
-    
-}

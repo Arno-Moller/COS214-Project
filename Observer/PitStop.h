@@ -3,8 +3,8 @@
 
 class PitStop
 {
-private:
-    /* data */
+
+    
 public:
     PitStop(){};
     ~PitStop(){};

@@ -1,19 +1,28 @@
 #ifndef CHAMPIONSHIP_H
 #define CHAMPIONSHIP_H
 
+#include <iostream>
 using namespace std;
 
 class Championship
 {
-private:
-    /* data */
+protected:
+    double** arr;
+    int numDrivers;
+    int numLaps;
 public:
-    Championship();///constructor 
+    Championship(double** array , int drivers , int laps);///constructor 
     ~Championship();///destructor
 
-    virtual void start() = 0;
-    virtual void restart() = 0;
-    virtual void stop() = 0;
+    virtual void calculate() = 0;
+    
+    struct Results
+    {
+        int team ; 
+        int driver;
+        double time;
+        double TeamTime;
+    };
 };
 
 

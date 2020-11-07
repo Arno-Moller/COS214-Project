@@ -5,17 +5,15 @@
 
 using namespace std;
 
-class ConstructorsChampionship
+class ConstructorsChampionship:public Championship
 {
-private:
-    /* data */
+
+
 public:
-    ConstructorsChampionship(/* args */);
+     ConstructorsChampionship(double** array , int drivers , int laps);
     ~ConstructorsChampionship();
 
-    void start();
-    void restart();
-    void stop();
+    void calculate();
 };
 
 #endif // CONSTRUCTORSCHAMPIONSHIP_H

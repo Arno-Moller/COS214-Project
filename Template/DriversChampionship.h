@@ -7,15 +7,12 @@ using namespace std;
 
 class DriversChampionship: public Championship
 {
-private:
-    /* data */
+
 public:
-    DriversChampionship();
+    DriversChampionship(double** arr , int drivers , int laps);
     ~DriversChampionship();
 
-    void start();
-    void restart();
-    void stop();
+    void calculate();
 };
 
 #endif // DRIVERSCHAMPIONSHIP_H
