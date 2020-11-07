@@ -16,5 +16,9 @@ void DriversChampionship::calculate()
     
     
 }
+void swap(double **xp, double **yp)
+{
+    
+}
 
 

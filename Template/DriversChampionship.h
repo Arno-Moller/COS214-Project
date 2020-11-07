@@ -13,6 +13,7 @@ public:
     ~DriversChampionship();
 
     void calculate();
+    void swap(double **xp, double **yp);
 };
 
 #endif // DRIVERSCHAMPIONSHIP_H

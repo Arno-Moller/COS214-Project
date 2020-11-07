@@ -61,7 +61,7 @@ void ConstructorsChampionship::calculate()
             cout<<"Time: "+ static_cast<int>(teamtime)<<endl;
         }
     }
-    //sort the teams 
+   //sort the teams 
    int n = numDrivers;
    int i, j;  
     for (i = 0; i < n-1; i++)       

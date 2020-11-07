@@ -15,6 +15,7 @@ public:
     ~Championship();///destructor
 
     virtual void calculate() = 0;
+    virtual void swap(double **xp, double **yp)=0;
     
     struct Results
     {
