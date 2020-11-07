@@ -125,6 +125,12 @@
 #include "StateWeather/Weather.cpp"
 #include "StateWeather/Race.cpp"
 
+#include "Template/Championship.h"
+#include "Template/ConstructorsChampionship.h"
+
+#include "Template/Championship.cpp"
+#include "Template/ConstructorsChampionship.cpp"
+
 using namespace std;
 
 int main()

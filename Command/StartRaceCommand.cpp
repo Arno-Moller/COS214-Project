@@ -80,6 +80,9 @@ void StartRaceCommand::execute()
         }
         // lap->execute();
     }
+    
+    Championship* champ = new ConstructorsChampionship(time, 20, laps);
+
 
     
     for(int i = 0; i < 20; i++)
