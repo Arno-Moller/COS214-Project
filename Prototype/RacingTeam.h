@@ -4,9 +4,11 @@
 #include "Team.h"
 #include "../CarComposite/CarBuilder.h"
 #include "../CarComposite/RaceCar.h"
-#include "../Memento/Memento.h"
+// #include "../Memento/Memento.h"
 #include "../Memento/TeamState.h"
 #include "../Memento/TeamStateCaretaker.h"
+
+class Memento;
 ///concrete prototype of the prototype design pattern 
 class RacingTeam: public Team
 {
@@ -92,5 +94,7 @@ public:
 	void loadMemento(Memento* m);
 
 };
+
+#include "../Memento/Memento.h"
 
 #endif // RACINGTEAM_H

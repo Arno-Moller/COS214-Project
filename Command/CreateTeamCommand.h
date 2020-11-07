@@ -4,8 +4,6 @@
 #include "Command.h"
 #include "../Prototype/Team.h"
 #include "../Prototype/RacingTeam.h"
-#include "../Memento/Memento.h"
-#include "../Memento/TeamState.h"
 #include "../Memento/TeamStateCaretaker.h"
 
 using namespace std;

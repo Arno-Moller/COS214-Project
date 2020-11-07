@@ -2,7 +2,7 @@
 #define TEAM_H
 
 #include <iostream>
-#include "../Memento/Memento.h"
+
 #include "../Memento/TeamState.h"
 #include "../Memento/TeamStateCaretaker.h"
 #include "../CarComposite/CarBuilder.h"
@@ -12,6 +12,8 @@
 using namespace std;
 /// prototype participant of the prototype design pattern 
 ///The director participant of the Builder Design Pattern 
+class Memento;
+
 class Team
 {
     public:
@@ -95,7 +97,9 @@ class Team
 		string tireCompound;/**< the tire compound  */  // 
 		int teamPoints;/**< the points of the team  */
 		string teamName;/**< the teams name   */
-        
+    
 };
+
+#include "../Memento/Memento.h"
 
 #endif
