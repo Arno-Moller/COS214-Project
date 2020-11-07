@@ -46,6 +46,8 @@ class RaceCar
         int getCarTireGrip();
 
         bool carPitted();
+        virtual string getName();
+        virtual void setName(string name);
 
     protected:
         Strategy* strategy = nullptr;

@@ -81,7 +81,8 @@ class Team
 
 
     protected:
-		CarBuilder* builder; /**<  the builder object to build the cars  */ 
+		CarBuilder* builder1; /**<  the builder object to build the cars  */
+		CarBuilder* builder2; /**<  the builder object to build the cars  */  
 		RaceCar* car1;/**< the first car that the car has */  
 		RaceCar* car2;/**< the second car that the team has  */ 
 		string tireCompound;/**< the tire compound  */  // 

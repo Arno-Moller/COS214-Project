@@ -14,7 +14,7 @@ HardCompound::~HardCompound()
 
 int HardCompound::getGrip() 
 {
-    return grip*rate*0.01 + 1;
+    return grip;
 }
 
 void HardCompound::setGrip(int grip) 

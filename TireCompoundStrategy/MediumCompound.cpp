@@ -14,7 +14,7 @@ MediumCompound::~MediumCompound()
 
 int MediumCompound::getGrip() 
 {
-    return grip*rate*0.01 + 1;
+    return grip;
 }
 
 void MediumCompound::setGrip(int grip) 

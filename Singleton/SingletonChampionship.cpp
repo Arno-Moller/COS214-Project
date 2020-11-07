@@ -59,6 +59,7 @@ void SingletonChampionship::StartChampionship()
                 //return;
             }
         }
+        cout << "\t\t\t\t" << i << endl;
     }
 
 }

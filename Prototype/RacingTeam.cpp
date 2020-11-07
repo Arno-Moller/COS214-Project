@@ -7,13 +7,16 @@ RacingTeam::RacingTeam()
 
 RacingTeam::RacingTeam(RacingTeam& racingTeam) 
 {	
-	tireCompound = racingTeam.tireCompound;
+	this->tireCompound = racingTeam.tireCompound;
+	this->builder1 = new CarBuilder();
+	this->builder2 = new CarBuilder();
     buildCar();
 }
 
 RacingTeam::RacingTeam(string tireCompound)
 {
-    this->builder = new CarBuilder();
+    this->builder1 = new CarBuilder();
+	this->builder2 = new CarBuilder();
 	this->tireCompound = tireCompound;
 }
 
@@ -71,15 +74,24 @@ void RacingTeam::setTeamName(string name)
 
 void RacingTeam::buildCar()
 {
-	builder->addChassis();
-	builder->addSuspension();
-	builder->addWing();
-	builder->addHub();
-	builder->addEngine();
-	builder->addTire(tireCompound);
+	builder1->addChassis();
+	builder1->addSuspension();
+	builder1->addWing();
+	builder1->addHub();
+	builder1->addEngine();
+	builder1->addTire(tireCompound);
 	
-	car1 = builder->getCar();
-	car2 = builder->getCar();
+	car1 = builder1->getCar();
+	
+	builder2->addChassis();
+	builder2->addSuspension();
+	builder2->addWing();
+	builder2->addHub();
+	builder2->addEngine();
+	builder2->addTire(tireCompound);
+	
+	car2 = builder2->getCar();
+
 }
 
 void RacingTeam::lap()

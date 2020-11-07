@@ -20,6 +20,8 @@ class CarPart: public RaceCar
 
         void addCarTire(RaceCar* part);
         int getTireGrip();
+        string getName();
+        void setName(string name);
         
     private:
         list<RaceCar*> parts;// a list of all the Race Car parts

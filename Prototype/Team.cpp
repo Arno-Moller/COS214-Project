@@ -2,13 +2,15 @@
 
 Team::Team()
 {
-	this->builder = new CarBuilder();
+	this->builder1 = new CarBuilder();
+	this->builder2 = new CarBuilder();
 	this->tireCompound = "m";
 }
 
 Team::~Team()
 {
-	delete this->builder;
+	delete this->builder1;
+	delete this->builder2;
 	delete this->car1;
 	delete this->car2;
 }

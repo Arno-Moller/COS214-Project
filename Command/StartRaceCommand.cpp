@@ -60,12 +60,16 @@ void StartRaceCommand::execute()
     }
 
     for(int i = 0; i < laps; i++)
-    {
+    {   
+        cout << "LAP: " << i+1 << endl;
+        cout << endl;
+
         for(int j = 0; j < 20; j++)
         {
             double d = 0;
             double temp = 0;
             
+            cout << drivers[j]->getName() << " :" << endl;
 
             for(TrackSection it:track)
             {
@@ -77,7 +81,11 @@ void StartRaceCommand::execute()
 
             time[j][i] = temp;
             
+            cout <<"Time: " << time[j][i] << endl;
+            cout << endl;
         }
+        cout << "*****************************************" << endl;
+        cout << endl;
         // lap->execute();
     }
     
@@ -86,16 +94,16 @@ void StartRaceCommand::execute()
 
 
     
-    for(int i = 0; i < 20; i++)
-    {
-        cout << "Driver" << i+1 << " :" << endl;
-        for(int j = 0; j < laps; j++)
-        {
-            cout << "\tlap" << j+1 << "\t time: " << time[i][j] << endl;
-        }
-        cout << "*****************************************" << endl;
-        cout << endl;
-    }
+    // for(int i = 0; i < 20; i++)
+    // {
+    //     cout << "Driver" << i+1 << " :" << endl;
+    //     for(int j = 0; j < laps; j++)
+    //     {
+    //         cout << "\tlap" << j+1 << "\t time: " << time[i][j] << endl;
+    //     }
+    //     cout << "*****************************************" << endl;
+    //     cout << endl;
+    // }
     
 
    cout << "Race END!!!" << endl << endl;

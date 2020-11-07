@@ -30,7 +30,7 @@ Tire::Tire(string type)
     PitStop* pit = new ChangeTires(this);
     addPitcrew(pit);
 
-    srand(rand()*rand()*atoi(driverName.c_str()));
+    srand(time(0));
 	int chanceStrategyOdds = rand() % 100;
 
     if (chanceStrategyOdds >= 0)
@@ -77,38 +77,39 @@ void Tire::setState(TireState *tState)
 
 void Tire::setType(string type) 
 {   
-    if (compound != NULL)
+    if (hasPitted != true)
     {
-        // delete compound;
-        hasPitted = true;
-    }
-    
-    string newCompound = "";
+        if (compound != NULL)
+        {
+            hasPitted = true;
+        }
+        
+        string newCompound = "";
+        setState(new GoodCondition());
 
-    if (type == "soft" || type == "s")
-    {
-        this->compound = new SoftCompound();
-        newCompound = "Soft Compound";
-    }
-    else if (type == "medium" || type == "m")
-    {
-        this->compound = new MediumCompound();
-        newCompound = "Medium Compound";
-    }
-    else
-    {
-        this->compound = new HardCompound();
-        newCompound = "Hard Compound";
-    }
+        if (type == "soft" || type == "s")
+        {
+            this->compound = new SoftCompound();
+            newCompound = "Soft Compound";
+        }
+        else if (type == "medium" || type == "m")
+        {
+            this->compound = new MediumCompound();
+            newCompound = "Medium Compound";
+        }
+        else
+        {
+            this->compound = new HardCompound();
+            newCompound = "Hard Compound";
+        }
 
-    if (currentCompound != "")
-    {
-        cout << "The tyres have been changed from " << currentCompound << " to " << newCompound << " on car " << getDriverName() << endl;
+        if (currentCompound != "" && getDriverName() != "" && currentCompound != newCompound)
+        {
+            cout << "The tyres have been changed from " << currentCompound << " to " << newCompound << " on car " << getDriverName() << endl;
+        }
+        
+        currentCompound = newCompound;    
     }
-    
-    currentCompound = newCompound;
-
-    setState(new GoodCondition());
 }
 
 void Tire::setType(TireCompound* type) 
@@ -129,12 +130,11 @@ void Tire::lap()
 ///Function to call each lap that degrades the tires
 void Tire::degrade()
 {   
-    
     hasPitted = false;
 
     int chanceStrategyOdds = rand() % 100;
 
-    if (chanceStrategyOdds >= 75)
+    if (chanceStrategyOdds >= 90)
     {
         int nextStrategy = rand() % 3;
         switch (nextStrategy)
@@ -161,7 +161,6 @@ void Tire::degrade()
 
     notify();
     state->changeTireState(this);
-    getStrategy()->execute();
 }
 
 int Tire::getGrip() 

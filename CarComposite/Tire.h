@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <ctime>
 
 #include "RaceCar.h"
 #include "../TireCompoundStrategy/SoftCompound.h"

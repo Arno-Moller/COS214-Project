@@ -68,11 +68,9 @@ Strategy* RaceCar::getStrategy() const
 
 void RaceCar::setStrategy(Strategy* strat) 
 {   
-    if (strategy != nullptr)
+    if (strategy != nullptr && getDriverName() != "" && strategy->type() != strat->type())
     {   
         cout << "The Strategy have been changed from " << strategy->type() << " to " << strat->type() << " on car " << getDriverName() << endl;
-        // delete strategy;
-        // strategy = nullptr;
     }
     
     this->strategy = strat;
@@ -111,6 +109,16 @@ int RaceCar::getCarTireGrip()
 bool RaceCar::carPitted() 
 {
     return hasPitted;
+}
+
+string RaceCar::getName() 
+{
+    return "";
+}
+
+void RaceCar::setName(string name) 
+{
+    
 }
 
 

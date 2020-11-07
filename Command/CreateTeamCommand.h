@@ -18,7 +18,7 @@ public:
 
 private:
     Team** teams;
-    string names[10] = {"Mercedes AMG F1", "McLaren", "Ferrari", "Racing Point", "Red Bull Racing", "AlphaTauri", "Haas F1", "Renault", "Alfa Romeo Racing"};
+    string names[10] = {"Mercedes AMG F1", "McLaren", "Ferrari", "Racing Point", "Red Bull Racing", "AlphaTauri", "Haas F1", "Renault", "Alfa Romeo Racing", "Williams Racing"};
     bool doesTheTeamsExist = false;
 };
 

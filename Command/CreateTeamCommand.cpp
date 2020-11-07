@@ -25,11 +25,22 @@ void CreateTeamCommand::execute()
     teams[0]->buildCar();
     teams[0]->setTeamName(names[0]);
     
+    string driver1 = names[0] + " Driver 1";
+    teams[0]->getCarOne()->setName(driver1);
+
+    string driver2 = names[0] + " Driver 2";
+    teams[0]->getCarTwo()->setName(driver2);
+    
     for (int i = 1; i < 10; i++)
     {
         teams[i] = teams[0]->clone();
-        // teams[i]->buildCar();
         teams[i]->setTeamName(names[i]);
+        
+        driver1 = names[i] + " Driver 1";
+        teams[i]->getCarOne()->setName(driver1);
+
+        driver2 = names[i] + " Driver 2";
+        teams[i]->getCarTwo()->setName(driver2);
     }
     doesTheTeamsExist = true;
 }
