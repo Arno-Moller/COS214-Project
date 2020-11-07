@@ -5,8 +5,10 @@
 #include "../Prototype/Team.h"
 #include "../Prototype/RacingTeam.h"
 #include "../CarComposite/RaceCar.h"
+
 #include "LapCommand.h"
 #include "BuildTrackCommand.h"
+#include "RaceConditionCommand.h"
 
 using  namespace std;
 
@@ -19,6 +21,7 @@ class StartRaceCommand: public Command
         BuildTrackCommand* trackBuilder;
         vector<TrackSection> track;
         int laps = 0;
+        RaceConditionCommand* weather;
         // ADD TRACK TO RACE ON!!!!!
     public:
         StartRaceCommand();
@@ -37,8 +40,7 @@ class StartRaceCommand: public Command
         void setTrackBuilder(BuildTrackCommand*);
 
         vector<TrackSection> getTrack();
-        void setTrack(vector<TrackSection>);
-         
+        void setTrack(vector<TrackSection>);  
 };
 
 

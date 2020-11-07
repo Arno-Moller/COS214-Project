@@ -12,6 +12,7 @@ class TrackBuilder
 
         int getLaps();
         string getName();
+        string getLocation();
 
         void construct(); // this builds the track or constructs the track consisting of the section we would want 
         void display();//this displays the track 
@@ -21,6 +22,7 @@ class TrackBuilder
         ConcreteTrack* concreteTrack;//Concrete Track object which is the builder participant in the Builder Design Pattern 
         int laps = 0;
         string name;
+        string location;
     
 };
 #endif
