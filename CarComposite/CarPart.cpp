@@ -1,8 +1,8 @@
 #include "CarPart.h"
 
 CarPart::CarPart(): RaceCar()
-{
-	
+{   
+    
 }
 
 CarPart::~CarPart()
@@ -33,33 +33,12 @@ RaceCar *CarPart::getPart()
 
 void CarPart::lap()
 {	
-	int chanceStrategyOdds = rand() % 100;
+    tire->degrade();
 
-    if (chanceStrategyOdds >= 75)
-    {
-        int nextStrategy = rand() % 3;
-        switch (nextStrategy)
-        {
-        case 0:
-            setStrategy(new Sensible());
-            break;
-
-        case 1:
-            setStrategy(new Cautious());
-            break;
-            
-        case 2:
-            setStrategy(new Aggresive());
-            break;
-        
-        default:
-            break;
-        }
-    }
-	for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
-	{
-		(*it)->degrade();
-	}
+	// for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
+	// {
+	// 	(*it)->degrade();
+	// }
 }
 
 void CarPart::addCarTire(RaceCar* part) 
@@ -68,7 +47,7 @@ void CarPart::addCarTire(RaceCar* part)
 }
 
 int CarPart::getTireGrip() 
-{   
+{    
     // cout << "grip " << tire->getCarTireGrip() <<endl;
     return tire->getCarTireGrip();
     // return 25;

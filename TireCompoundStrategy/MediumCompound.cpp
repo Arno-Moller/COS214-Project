@@ -3,7 +3,7 @@
 MediumCompound::MediumCompound() 
 {
     setGrip(100);
-    setWear(0);
+    setWear(1);
     rate = 2;
 }
 

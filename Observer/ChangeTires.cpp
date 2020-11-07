@@ -1,7 +1,7 @@
 #include "ChangeTires.h"
 
 ChangeTires::ChangeTires(Tire* carTire) 
-{
+{      
     this->carTire = carTire;
     this->state = carTire->getState();
 }
@@ -20,5 +20,10 @@ void ChangeTires::update()
     {   
         carTire->setType(carTire->getNextTireCompound()); 
     }
+
+    
+    this->state = carTire->getState();
     state->changeTireState();
+
+    
 }

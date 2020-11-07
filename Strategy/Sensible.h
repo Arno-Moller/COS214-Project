@@ -17,6 +17,7 @@ public:
     * @return string that gives information about the tires given the strategy that is used.
     */
     string execute();
+    string type();
 };
 
 

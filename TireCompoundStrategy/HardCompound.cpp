@@ -3,7 +3,7 @@
 HardCompound::HardCompound() 
 {
     setGrip(100);
-    setWear(0);
+    setWear(1);
     rate = 1;
 }
 

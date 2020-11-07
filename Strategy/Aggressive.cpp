@@ -27,3 +27,8 @@ string Aggresive::execute()
         return "hard";
     }
 }
+
+string Aggresive::type() 
+{
+    return "Aggressive";
+}

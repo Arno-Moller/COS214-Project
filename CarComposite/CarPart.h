@@ -4,6 +4,7 @@
 #include <iostream>
 #include <list>
 #include "RaceCar.h"
+#include "Tire.h"
 
 using namespace std;
 //the composite participant of the Composite Design Pattern 

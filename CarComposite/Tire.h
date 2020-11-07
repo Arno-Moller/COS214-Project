@@ -9,6 +9,7 @@
 #include "../TireCompoundStrategy/MediumCompound.h"
 #include "../TireCompoundStrategy/HardCompound.h"
 #include "../TireState/GoodCondition.h"
+#include "../Observer/ChangeTires.h"
 
 using namespace std;
 

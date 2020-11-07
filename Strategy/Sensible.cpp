@@ -28,3 +28,8 @@ string Sensible::execute()
     }
 }
 
+string Sensible::type() 
+{
+    return "Sensible";
+}
+

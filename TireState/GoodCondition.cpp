@@ -2,12 +2,12 @@
 
 GoodCondition::GoodCondition()
 {
-	cout << "Good Condition" << endl;
+	
 }
 
 GoodCondition::GoodCondition(Tire* tires): TireState(tires) 
 {
-	cout << "Good Condition" << endl;
+
 }
 
 GoodCondition::~GoodCondition()
@@ -21,7 +21,8 @@ bool GoodCondition::handle()
 }
 
 void GoodCondition::changeTireState() 
-{
+{	
+
 	if (tires->getWear() >= 30)
 	{
 		TireState* ok = new OKCondition();

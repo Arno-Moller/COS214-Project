@@ -20,7 +20,7 @@ class RaceCar
         ~RaceCar();//destructor
     
         void request();
-        void lap();//the method to do a lap 
+        virtual void lap();//the method to do a lap 
         RaceCar* getChild(); // returns the child of the race car
         virtual void degrade();//the degrade method 
         virtual void addPart(RaceCar* car);// method to add parts to the race car 
@@ -45,14 +45,17 @@ class RaceCar
         virtual int getTireGrip();
         int getCarTireGrip();
 
+        bool carPitted();
+
     protected:
-        Strategy* strategy;
-        PitStop* pitCrew;
+        Strategy* strategy = nullptr;
+        PitStop* pitCrew = nullptr;
         int points = 0;
         string driverName;
 
         int tireGrip = 5;
         TireCompound* compound; 
+        bool hasPitted = false;
 
 };
 

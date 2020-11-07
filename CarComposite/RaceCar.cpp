@@ -26,32 +26,7 @@ RaceCar *RaceCar::getChild()
 }
 
 void RaceCar::lap()
-{
-    degrade(); // check net of hy actually degrade call van tires
-    
-	// int chanceStrategyOdds = rand() % 100;
-
-    // if (chanceStrategyOdds >= 75)
-    // {
-    //     int nextStrategy = rand() % 3;
-    //     switch (nextStrategy)
-    //     {
-    //     case 0:
-    //         setStrategy(new Sensible());
-    //         break;
-
-    //     case 1:
-    //         setStrategy(new Cautious());
-    //         break;
-            
-    //     case 2:
-    //         setStrategy(new Aggresive());
-    //         break;
-        
-    //     default:
-    //         break;
-    //     }
-    // }
+{   
     
 }
 
@@ -61,8 +36,9 @@ void RaceCar::degrade()
 }
 
 void RaceCar::addPitcrew(PitStop* pitcrew) 
-{
-    this->pitCrew = pitCrew;
+{   
+    cout << "added pitcrew" << endl;
+    this->pitCrew = pitcrew;
 }
 
 void RaceCar::removePitCrew() 
@@ -91,7 +67,14 @@ Strategy* RaceCar::getStrategy() const
 }
 
 void RaceCar::setStrategy(Strategy* strat) 
-{
+{   
+    if (strategy != nullptr)
+    {   
+        cout << "The Strategy have been changed from " << strategy->type() << " to " << strat->type() << " on car " << getDriverName() << endl;
+        delete strategy;
+        strategy = nullptr;
+    }
+    
     this->strategy = strat;
 }
 
@@ -124,3 +107,10 @@ int RaceCar::getCarTireGrip()
 {
     return this->compound->getGrip();
 }
+
+bool RaceCar::carPitted() 
+{
+    return hasPitted;
+}
+
+

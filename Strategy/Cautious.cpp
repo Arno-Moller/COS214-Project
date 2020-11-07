@@ -27,3 +27,8 @@ string Cautious::execute()
         return "soft";
     }
 }
+
+string Cautious::type() 
+{
+    return "Cautious";
+}

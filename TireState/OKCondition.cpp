@@ -2,12 +2,12 @@
 
 OKCondition::OKCondition()
 {
-	cout << "OK Condition" << endl;
+	
 }
 
 OKCondition::OKCondition(Tire* tires): TireState(tires) 
 {
-	cout << "OK Condition" << endl;
+	
 }
 
 OKCondition::~OKCondition()

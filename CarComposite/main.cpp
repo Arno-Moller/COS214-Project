@@ -49,6 +49,12 @@
 #include "../Strategy/Cautious.cpp"
 #include "../Strategy/Aggressive.cpp"
 
+#include "../Observer/PitStop.h"
+#include "../Observer/ChangeTires.h"
+
+#include "../Observer/ChangeTires.cpp"
+
+
 
 int main(int argc, char const *argv[])
 {
@@ -68,6 +74,14 @@ int main(int argc, char const *argv[])
     
     cout<< "Name: " << car->getDriverName() << endl;
     cout<< "Tire Grip: " <<car->getTireGrip() << endl;
+    
+    car->lap();
+
+    for (int i = 0; i < 10; i++)
+    {
+        car->lap();
+    }
+    
 
     // cout<< "Strategy: " <<car->getStrategy()->execute() << endl;
 
