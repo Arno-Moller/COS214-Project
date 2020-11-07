@@ -132,7 +132,7 @@ void Tire::lap()
 void Tire::degrade()
 {   
     hasPitted = false;
-    
+
     int chanceStrategyOdds = rand() % 100;
 
     if (chanceStrategyOdds >= 75)
