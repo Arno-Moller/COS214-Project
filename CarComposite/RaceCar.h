@@ -51,7 +51,7 @@ class RaceCar
         Strategy* strategy = nullptr;
         PitStop* pitCrew = nullptr;
         int points = 0;
-        string driverName;
+        string driverName = "";
 
         int tireGrip = 5;
         TireCompound* compound; 

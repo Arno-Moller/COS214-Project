@@ -30,7 +30,7 @@ Tire::Tire(string type)
     PitStop* pit = new ChangeTires(this);
     addPitcrew(pit);
 
-    srand(rand()*rand());
+    srand(rand()*rand()*atoi(driverName.c_str()));
 	int chanceStrategyOdds = rand() % 100;
 
     if (chanceStrategyOdds >= 0)
