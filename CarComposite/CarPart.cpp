@@ -68,8 +68,9 @@ void CarPart::addCarTire(RaceCar* part)
 }
 
 int CarPart::getTireGrip() 
-{
-    return tire->getTireGrip();
+{   
+    // cout << "grip " << tire->getCarTireGrip() <<endl;
+    return tire->getCarTireGrip();
     // return 25;
 }
 
