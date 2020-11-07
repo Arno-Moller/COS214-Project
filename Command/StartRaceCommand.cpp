@@ -104,9 +104,9 @@ void StartRaceCommand::execute()
             }
             
 
-            time[i][j] = temp;
+            time[j][i] = temp;
             
-            cout <<"Time: " << time[i][j] << endl;
+            cout <<"Time: " << time[j][i] << endl;
             cout << endl;
         }
         cout << "*****************************************" << endl;
