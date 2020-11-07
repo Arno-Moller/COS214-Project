@@ -61,3 +61,16 @@ void CarPart::lap()
 		(*it)->degrade();
 	}
 }
+
+void CarPart::addCarTire(RaceCar* part) 
+{
+    tire = part;
+}
+
+int CarPart::getTireGrip() 
+{
+    return tire->getTireGrip();
+    // return 25;
+}
+
+

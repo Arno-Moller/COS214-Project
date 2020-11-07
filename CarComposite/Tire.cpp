@@ -44,7 +44,12 @@ TireState* Tire::getState()
 
 void Tire::setState(TireState *tState)
 {
-	delete this->state;
+	if (state != nullptr)
+    {
+        delete this->state;
+        this->state = nullptr;
+    }
+    
 	this->state = tState;
 }
 

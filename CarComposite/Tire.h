@@ -38,7 +38,7 @@ class Tire: public RaceCar
         string getNextTireCompound();
 
     private:
-        TireState* state; // The state of the tires object to check the tires condition 
+        TireState* state = nullptr; // The state of the tires object to check the tires condition 
         
         string currentCompound = "";
 };

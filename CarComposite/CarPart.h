@@ -17,10 +17,12 @@ class CarPart: public RaceCar
         RaceCar* getPart(); // returns the race car 
 	    void lap();// does a lap 
 
+        void addCarTire(RaceCar* part);
+        int getTireGrip();
         
     private:
         list<RaceCar*> parts;// a list of all the Race Car parts
-
+        RaceCar* tire;
 };
 
 #endif
