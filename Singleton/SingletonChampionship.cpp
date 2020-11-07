@@ -7,6 +7,11 @@ SingletonChampionship* SingletonChampionship::getInstance()
     return championship;
 }
 
+SingletonChampionship::SingletonChampionship()
+{
+
+}
+
 void SingletonChampionship::StartChampionship()
 {
     CreateTeamCommand* teamCom = new CreateTeamCommand();

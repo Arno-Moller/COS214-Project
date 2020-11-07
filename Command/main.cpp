@@ -1,6 +1,7 @@
 #include <iostream>
 #include <new>
 
+
 #include "../Builder/Track.h"
 #include "../Builder/TrackSection.h"
 #include "../Builder/ConcreteTrack.h"
@@ -108,48 +109,48 @@ int main()
     Team** teams = teamCom->getTeams();
 
     BuildTrackCommand* tmp = new BuildTrackCommand();
-    // tmp->execute();
+    tmp->execute();
     int laps = tmp->getTrackBuilder()->getLaps();
     vector<TrackSection> track = tmp->getTrack()->getTrack();
-    Command* race = new StartRaceCommand(teams, tmp);
-    race->execute();
+    //Command* race = new StartRaceCommand(teams, tmp);
+    //race->execute();
 
-    // double** time = new double*[20];
+    double** time = new double*[20];
 
-    // for(int i = 0; i < 20; i++)
-    // {
-    //     time[i] = new double[laps];
-    // }
+    for(int i = 0; i < 20; i++)
+    {
+        time[i] = new double[laps];
+    }
 
-    // for(int i = 0; i < 20; i++)
-    // {
-    //     for(int j = 0; j < laps; j++)
-    //     {
-    //         double d = 0;
-    //         double temp = 0;
+    for(int i = 0; i < 20; i++)
+    {
+        for(int j = 0; j < laps; j++)
+        {
+            double d = 0;
+            double temp = 0;
 
-    //         for(TrackSection it:track)
-    //         {
-    //             d = it.getDistance();
-    //             //temp += d*(double)5;//drivers[j]->getGrip();
-    //             //temp += d*(double)drivers[j]->getTireGrip();
-    //             //drivers[j]->lap();
+            for(TrackSection it:track)
+            {
+                d = it.getDistance();
+                //temp += d*(double)5;//drivers[j]->getGrip();
+                //temp += d*(double)drivers[j]->getTireGrip();
+                //drivers[j]->lap();
                 
-    //         }
-    //         time[i][j] = d;
-    //     }
-    // }
+            }
+            time[i][j] = d;
+        }
+    }
 
-    // for(int i = 0; i < 20; i++)
-    // {
-    //     cout << "Driver" << i+1 << " :" << endl;
-    //     for(int j = 0; j < laps; j++)
-    //     {
-    //         cout << "\tlap" << j+1 << "\t time: " << time[i][j] << endl;
-    //     }
-    //     cout << "*****************************************" << endl;
-    //     cout << endl;
-    // }
+    for(int i = 0; i < 20; i++)
+    {
+        cout << "Driver" << i+1 << " :" << endl;
+        for(int j = 0; j < laps; j++)
+        {
+            cout << "\tlap" << j+1 << "\t time: " << time[i][j] << endl;
+        }
+        cout << "*****************************************" << endl;
+        cout << endl;
+    }
 
 
     return 0;
