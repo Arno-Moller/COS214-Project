@@ -68,6 +68,7 @@ int main(int argc, char const *argv[])
     
     cout<< "Name: " << car->getDriverName() << endl;
     cout<< "Tire Grip: " <<car->getTireGrip() << endl;
+
     // cout<< "Strategy: " <<car->getStrategy()->execute() << endl;
 
     return 0;
