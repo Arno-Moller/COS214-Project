@@ -14,7 +14,7 @@ SoftCompound::~SoftCompound()
 
 int SoftCompound::getGrip() 
 {
-    return grip*rate*0.01;
+    return grip*rate*0.01 + 1;
 }
 
 void SoftCompound::setGrip(int grip) 
