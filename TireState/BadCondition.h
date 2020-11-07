@@ -11,10 +11,9 @@ class BadCondition: public TireState
 {
     public:
         BadCondition();/// constructor
-        BadCondition(Tire* tires);/// constructor that takes in a tire object
         ~BadCondition();///destructor
-        bool handle();///method to check if you should pit stop or not
-        void changeTireState();/// method to change tire state 
+        bool handle(Tire* tire);///method to check if you should pit stop or not
+        void changeTireState(Tire* tire);/// method to change tire state 
 };
 
 #endif // BADCONDITION_H

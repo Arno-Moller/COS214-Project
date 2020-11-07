@@ -13,17 +13,14 @@ ChangeTires::~ChangeTires()
 }
 
 void ChangeTires::update() 
-{
+{   
     this->state = carTire->getState();
-
-    if (state->handle() == true || (rand()%100) > 75) 
+    
+    if (state->handle(carTire) == true || (rand()%100) > 75) 
     {   
         carTire->setType(carTire->getNextTireCompound()); 
+        
     }
-
-    
-    this->state = carTire->getState();
-    state->changeTireState();
-
     
 }
+ 

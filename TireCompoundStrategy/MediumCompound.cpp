@@ -14,7 +14,7 @@ MediumCompound::~MediumCompound()
 
 int MediumCompound::getGrip() 
 {
-    return grip*rate;
+    return grip*rate*0.01;
 }
 
 void MediumCompound::setGrip(int grip) 
@@ -34,7 +34,7 @@ void MediumCompound::setWear(int wear)
 
 double MediumCompound::getRate() 
 {
-    return rate*getWear();
+    return rate;
 }
 
 

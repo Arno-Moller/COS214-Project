@@ -59,23 +59,29 @@ void StartRaceCommand::execute()
         time[i] = new double[laps];
     }
 
-    for(int i = 0; i < 20; i++)
+    for(int i = 0; i < laps; i++)
     {
-        for(int j = 0; j < laps; j++)
+        for(int j = 0; j < 20; j++)
         {
             double d = 0;
             double temp = 0;
+            
 
             for(TrackSection it:track)
             {
                 d = it.getDistance();
-                temp += d*(double)drivers[i]->getTireGrip();
+                temp += d*(double)drivers[j]->getTireGrip();
+                drivers[j]->lap();
             }
-            time[i][j] = temp;
+            
+
+            time[j][i] = temp;
+            
         }
+        // lap->execute();
     }
 
-    /*
+    
     for(int i = 0; i < 20; i++)
     {
         cout << "Driver" << i+1 << " :" << endl;
@@ -86,7 +92,7 @@ void StartRaceCommand::execute()
         cout << "*****************************************" << endl;
         cout << endl;
     }
-    */
+    
 
    cout << "Race END!!!" << endl << endl;
     

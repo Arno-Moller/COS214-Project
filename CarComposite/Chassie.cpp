@@ -2,7 +2,7 @@
 
 Chassie::Chassie(): RaceCar()
 {
-	cout << "Chassis" << endl;
+	// cout << "Chassis" << endl;
 }
 
 Chassie::~Chassie()

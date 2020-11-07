@@ -37,7 +37,7 @@ void RaceCar::degrade()
 
 void RaceCar::addPitcrew(PitStop* pitcrew) 
 {   
-    cout << "added pitcrew" << endl;
+    // cout << "added pitcrew" << endl;s
     this->pitCrew = pitcrew;
 }
 
@@ -71,8 +71,8 @@ void RaceCar::setStrategy(Strategy* strat)
     if (strategy != nullptr)
     {   
         cout << "The Strategy have been changed from " << strategy->type() << " to " << strat->type() << " on car " << getDriverName() << endl;
-        delete strategy;
-        strategy = nullptr;
+        // delete strategy;
+        // strategy = nullptr;
     }
     
     this->strategy = strat;

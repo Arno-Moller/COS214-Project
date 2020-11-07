@@ -2,7 +2,7 @@
 
 Tire::Tire(): RaceCar()
 {
-	cout << "Tire" << endl;
+	// cout << "Tire" << endl;
 }
 
 Tire::Tire(TireState *tState, TireCompound* type)
@@ -54,7 +54,7 @@ Tire::Tire(string type)
             break;
         }
     }
-    this->setState(new GoodCondition(this));
+    this->setState(new GoodCondition());
     
     tireGrip = getGrip();
 }
@@ -72,16 +72,14 @@ TireState* Tire::getState()
 
 void Tire::setState(TireState *tState)
 {   
-  
     this->state = tState;
-
 }
 
 void Tire::setType(string type) 
 {   
     if (compound != NULL)
     {
-        delete compound;
+        // delete compound;
         hasPitted = true;
     }
     
@@ -110,17 +108,17 @@ void Tire::setType(string type)
     
     currentCompound = newCompound;
 
-    setState(new GoodCondition(this));
+    setState(new GoodCondition());
 }
 
 void Tire::setType(TireCompound* type) 
 {
-    if (compound != NULL)
-    {
-        delete compound;
-    }
+    // if (compound != NULL)
+    // {
+    //     delete compound;
+    // }
     this->compound = type;
-    setState(new GoodCondition(this));
+    setState(new GoodCondition());
 }
 
 void Tire::lap() 
@@ -131,6 +129,7 @@ void Tire::lap()
 ///Function to call each lap that degrades the tires
 void Tire::degrade()
 {   
+    
     hasPitted = false;
 
     int chanceStrategyOdds = rand() % 100;
@@ -156,11 +155,12 @@ void Tire::degrade()
             break;
         }
     }
-
+   
 	setWear(getWear() + getRate());
     setGrip(getGrip() - getRate());
 
     notify();
+    state->changeTireState(this);
     getStrategy()->execute();
 }
 

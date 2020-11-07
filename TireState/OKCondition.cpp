@@ -5,26 +5,21 @@ OKCondition::OKCondition()
 	
 }
 
-OKCondition::OKCondition(Tire* tires): TireState(tires) 
+OKCondition::~OKCondition() 
 {
 	
 }
 
-OKCondition::~OKCondition()
-{
-	delete tires;
-}
-
-bool OKCondition::handle()
+bool OKCondition::handle(Tire* tire)
 {
 	return false;
 }
 
-void OKCondition::changeTireState() 
+void OKCondition::changeTireState(Tire* tire) 
 {	
-	if (tires->getWear() >= 80)
+	if (tire->getWear() >= 80)
 	{
 		TireState* bad = new BadCondition();
-		tires->setState(bad);
+		tire->setState(bad);
 	}
 }

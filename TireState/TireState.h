@@ -13,25 +13,17 @@ class TireState
 {   
     public:
         TireState();///constructor
-        
-        /**
-        * Constructor 
-        * @param Tire pointer object 
-        */
-        TireState(Tire* tires);
-        
+               
         virtual ~TireState(); /// destructor 
         
         /**
         * Checks if the race car should pit 
         * @return true if the race car should pit and false otherwise 
         */
-        virtual bool handle() = 0;/// abstract interface to check the state of the tires
+        virtual bool handle(Tire* tire) = 0;/// abstract interface to check the state of the tires
    
-        virtual void changeTireState() = 0; /// abstrackt interface to change the tire state
+        virtual void changeTireState(Tire* tire) = 0; /// abstrackt interface to change the tire state
 
-    protected:
-        Tire* tires; /**< a tire object of  */ 
 };
 
 #include "../CarComposite/Tire.h"

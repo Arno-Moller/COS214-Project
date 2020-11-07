@@ -14,9 +14,9 @@ SingletonChampionship::SingletonChampionship()
 
 void SingletonChampionship::StartChampionship()
 {
-    BuildTrackCommand** tracks = new BuildTrackCommand*[10];
+    BuildTrackCommand** tracks = new BuildTrackCommand*[2];
 
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 2; i++)
     {
         tracks[i] = new BuildTrackCommand();
     }
@@ -26,7 +26,7 @@ void SingletonChampionship::StartChampionship()
     Team** teams = teamCom->getTeams();
     StartRaceCommand* race = new StartRaceCommand(teams, tracks[0]);
 
-    for(int i = 1; i < 10; i++)
+    for(int i = 1; i < 2; i++)
     {
         race->execute();
 

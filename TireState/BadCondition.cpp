@@ -5,19 +5,15 @@ BadCondition::BadCondition()
 	
 }
 
-BadCondition::BadCondition(Tire* tires): TireState(tires)  
+BadCondition::~BadCondition() 
 {
 	
 }
 
-BadCondition::~BadCondition()
-{
-	delete tires;
-}
 
-bool BadCondition::handle()
+bool BadCondition::handle(Tire* tire)
 {
-	if (tires->getWear() >= 100)
+	if (tire->getWear() >= 100)
 	{
 		return true; // needs to pit
 	}
@@ -25,12 +21,11 @@ bool BadCondition::handle()
 
 }
 
-void BadCondition::changeTireState() 
+void BadCondition::changeTireState(Tire* tire) 
 {	
-	if (tires->getWear() >= 100)
+	if (tire->getWear() >= 100)
 	{
-		
 		TireState* good = new GoodCondition();
-		tires->setState(good);
+		tire->setState(good);
 	}
 }

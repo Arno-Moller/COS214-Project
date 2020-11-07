@@ -5,27 +5,21 @@ GoodCondition::GoodCondition()
 	
 }
 
-GoodCondition::GoodCondition(Tire* tires): TireState(tires) 
+GoodCondition::~GoodCondition() 
 {
-
+	
 }
 
-GoodCondition::~GoodCondition()
-{
-	delete tires;
-}
-
-bool GoodCondition::handle()
+bool GoodCondition::handle(Tire* tire)
 {
 	return false;
 }
 
-void GoodCondition::changeTireState() 
+void GoodCondition::changeTireState(Tire* tire) 
 {	
-
-	if (tires->getWear() >= 30)
+	if (tire->getWear() >= 30)
 	{
 		TireState* ok = new OKCondition();
-		tires->setState(ok);
+		tire->setState(ok);
 	}
 }
