@@ -8,8 +8,8 @@ class Championship
 private:
     /* data */
 public:
-    Championship();
-    ~Championship();
+    Championship();///constructor 
+    ~Championship();///destructor
 
     virtual void start() = 0;
     virtual void restart() = 0;
