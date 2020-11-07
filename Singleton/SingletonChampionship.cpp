@@ -14,9 +14,9 @@ SingletonChampionship::SingletonChampionship()
 
 void SingletonChampionship::StartChampionship()
 {
-    BuildTrackCommand** tracks = new BuildTrackCommand*[2];
+    BuildTrackCommand** tracks = new BuildTrackCommand*[5];
 
-    for(int i = 0; i < 2; i++)
+    for(int i = 0; i < 5; i++)
     {
         tracks[i] = new BuildTrackCommand();
     }
@@ -26,40 +26,41 @@ void SingletonChampionship::StartChampionship()
     Team** teams = teamCom->getTeams();
     StartRaceCommand* race = new StartRaceCommand(teams, tracks[0]);
 
-    for(int i = 1; i < 2; i++)
+    for(int i = 0; i < 5; i++)
     {
+        race->setTrackBuilder(tracks[i]);
         race->execute();
 
         string option = "s";
         bool next = false;
 
-        while(!next)
-        {
+        // while(!next)
+        // {
             cout    << "Select an option and press Enter:" 
                     << "\n\tShow results: s"
                     << "\n\tnext: n" 
                     << "\n\texit e" << endl;
 
-            //cin >> option;
-
-            if(option == "n")
-            {
-                race->setTrackBuilder(tracks[i]);
-                race->execute();
-                next = true;
-            }
-            else if(option == "s")
-            {
+            // // cin >> option;
+            cout << "\t\t\t\t" << i << endl;
+            // if(option == "n")
+            // {
+                // race->setTrackBuilder(tracks[i]);
+                // race->execute();
+                // next = true;
+            // }
+            // else if(option == "s")
+            // {
                 cout << "Show results: " << endl;
-                option = "n";
-            }
-            else
-            {
-                cout << "Exited" << endl;
-                //return;
-            }
-        }
-        cout << "\t\t\t\t" << i << endl;
+                // option = "n";
+            // }
+            // else
+            // {
+            //     cout << "Exited" << endl;
+            //     //return;
+            // }
+        // }
+        
     }
 
 }

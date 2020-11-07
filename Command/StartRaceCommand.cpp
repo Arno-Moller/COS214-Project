@@ -50,7 +50,7 @@ StartRaceCommand::~StartRaceCommand()
 void StartRaceCommand::execute() 
 {
     cout << "Race STARTED!!!" << endl << endl;
-    weather->execute();
+    // weather->execute();
 
     double** time = new double*[laps];
 
@@ -89,8 +89,8 @@ void StartRaceCommand::execute()
         // lap->execute();
     }
     
-    Championship* champ = new ConstructorsChampionship(time, 20, laps);
-    champ->calculate();
+    // Championship* champ = new ConstructorsChampionship(time, 20, laps);
+    // champ->calculate();
 
 
     
