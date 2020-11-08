@@ -71,10 +71,12 @@ void ConstructorsChampionship::calculate()
 
    for(int i = 0 ; i < numDrivers ; i++)
    {
-       cout<<(i+1) << "Place is:"<<endl;
+       int place=1;
+       cout<< place << "Place is:"<<endl;
        cout<<"Team " << driversResults[i].team <<endl;
        cout<<"Time: "<< static_cast<int>(driversResults[i].TeamTime)<<endl;
        i++;
+       place++;
    }
 
 
