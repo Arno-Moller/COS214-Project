@@ -103,12 +103,12 @@ void StartRaceCommand::execute()
             for(TrackSection it:track)
             {
                 d = it.getDistance();
-                temp += d*(double)drivers[j]->getTireGrip();
+                temp += d*(1+((double)drivers[j]->getTireGrip())*(0.00035));
             }
             drivers[j]->lap();
             
 
-            time[j][i] = temp;
+            time[j][i] = temp/6;
             
         }
 
@@ -127,6 +127,8 @@ void StartRaceCommand::execute()
     Championship* drivers = new DriversChampionship(constructors, time, 20, laps);
     drivers->calculate();
     drivers->print();
+
+    teamsCup->logResults();
 
     teamCom->restoreTeams();
     setTeams(teamCom->getTeams());

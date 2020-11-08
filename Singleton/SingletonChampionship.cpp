@@ -38,6 +38,7 @@ void SingletonChampionship::StartChampionship()
     StartRaceCommand* race = new StartRaceCommand(teamCom, tracks[0]);
     for(int i = 0; i < 5; i++)
     {
+        
         race->setTrackBuilder(tracks[i]);
         race->execute();
 
@@ -69,6 +70,13 @@ void SingletonChampionship::StartChampionship()
         //         return;
         //     }
         // }
+    }
+
+    
+
+    for(int i = 0; i < 10; i++)
+    {
+        cout << race->getTeams()[i]->getTeamPoints() << endl << endl;
     }
 
     for(int i = 0; i < 5; i++)
