@@ -74,7 +74,9 @@ StartRaceCommand::~StartRaceCommand()
 
 void StartRaceCommand::execute() 
 {
+    cout << "##############################################" << endl << endl;
     cout << "Race STARTED!!!" << endl << endl;
+    cout << "##############################################" << endl << endl;
     weather->execute();
 
     double** time = new double*[20];
@@ -86,8 +88,7 @@ void StartRaceCommand::execute()
 
     for(int i = 0; i < laps; i++)
     {   
-        cout << "LAP: " << i+1 << endl;
-        cout << endl;
+        cout << "LAP: " << i+1 << endl << endl;
 
         for(int j = 0; j < 20; j++)
         {
@@ -106,9 +107,8 @@ void StartRaceCommand::execute()
 
             time[j][i] = temp;
             
-            //cout <<"Time: " << time[j][i] << endl;
-            //cout << endl;
         }
+
         cout << "*****************************************" << endl;
         cout << endl;
         // lap->execute();
@@ -117,21 +117,10 @@ void StartRaceCommand::execute()
     Championship* champ = new ConstructorsChampionship(constructors, time, 20, laps);
     champ->calculate();
 
+    cout << "##############################################" << endl << endl;
+    cout << "Race STARTED!!!" << endl << endl;
+    cout << "##############################################" << endl << endl;
 
-    
-    // for(int i = 0; i < 20; i++)
-    // {
-    //     cout << "Driver" << i+1 << " :" << endl;
-    //     for(int j = 0; j < laps; j++)
-    //     {
-    //         cout << "\tlap" << j+1 << "\t time: " << time[i][j] << endl;
-    //     }
-    //     cout << "*****************************************" << endl;
-    //     cout << endl;
-    // }
-    
-
-    cout << "Race END!!!" << endl << endl;
     teamCom->restoreTeams();
     setTeams(teamCom->getTeams());
     cout << "=========================="<< endl;
