@@ -59,16 +59,6 @@ void RaceCar::notify()
     this->pitCrew->update();
 }
 
-int RaceCar::getPoints() 
-{
-    return points;
-}
-
-void RaceCar::setPoints(int points) 
-{
-    this->points = points;
-}
-
 Strategy* RaceCar::getStrategy() const
 {
     return this->strategy;
@@ -76,13 +66,18 @@ Strategy* RaceCar::getStrategy() const
 
 void RaceCar::setStrategy(Strategy* strat) 
 {   
-    if (strategy != nullptr && getDriverName() != "" && strategy->type() != strat->type())
+    if (changedStrat != true)
     {   
-        cout << "The Strategy have been changed from " << strategy->type() << " to " << strat->type() << " on car " << getDriverName() << endl;
+        changedStrat = true;
         
+        if (strategy != nullptr && getDriverName() != "" && strategy->type() != strat->type() && print == true)
+        {   
+            cout << "\t\tThe Strategy have been changed from " << strategy->type() << " to " << strat->type()<< endl;
+            
+        }
+        delete strategy;
+        this->strategy = strat;
     }
-    delete strategy;
-    this->strategy = strat;
 }
 
 PitStop* RaceCar::getPitStops() const
@@ -120,6 +115,11 @@ bool RaceCar::carPitted()
     return hasPitted;
 }
 
+bool RaceCar::strategyChanged() 
+{
+    return changedStrat;
+}
+
 string RaceCar::getName() 
 {
     return "";
@@ -130,4 +130,23 @@ void RaceCar::setName(string name)
     
 }
 
+int RaceCar::getPoints() 
+{
+    return points;
+}
+
+void RaceCar::setPoints(int points) 
+{
+    this->points = points;
+}
+
+int RaceCar::getCarPoints() 
+{
+    return points;
+}
+
+void RaceCar::setCarPoints(int points) 
+{
+    this->points = points;
+}
 

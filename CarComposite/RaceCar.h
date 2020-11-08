@@ -33,26 +33,29 @@ class RaceCar
         void removePitCrew();// dettach observer
         void notify();// notify observer
 
-	    //~ virtual void addPart(RaceCar* part) = 0;
-
-        int getPoints();
-        void setPoints(int points);
 
         Strategy* getStrategy() const;
         void setStrategy(Strategy* strat);
         PitStop* getPitStops() const;
         void setPitStop(PitStop* pitstop);
 
-        string getDriverName();
-        void setDriverName(string name);
+        bool carPitted();
+        bool strategyChanged();
 
         virtual int getTireGrip();
         int getCarTireGrip();
 
-        bool carPitted();
         virtual string getName();
         virtual void setName(string name);
+        string getDriverName();
+        void setDriverName(string name);
 
+        virtual int getPoints();
+        virtual void setPoints(int points);
+        int getCarPoints();
+        void setCarPoints(int points);
+
+        bool print = true;
     protected:
         Strategy* strategy = nullptr;
         PitStop* pitCrew = nullptr;
@@ -62,7 +65,9 @@ class RaceCar
         int tireGrip = 5;
         TireCompound* compound = nullptr; 
         bool hasPitted = false;
+        bool changedStrat = false;
 
+        
 };
 
 #endif

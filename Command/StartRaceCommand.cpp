@@ -73,7 +73,7 @@ StartRaceCommand::~StartRaceCommand()
 }
 
 void StartRaceCommand::execute() 
-{
+{   
     cout << "Race STARTED!!!" << endl << endl;
     weather->execute();
 
