@@ -115,6 +115,8 @@ void RacingTeam::loadMemento(Memento* m)
 
 	this->car1 = m->getState()->getCarOne();
 	this->car2 = m->getState()->getCarTwo();
+
+	teamName = m->getState()->getTeamName();
 }
 
 

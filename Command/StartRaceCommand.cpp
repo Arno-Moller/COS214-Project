@@ -106,15 +106,15 @@ void StartRaceCommand::execute()
 
             time[j][i] = temp;
             
-            cout <<"Time: " << time[j][i] << endl;
-            cout << endl;
+            //cout <<"Time: " << time[j][i] << endl;
+            //cout << endl;
         }
         cout << "*****************************************" << endl;
         cout << endl;
         // lap->execute();
     }
     
-    Championship* champ = new ConstructorsChampionship(time, 20, laps);
+    Championship* champ = new ConstructorsChampionship(constructors, time, 20, laps);
     champ->calculate();
 
 

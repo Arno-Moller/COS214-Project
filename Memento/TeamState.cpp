@@ -10,6 +10,8 @@ TeamState::TeamState(Team* teams)
 {
     this->carOne = (new CarPart(*teams->getCarOnePart()))->getPart();
 	this->carTwo = (new CarPart(*teams->getCarTwoPart()))->getPart();
+
+    teamName = teams->getTeamName();
 }
 
 TeamState::~TeamState() 
@@ -31,4 +33,9 @@ RaceCar* TeamState::getCarOne()
 RaceCar* TeamState::getCarTwo() 
 {
     return carTwo;
+}
+
+string TeamState::getTeamName() 
+{
+    return teamName;
 }

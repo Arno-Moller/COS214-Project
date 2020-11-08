@@ -9,10 +9,11 @@ class DriversChampionship: public Championship
 {
 
 public:
-    DriversChampionship(double** arr , int drivers , int laps);
+    DriversChampionship(Team** t, double** arr , int drivers , int laps);
     ~DriversChampionship();
 
     void calculate();
+    void calculateResults();
     void swap(double **xp, double **yp);
 };
 

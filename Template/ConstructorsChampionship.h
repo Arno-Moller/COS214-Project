@@ -9,7 +9,7 @@ using namespace std;
 class ConstructorsChampionship:public Championship
 {
 public:
-    ConstructorsChampionship(double** array , int drivers , int laps);
+    ConstructorsChampionship(Team** t, double** array , int drivers , int laps);
     ~ConstructorsChampionship();
 
     void swap(double **xp, double **yp);
