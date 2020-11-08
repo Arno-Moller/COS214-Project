@@ -114,8 +114,8 @@ void StartRaceCommand::execute()
         // lap->execute();
     }
     
-    // Championship* champ = new ConstructorsChampionship(time, 20, laps);
-    // champ->calculate();
+    Championship* champ = new ConstructorsChampionship(time, 20, laps);
+    champ->calculate();
 
 
     
