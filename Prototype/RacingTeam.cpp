@@ -12,6 +12,9 @@ RacingTeam::RacingTeam(RacingTeam& racingTeam)
 	// this->builder2 = new CarBuilder();
     // buildCar();
 
+	car1Part = racingTeam.getCarOnePart();
+    car2Part = racingTeam.getCarTwoPart();
+
 	setCarOne(racingTeam.getCarOne()->clone());
 	setCarTwo(racingTeam.getCarTwo()->clone());
 }
@@ -120,7 +123,7 @@ void RacingTeam::buildCar()
 	builder1->addTire(tireCompound);
 	
 	car1 = builder1->getCar();
-	car2Part = builder1->getCarPart();
+	car1Part = builder1->getCarPart();
 	
 	builder2->addChassis();
 	builder2->addSuspension();
