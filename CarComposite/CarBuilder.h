@@ -27,6 +27,7 @@ class CarBuilder: public RaceCarBuilder
 		void addTire(string compound);// adds tire to the car 
     
 	RaceCar* getCar(); // returns the car 
+	CarPart* getCarPart();
     
 	private:
 		CarPart* car; // an object of the car 

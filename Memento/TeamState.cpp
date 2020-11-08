@@ -2,8 +2,14 @@
 
 TeamState::TeamState(RaceCar* car1, RaceCar* car2) 
 {   
-	this->carOne = car1->clone();
-	this->carTwo = car2->clone();
+// 	this->carOne = new CarPart(*car1);
+// 	this->carTwo = new CarPart(*car2);
+}
+
+TeamState::TeamState(Team* teams) 
+{
+    this->carOne = new CarPart(*teams->getCarOnePart());
+	this->carTwo = new CarPart(*teams->getCarTwoPart());
 }
 
 TeamState::~TeamState() 

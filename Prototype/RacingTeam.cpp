@@ -43,9 +43,19 @@ RaceCar* RacingTeam::getCarOne()
 	return this->car1;
 }
 
+CarPart* RacingTeam::getCarOnePart() 
+{
+	return this->car1Part;
+}
+
 RaceCar* RacingTeam::getCarTwo() 
 {
 	return this->car2;
+}
+
+CarPart* RacingTeam::getCarTwoPart() 
+{
+	return this->car2Part;
 }
 
 void RacingTeam::setCarOne(RaceCar* car1) 
@@ -110,6 +120,7 @@ void RacingTeam::buildCar()
 	builder1->addTire(tireCompound);
 	
 	car1 = builder1->getCar();
+	car2Part = builder1->getCarPart();
 	
 	builder2->addChassis();
 	builder2->addSuspension();
@@ -119,6 +130,7 @@ void RacingTeam::buildCar()
 	builder2->addTire(tireCompound);
 	
 	car2 = builder2->getCar();
+	car2Part = builder2->getCarPart();
 
 }
 

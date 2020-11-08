@@ -2,7 +2,7 @@
 
 Memento::Memento(Team* team) 
 {
-    state = new TeamState(team->getCarOne(), team->getCarTwo());
+    state = new TeamState(team);
 }
 
 Memento::Memento(RaceCar* carOne, RaceCar* carTwo) 

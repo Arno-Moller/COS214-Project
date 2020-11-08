@@ -46,3 +46,8 @@ RaceCar* CarBuilder::getCar()
 {
 	return this->car;
 }
+
+CarPart* CarBuilder::getCarPart()
+{
+	return this->car;
+}
