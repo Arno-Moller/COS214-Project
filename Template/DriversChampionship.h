@@ -12,9 +12,7 @@ public:
     DriversChampionship(Team** t, double** arr , int drivers , int laps);
     ~DriversChampionship();
 
-    void calculate();
-    void calculateResults();
-    void swap(double **xp, double **yp);
+    void print();
 };
 
 #endif // DRIVERSCHAMPIONSHIP_H

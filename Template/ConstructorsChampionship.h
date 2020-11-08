@@ -12,9 +12,7 @@ public:
     ConstructorsChampionship(Team** t, double** array , int drivers , int laps);
     ~ConstructorsChampionship();
 
-    void swap(double **xp, double **yp);
-
-    void calculate();
+    void print();
 };
 
 #endif // CONSTRUCTORSCHAMPIONSHIP_H

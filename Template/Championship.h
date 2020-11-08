@@ -7,6 +7,15 @@
 #include <iostream>
 using namespace std;
 
+struct TeamResults
+{
+    int driver1Points;
+    int driver2Points;
+    int TeamPoints;
+    string teamName;
+    Team* teamObject;
+};
+
 struct Results
 {
     int team ; 
@@ -14,6 +23,8 @@ struct Results
     double time;
     double TeamTime;
     string teamName;
+    int points;
+    Team* teamObject;
 };
 
 class Championship
@@ -23,14 +34,20 @@ class Championship
         int numDrivers;
         int numLaps;
         Team** teams;
+        Results* driversResults;
+        TeamResults* teamResults;
+        int* pointList;
+        int pointAmount [20] = {25,18,15,12,10,8,6,4,2,1,0,0,0,0,0,0,0,0,0,0};
         
         
     public:
         Championship(Team** , double** array , int drivers , int laps);///constructor 
         virtual ~Championship();///destructor
 
-        virtual void calculate() = 0;
-        virtual void swap(double **xp, double **yp) = 0;
+        void calculate();
+        void logResults();
+        int* getTeamPoints();
+        virtual void print() = 0;
     
     
 };

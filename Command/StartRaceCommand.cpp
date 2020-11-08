@@ -110,20 +110,23 @@ void StartRaceCommand::execute()
         }
 
         cout << "*****************************************" << endl;
-        cout << endl;
-        // lap->execute();
+        cout << endl << endl;
     }
-    
-    Championship* champ = new ConstructorsChampionship(constructors, time, 20, laps);
-    champ->calculate();
 
     cout << "##############################################" << endl << endl;
-    cout << "Race STARTED!!!" << endl << endl;
+    cout << "Race ENDED!!!" << endl << endl;
     cout << "##############################################" << endl << endl;
+    
+    Championship* teamsCup = new ConstructorsChampionship(constructors, time, 20, laps);
+    teamsCup->calculate();
+    teamsCup->print();
+
+    Championship* drivers = new DriversChampionship(constructors, time, 20, laps);
+    drivers->calculate();
+    drivers->print();
 
     teamCom->restoreTeams();
     setTeams(teamCom->getTeams());
-    cout << "=========================="<< endl;
 }
 
 Team** StartRaceCommand::getTeams() 

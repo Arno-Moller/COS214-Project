@@ -138,6 +138,8 @@
 
 #include "Template/Championship.cpp"
 #include "Template/ConstructorsChampionship.cpp"
+#include "Template/DriversChampionship.cpp"
+
 
 
 using namespace std;

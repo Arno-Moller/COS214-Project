@@ -17,6 +17,7 @@
 
 #include "../Template/Championship.h"
 #include "../Template/ConstructorsChampionship.h"
+#include "../Template/DriversChampionship.h"
 
 using  namespace std;
 
