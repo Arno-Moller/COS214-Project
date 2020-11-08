@@ -22,10 +22,13 @@ void SingletonChampionship::StartChampionship()
 {
     BuildTrackCommand** tracks = new BuildTrackCommand*[5];
 
-    for(int i = 0; i < 5; i++)
-    {
-        tracks[i] = new BuildTrackCommand();
-    }
+
+    tracks[0] = new BuildTrackCommand("Europe", 10);
+    tracks[1] = new BuildTrackCommand("America", 10);
+    tracks[2] = new BuildTrackCommand("Brazil", 10);
+    tracks[3] = new BuildTrackCommand("Australia", 10);
+    tracks[4] = new BuildTrackCommand("Italy", 10);
+
 
     CreateTeamCommand* teamCom = new CreateTeamCommand();
     teamCom->execute();
@@ -41,31 +44,30 @@ void SingletonChampionship::StartChampionship()
         string option = "s";
         bool next = false;
 
+        
         // while(!next)
         // {
-            cout    << "Select an option and press Enter:" 
-                    << "\n\tShow results: s"
-                    << "\n\tnext: n" 
-                    << "\n\texit e" << endl;
+        //     cout    << "Select an option and press Enter:" 
+        //             << "\n\tShow results: s"
+        //             << "\n\tnext: n" 
+        //             << "\n\texit e" << endl;
 
-            // // cin >> option;
-            cout << "\t\t\t\t" << i << endl;
-            // if(option == "n")
-            // {
-                // race->setTrackBuilder(tracks[i]);
-                // race->execute();
-                // next = true;
-            // }
-            // else if(option == "s")
-            // {
-                cout << "Show results: " << endl;
-                // option = "n";
-            // }
-            // else
-            // {
-            //     cout << "Exited" << endl;
-            //     //return;
-            // }
+        //     //cin >> option;
+        //     cout << "\t\t\t\t" << i << endl;
+        //     if(option == "n")
+        //     {
+        //         next = true;
+        //     }
+        //     else if(option == "s")
+        //     {
+        //         cout << "Show results: " << endl;
+        //         //option = "n";
+        //     }
+        //     else
+        //     {
+        //         cout << "Exited" << endl;
+        //         return;
+        //     }
         // }
     }
 

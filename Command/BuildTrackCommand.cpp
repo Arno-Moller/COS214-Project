@@ -5,6 +5,11 @@ BuildTrackCommand::BuildTrackCommand()
     trackBuilder = new TrackBuilder();
 }
 
+BuildTrackCommand::BuildTrackCommand(string n, int l)
+{
+    trackBuilder = new TrackBuilder(n, l);
+}
+
 BuildTrackCommand::~BuildTrackCommand()
 {
     delete trackBuilder;

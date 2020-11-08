@@ -15,6 +15,7 @@ class BuildTrackCommand : public Command
 {
     public:
         BuildTrackCommand();
+        BuildTrackCommand(string, int);
         ~BuildTrackCommand();
         void execute();
         ConcreteTrack* getTrack();
@@ -22,6 +23,7 @@ class BuildTrackCommand : public Command
     
     private:
         TrackBuilder* trackBuilder;
+        string location;
 
 };
 

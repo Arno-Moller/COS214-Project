@@ -15,6 +15,7 @@ class TrackBuilder
         string getLocation();
 
         void construct(); // this builds the track or constructs the track consisting of the section we would want 
+        void construct(string, int); // this builds the track or constructs the track consisting of the section we would want 
         void display();//this displays the track 
         ConcreteTrack* getTrack();//returns this track
         

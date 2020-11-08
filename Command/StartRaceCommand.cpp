@@ -75,7 +75,7 @@ StartRaceCommand::~StartRaceCommand()
 void StartRaceCommand::execute() 
 {
     cout << "##############################################" << endl << endl;
-    cout << "Race STARTED!!!" << endl << endl;
+    cout << "               Race STARTED!!!                " << endl << endl;
     cout << "##############################################" << endl << endl;
 
     weather->execute();
@@ -117,7 +117,7 @@ void StartRaceCommand::execute()
     }
 
     cout << "##############################################" << endl << endl;
-    cout << "Race ENDED!!!" << endl << endl;
+    cout << "               Race ENDED!!!                  " << endl << endl;
     cout << "##############################################" << endl << endl;
     
     Championship* teamsCup = new ConstructorsChampionship(constructors, time, 20, laps);
