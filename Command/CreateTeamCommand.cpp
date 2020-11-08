@@ -8,7 +8,7 @@ CreateTeamCommand::CreateTeamCommand()
         teams[i] = nullptr;
     }
 
-    // this->teamSaves = new TeamStateCaretaker*[10];
+    this->teamSaves = new TeamStateCaretaker*[10];
 }
 
 CreateTeamCommand::~CreateTeamCommand() 
