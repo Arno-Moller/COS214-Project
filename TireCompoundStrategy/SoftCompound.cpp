@@ -4,7 +4,7 @@ SoftCompound::SoftCompound()
 {
     setGrip(100);
     setWear(1);
-    rate = 9;
+    rate = 25;
 }
 
 SoftCompound::~SoftCompound() 

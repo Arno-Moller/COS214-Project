@@ -168,7 +168,7 @@ void Tire::degrade()
     changedStrat = false;
 
     int chanceStrategyOdds = rand() % 100;
-    if (chanceStrategyOdds > 95 && changedStrat == false)
+    if (chanceStrategyOdds > 90 && changedStrat == false)
     {
         int nextStrategy = rand() % 3;
         switch (nextStrategy)
@@ -195,7 +195,6 @@ void Tire::degrade()
     state->changeTireState(this);
     
     notify();
-    
 }
 
 int Tire::getGrip() 

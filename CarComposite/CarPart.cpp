@@ -58,10 +58,10 @@ void CarPart::lap()
 {	
     tire->degrade();
 
-	for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
-	{
-		(*it)->degrade();
-	}
+	// for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
+	// {
+	// 	(*it)->degrade();
+	// }
 }
 
 void CarPart::addCarTire(RaceCar* part) 

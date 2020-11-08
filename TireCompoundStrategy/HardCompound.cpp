@@ -4,7 +4,7 @@ HardCompound::HardCompound()
 {
     setGrip(100);
     setWear(1);
-    rate = 3;
+    rate = 15;
 }
 
 HardCompound::~HardCompound() 
