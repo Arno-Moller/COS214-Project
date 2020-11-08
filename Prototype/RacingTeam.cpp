@@ -22,8 +22,17 @@ RacingTeam::RacingTeam(string tireCompound)
 
 RacingTeam::~RacingTeam() 
 {
-    delete this->car1;
-    delete this->car2;
+	if(car1 != nullptr)
+	{
+   		delete this->car1;
+		car1 = nullptr;
+	}
+
+	if(car2 != nullptr)
+	{
+    	delete this->car2;
+    	car2 = nullptr;
+	}
 }
 
 RaceCar* RacingTeam::getCarOne() 

@@ -71,7 +71,7 @@ class SingletonChampionship
 
     protected:
         SingletonChampionship();//constructor 
-        //~SingletonChampionship();//destrucor 
+        ~SingletonChampionship();//destrucor 
 
         //SingletonChampionship(SingletonChampionship &); 
 
