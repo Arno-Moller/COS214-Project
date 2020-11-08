@@ -77,7 +77,10 @@ void StartRaceCommand::execute()
     cout << "##############################################" << endl << endl;
     cout << "Race STARTED!!!" << endl << endl;
     cout << "##############################################" << endl << endl;
+
     weather->execute();
+    teamCom->restoreTeams();
+    setTeams(teamCom->getTeams());
 
     double** time = new double*[20];
 
@@ -95,14 +98,14 @@ void StartRaceCommand::execute()
             double d = 0;
             double temp = 0;
             
-            cout << drivers[j]->getName() << " :" << endl;
+            // cout << drivers[j]->getName() << " :" << endl;
 
             for(TrackSection it:track)
             {
                 d = it.getDistance();
                 temp += d*(double)drivers[j]->getTireGrip();
-                drivers[j]->lap();
             }
+            drivers[j]->lap();
             
 
             time[j][i] = temp;

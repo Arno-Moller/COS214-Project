@@ -67,6 +67,9 @@ class RaceCar
         bool hasPitted = false;
         bool changedStrat = false;
 
+        string oldStrat = "";
+        string newStrat = "";
+
         
 };
 

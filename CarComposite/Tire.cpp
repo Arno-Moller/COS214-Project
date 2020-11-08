@@ -118,7 +118,7 @@ void Tire::setType(string type)
         
         delete compound;
 
-        string newCompound = "";
+        newCompound = "";
         setState(new GoodCondition());
 
         if (type == "soft" || type == "s")
@@ -139,7 +139,7 @@ void Tire::setType(string type)
 
         if (currentCompound != "" && getDriverName() != "" && currentCompound != newCompound && print == true)
         {
-            cout << "\t\tThe tyres have been changed from " << currentCompound << " to " << newCompound<< endl;
+            // cout << "\t\tThe tyres have been changed from " << currentCompound << " to " << newCompound<< endl;
         }
         
         currentCompound = newCompound;    
@@ -193,8 +193,25 @@ void Tire::degrade()
 	setWear(getWear() + getRate());
     setGrip(getGrip() - getRate());
     state->changeTireState(this);
-    
     notify();
+
+
+
+    if ((currentCompound != "" && newCompound != "" && hasPitted == true) || (oldStrat != "" && newStrat != "" && changedStrat == true))
+    {
+        cout << getDriverName() << ": " << endl;
+    }
+
+    if (oldStrat != "" && newStrat != "" && changedStrat == true)
+    {
+        cout << "\tThe Strategy have been changed from " << oldStrat << " to " << newStrat << endl;
+    }
+
+    if (currentCompound != "" && newCompound != "" && hasPitted == true)
+    {
+        cout << "\tThe tyres have been changed from " << currentCompound << " to " << newCompound<< endl;
+    }
+    
 }
 
 int Tire::getGrip() 

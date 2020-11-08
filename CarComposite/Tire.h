@@ -44,6 +44,7 @@ class Tire: public RaceCar
     private:
         TireState* state = nullptr; // The state of the tires object to check the tires condition 
         string currentCompound = "";
+        string newCompound = "";
 };
 
 //~ #include "TireState.h"

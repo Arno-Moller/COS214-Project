@@ -70,10 +70,13 @@ void RaceCar::setStrategy(Strategy* strat)
     {   
         changedStrat = true;
         
+        newStrat = "";
+
         if (strategy != nullptr && getDriverName() != "" && strategy->type() != strat->type() && print == true)
         {   
-            cout << "\t\tThe Strategy have been changed from " << strategy->type() << " to " << strat->type()<< endl;
-            
+            oldStrat = strategy->type();
+            newStrat = strat->type();
+            // cout1 << "\t\tThe Strategy have been changed from " << strategy->type() << " to " << strat->type()<< endl;
         }
         delete strategy;
         this->strategy = strat;
