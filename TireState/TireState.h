@@ -24,6 +24,7 @@ class TireState
    
         virtual void changeTireState(Tire* tire) = 0; /// abstrackt interface to change the tire state
 
+        virtual TireState* clone() = 0;
 };
 
 #include "../CarComposite/Tire.h"

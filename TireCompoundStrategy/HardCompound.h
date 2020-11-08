@@ -46,6 +46,8 @@ public:
     */
     double getRate(); /// returns the rate at wich the tire wears 
     
+
+    TireCompound* clone();
 };
 
 #endif // HARDCOMPOUND_H

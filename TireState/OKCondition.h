@@ -14,7 +14,8 @@ class OKCondition: public TireState
         OKCondition();///constructor 
         ~OKCondition();///destructor
         bool handle(Tire* tire);///method to check if you should pit stop or not 
-        void changeTireState(Tire* tire);///method tochange the state of the tires 
-};
+        void changeTireState(Tire* tire);///method tochange the state of the tires
+        TireState* clone();
+};  
 
 #endif

@@ -22,6 +22,12 @@ void RaceCar::addPart(RaceCar *car)
 
 }
 
+list<RaceCar*> RaceCar::getCarParts() 
+{
+    list<RaceCar*> temp;
+    return temp;
+}
+
 RaceCar *RaceCar::getChild()
 {
     return nullptr;

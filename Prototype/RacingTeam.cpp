@@ -7,10 +7,13 @@ RacingTeam::RacingTeam()
 
 RacingTeam::RacingTeam(RacingTeam& racingTeam) 
 {	
-	this->tireCompound = racingTeam.tireCompound;
-	this->builder1 = new CarBuilder();
-	this->builder2 = new CarBuilder();
-    buildCar();
+	// this->tireCompound = racingTeam.tireCompound;
+	// this->builder1 = new CarBuilder();
+	// this->builder2 = new CarBuilder();
+    // buildCar();
+
+	setCarOne(racingTeam.getCarOne()->clone());
+	setCarTwo(racingTeam.getCarTwo()->clone());
 }
 
 RacingTeam::RacingTeam(string tireCompound)

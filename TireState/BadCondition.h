@@ -14,6 +14,7 @@ class BadCondition: public TireState
         ~BadCondition();///destructor
         bool handle(Tire* tire);///method to check if you should pit stop or not
         void changeTireState(Tire* tire);/// method to change tire state 
+        TireState* clone();
 };
 
 #endif // BADCONDITION_H

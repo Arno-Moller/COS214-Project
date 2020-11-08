@@ -12,6 +12,7 @@ class Wing : public RaceCar
         Wing();//constructor 
         ~Wing();// destructor 
         void degrade();// how the wings degrade 
+        RaceCar* clone();
 
 };
 

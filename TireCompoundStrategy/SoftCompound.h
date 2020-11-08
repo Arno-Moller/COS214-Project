@@ -46,6 +46,7 @@ public:
     */
     double getRate(); 
     
+    TireCompound* clone();
 };
 
 

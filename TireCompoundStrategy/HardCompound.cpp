@@ -37,3 +37,8 @@ double HardCompound::getRate()
     return rate;
 }
 
+TireCompound* HardCompound::clone() 
+{
+    return new HardCompound();
+}
+

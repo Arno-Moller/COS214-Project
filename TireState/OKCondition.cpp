@@ -23,3 +23,9 @@ void OKCondition::changeTireState(Tire* tire)
 		tire->setState(bad);
 	}
 }
+
+TireState* OKCondition::clone() 
+{
+	return new OKCondition();
+}
+

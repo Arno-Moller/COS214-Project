@@ -6,10 +6,39 @@ Tire::Tire(): RaceCar()
 }
 
 Tire::Tire(TireState *tState, TireCompound* type)
-{
+{   
 	this->setState(tState);
 	setType(type);
+
     tireGrip = getGrip();
+
+    PitStop* pit = new ChangeTires(this);
+    addPitcrew(pit);
+
+    srand(time(0));
+    int chanceStrategyOdds = rand() % 100;
+
+    if (chanceStrategyOdds >= 0)
+    {
+        int nextStrategy = rand() % 3;
+        switch (nextStrategy)
+        {
+        case 0:
+            setStrategy(new Sensible());
+            break;
+
+        case 1:
+            setStrategy(new Cautious());
+            break;
+            
+        case 2:
+            setStrategy(new Aggressive());
+            break;
+        
+        default:
+            break;
+        }
+    }
 }
 
 Tire::Tire(string type)
@@ -62,6 +91,13 @@ Tire::Tire(string type)
 Tire::~Tire()
 {
     delete state;
+}
+
+RaceCar* Tire::clone() 
+{
+    RaceCar* newTire = new Tire(state->clone(), compound->clone());
+    newTire->setDriverName(getDriverName());
+    return newTire;
 }
 
 TireState* Tire::getState()
@@ -195,3 +231,4 @@ string Tire::getNextTireCompound()
 {
     return getStrategy()->execute();
 }
+
