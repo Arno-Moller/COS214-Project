@@ -41,15 +41,15 @@ void DriversChampionship::calculate()
     for(int i = 0 ; i < numDrivers/2 ; i++)
     {
         driversResults[i*2].teamName = teams[i]->getTeamName();
-        driversResults[i*2].driver = i*2;
+        driversResults[i*2].driver = 1;
         driversResults[i*2].team = i;
         driversResults[i*2].time = raceTimes[i*2];
 
-        driversResults[i*2+1].driver = i*2+1;
+        driversResults[i*2+1].teamName = teams[i]->getTeamName();
+        driversResults[i*2+1].driver = 2;
         driversResults[i*2+1].team = i;
         driversResults[i*2+1].time = raceTimes[i*2+1];
     }
-   
     //sort the teams 
     
     int n = numDrivers;
@@ -67,18 +67,17 @@ void DriversChampionship::calculate()
             }
         }
     }
-    
 
     for(int i = 0 ; i < numDrivers ; i++)
     {
         cout << "===========================================" << endl << endl;
-        cout<< "In place " << i+1 << " :"<<endl;
-        cout<<"Team " << driversResults[i].driver <<endl;
-        cout<<"Time: "<< static_cast<int>(driversResults[i].time)<<endl;
+
+        cout << "In place " << i+1 << " :" << endl;
+        cout <<"Team " << driversResults[i].teamName << "'s driver "
+                << driversResults[i].driver  << endl;
+        cout << "Time: " << static_cast<int>(driversResults[i].time) << endl;
+
+        cout  << endl;
     }       
 
 }
-
-
-
-

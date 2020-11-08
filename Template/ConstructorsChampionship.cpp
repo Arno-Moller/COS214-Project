@@ -46,6 +46,7 @@ void ConstructorsChampionship::calculate()
         driversResults[i*2].team = i;
         driversResults[i*2].time = raceTimes[i*2];
 
+        driversResults[i*2+1].teamName = teams[i]->getTeamName();
         driversResults[i*2+1].driver = 2;
         driversResults[i*2+1].team = i;
         driversResults[i*2+1].time = raceTimes[i*2+1];
