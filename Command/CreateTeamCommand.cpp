@@ -70,6 +70,7 @@ void CreateTeamCommand::restoreTeams()
         teams[i] = new RacingTeam();
         teams[i]->setCarOne(teamSaves[i]->getBackupTeam()->getState()->getCarOne());
         teams[i]->setCarTwo(teamSaves[i]->getBackupTeam()->getState()->getCarTwo());
+        teams[i]->setTeamName(teamSaves[i]->getBackupTeam()->getState()->getTeamName());
     }
     
 }
