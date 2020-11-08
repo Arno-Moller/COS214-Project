@@ -18,7 +18,7 @@ Tire::Tire(TireState *tState, TireCompound* type)
     srand(time(0));
     int chanceStrategyOdds = rand() % 100;
 
-    if (chanceStrategyOdds >= 0)
+    if (chanceStrategyOdds >= 0 && changedStrat == false)
     {
         int nextStrategy = rand() % 3;
         switch (nextStrategy)
@@ -62,7 +62,7 @@ Tire::Tire(string type)
     srand(time(0));
 	int chanceStrategyOdds = rand() % 100;
 
-    if (chanceStrategyOdds >= 0)
+    if (chanceStrategyOdds >= 0 && changedStrat == false)
     {
         int nextStrategy = rand() % 3;
         switch (nextStrategy)
@@ -114,10 +114,8 @@ void Tire::setType(string type)
 {   
     if (hasPitted != true)
     {
-        if (compound != NULL)
-        {
-            hasPitted = true;
-        }
+        hasPitted = true;
+        
         delete compound;
 
         string newCompound = "";
@@ -139,9 +137,9 @@ void Tire::setType(string type)
             newCompound = "Hard Compound";
         }
 
-        if (currentCompound != "" && getDriverName() != "" && currentCompound != newCompound)
+        if (currentCompound != "" && getDriverName() != "" && currentCompound != newCompound && print == true)
         {
-            cout << "The tyres have been changed from " << currentCompound << " to " << newCompound << " on car " << getDriverName() << endl;
+            cout << "\t\tThe tyres have been changed from " << currentCompound << " to " << newCompound<< endl;
         }
         
         currentCompound = newCompound;    
@@ -167,36 +165,36 @@ void Tire::lap()
 void Tire::degrade()
 {   
     hasPitted = false;
+    changedStrat = false;
 
     int chanceStrategyOdds = rand() % 100;
-
-    if (chanceStrategyOdds >= 90)
+    if (chanceStrategyOdds > 90 && changedStrat == false)
     {
         int nextStrategy = rand() % 3;
         switch (nextStrategy)
         {
         case 0:
             setStrategy(new Sensible());
+            changedStrat = true;
             break;
 
         case 1:
             setStrategy(new Cautious());
+            changedStrat = true;
             break;
             
         case 2:
             setStrategy(new Aggressive());
-            break;
-        
-        default:
+            changedStrat = true;
             break;
         }
     }
    
 	setWear(getWear() + getRate());
     setGrip(getGrip() - getRate());
-
-    notify();
     state->changeTireState(this);
+    
+    notify();
 }
 
 int Tire::getGrip() 

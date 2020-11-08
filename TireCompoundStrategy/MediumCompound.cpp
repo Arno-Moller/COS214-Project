@@ -4,7 +4,7 @@ MediumCompound::MediumCompound()
 {
     setGrip(100);
     setWear(1);
-    rate = 2;
+    rate = 20;
 }
 
 MediumCompound::~MediumCompound() 

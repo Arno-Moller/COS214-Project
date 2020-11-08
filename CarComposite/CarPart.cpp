@@ -14,6 +14,8 @@ CarPart::CarPart(CarPart& oldCar)
 	}
 	addCarTire(oldCar.getCarTire()->clone());
 	setName(oldCar.getName());
+	setPoints(oldCar.getPoints());
+	setPrint(oldCar.getPrint());
 }
 
 CarPart::~CarPart()
@@ -56,10 +58,10 @@ void CarPart::lap()
 {	
     tire->degrade();
 
-	for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
-	{
-		(*it)->degrade();
-	}
+	// for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
+	// {
+	// 	(*it)->degrade();
+	// }
 }
 
 void CarPart::addCarTire(RaceCar* part) 
@@ -86,6 +88,26 @@ string CarPart::getName()
 void CarPart::setName(string name) 
 {
 	tire->setDriverName(name);
+}
+
+int CarPart::getPoints() 
+{
+	return tire->getCarPoints();
+}
+
+void CarPart::setPoints(int points) 
+{
+	tire->setCarPoints(points);
+}
+
+void CarPart::setPrint(bool shouldItPrint) 
+{
+	tire->print = shouldItPrint;
+}
+
+bool CarPart::getPrint() 
+{
+	return tire->print;
 }
 
 

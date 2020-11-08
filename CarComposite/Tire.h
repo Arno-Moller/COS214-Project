@@ -17,7 +17,7 @@ using namespace std;
 
 //The context participant of the State design Pattern 
 class Tire: public RaceCar
-{
+{   
     public:
         Tire(); // efault constructor 
         Tire(TireState* tState, TireCompound* type);//constructor taking in a tire state and a type of tire 
