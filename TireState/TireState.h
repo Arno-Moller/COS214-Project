@@ -22,7 +22,7 @@ class TireState
         */
         virtual bool handle(Tire* tire) = 0;/// abstract interface to check the state of the tires
    
-        virtual void changeTireState(Tire* tire) = 0; /// abstrackt interface to change the tire state
+        virtual void changeTireState(Tire* tire) = 0; /// abstract interface to change the tire state
 
         virtual TireState* clone() = 0;
 };

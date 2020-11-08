@@ -13,6 +13,11 @@ Team::~Team()
 	delete this->builder2;
 	delete this->car1;
 	delete this->car2;
+
+	builder1 = nullptr;
+	builder2 = nullptr;
+	car1 = nullptr;
+	car2 = nullptr;
 }
 
 

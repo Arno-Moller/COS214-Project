@@ -9,7 +9,10 @@ ChangeTires::ChangeTires(Tire* carTire)
 ChangeTires::~ChangeTires() 
 {
     delete carTire;
+    carTire = nullptr;
+
     delete state;
+    state = nullptr;
 }
 
 void ChangeTires::update() 
