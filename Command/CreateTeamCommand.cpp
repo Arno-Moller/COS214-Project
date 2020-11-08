@@ -8,7 +8,7 @@ CreateTeamCommand::CreateTeamCommand()
         teams[i] = nullptr;
     }
 
-    // this->teamSaves = new TeamStateCaretaker*[10];
+    this->teamSaves = new TeamStateCaretaker*[10];
 }
 
 CreateTeamCommand::~CreateTeamCommand() 
@@ -45,10 +45,10 @@ void CreateTeamCommand::execute()
     }
     doesTheTeamsExist = true;
 
-    // for (int i = 0; i < 10; i++)
-    // {
-    //     teamSaves[i] = new TeamStateCaretaker(teams[i]->createMemento());
-    // }
+    for (int i = 0; i < 10; i++)
+    {
+        teamSaves[i] = new TeamStateCaretaker(teams[i]->createMemento());
+    }
     
 }
 

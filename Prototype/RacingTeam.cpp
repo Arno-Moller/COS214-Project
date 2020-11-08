@@ -7,10 +7,16 @@ RacingTeam::RacingTeam()
 
 RacingTeam::RacingTeam(RacingTeam& racingTeam) 
 {	
-	this->tireCompound = racingTeam.tireCompound;
-	this->builder1 = new CarBuilder();
-	this->builder2 = new CarBuilder();
-    buildCar();
+	// this->tireCompound = racingTeam.tireCompound;
+	// this->builder1 = new CarBuilder();
+	// this->builder2 = new CarBuilder();
+    // buildCar();
+
+	car1Part = racingTeam.getCarOnePart();
+    car2Part = racingTeam.getCarTwoPart();
+
+	setCarOne(racingTeam.getCarOne()->clone());
+	setCarTwo(racingTeam.getCarTwo()->clone());
 }
 
 RacingTeam::RacingTeam(string tireCompound)
@@ -22,8 +28,17 @@ RacingTeam::RacingTeam(string tireCompound)
 
 RacingTeam::~RacingTeam() 
 {
-    delete this->car1;
-    delete this->car2;
+	if(car1 != nullptr)
+	{
+   		delete this->car1;
+		car1 = nullptr;
+	}
+
+	if(car2 != nullptr)
+	{
+    	delete this->car2;
+    	car2 = nullptr;
+	}
 }
 
 RaceCar* RacingTeam::getCarOne() 
@@ -31,9 +46,19 @@ RaceCar* RacingTeam::getCarOne()
 	return this->car1;
 }
 
+CarPart* RacingTeam::getCarOnePart() 
+{
+	return this->car1Part;
+}
+
 RaceCar* RacingTeam::getCarTwo() 
 {
 	return this->car2;
+}
+
+CarPart* RacingTeam::getCarTwoPart() 
+{
+	return this->car2Part;
 }
 
 void RacingTeam::setCarOne(RaceCar* car1) 
@@ -98,6 +123,7 @@ void RacingTeam::buildCar()
 	builder1->addTire(tireCompound);
 	
 	car1 = builder1->getCar();
+	car1Part = builder1->getCarPart();
 	
 	builder2->addChassis();
 	builder2->addSuspension();
@@ -107,6 +133,7 @@ void RacingTeam::buildCar()
 	builder2->addTire(tireCompound);
 	
 	car2 = builder2->getCar();
+	car2Part = builder2->getCarPart();
 
 }
 

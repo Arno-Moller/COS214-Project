@@ -11,6 +11,7 @@ class Chassie : public RaceCar
     public:
         Chassie();//constructor 
         ~Chassie();//destructor 
+        RaceCar* clone();
         void degrade();//degrade method 
 
 };

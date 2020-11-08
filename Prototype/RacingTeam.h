@@ -4,6 +4,7 @@
 #include "Team.h"
 #include "../CarComposite/CarBuilder.h"
 #include "../CarComposite/RaceCar.h"
+#include "../CarComposite/CarPart.h"
 // #include "../Memento/Memento.h"
 #include "../Memento/TeamState.h"
 #include "../Memento/TeamStateCaretaker.h"
@@ -54,12 +55,14 @@ public:
 	* @return RaceCar object of the first car of the team 
     */
     RaceCar* getCarOne(); 
+    CarPart* getCarOnePart(); 
 
     /**
     *  method that returns the second car of the team 
 	* @return RaceCar object of the second car of the team 
     */
-    RaceCar* getCarTwo(); 
+    RaceCar* getCarTwo();
+    CarPart* getCarTwoPart(); 
 
     /**
     *  method that sets the first car of the team 

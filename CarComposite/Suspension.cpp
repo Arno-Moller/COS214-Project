@@ -14,3 +14,8 @@ void Suspension::degrade()
 {
 
 }
+
+RaceCar* Suspension::clone() 
+{
+	return new Suspension();
+}

@@ -29,3 +29,8 @@ void BadCondition::changeTireState(Tire* tire)
 		tire->setState(good);
 	}
 }
+
+TireState* BadCondition::clone() 
+{
+	return new BadCondition();
+}

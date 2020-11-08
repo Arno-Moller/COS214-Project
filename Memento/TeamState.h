@@ -3,6 +3,9 @@
 
 #include "../CarComposite/RaceCar.h"
 #include "../CarComposite/CarBuilder.h"
+#include "../CarComposite/CarPart.h"
+#include "../Prototype/Team.h"
+#include "../Prototype/RacingTeam.h"
 /// Originator participant of the Memento Design Pattern 
 class TeamState
 {
@@ -17,6 +20,7 @@ public:
      * @param carTwo the second car of the team 
      */
     TeamState(RaceCar* carOne, RaceCar* carTwo);
+    TeamState(Team* teams);
 
     ~TeamState();//destructor
 

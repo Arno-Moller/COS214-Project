@@ -44,6 +44,8 @@ public:
     * @return  double rate of the car  
     */
     virtual double getRate() = 0; 
+
+    virtual TireCompound* clone() = 0;
      
 
 };

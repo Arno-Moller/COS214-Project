@@ -37,4 +37,9 @@ double MediumCompound::getRate()
     return rate;
 }
 
+TireCompound* MediumCompound::clone() 
+{
+    return new MediumCompound();
+}
+
 

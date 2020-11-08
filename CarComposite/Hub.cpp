@@ -14,3 +14,8 @@ void Hub::degrade()
 {
 
 }
+
+RaceCar* Hub::clone() 
+{
+	return new Hub();
+}

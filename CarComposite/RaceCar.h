@@ -1,6 +1,7 @@
 #ifndef RACECAR_H
 #define RACECAR_H
 
+#include <list>
 #include <iostream>
 #include "../Observer/PitStop.h"
 #include "../Strategy/Strategy.h"
@@ -24,6 +25,9 @@ class RaceCar
         RaceCar* getChild(); // returns the child of the race car
         virtual void degrade();//the degrade method 
         virtual void addPart(RaceCar* car);// method to add parts to the race car 
+        virtual RaceCar* clone() = 0;
+
+        virtual list<RaceCar*> getCarParts();
 
         void addPitcrew(PitStop* pitcrew);// attach Observer
         void removePitCrew();// dettach observer
@@ -56,7 +60,7 @@ class RaceCar
         string driverName = "";
 
         int tireGrip = 5;
-        TireCompound* compound; 
+        TireCompound* compound = nullptr; 
         bool hasPitted = false;
 
 };

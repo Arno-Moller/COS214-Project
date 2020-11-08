@@ -132,8 +132,8 @@ void StartRaceCommand::execute()
     
 
     cout << "Race END!!!" << endl << endl;
-    // teamCom->restoreTeams();
-    // setTeams(teamCom->getTeams());
+    teamCom->restoreTeams();
+    setTeams(teamCom->getTeams());
     cout << "=========================="<< endl;
 }
 

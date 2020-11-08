@@ -14,3 +14,8 @@ void Wing::degrade()
 {
 
 }
+
+RaceCar* Wing::clone() 
+{
+	return new Wing();
+}

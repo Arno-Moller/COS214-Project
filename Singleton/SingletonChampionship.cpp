@@ -12,6 +12,12 @@ SingletonChampionship::SingletonChampionship()
 
 }
 
+SingletonChampionship::~SingletonChampionship()
+{
+    delete championship;
+    championship = nullptr;
+}
+
 void SingletonChampionship::StartChampionship()
 {
     BuildTrackCommand** tracks = new BuildTrackCommand*[5];
@@ -61,7 +67,15 @@ void SingletonChampionship::StartChampionship()
             //     //return;
             // }
         // }
-        
     }
 
+    for(int i = 0; i < 5; i++)
+    {
+        delete tracks[i];
+    }
+    delete tracks;
+    tracks = nullptr;
+
+    delete race;
+    race = nullptr;
 }

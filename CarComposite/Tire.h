@@ -10,6 +10,7 @@
 #include "../TireCompoundStrategy/MediumCompound.h"
 #include "../TireCompoundStrategy/HardCompound.h"
 #include "../TireState/GoodCondition.h"
+#include "../TireState/TireState.h"
 #include "../Observer/ChangeTires.h"
 
 using namespace std;
@@ -22,6 +23,7 @@ class Tire: public RaceCar
         Tire(TireState* tState, TireCompound* type);//constructor taking in a tire state and a type of tire 
         Tire(string type); // Constructor to set 
         ~Tire();//destructor
+        RaceCar* clone();
         TireState*  getState();// returns the state of the tires. 
         void setState(TireState* tState);//sets the state of the tires
 
@@ -41,7 +43,6 @@ class Tire: public RaceCar
 
     private:
         TireState* state = nullptr; // The state of the tires object to check the tires condition 
-        
         string currentCompound = "";
 };
 

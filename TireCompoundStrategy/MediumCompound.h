@@ -43,6 +43,7 @@ public:
     * 
     */
     double getRate(); 
+    TireCompound* clone();
    
 };
 #endif // MEDIUMCOMPOUND_H

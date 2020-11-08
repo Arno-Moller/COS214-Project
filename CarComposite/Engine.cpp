@@ -14,3 +14,8 @@ void Engine::degrade()
 {
 
 }
+
+RaceCar* Engine::clone()
+{
+	return new Engine();
+}

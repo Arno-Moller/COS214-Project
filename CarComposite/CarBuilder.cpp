@@ -10,7 +10,6 @@ CarBuilder::~CarBuilder()
 	//cars get deleted in team
 }
 
-
 void CarBuilder::addChassis()
 {
 	car->addPart(new Chassie);
@@ -44,6 +43,11 @@ void CarBuilder::addTire(string compound)
 }
     
 RaceCar* CarBuilder::getCar()
+{
+	return this->car;
+}
+
+CarPart* CarBuilder::getCarPart()
 {
 	return this->car;
 }

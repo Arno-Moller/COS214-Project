@@ -37,6 +37,11 @@ double SoftCompound::getRate()
     return rate;
 }
 
+TireCompound* SoftCompound::clone() 
+{
+    return new SoftCompound();
+}
+
 
 
 

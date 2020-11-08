@@ -12,18 +12,24 @@ class CarPart: public RaceCar
 {
     public:
         CarPart();//constructor 
+        CarPart(CarPart&);
         ~CarPart();//destructor 
+        RaceCar* clone();
+
         void addPart(RaceCar* part);// adds a part to the race car 
-        void removePart(RaceCar* part);// removes a part from the race car 
+        void removePart(RaceCar* part);// removes a part from the race car
         RaceCar* getPart(); // returns the race car 
+        
+        list<RaceCar*> getCarParts();
 	    void lap();// does a lap 
 
         void addCarTire(RaceCar* part);
+        RaceCar*  getCarTire();
         int getTireGrip();
         string getName();
         void setName(string name);
         
-    private:
+    protected:
         list<RaceCar*> parts;// a list of all the Race Car parts
         RaceCar* tire;
 };
