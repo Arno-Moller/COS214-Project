@@ -95,9 +95,7 @@ Tire::~Tire()
 
 RaceCar* Tire::clone() 
 {
-    RaceCar* newTire = new Tire(state->clone(), compound->clone());
-    newTire->setDriverName(getDriverName());
-    return newTire;
+    return new Tire(state->clone(), compound->clone());
 }
 
 TireState* Tire::getState()

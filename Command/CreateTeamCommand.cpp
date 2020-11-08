@@ -38,10 +38,10 @@ void CreateTeamCommand::execute()
         teams[i]->setTeamName(names[i]);
         
         driver1 = names[i] + " Driver 1";
-        teams[i]->getCarOne()->setName(driver1);
+        teams[i]->getCarOnePart()->setName(driver1);
 
         driver2 = names[i] + " Driver 2";
-        teams[i]->getCarTwo()->setName(driver2);
+        teams[i]->getCarTwoPart()->setName(driver2);
     }
     doesTheTeamsExist = true;
 
@@ -65,11 +65,6 @@ Team** CreateTeamCommand::getTeams()
 
 void CreateTeamCommand::restoreTeams() 
 {
-    // for (int i = 0; i < 10; i++)
-    // {
-    //     delete teams[i];
-    // }
-
     for (int i = 0; i < 10; i++)
     {
         teams[i] = new RacingTeam();

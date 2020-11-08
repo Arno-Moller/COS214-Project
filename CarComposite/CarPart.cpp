@@ -9,10 +9,11 @@ CarPart::CarPart(CarPart& oldCar)
 {
 	list<RaceCar*> tempParts = oldCar.getCarParts();
 	for(list<RaceCar*>::iterator it = tempParts.begin(); it != tempParts.end(); ++it)
-	{
+	{	
 		addPart((*it)->clone());
 	}
-	addCarTire(oldCar.getCarTire());
+	addCarTire(oldCar.getCarTire()->clone());
+	setName(oldCar.getName());
 }
 
 CarPart::~CarPart()
@@ -55,10 +56,10 @@ void CarPart::lap()
 {	
     tire->degrade();
 
-	// for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
-	// {
-	// 	(*it)->degrade();
-	// }
+	for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
+	{
+		(*it)->degrade();
+	}
 }
 
 void CarPart::addCarTire(RaceCar* part) 

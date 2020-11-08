@@ -13,9 +13,16 @@ RacingTeam::RacingTeam(RacingTeam& racingTeam)
     // buildCar();
 
 	car1Part = new CarPart(*racingTeam.getCarOnePart());
+	// car1Part->setName(racingTeam.getCarOne()->getName());
+
     car2Part = new CarPart(*racingTeam.getCarTwoPart());
+	// car2Part->setName(racingTeam.getCarTwo()->getName());
+
 	setCarOne(racingTeam.getCarOne()->clone());
+	// car1->setName(racingTeam.getCarOne()->getName());
+
 	setCarTwo(racingTeam.getCarTwo()->clone());
+	// car2->setName(racingTeam.getCarTwo()->getName());
 }
 
 RacingTeam::RacingTeam(string tireCompound)
