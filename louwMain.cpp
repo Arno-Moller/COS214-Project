@@ -144,8 +144,8 @@ using namespace std;
 
 int main()
 {
-    SingletonChampionship* c = SingletonChampionship::getInstance();
-	c->StartChampionship();
+    SingletonChampionship* championship = SingletonChampionship::getInstance();
+	championship->StartChampionship();
 	return 0;
 }
 
