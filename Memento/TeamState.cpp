@@ -8,8 +8,8 @@ TeamState::TeamState(RaceCar* car1, RaceCar* car2)
 
 TeamState::TeamState(Team* teams) 
 {
-    this->carOne = new CarPart(*teams->getCarOnePart());
-	this->carTwo = new CarPart(*teams->getCarTwoPart());
+    this->carOne = (new CarPart(*teams->getCarOnePart()))->getPart();
+	this->carTwo = (new CarPart(*teams->getCarTwoPart()))->getPart();
 }
 
 TeamState::~TeamState() 

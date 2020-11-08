@@ -12,9 +12,8 @@ RacingTeam::RacingTeam(RacingTeam& racingTeam)
 	// this->builder2 = new CarBuilder();
     // buildCar();
 
-	car1Part = racingTeam.getCarOnePart();
-    car2Part = racingTeam.getCarTwoPart();
-
+	car1Part = new CarPart(*racingTeam.getCarOnePart());
+    car2Part = new CarPart(*racingTeam.getCarTwoPart());
 	setCarOne(racingTeam.getCarOne()->clone());
 	setCarTwo(racingTeam.getCarTwo()->clone());
 }

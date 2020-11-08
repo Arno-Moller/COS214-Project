@@ -47,7 +47,7 @@ void CreateTeamCommand::execute()
 
     for (int i = 0; i < 10; i++)
     {
-        teamSaves[i] = new TeamStateCaretaker(teams[i]->createMemento());
+        teamSaves[i] = new TeamStateCaretaker(new Memento(teams[i]));
     }
     
 }
@@ -65,10 +65,10 @@ Team** CreateTeamCommand::getTeams()
 
 void CreateTeamCommand::restoreTeams() 
 {
-    for (int i = 0; i < 10; i++)
-    {
-        delete teams[i];
-    }
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     delete teams[i];
+    // }
 
     for (int i = 0; i < 10; i++)
     {

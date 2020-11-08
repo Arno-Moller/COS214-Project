@@ -9,7 +9,7 @@
 class Memento
 {
 private:
-    TeamState* state = 0; /**< The state of the teams that is stored   */ 
+    TeamState* state = nullptr; /**< The state of the teams that is stored   */ 
 
 public:
 

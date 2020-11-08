@@ -1,6 +1,6 @@
 #include "TeamStateCaretaker.h"
 
-TeamStateCaretaker::TeamStateCaretaker(Memento* backupCar) 
+TeamStateCaretaker::TeamStateCaretaker(Memento* backupTeam) 
 {
     this->backupTeam = backupTeam;
 }
