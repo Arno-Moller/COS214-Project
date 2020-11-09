@@ -3,14 +3,11 @@
 
 class PitStop
 {
-
-    
 public:
     PitStop(){};
     ~PitStop(){};
 
     virtual void update() = 0;
 };
-
 
 #endif // PITSTOP_H

@@ -45,7 +45,6 @@ void RaceCar::degrade()
 
 void RaceCar::addPitcrew(PitStop* pitcrew) 
 {   
-    // cout << "added pitcrew" << endl;s
     this->pitCrew = pitcrew;
 }
 

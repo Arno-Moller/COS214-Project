@@ -9,7 +9,6 @@ SoftCompound::SoftCompound()
 
 SoftCompound::~SoftCompound() 
 {
-    
 }
 
 int SoftCompound::getGrip() 
@@ -41,8 +40,3 @@ TireCompound* SoftCompound::clone()
 {
     return new SoftCompound();
 }
-
-
-
-
-
