@@ -19,7 +19,6 @@ BuildTrackCommand::~BuildTrackCommand()
 void BuildTrackCommand::execute()
 {
     trackBuilder->construct();
-    //trackBuilder->display();
 }
 
 ConcreteTrack* BuildTrackCommand::getTrack()
