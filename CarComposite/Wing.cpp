@@ -2,7 +2,7 @@
 
 Wing::Wing(): RaceCar()
 {
-	// cout << "wing" << endl;
+
 }
 
 Wing::~Wing()

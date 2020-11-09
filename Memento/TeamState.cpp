@@ -2,8 +2,7 @@
 
 TeamState::TeamState(RaceCar* car1, RaceCar* car2) 
 {   
-// 	this->carOne = new CarPart(*car1);
-// 	this->carTwo = new CarPart(*car2);
+
 }
 
 TeamState::TeamState(Team* teams) 

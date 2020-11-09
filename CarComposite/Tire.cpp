@@ -2,7 +2,7 @@
 
 Tire::Tire(): RaceCar()
 {
-	// cout << "Tire" << endl;
+
 }
 
 Tire::Tire(TireState *tState, TireCompound* type)
@@ -140,19 +140,13 @@ void Tire::setType(string type)
 
         if (currentCompound != "" && getDriverName() != "" && currentCompound != newCompound && print == true)
         {
-            // cout << "\t\tThe tyres have been changed from " << currentCompound << " to " << newCompound<< endl;
+            
         }
-        
-          
     }
 }
 
 void Tire::setType(TireCompound* type) 
 {
-    // if (compound != NULL)
-    // {
-    //     delete compound;
-    // }
     this->compound = type;
     setState(new GoodCondition());
 }

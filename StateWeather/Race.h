@@ -41,6 +41,6 @@ class Race
 
     private:
         Weather* weather; /**< the weather state present in the race */ 
-        string location; /**< the location of the race to ientify each race  */ 
+        string location; /**< the location of the race to identify each race  */ 
 };
 #endif

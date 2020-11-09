@@ -7,22 +7,11 @@ RacingTeam::RacingTeam()
 
 RacingTeam::RacingTeam(RacingTeam& racingTeam) 
 {	
-	// this->tireCompound = racingTeam.tireCompound;
-	// this->builder1 = new CarBuilder();
-	// this->builder2 = new CarBuilder();
-    // buildCar();
-
 	car1Part = new CarPart(*racingTeam.getCarOnePart());
-	// car1Part->setName(racingTeam.getCarOne()->getName());
-
     car2Part = new CarPart(*racingTeam.getCarTwoPart());
-	// car2Part->setName(racingTeam.getCarTwo()->getName());
 
 	setCarOne(racingTeam.getCarOne()->clone());
-	// car1->setName(racingTeam.getCarOne()->getName());
-
 	setCarTwo(racingTeam.getCarTwo()->clone());
-	// car2->setName(racingTeam.getCarTwo()->getName());
 	
 	setTeamPoints(racingTeam.getTeamPoints());
 }
@@ -120,7 +109,6 @@ void RacingTeam::loadMemento(Memento* m)
 	this->car2 = m->getState()->getCarTwo();
 
 	teamName = m->getState()->getTeamName();
-	// teamPoints = m->getState()->getTeamPoints();
 }
 
 

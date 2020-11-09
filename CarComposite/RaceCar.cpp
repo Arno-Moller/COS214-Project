@@ -75,7 +75,6 @@ void RaceCar::setStrategy(Strategy* strat)
         {   
             oldStrat = strategy->type();
             newStrat = strat->type();
-            // cout1 << "\t\tThe Strategy have been changed from " << strategy->type() << " to " << strat->type()<< endl;
         }
         delete strategy;
         this->strategy = strat;

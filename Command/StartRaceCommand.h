@@ -25,7 +25,6 @@ class StartRaceCommand: public Command
     private:
         Team** constructors;
         RaceCar** drivers;
-        //LapCommand* lap;
         BuildTrackCommand* trackBuilder;
         vector<TrackSection> track;
         int laps = 0;

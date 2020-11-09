@@ -65,8 +65,4 @@ class Tire: public RaceCar
         string currentCompound = "";
         string newCompound = "";
 };
-
-//~ #include "TireState.h"
-//~ #include "GoodCondition.h"
-
 #endif

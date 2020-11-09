@@ -71,8 +71,6 @@ class SingletonChampionship
         SingletonChampionship();//constructor 
         ~SingletonChampionship();//destrucor 
 
-        //SingletonChampionship(SingletonChampionship &); 
-
     private:
         static SingletonChampionship* championship;
 

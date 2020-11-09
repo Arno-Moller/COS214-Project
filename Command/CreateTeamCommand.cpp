@@ -1,4 +1,5 @@
 #include "CreateTeamCommand.h"
+
 CreateTeamCommand::CreateTeamCommand() 
 {
     this->teams = new Team*[10];
@@ -49,7 +50,6 @@ void CreateTeamCommand::execute()
     {
         teamSaves[i] = new TeamStateCaretaker(teams[i]->createMemento());
     }
-    
 }
 
 Team** CreateTeamCommand::getTeams() 
@@ -67,7 +67,6 @@ void CreateTeamCommand::restoreTeams()
 {
     for (int i = 0; i < 10; i++)
     {   
-        // teams[i] = teamSaves[i]->getBackupTeam()->getState()->getTeam();
         teams[i]->loadMemento(teamSaves[i]->getBackupTeam());
     }
 }
