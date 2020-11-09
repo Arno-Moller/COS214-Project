@@ -114,7 +114,7 @@ void Championship::logResults()
     {
         teamResults[i].teamObject->getCarOne()->setPoints(teamResults[i].driver1Points);
         teamResults[i].teamObject->getCarTwo()->setPoints(teamResults[i].driver2Points);
-        teamResults[i].teamObject->setTeamPoints();
+        teamResults[i].teamObject->setTeamPoints(teamResults[i].driver1Points + teamResults[i].driver2Points);
     }
 }
 

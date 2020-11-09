@@ -130,8 +130,8 @@ void StartRaceCommand::execute()
 
     teamsCup->logResults();
 
-    teamCom->restoreTeams();
-    setTeams(teamCom->getTeams());
+    // teamCom->restoreTeams();
+    // setTeams(teamCom->getTeams());
 }
 
 Team** StartRaceCommand::getTeams() 

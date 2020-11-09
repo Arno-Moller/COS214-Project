@@ -92,7 +92,6 @@ int RacingTeam::getTeamPoints()
 void RacingTeam::setTeamPoints() 
 {
     teamPoints = getCarOne()->getPoints() + getCarTwo()->getPoints();
-
 }
 
 void RacingTeam::setTeamPoints(int points) 

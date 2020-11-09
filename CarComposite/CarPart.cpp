@@ -12,6 +12,7 @@ CarPart::CarPart(CarPart& oldCar)
 	{	
 		addPart((*it)->clone());
 	}
+	
 	addCarTire(oldCar.getCarTire()->clone());
 	setName(oldCar.getName());
 	setPoints(oldCar.getPoints());

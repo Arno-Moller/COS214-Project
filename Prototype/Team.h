@@ -89,7 +89,11 @@ class Team
         */
 		virtual void setTeamPoints() = 0;
 
-		
+		/**
+        * Abstract interface method that sets the teams points 
+        */
+		virtual void setTeamPoints(int p) = 0;
+
 		/**
         * Abstract interface method that returns the teams name 
 		* @return string of the teams name 
@@ -126,7 +130,7 @@ class Team
 		RaceCar* car2;/**< the second car that the team has  */ 
 		CarPart* car2Part;/**< the first car that the car has */  
 		string tireCompound;/**< the tire compound  */  // 
-		int teamPoints;/**< the points of the team  */
+		int teamPoints = 0;/**< the points of the team  */
 		string teamName;/**< the teams name   */
     
 };
