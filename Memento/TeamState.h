@@ -12,8 +12,8 @@ class TeamState
 private:
     RaceCar* carOne; /**< The first car of the team    */ 
     RaceCar* carTwo; /**< The second car of the team   */
-    string teamName; 
-    int points;
+    string teamName; /**< the teams name   */ 
+    int points;/**< the points  */ 
 public:
 
     /**
@@ -44,10 +44,22 @@ public:
      */
     RaceCar* getCarTwo(); 
 
-    string getTeamName();//returns the state of the team]
+    /**
+     *  Returns the name of the team 
+     * @return string of the teams name 
+     */
+    string getTeamName();
 
+    /**
+     *  Returns the points of the team 
+     * @return int of the teams points
+     */
     int getTeamPoints();
 
+    /**
+     *  Returns the team 
+     * @return team 
+     */
     Team* getTeam();
 };
 

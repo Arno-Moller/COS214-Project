@@ -14,6 +14,7 @@
 
 using namespace std;
 //This class is the product participant of the Builder Design pattern 
+///Subject participant of the observer design Pattern 
 class RaceCar
 {
     public:

@@ -14,7 +14,7 @@
 #include "../Observer/ChangeTires.h"
 
 using namespace std;
-
+/// concrete subject participant of the observer design pattern 
 //The context participant of the State design Pattern 
 class Tire: public RaceCar
 {   
@@ -42,7 +42,7 @@ class Tire: public RaceCar
         */
         RaceCar* clone();
 
-        
+
         TireState*  getState();// returns the state of the tires. 
         void setState(TireState* tState);//sets the state of the tires
 

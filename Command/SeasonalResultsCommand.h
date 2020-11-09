@@ -11,9 +11,9 @@ using namespace std;
 
 struct TeamResult
 {   
-    Team* team;
-    string teamName;
-    int teamPoints;
+    Team* team;  /**< The teams taking part in the race   */
+    string teamName;  /**< The teams taking part in the race   */
+    int teamPoints;  /**< The teams taking part in the race   */
 };
 
 class SeasonalResultsCommand: public Command

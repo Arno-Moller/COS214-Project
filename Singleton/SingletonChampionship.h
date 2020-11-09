@@ -64,19 +64,29 @@
 class SingletonChampionship
 {
     public:
+        
+        /**
+        *  method that returns a singleton object of the championship
+        * @return SingletonChampionship 
+        */
         static SingletonChampionship* getInstance();
+
+        /**
+        *  method to start the championship 
+        */
         void StartChampionship();
 
     protected:
-        SingletonChampionship();//constructor 
-        ~SingletonChampionship();//destrucor 
+        SingletonChampionship();///constructor 
+       
+        ~SingletonChampionship();///destrucor 
 
     private:
-        static SingletonChampionship* championship;
-        CreateTeamCommand* teamCom;
-        BuildTrackCommand** tracks;
-        StartRaceCommand* race;
-        SeasonalResultsCommand* results;
+        static SingletonChampionship* championship;/**< The singleton object of the championship  */ 
+        CreateTeamCommand* teamCom; /**< the commands of the teams   */ 
+        BuildTrackCommand** tracks; /**< command to build the track  */ 
+        StartRaceCommand* race; /**< command to race  */ 
+        SeasonalResultsCommand* results; /**< command to get the results of the seasons  */ 
 
 };
 #endif
