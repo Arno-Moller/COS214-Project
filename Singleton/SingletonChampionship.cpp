@@ -70,12 +70,11 @@ void SingletonChampionship::StartChampionship()
         //         return;
         //     }
         // }
-
-        for(int i = 0; i < 10; i++)
-        {
-            cout << race->getTeams()[i]->getTeamPoints() << endl << endl;
-        }
     }
+
+    SeasonalResultsCommand* results = new SeasonalResultsCommand(teamCom->getTeams());
+    results->execute();
+
 
     for(int i = 0; i < 5; i++)
     {

@@ -89,6 +89,9 @@ void StartRaceCommand::execute()
         time[i] = new double[laps];
     }
 
+    cout << "****************************************************************************************" << endl;
+    cout << endl << endl;
+
     for(int i = 0; i < laps; i++)
     {   
         cout << "LAP: " << i+1 << endl << endl;
@@ -111,8 +114,8 @@ void StartRaceCommand::execute()
             time[j][i] = temp/6;
             
         }
-
-        cout << "*****************************************" << endl;
+        cout << endl << endl;
+        cout << "****************************************************************************************" << endl;
         cout << endl << endl;
     }
 

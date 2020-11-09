@@ -137,6 +137,9 @@
 #include "Template/ConstructorsChampionship.cpp"
 #include "Template/DriversChampionship.cpp"
 
+#include "Command/SeasonalResultsCommand.h"
+#include "Command/SeasonalResultsCommand.cpp"
+
 using namespace std;
 
 int main()
