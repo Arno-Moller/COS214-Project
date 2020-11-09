@@ -24,6 +24,7 @@ class BuildTrackCommand : public Command
     private:
         TrackBuilder* trackBuilder;
         string location;
+        int laps;
 
 };
 

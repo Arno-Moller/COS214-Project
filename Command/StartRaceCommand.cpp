@@ -45,7 +45,7 @@ StartRaceCommand::StartRaceCommand(Team** teams, BuildTrackCommand* t)
 StartRaceCommand::StartRaceCommand(CreateTeamCommand* teamCom, BuildTrackCommand* t) 
 {
     this->teamCom = teamCom;
-    setTrackBuilder(t); 
+    trackBuilder = t;
     teamCom->execute();
     Team** teams = teamCom->getTeams();
 
@@ -183,7 +183,7 @@ void StartRaceCommand::setTrackBuilder(BuildTrackCommand* t)
     laps = trackBuilder->getTrackBuilder()->getLaps();
     track = trackBuilder->getTrack()->getTrack();
     
-    cout << "Next track: " << trackBuilder->getTrackBuilder()->getName() << endl;
+    cout << "LOADING next track: " << trackBuilder->getTrackBuilder()->getName() << endl;
     cout << "Location: " << trackBuilder->getTrackBuilder()->getLocation() << endl;
 
     weather = new RaceConditionCommand(trackBuilder->getTrackBuilder()->getLocation());

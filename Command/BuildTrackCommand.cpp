@@ -3,11 +3,15 @@
 BuildTrackCommand::BuildTrackCommand()
 {
     trackBuilder = new TrackBuilder();
+    location = "";
+    int laps  = 10;
 }
 
 BuildTrackCommand::BuildTrackCommand(string n, int l)
 {
     trackBuilder = new TrackBuilder(n, l);
+    location = n;
+    int laps  = l;
 }
 
 BuildTrackCommand::~BuildTrackCommand()
@@ -18,7 +22,7 @@ BuildTrackCommand::~BuildTrackCommand()
 
 void BuildTrackCommand::execute()
 {
-    trackBuilder->construct();
+    trackBuilder->construct(location, 10);
 }
 
 ConcreteTrack* BuildTrackCommand::getTrack()

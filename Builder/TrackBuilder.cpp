@@ -12,6 +12,7 @@ TrackBuilder::TrackBuilder(string n, int l)
 {
     name = n;
     laps = l;
+    location: "s";
     concreteTrack = new TrackMaker(n);
 }
 
