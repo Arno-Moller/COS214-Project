@@ -21,22 +21,65 @@ class Track
 {
     public:
         Track();// default constructor 
-        Track(string n); // string with the name of the track 
 
-        string getTrackName(); // get method for retrieving the name of the track 
-        int getTrackDistance();// get method for retrieving the distance of the track 
+       /**
+       *  Constructor taking in a string name 
+       * @param name
+       */
+        Track(string n); 
+
+        /**
+         * @brief Get the Track Name object
+         * 
+         * @return string 
+         */
+        string getTrackName(); 
+
+        /**
+         * @brief Get the Track Distance object
+         * 
+         * @return int 
+         */
+        int getTrackDistance();
+
+        /**
+         * @brief Get the Track Risk object
+         * 
+         * @return int 
+         */
         int getTrackRisk(); // get method for retrieving the risk of the track 
+
+        /**
+         * @brief Get the Section Count object
+         * 
+         * @return int 
+         */
         int getSectionCount(); // get method for retrieving the number of section of the track
 
-        void addSection(TrackSection*); // function to add a Track Section to the track 
-        void showTrack(); // display the track 
+        /**
+         * @brief function to add a Track Section to the track 
+         * 
+         */
+        void addSection(TrackSection*); 
+
+        /**
+         * @brief display the track 
+         * 
+         */
+        void showTrack(); 
+
+        /**
+         * @brief Get the Track object
+         * 
+         * @return vector<TrackSection> 
+         */
         vector<TrackSection> getTrack(); //return track list
 
     private:
-        vector<TrackSection> trackSection; // a list containing all the different track section making up the track 
-        string trackName; // the name of the track 
-        int trackDistance = 0; // the distance of the track 
-        int trackRisk; // the risk of the track 
-        int numSections; // the number of Track Sections that the track consists of 
+        vector<TrackSection> trackSection;/**< a list containing all the different track section making up the track    */ 
+        string trackName;/**< the name of the track    */
+        int trackDistance = 0;/**< the distance of the track     */ 
+        int trackRisk; /**< the risk of the track   */ 
+        int numSections;/**< the number of Track Sections that the track consists of  */ 
 };
 #endif

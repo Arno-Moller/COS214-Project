@@ -7,23 +7,65 @@ class TrackBuilder
 {
     public:
         TrackBuilder();//constructor 
+
+        /**
+       *  Constructor taking in a string name 
+       * @param name
+       */
         TrackBuilder(string, int);//constructor 
         ~TrackBuilder();//destrucor 
-
+        /**
+         * @brief Get the Laps object
+         * 
+         * @return int 
+         */
         int getLaps();
+
+        /**
+         * @brief Get the Name object
+         * 
+         * @return string 
+         */
         string getName();
+
+        /**
+         * @brief Get the Location object
+         * 
+         * @return string 
+         */
         string getLocation();
 
-        void construct(); // this builds the track or constructs the track consisting of the section we would want 
-        void construct(string, int); // this builds the track or constructs the track consisting of the section we would want 
-        void display();//this displays the track 
-        ConcreteTrack* getTrack();//returns this track
+
+        /**
+         * @brief this builds the track or constructs the track consisting of the section we would want 
+         * 
+         */
+        void construct(); 
+
+        /**
+         * @brief this builds the track or constructs the track consisting of the section we would want 
+         * 
+         */
+        void construct(string, int); 
+
+        /**
+         * @brief this displays the track
+         * 
+         */
+        void display();
+
+        /**
+         * @brief Get the Track object
+         * 
+         * @return ConcreteTrack* 
+         */
+        ConcreteTrack* getTrack();
         
     private:
-        ConcreteTrack* concreteTrack;//Concrete Track object which is the builder participant in the Builder Design Pattern 
-        int laps = 0;
-        string name;
-        string location;
+        ConcreteTrack* concreteTrack;/**< concrete track    */
+        int laps = 0;/**< number of laps    */
+        string name;/**< name of the track    */
+        string location;/**< the location of track    */
     
 };
 #endif

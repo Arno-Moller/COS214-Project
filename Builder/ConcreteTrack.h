@@ -12,16 +12,20 @@ using namespace std;
 class ConcreteTrack
 {
     public:
+
         ConcreteTrack(); ///Constructor
 
-        
-        virtual void addNinetyDegree(int) = 0;// interface for concrete builder 
+        /**
+         * @brief interface for concrete builder 
+         * 
+         */
+        virtual void addNinetyDegree(int) = 0;
         virtual void addStraight(int) = 0;
         virtual void addHairpin(int) = 0;
         virtual void addS_section(int) = 0;
         virtual void addSlightTurn(int) = 0;
         virtual int getNumSections() = 0;
-        virtual vector<TrackSection> getTrack() = 0; //return track list
+        virtual vector<TrackSection> getTrack() = 0; 
         virtual void showTrack() = 0;
 
     private:

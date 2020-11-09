@@ -10,7 +10,11 @@ using namespace std;
 class S_Section : public TrackSection
 {
     public:
-        S_Section(int);//the distance of the S section you would like to add. 
+    /**
+     * @brief Construct a new s section object
+     * @param distance
+     */
+        S_Section(int);
 
 
     private:

@@ -8,6 +8,9 @@ using namespace std;
 class Command
 {
     public:
+    /**
+    *  Function that executes all the commands 
+    */
         virtual void execute() = 0;
 };
 

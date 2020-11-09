@@ -10,6 +10,11 @@ using namespace std;
 class NinetyDegreeTurn : public TrackSection
 {
     public:
+        
+        /**
+         * @brief Construct a new Ninety Degree Turn object
+         * @param distance
+         */
         NinetyDegreeTurn(int);// the distance of the ninety degree turn you would like to add
 
     private:

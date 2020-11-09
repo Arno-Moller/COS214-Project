@@ -6,7 +6,7 @@
 #include "TrackSection.h"
 
 using namespace std;
- //This is the leaf participant of the Composite Design Pattern
+ ///This is the leaf participant of the Composite Design Pattern
 class SlightTurn : public TrackSection
 {
     public:
