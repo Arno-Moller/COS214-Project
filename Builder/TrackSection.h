@@ -8,14 +8,14 @@ using namespace std;
 class TrackSection
 {
     public:
-        string getName(); //a get method to get the name of the piece of track
-        int getRiskValue(); // a get method to get the risk value of the piece of track 
-        int getDistance(); // a get method to get the distance of the piece of track
+        string getName(); ///a get method to get the name of the piece of track
+        int getRiskValue(); /// a get method to get the risk value of the piece of track 
+        int getDistance(); /// a get method to get the distance of the piece of track
 
     protected:
-        string name; //The name of the piece of track eg hairpin or straight 
-        int riskValue; // The risk value of driving on the piece of track eg you have a higher risk of crashing on a hairpin than on a straight
-        int distance;//the distance of the piece of track 
+        string name; ///The name of the piece of track eg hairpin or straight 
+        int riskValue; /// The risk value of driving on the piece of track eg you have a higher risk of crashing on a hairpin than on a straight
+        int distance;///the distance of the piece of track 
 };
 #endif
 

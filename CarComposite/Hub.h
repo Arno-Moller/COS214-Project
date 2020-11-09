@@ -12,6 +12,11 @@ class Hub : public RaceCar
         Hub();//constructor
         ~Hub();//destructor
         void degrade();//degrade method
+
+        /**
+        * Clone function that returns a clone of the current Race Car 
+        * @return a clone of the the Race Car
+        */
         RaceCar* clone();
 
 };

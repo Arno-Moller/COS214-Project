@@ -19,11 +19,30 @@ using namespace std;
 class Tire: public RaceCar
 {   
     public:
-        Tire(); // efault constructor 
+        Tire(); /// default constructor 
+
+        /**
+        * Constructor Taking in a tire state and the type of tire
+        * @param tireState 
+        * @param type
+        */
         Tire(TireState* tState, TireCompound* type);//constructor taking in a tire state and a type of tire 
+        
+        /**
+        * Constructor taking in  the type of tire
+        * @param type
+        */
         Tire(string type); // Constructor to set 
-        ~Tire();//destructor
+       
+        ~Tire();///destructor
+
+         /**
+        * Clone function that returns a clone of the current Race Car 
+        * @return a clone of the the Race Car
+        */
         RaceCar* clone();
+
+        
         TireState*  getState();// returns the state of the tires. 
         void setState(TireState* tState);//sets the state of the tires
 
