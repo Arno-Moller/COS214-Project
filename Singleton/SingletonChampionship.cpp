@@ -42,32 +42,30 @@ void SingletonChampionship::StartChampionship()
 
         string option = "s";
         bool next = false;
-
         
-        // while(!next)
-        // {
-        //     cout    << "Select an option and press Enter:" 
-        //             << "\n\tShow results: s"
-        //             << "\n\tnext: n" 
-        //             << "\n\texit e" << endl;
+        while(!next)
+        {
+            cout    << "Select an option and press Enter:" 
+                    << "\n\tShow results: s"
+                    << "\n\tNext: n" 
+                    << "\n\tExit: e" << endl;
 
-        //     //cin >> option;
-        //     cout << "\t\t\t\t" << i << endl;
-        //     if(option == "n")
-        //     {
-        //         next = true;
-        //     }
-        //     else if(option == "s")
-        //     {
-        //         cout << "Show results: " << endl;
-        //         //option = "n";
-        //     }
-        //     else
-        //     {
-        //         cout << "Exited" << endl;
-        //         return;
-        //     }
-        // }
+            cin >> option;
+
+            if(option == "n")
+            {
+                next = true;
+            }
+            else if(option == "s")
+            {
+                cout << "Show results: " << endl;
+            }
+            else
+            {
+                cout << "Exited" << endl;
+                return;
+            }
+        }
     }
 
     SeasonalResultsCommand* results = new SeasonalResultsCommand(teamCom->getTeams());
