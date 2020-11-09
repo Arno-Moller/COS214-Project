@@ -137,8 +137,6 @@
 #include "Template/ConstructorsChampionship.cpp"
 #include "Template/DriversChampionship.cpp"
 
-
-
 using namespace std;
 
 int main()
