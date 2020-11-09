@@ -57,12 +57,16 @@ list<RaceCar*> CarPart::getCarParts()
 void CarPart::lap()
 {	
     tire->degrade();
-
-	// for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
-	// {
-	// 	(*it)->degrade();
-	// }
 }
+
+void CarPart::degrade() 
+{
+	for(list<RaceCar*>::iterator it = parts.begin(); it != parts.end(); ++it)
+	{
+		(*it)->degrade();
+	}
+}
+
 
 void CarPart::addCarTire(RaceCar* part) 
 {

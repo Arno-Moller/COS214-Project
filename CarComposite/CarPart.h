@@ -22,6 +22,7 @@ class CarPart: public RaceCar
         
         list<RaceCar*> getCarParts();
 	    void lap();// does a lap 
+        void degrade();
 
         void addCarTire(RaceCar* part);
         RaceCar*  getCarTire();

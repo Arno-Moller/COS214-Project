@@ -12,6 +12,7 @@ TeamState::TeamState(Team* teams)
 	this->carTwo = (new CarPart(*teams->getCarTwoPart()))->getPart();
 
     teamName = teams->getTeamName();
+    points = teams->getTeamPoints();
 }
 
 TeamState::~TeamState() 
@@ -38,4 +39,9 @@ RaceCar* TeamState::getCarTwo()
 string TeamState::getTeamName() 
 {
     return teamName;
+}
+
+int TeamState::getTeamPoints() 
+{
+    return points;   
 }
