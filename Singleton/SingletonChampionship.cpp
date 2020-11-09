@@ -36,17 +36,25 @@ void SingletonChampionship::StartChampionship()
     StartRaceCommand* race = new StartRaceCommand(teamCom, tracks[0]);
     for(int i = 0; i < 5; i++)
     {
-        
         race->setTrackBuilder(tracks[i]);
+
+        string start = "";
+
+        while(start != "s")
+        {
+            cout    << "Press s and enter to start race: ";
+            cin >> start;
+        }
+
         race->execute();
 
-        string option = "s";
+        string option = "";
         bool next = false;
         
         while(!next)
         {
             cout    << "Select an option and press Enter:" 
-                    << "\n\tShow results: s"
+                    << "\n\tShow results: r"
                     << "\n\tNext: n" 
                     << "\n\tExit: e" << endl;
 
@@ -56,7 +64,7 @@ void SingletonChampionship::StartChampionship()
             {
                 next = true;
             }
-            else if(option == "s")
+            else if(option == "r")
             {
                 cout << "Show results: " << endl;
                 SeasonalResultsCommand* results = new SeasonalResultsCommand(teamCom->getTeams());
