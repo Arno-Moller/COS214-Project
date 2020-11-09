@@ -117,7 +117,8 @@ void Tire::setType(string type)
         hasPitted = true;
         
         delete compound;
-
+        
+        currentCompound = newCompound;  
         newCompound = "";
         setState(new GoodCondition());
 
@@ -142,7 +143,7 @@ void Tire::setType(string type)
             // cout << "\t\tThe tyres have been changed from " << currentCompound << " to " << newCompound<< endl;
         }
         
-        currentCompound = newCompound;    
+          
     }
 }
 
@@ -168,7 +169,7 @@ void Tire::degrade()
     changedStrat = false;
 
     int chanceStrategyOdds = rand() % 100;
-    if (chanceStrategyOdds > 90 && changedStrat == false)
+    if (chanceStrategyOdds > 80 && changedStrat == false)
     {
         int nextStrategy = rand() % 3;
         switch (nextStrategy)
