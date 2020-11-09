@@ -23,6 +23,8 @@ RacingTeam::RacingTeam(RacingTeam& racingTeam)
 
 	setCarTwo(racingTeam.getCarTwo()->clone());
 	// car2->setName(racingTeam.getCarTwo()->getName());
+	
+	setTeamPoints(racingTeam.getTeamPoints());
 }
 
 RacingTeam::RacingTeam(string tireCompound)
@@ -93,6 +95,11 @@ void RacingTeam::setTeamPoints()
 
 }
 
+void RacingTeam::setTeamPoints(int points) 
+{
+	teamPoints = points;
+}
+
 string RacingTeam::getTeamName() 
 {
     return teamName;
@@ -117,6 +124,7 @@ void RacingTeam::loadMemento(Memento* m)
 	this->car2 = m->getState()->getCarTwo();
 
 	teamName = m->getState()->getTeamName();
+	teamPoints = m->getState()->getTeamPoints();
 }
 
 

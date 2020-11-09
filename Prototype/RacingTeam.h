@@ -88,8 +88,9 @@ public:
     */
     int getTeamPoints();
 
-    
     void setTeamPoints();
+    void setTeamPoints(int points);
+
     string getTeamName();
     void setTeamName(string name);
 
