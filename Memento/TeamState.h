@@ -47,6 +47,8 @@ public:
     string getTeamName();//returns the state of the team]
 
     int getTeamPoints();
+
+    Team* getTeam();
 };
 
 

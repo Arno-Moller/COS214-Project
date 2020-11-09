@@ -2,12 +2,10 @@
 
 Sensible::Sensible() 
 {
-    
 }
 
 Sensible::~Sensible() 
 {
-    
 }
 
 string Sensible::execute() 

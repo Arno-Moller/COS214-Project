@@ -10,8 +10,6 @@ class Strategy
 {
 public:
     Strategy()  {}; ///constructor 
-
-
     /**
     * Abstract interface to execture the strategy of the way the driver wants to race. 
     * @return string that gives information about the tires given the strategy that is used.
@@ -19,7 +17,4 @@ public:
     virtual string execute() = 0;
     virtual string type() = 0;
 };
-
-
-
 #endif // STRATEGY_H
