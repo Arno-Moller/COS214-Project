@@ -59,6 +59,8 @@ void SingletonChampionship::StartChampionship()
             else if(option == "s")
             {
                 cout << "Show results: " << endl;
+                SeasonalResultsCommand* results = new SeasonalResultsCommand(teamCom->getTeams());
+                results->execute();
             }
             else
             {
@@ -68,8 +70,7 @@ void SingletonChampionship::StartChampionship()
         }
     }
 
-    SeasonalResultsCommand* results = new SeasonalResultsCommand(teamCom->getTeams());
-    results->execute();
+    
 
 
     for(int i = 0; i < 5; i++)
