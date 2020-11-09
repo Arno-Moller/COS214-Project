@@ -14,6 +14,11 @@ class CarPart: public RaceCar
         CarPart();//constructor 
         CarPart(CarPart&);
         ~CarPart();//destructor 
+
+        /**
+        * Clone function that returns a clone of the current Race Car 
+        * @return a clone of the the Race Car
+        */
         RaceCar* clone();
 
         void addPart(RaceCar* part);// adds a part to the race car 

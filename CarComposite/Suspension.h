@@ -12,6 +12,11 @@ class Suspension : public RaceCar
         Suspension();//constructor 
         ~Suspension();//destructor
         void degrade();//degrade method 
+
+        /**
+        * Clone function that returns a clone of the current Race Car 
+        * @return a clone of the the Race Car
+        */
         RaceCar* clone();
 };
 

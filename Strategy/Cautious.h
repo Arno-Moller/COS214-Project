@@ -16,6 +16,11 @@ public:
     * @return string that gives information about the tires given the strategy that is used.
     */
     string execute();
+
+    /**
+    * Returns the way the driver wants to race 
+    * @return string that displays the drivers startegy. 
+    */
     string type();
 };
 

@@ -12,6 +12,11 @@ class Engine : public RaceCar
         Engine();//constructor 
         ~Engine();//destructor
         void degrade();//degrade method 
+
+        /**
+        * Clone function that returns a clone of the current Race Car 
+        * @return a clone of the the Race Car
+        */
         virtual RaceCar* clone();
 
 };

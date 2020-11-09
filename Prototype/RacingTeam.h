@@ -87,13 +87,34 @@ public:
 	* @return int amount of the points the team has made
     */
     int getTeamPoints();
-
+    
+    /**
+    *  method that sets the points of the team
+    */
     void setTeamPoints();
+
+    /**
+    * method that sets the points of the team
+	* @param int of the points
+    */
     void setTeamPoints(int points);
 
+    /**
+    * gets the team name 
+	* @return string of the team name
+    */
     string getTeamName();
+
+    /**
+    * gets the team name 
+	* @param string of the team name
+    */
     void setTeamName(string name);
 
+    /**
+    * gets the team name 
+	* @return memento of the
+    */
     Memento* createMemento();
 
     /**

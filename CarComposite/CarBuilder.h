@@ -12,12 +12,12 @@
 #include "CarPart.h"
 
 using namespace std;
-//this class is the Concrete Builder in the Builder design Pattern 
+///this class is the Concrete Builder in the Builder design Pattern 
 class CarBuilder: public RaceCarBuilder
 {
     public:
-        CarBuilder();// constructor 
-        ~CarBuilder();// destructor 
+        CarBuilder();/// constructor 
+        ~CarBuilder();/// destructor 
     
         void addChassis();//adds a Chassis to the car 
 		void addSuspension();// adds Suspension to the car 
