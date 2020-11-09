@@ -55,10 +55,6 @@
 
 #include "../Command/StartRaceCommand.h"
 
-#include "../Command/LapCommand.h"
-
-
-
 #ifndef SingletonChampionship_h
 #define SingletonChampionship_h
 

@@ -10,7 +10,6 @@
 #include "../Prototype/RacingTeam.h"
 #include "../CarComposite/RaceCar.h"
 
-#include "LapCommand.h"
 #include "BuildTrackCommand.h"
 #include "RaceConditionCommand.h"
 #include "CreateTeamCommand.h"
@@ -26,7 +25,7 @@ class StartRaceCommand: public Command
     private:
         Team** constructors;
         RaceCar** drivers;
-        LapCommand* lap;
+        //LapCommand* lap;
         BuildTrackCommand* trackBuilder;
         vector<TrackSection> track;
         int laps = 0;
