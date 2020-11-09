@@ -1,0 +1,103 @@
+\hypertarget{class_o_k_condition}{}\doxysection{O\+K\+Condition Class Reference}
+\label{class_o_k_condition}\index{OKCondition@{OKCondition}}
+
+
+The concrete state participant of the State design Pattern.  
+
+
+
+
+{\ttfamily \#include $<$O\+K\+Condition.\+h$>$}
+
+Inheritance diagram for O\+K\+Condition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_o_k_condition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_k_condition_a20e93b702670ecc09d45c39e6a848ab0}{O\+K\+Condition}} ()
+\item 
+\mbox{\hyperlink{class_o_k_condition_ab6cbbfd53634a98760314e2cad535e37}{$\sim$\+O\+K\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_k_condition_aebf97ec5e4159d28a4bd3a4471a9d3e9}{handle}} (\mbox{\hyperlink{class_tire}{Tire}} $\ast$tire)
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_k_condition_a8565c3f719fcc30a2c43d59121eed4d6}{change\+Tire\+State}} (\mbox{\hyperlink{class_tire}{Tire}} $\ast$tire)
+\begin{DoxyCompactList}\small\item\em method to check if you should pit stop or not \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tire_state}{Tire\+State}} $\ast$ \mbox{\hyperlink{class_o_k_condition_aca9317ff278c57861eeee02ae242b0b6}{clone}} ()
+\begin{DoxyCompactList}\small\item\em method to change the state of the tires \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The concrete state participant of the State design Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_k_condition_a20e93b702670ecc09d45c39e6a848ab0}\label{class_o_k_condition_a20e93b702670ecc09d45c39e6a848ab0}} 
+\index{OKCondition@{OKCondition}!OKCondition@{OKCondition}}
+\index{OKCondition@{OKCondition}!OKCondition@{OKCondition}}
+\doxysubsubsection{\texorpdfstring{OKCondition()}{OKCondition()}}
+{\footnotesize\ttfamily O\+K\+Condition\+::\+O\+K\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_k_condition_ab6cbbfd53634a98760314e2cad535e37}\label{class_o_k_condition_ab6cbbfd53634a98760314e2cad535e37}} 
+\index{OKCondition@{OKCondition}!````~OKCondition@{$\sim$OKCondition}}
+\index{````~OKCondition@{$\sim$OKCondition}!OKCondition@{OKCondition}}
+\doxysubsubsection{\texorpdfstring{$\sim$OKCondition()}{~OKCondition()}}
+{\footnotesize\ttfamily O\+K\+Condition\+::$\sim$\+O\+K\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_k_condition_a8565c3f719fcc30a2c43d59121eed4d6}\label{class_o_k_condition_a8565c3f719fcc30a2c43d59121eed4d6}} 
+\index{OKCondition@{OKCondition}!changeTireState@{changeTireState}}
+\index{changeTireState@{changeTireState}!OKCondition@{OKCondition}}
+\doxysubsubsection{\texorpdfstring{changeTireState()}{changeTireState()}}
+{\footnotesize\ttfamily void O\+K\+Condition\+::change\+Tire\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tire}{Tire}} $\ast$}]{tire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to check if you should pit stop or not 
+
+
+
+Implements \mbox{\hyperlink{class_tire_state_a1d34f5ba66280583aa4857a404db7752}{Tire\+State}}.
+
+\mbox{\Hypertarget{class_o_k_condition_aca9317ff278c57861eeee02ae242b0b6}\label{class_o_k_condition_aca9317ff278c57861eeee02ae242b0b6}} 
+\index{OKCondition@{OKCondition}!clone@{clone}}
+\index{clone@{clone}!OKCondition@{OKCondition}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tire_state}{Tire\+State}} $\ast$ O\+K\+Condition\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to change the state of the tires 
+
+
+
+Implements \mbox{\hyperlink{class_tire_state_aaaa5e11cfa2922529905c8fee8059067}{Tire\+State}}.
+
+\mbox{\Hypertarget{class_o_k_condition_aebf97ec5e4159d28a4bd3a4471a9d3e9}\label{class_o_k_condition_aebf97ec5e4159d28a4bd3a4471a9d3e9}} 
+\index{OKCondition@{OKCondition}!handle@{handle}}
+\index{handle@{handle}!OKCondition@{OKCondition}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily bool O\+K\+Condition\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tire}{Tire}} $\ast$}]{tire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+
+
+Implements \mbox{\hyperlink{class_tire_state_ac11f67140e12f7a35e46255d893d00ab}{Tire\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tire\+State/\mbox{\hyperlink{_o_k_condition_8h}{O\+K\+Condition.\+h}}\item 
+Tire\+State/\mbox{\hyperlink{_o_k_condition_8cpp}{O\+K\+Condition.\+cpp}}\end{DoxyCompactItemize}

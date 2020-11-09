@@ -1,0 +1,168 @@
+\hypertarget{class_championship}{}\doxysection{Championship Class Reference}
+\label{class_championship}\index{Championship@{Championship}}
+
+
+{\ttfamily \#include $<$Championship.\+h$>$}
+
+Inheritance diagram for Championship\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_championship}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_championship_a904e2ae2a05f7f9000ed1b54cb9e175d}{Championship}} (\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$, double $\ast$$\ast$array, int drivers, int laps)
+\item 
+virtual \mbox{\hyperlink{class_championship_afdb3d750509617a08da93a5fb0142d6b}{$\sim$\+Championship}} ()
+\item 
+void \mbox{\hyperlink{class_championship_a9bf0aea2f2a08e42bfc0f828f84ddc7b}{calculate}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_championship_a7926ddff76c11a806a194b3efaa77ea3}{log\+Results}} ()
+\item 
+int $\ast$ \mbox{\hyperlink{class_championship_ae5f5a143a47c6ee1b2e75cc9c81a3ad5}{get\+Team\+Points}} ()
+\item 
+virtual void \mbox{\hyperlink{class_championship_aea455551deb6939dfec6d2060ad16172}{print}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{class_championship_a692bd08f6f2172e606b12bec370f4e8e}{arr}}
+\item 
+int \mbox{\hyperlink{class_championship_ab310af77891da5eb5fd1ab76acf84f76}{num\+Drivers}}
+\item 
+int \mbox{\hyperlink{class_championship_ad948150949e765476a6f4915c68f09a3}{num\+Laps}}
+\item 
+\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$ \mbox{\hyperlink{class_championship_aa1960f87e9887cb456c74cd8528d5c41}{teams}}
+\item 
+\mbox{\hyperlink{struct_results}{Results}} $\ast$ \mbox{\hyperlink{class_championship_ac3f0733a8d38002f2abf10a4ae73d84f}{drivers\+Results}}
+\item 
+\mbox{\hyperlink{struct_team_results}{Team\+Results}} $\ast$ \mbox{\hyperlink{class_championship_aa4cbbb8276a228cb4eadc02eec5f7d72}{team\+Results}}
+\item 
+int $\ast$ \mbox{\hyperlink{class_championship_a382b25a01769939934f73387c9a5f5f8}{point\+List}}
+\item 
+int \mbox{\hyperlink{class_championship_a9cb2791244b3c86ee0d5b30532a614f2}{point\+Amount}} \mbox{[}20\mbox{]} = \{25,18,15,12,10,8,6,4,2,1,0,0,0,0,0,0,0,0,0,0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_championship_a904e2ae2a05f7f9000ed1b54cb9e175d}\label{class_championship_a904e2ae2a05f7f9000ed1b54cb9e175d}} 
+\index{Championship@{Championship}!Championship@{Championship}}
+\index{Championship@{Championship}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{Championship()}{Championship()}}
+{\footnotesize\ttfamily Championship\+::\+Championship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$}]{t,  }\item[{double $\ast$$\ast$}]{array,  }\item[{int}]{drivers,  }\item[{int}]{laps }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_team}{Team}}} & \\
+\hline
+{\em array} & of the times for each lap \\
+\hline
+{\em drivers} & amount \\
+\hline
+{\em laps} & amount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_championship_afdb3d750509617a08da93a5fb0142d6b}\label{class_championship_afdb3d750509617a08da93a5fb0142d6b}} 
+\index{Championship@{Championship}!````~Championship@{$\sim$Championship}}
+\index{````~Championship@{$\sim$Championship}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{$\sim$Championship()}{~Championship()}}
+{\footnotesize\ttfamily Championship\+::$\sim$\+Championship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_championship_a9bf0aea2f2a08e42bfc0f828f84ddc7b}\label{class_championship_a9bf0aea2f2a08e42bfc0f828f84ddc7b}} 
+\index{Championship@{Championship}!calculate@{calculate}}
+\index{calculate@{calculate}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily void Championship\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+Prints out the results of the race for each driver \mbox{\Hypertarget{class_championship_ae5f5a143a47c6ee1b2e75cc9c81a3ad5}\label{class_championship_ae5f5a143a47c6ee1b2e75cc9c81a3ad5}} 
+\index{Championship@{Championship}!getTeamPoints@{getTeamPoints}}
+\index{getTeamPoints@{getTeamPoints}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{getTeamPoints()}{getTeamPoints()}}
+{\footnotesize\ttfamily int$\ast$ Championship\+::get\+Team\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints out the results of the race for each driver \mbox{\Hypertarget{class_championship_a7926ddff76c11a806a194b3efaa77ea3}\label{class_championship_a7926ddff76c11a806a194b3efaa77ea3}} 
+\index{Championship@{Championship}!logResults@{logResults}}
+\index{logResults@{logResults}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{logResults()}{logResults()}}
+{\footnotesize\ttfamily void Championship\+::log\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints out the results of the race for each driver \mbox{\Hypertarget{class_championship_aea455551deb6939dfec6d2060ad16172}\label{class_championship_aea455551deb6939dfec6d2060ad16172}} 
+\index{Championship@{Championship}!print@{print}}
+\index{print@{print}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Championship\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Prints out the results of the race for each driver 
+
+Implemented in \mbox{\hyperlink{class_drivers_championship_abe3644200a794e5a7d0e4ad91e9cca48}{Drivers\+Championship}}, and \mbox{\hyperlink{class_constructors_championship_a43f6437b830314199107689e15cb74c8}{Constructors\+Championship}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_championship_a692bd08f6f2172e606b12bec370f4e8e}\label{class_championship_a692bd08f6f2172e606b12bec370f4e8e}} 
+\index{Championship@{Championship}!arr@{arr}}
+\index{arr@{arr}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{arr}{arr}}
+{\footnotesize\ttfamily double$\ast$$\ast$ Championship\+::arr\hspace{0.3cm}{\ttfamily [protected]}}
+
+the double array of the times made by each driver for each lap ~\newline
+ \mbox{\Hypertarget{class_championship_ac3f0733a8d38002f2abf10a4ae73d84f}\label{class_championship_ac3f0733a8d38002f2abf10a4ae73d84f}} 
+\index{Championship@{Championship}!driversResults@{driversResults}}
+\index{driversResults@{driversResults}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{driversResults}{driversResults}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_results}{Results}}$\ast$ Championship\+::drivers\+Results\hspace{0.3cm}{\ttfamily [protected]}}
+
+the drivers results for the race \mbox{\Hypertarget{class_championship_ab310af77891da5eb5fd1ab76acf84f76}\label{class_championship_ab310af77891da5eb5fd1ab76acf84f76}} 
+\index{Championship@{Championship}!numDrivers@{numDrivers}}
+\index{numDrivers@{numDrivers}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{numDrivers}{numDrivers}}
+{\footnotesize\ttfamily int Championship\+::num\+Drivers\hspace{0.3cm}{\ttfamily [protected]}}
+
+the number of drivers driving the race \mbox{\Hypertarget{class_championship_ad948150949e765476a6f4915c68f09a3}\label{class_championship_ad948150949e765476a6f4915c68f09a3}} 
+\index{Championship@{Championship}!numLaps@{numLaps}}
+\index{numLaps@{numLaps}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{numLaps}{numLaps}}
+{\footnotesize\ttfamily int Championship\+::num\+Laps\hspace{0.3cm}{\ttfamily [protected]}}
+
+the number of laps that the race consists of ~\newline
+ \mbox{\Hypertarget{class_championship_a9cb2791244b3c86ee0d5b30532a614f2}\label{class_championship_a9cb2791244b3c86ee0d5b30532a614f2}} 
+\index{Championship@{Championship}!pointAmount@{pointAmount}}
+\index{pointAmount@{pointAmount}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{pointAmount}{pointAmount}}
+{\footnotesize\ttfamily int Championship\+::point\+Amount\mbox{[}20\mbox{]} = \{25,18,15,12,10,8,6,4,2,1,0,0,0,0,0,0,0,0,0,0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+array of points for each place ~\newline
+ \mbox{\Hypertarget{class_championship_a382b25a01769939934f73387c9a5f5f8}\label{class_championship_a382b25a01769939934f73387c9a5f5f8}} 
+\index{Championship@{Championship}!pointList@{pointList}}
+\index{pointList@{pointList}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{pointList}{pointList}}
+{\footnotesize\ttfamily int$\ast$ Championship\+::point\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+the points list \mbox{\Hypertarget{class_championship_aa4cbbb8276a228cb4eadc02eec5f7d72}\label{class_championship_aa4cbbb8276a228cb4eadc02eec5f7d72}} 
+\index{Championship@{Championship}!teamResults@{teamResults}}
+\index{teamResults@{teamResults}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{teamResults}{teamResults}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_team_results}{Team\+Results}}$\ast$ Championship\+::team\+Results\hspace{0.3cm}{\ttfamily [protected]}}
+
+the team results of the race \mbox{\Hypertarget{class_championship_aa1960f87e9887cb456c74cd8528d5c41}\label{class_championship_aa1960f87e9887cb456c74cd8528d5c41}} 
+\index{Championship@{Championship}!teams@{teams}}
+\index{teams@{teams}!Championship@{Championship}}
+\doxysubsubsection{\texorpdfstring{teams}{teams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_team}{Team}}$\ast$$\ast$ Championship\+::teams\hspace{0.3cm}{\ttfamily [protected]}}
+
+List of participating teams ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Template/\mbox{\hyperlink{_championship_8h}{Championship.\+h}}\item 
+Template/\mbox{\hyperlink{_championship_8cpp}{Championship.\+cpp}}\end{DoxyCompactItemize}

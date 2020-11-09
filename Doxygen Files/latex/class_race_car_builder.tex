@@ -1,0 +1,174 @@
+\hypertarget{class_race_car_builder}{}\doxysection{Race\+Car\+Builder Class Reference}
+\label{class_race_car_builder}\index{RaceCarBuilder@{RaceCarBuilder}}
+
+
+The Builder participant of The B\+Uilder Design Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Race\+Car\+Builder.\+h$>$}
+
+Inheritance diagram for Race\+Car\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_race_car_builder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_race_car_builder_ac8c3850206e13ee207d6a70816a388bd}{Race\+Car\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_race}{Race}} Car Builder object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_race_car_builder_aa753f065e632a8e221feb8e317dd0ce8}{$\sim$\+Race\+Car\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_race}{Race}} Car Builder object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_builder_ab7714bbdf5b89df123cebc693caaccde}{add\+Chassis}} ()=0
+\begin{DoxyCompactList}\small\item\em add the chassis to the car \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_builder_ab54bd535b60166696c92ea5004640d13}{add\+Suspension}} ()=0
+\begin{DoxyCompactList}\small\item\em add the suspension \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_builder_a07849f20967bde4b37e7969d8cc30116}{add\+Wing}} ()=0
+\begin{DoxyCompactList}\small\item\em add the wing to the car \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_builder_a186cf50d74dcfb53e4b0f1db86bc9fc2}{add\+Hub}} ()=0
+\begin{DoxyCompactList}\small\item\em add the hub to the car \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_builder_a73bf55ac5a1a6d542176f7dd73d8e60e}{add\+Engine}} ()=0
+\begin{DoxyCompactList}\small\item\em add the engine to the car \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_builder_ae11e2db1d13f0be3a78dac5a8269cbc8}{add\+Tire}} (string)=0
+\begin{DoxyCompactList}\small\item\em add the tire to the car \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_race_car_builder_a06112b3628535c0d86affd94adcecf85}{get\+Car}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Car object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Builder participant of The B\+Uilder Design Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_race_car_builder_ac8c3850206e13ee207d6a70816a388bd}\label{class_race_car_builder_ac8c3850206e13ee207d6a70816a388bd}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!RaceCarBuilder@{RaceCarBuilder}}
+\index{RaceCarBuilder@{RaceCarBuilder}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{RaceCarBuilder()}{RaceCarBuilder()}}
+{\footnotesize\ttfamily Race\+Car\+Builder\+::\+Race\+Car\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_race}{Race}} Car Builder object. 
+
+\mbox{\Hypertarget{class_race_car_builder_aa753f065e632a8e221feb8e317dd0ce8}\label{class_race_car_builder_aa753f065e632a8e221feb8e317dd0ce8}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!````~RaceCarBuilder@{$\sim$RaceCarBuilder}}
+\index{````~RaceCarBuilder@{$\sim$RaceCarBuilder}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{$\sim$RaceCarBuilder()}{~RaceCarBuilder()}}
+{\footnotesize\ttfamily Race\+Car\+Builder\+::$\sim$\+Race\+Car\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_race}{Race}} Car Builder object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_race_car_builder_ab7714bbdf5b89df123cebc693caaccde}\label{class_race_car_builder_ab7714bbdf5b89df123cebc693caaccde}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!addChassis@{addChassis}}
+\index{addChassis@{addChassis}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{addChassis()}{addChassis()}}
+{\footnotesize\ttfamily virtual void Race\+Car\+Builder\+::add\+Chassis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+add the chassis to the car 
+
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_a190fc51d7a0a44325e1dc5da21deb90d}{Car\+Builder}}.
+
+\mbox{\Hypertarget{class_race_car_builder_a73bf55ac5a1a6d542176f7dd73d8e60e}\label{class_race_car_builder_a73bf55ac5a1a6d542176f7dd73d8e60e}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!addEngine@{addEngine}}
+\index{addEngine@{addEngine}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{addEngine()}{addEngine()}}
+{\footnotesize\ttfamily virtual void Race\+Car\+Builder\+::add\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+add the engine to the car 
+
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_a1b01e862dc6c0aa2887292e4f4f43a1f}{Car\+Builder}}.
+
+\mbox{\Hypertarget{class_race_car_builder_a186cf50d74dcfb53e4b0f1db86bc9fc2}\label{class_race_car_builder_a186cf50d74dcfb53e4b0f1db86bc9fc2}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!addHub@{addHub}}
+\index{addHub@{addHub}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{addHub()}{addHub()}}
+{\footnotesize\ttfamily virtual void Race\+Car\+Builder\+::add\+Hub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+add the hub to the car 
+
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_afab1bbe271511388c0ad8aac2de20ec8}{Car\+Builder}}.
+
+\mbox{\Hypertarget{class_race_car_builder_ab54bd535b60166696c92ea5004640d13}\label{class_race_car_builder_ab54bd535b60166696c92ea5004640d13}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!addSuspension@{addSuspension}}
+\index{addSuspension@{addSuspension}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{addSuspension()}{addSuspension()}}
+{\footnotesize\ttfamily virtual void Race\+Car\+Builder\+::add\+Suspension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+add the suspension 
+
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_a3a4297f1a42d739968cd3cbef7f9beaa}{Car\+Builder}}.
+
+\mbox{\Hypertarget{class_race_car_builder_ae11e2db1d13f0be3a78dac5a8269cbc8}\label{class_race_car_builder_ae11e2db1d13f0be3a78dac5a8269cbc8}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!addTire@{addTire}}
+\index{addTire@{addTire}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{addTire()}{addTire()}}
+{\footnotesize\ttfamily virtual void Race\+Car\+Builder\+::add\+Tire (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+add the tire to the car 
+
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_ad2a416cdf17303f10838a66f5a5e8405}{Car\+Builder}}.
+
+\mbox{\Hypertarget{class_race_car_builder_a07849f20967bde4b37e7969d8cc30116}\label{class_race_car_builder_a07849f20967bde4b37e7969d8cc30116}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!addWing@{addWing}}
+\index{addWing@{addWing}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{addWing()}{addWing()}}
+{\footnotesize\ttfamily virtual void Race\+Car\+Builder\+::add\+Wing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+add the wing to the car 
+
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_abb1228d304309365c90e62b966ea1325}{Car\+Builder}}.
+
+\mbox{\Hypertarget{class_race_car_builder_a06112b3628535c0d86affd94adcecf85}\label{class_race_car_builder_a06112b3628535c0d86affd94adcecf85}} 
+\index{RaceCarBuilder@{RaceCarBuilder}!getCar@{getCar}}
+\index{getCar@{getCar}!RaceCarBuilder@{RaceCarBuilder}}
+\doxysubsubsection{\texorpdfstring{getCar()}{getCar()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Race\+Car\+Builder\+::get\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Car object. 
+
+\begin{DoxyReturn}{Returns}
+Race\+Car$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_car_builder_a07582d7bed34c3ffd38c5d378e7d4ffa}{Car\+Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Composite/\mbox{\hyperlink{_race_car_builder_8h}{Race\+Car\+Builder.\+h}}\item 
+Car\+Composite/\mbox{\hyperlink{_race_car_builder_8cpp}{Race\+Car\+Builder.\+cpp}}\end{DoxyCompactItemize}

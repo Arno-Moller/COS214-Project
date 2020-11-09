@@ -1,0 +1,197 @@
+\hypertarget{class_start_race_command}{}\doxysection{Start\+Race\+Command Class Reference}
+\label{class_start_race_command}\index{StartRaceCommand@{StartRaceCommand}}
+
+
+Concrete \mbox{\hyperlink{class_command}{Command}} Participant of the \mbox{\hyperlink{class_command}{Command}} Design Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Start\+Race\+Command.\+h$>$}
+
+Inheritance diagram for Start\+Race\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_start_race_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_start_race_command_a91713b2374e14601adec1bc04113d792}{Start\+Race\+Command}} ()
+\item 
+\mbox{\hyperlink{class_start_race_command_a8637dfd179925660a68f4d40aa4bcc2a}{Start\+Race\+Command}} (\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$teams, \mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_start_race_command_a342fc5c10572bfc458beda9feb13d2e5}{Start\+Race\+Command}} (\mbox{\hyperlink{class_create_team_command}{Create\+Team\+Command}} $\ast$, \mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$)
+\item 
+\mbox{\hyperlink{class_start_race_command_ab7a070c79b2eebdb4e1775e436e83698}{$\sim$\+Start\+Race\+Command}} ()
+\item 
+void \mbox{\hyperlink{class_start_race_command_a01069efde13cf900b832d70200992dbc}{execute}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$ \mbox{\hyperlink{class_start_race_command_a4dbbf3061dde35888520039b3986315c}{get\+Teams}} ()
+\item 
+void \mbox{\hyperlink{class_start_race_command_ad7b97d090f6a3bbb45e9d203f2ea594b}{set\+Teams}} (\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$teams)
+\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$$\ast$ \mbox{\hyperlink{class_start_race_command_ad4b31200ff2c6180040ca2e1bb187965}{get\+Cars}} ()
+\item 
+void \mbox{\hyperlink{class_start_race_command_a66d828ee03153f2f26941e3f6f9d1ed8}{set\+Cars}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$$\ast$cars)
+\item 
+\mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$ \mbox{\hyperlink{class_start_race_command_a1cfa1a566dccda9c65ef561d9468ddf9}{get\+Track\+Builder}} ()
+\item 
+void \mbox{\hyperlink{class_start_race_command_a76976a7f1e97b101f14e8ae278a015f5}{set\+Track\+Builder}} (\mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$)
+\item 
+vector$<$ \mbox{\hyperlink{class_track_section}{Track\+Section}} $>$ \mbox{\hyperlink{class_start_race_command_a5725ab01da1430e8ab08220d7dad2782}{get\+Track}} ()
+\item 
+void \mbox{\hyperlink{class_start_race_command_aa5a2ef1ac48ba6c4b81c1eb616b55006}{set\+Track}} (vector$<$ \mbox{\hyperlink{class_track_section}{Track\+Section}} $>$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete \mbox{\hyperlink{class_command}{Command}} Participant of the \mbox{\hyperlink{class_command}{Command}} Design Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_start_race_command_a91713b2374e14601adec1bc04113d792}\label{class_start_race_command_a91713b2374e14601adec1bc04113d792}} 
+\index{StartRaceCommand@{StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\index{StartRaceCommand@{StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{StartRaceCommand()}{StartRaceCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Start\+Race\+Command\+::\+Start\+Race\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_start_race_command_a8637dfd179925660a68f4d40aa4bcc2a}\label{class_start_race_command_a8637dfd179925660a68f4d40aa4bcc2a}} 
+\index{StartRaceCommand@{StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\index{StartRaceCommand@{StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{StartRaceCommand()}{StartRaceCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Start\+Race\+Command\+::\+Start\+Race\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$}]{teams,  }\item[{\mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em teams} & \\
+\hline
+{\em Buildt\+Rack\+Command} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_start_race_command_a342fc5c10572bfc458beda9feb13d2e5}\label{class_start_race_command_a342fc5c10572bfc458beda9feb13d2e5}} 
+\index{StartRaceCommand@{StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\index{StartRaceCommand@{StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{StartRaceCommand()}{StartRaceCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Start\+Race\+Command\+::\+Start\+Race\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_create_team_command}{Create\+Team\+Command}} $\ast$}]{team\+Com,  }\item[{\mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_create_team_command}{Create\+Team\+Command}}} & \\
+\hline
+{\em Buildt\+Rack\+Command} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_start_race_command_ab7a070c79b2eebdb4e1775e436e83698}\label{class_start_race_command_ab7a070c79b2eebdb4e1775e436e83698}} 
+\index{StartRaceCommand@{StartRaceCommand}!````~StartRaceCommand@{$\sim$StartRaceCommand}}
+\index{````~StartRaceCommand@{$\sim$StartRaceCommand}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$StartRaceCommand()}{~StartRaceCommand()}}
+{\footnotesize\ttfamily Start\+Race\+Command\+::$\sim$\+Start\+Race\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_start_race_command_a01069efde13cf900b832d70200992dbc}\label{class_start_race_command_a01069efde13cf900b832d70200992dbc}} 
+\index{StartRaceCommand@{StartRaceCommand}!execute@{execute}}
+\index{execute@{execute}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Start\+Race\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+Function that executes all the commands 
+
+Implements \mbox{\hyperlink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+\mbox{\Hypertarget{class_start_race_command_ad4b31200ff2c6180040ca2e1bb187965}\label{class_start_race_command_ad4b31200ff2c6180040ca2e1bb187965}} 
+\index{StartRaceCommand@{StartRaceCommand}!getCars@{getCars}}
+\index{getCars@{getCars}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{getCars()}{getCars()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$$\ast$ Start\+Race\+Command\+::get\+Cars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the cars/drivers \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_race_car}{Race\+Car}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_start_race_command_a4dbbf3061dde35888520039b3986315c}\label{class_start_race_command_a4dbbf3061dde35888520039b3986315c}} 
+\index{StartRaceCommand@{StartRaceCommand}!getTeams@{getTeams}}
+\index{getTeams@{getTeams}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{getTeams()}{getTeams()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$ Start\+Race\+Command\+::get\+Teams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the teams \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_team}{Team}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_start_race_command_a5725ab01da1430e8ab08220d7dad2782}\label{class_start_race_command_a5725ab01da1430e8ab08220d7dad2782}} 
+\index{StartRaceCommand@{StartRaceCommand}!getTrack@{getTrack}}
+\index{getTrack@{getTrack}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{getTrack()}{getTrack()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_track_section}{Track\+Section}} $>$ Start\+Race\+Command\+::get\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the track sections \begin{DoxyReturn}{Returns}
+the trac sections 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_start_race_command_a1cfa1a566dccda9c65ef561d9468ddf9}\label{class_start_race_command_a1cfa1a566dccda9c65ef561d9468ddf9}} 
+\index{StartRaceCommand@{StartRaceCommand}!getTrackBuilder@{getTrackBuilder}}
+\index{getTrackBuilder@{getTrackBuilder}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{getTrackBuilder()}{getTrackBuilder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$ Start\+Race\+Command\+::get\+Track\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the track builder \begin{DoxyReturn}{Returns}
+the trackbuilder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_start_race_command_a66d828ee03153f2f26941e3f6f9d1ed8}\label{class_start_race_command_a66d828ee03153f2f26941e3f6f9d1ed8}} 
+\index{StartRaceCommand@{StartRaceCommand}!setCars@{setCars}}
+\index{setCars@{setCars}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{setCars()}{setCars()}}
+{\footnotesize\ttfamily void Start\+Race\+Command\+::set\+Cars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$$\ast$}]{cars }\end{DoxyParamCaption})}
+
+Sets the drivers/cars 
+\begin{DoxyParams}{Parameters}
+{\em cars} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_start_race_command_ad7b97d090f6a3bbb45e9d203f2ea594b}\label{class_start_race_command_ad7b97d090f6a3bbb45e9d203f2ea594b}} 
+\index{StartRaceCommand@{StartRaceCommand}!setTeams@{setTeams}}
+\index{setTeams@{setTeams}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{setTeams()}{setTeams()}}
+{\footnotesize\ttfamily void Start\+Race\+Command\+::set\+Teams (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_team}{Team}} $\ast$$\ast$}]{teams }\end{DoxyParamCaption})}
+
+Sets the teams 
+\begin{DoxyParams}{Parameters}
+{\em teams} & taking part \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_start_race_command_aa5a2ef1ac48ba6c4b81c1eb616b55006}\label{class_start_race_command_aa5a2ef1ac48ba6c4b81c1eb616b55006}} 
+\index{StartRaceCommand@{StartRaceCommand}!setTrack@{setTrack}}
+\index{setTrack@{setTrack}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{setTrack()}{setTrack()}}
+{\footnotesize\ttfamily void Start\+Race\+Command\+::set\+Track (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_track_section}{Track\+Section}} $>$}]{t }\end{DoxyParamCaption})}
+
+sets the track sections 
+\begin{DoxyParams}{Parameters}
+{\em track} & sections. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_start_race_command_a76976a7f1e97b101f14e8ae278a015f5}\label{class_start_race_command_a76976a7f1e97b101f14e8ae278a015f5}} 
+\index{StartRaceCommand@{StartRaceCommand}!setTrackBuilder@{setTrackBuilder}}
+\index{setTrackBuilder@{setTrackBuilder}!StartRaceCommand@{StartRaceCommand}}
+\doxysubsubsection{\texorpdfstring{setTrackBuilder()}{setTrackBuilder()}}
+{\footnotesize\ttfamily void Start\+Race\+Command\+::set\+Track\+Builder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+sets the buildtrackcommand 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_build_track_command}{Build\+Track\+Command}}} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Command/\mbox{\hyperlink{_start_race_command_8h}{Start\+Race\+Command.\+h}}\item 
+Command/\mbox{\hyperlink{_start_race_command_8cpp}{Start\+Race\+Command.\+cpp}}\end{DoxyCompactItemize}

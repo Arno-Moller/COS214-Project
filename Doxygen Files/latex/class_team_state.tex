@@ -1,0 +1,126 @@
+\hypertarget{class_team_state}{}\doxysection{Team\+State Class Reference}
+\label{class_team_state}\index{TeamState@{TeamState}}
+
+
+Originator participant of the \mbox{\hyperlink{class_memento}{Memento}} Design Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Team\+State.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_team_state_acf8767807d94c84ff3be68f096631425}{Team\+State}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car\+One, \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car\+Two)
+\item 
+\mbox{\hyperlink{class_team_state_a8873c04d98267ea85626cc5b71c3254f}{Team\+State}} (\mbox{\hyperlink{class_team}{Team}} $\ast$teams)
+\item 
+\mbox{\hyperlink{class_team_state_ae948d399a48d7ab16b23e50fd8d6fa56}{$\sim$\+Team\+State}} ()
+\item 
+\mbox{\hyperlink{class_team_state}{Team\+State}} $\ast$ \mbox{\hyperlink{class_team_state_a5bf7cfd2193f519615375ddd05aa5b10}{get\+Team\+State}} ()
+\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_team_state_aebbab45af7ab747feb93cb5e868cad97}{get\+Car\+One}} ()
+\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_team_state_a6a5318032c044b7dccb751aed8be39cf}{get\+Car\+Two}} ()
+\item 
+string \mbox{\hyperlink{class_team_state_a0ac9ec5d0b39747e60a53cab8b6ee8a1}{get\+Team\+Name}} ()
+\item 
+int \mbox{\hyperlink{class_team_state_a233d86d9f95c08d7424997999539c1e4}{get\+Team\+Points}} ()
+\item 
+\mbox{\hyperlink{class_team}{Team}} $\ast$ \mbox{\hyperlink{class_team_state_a924ce63a031a31bfce4df49f3bca4fa0}{get\+Team}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Originator participant of the \mbox{\hyperlink{class_memento}{Memento}} Design Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_team_state_acf8767807d94c84ff3be68f096631425}\label{class_team_state_acf8767807d94c84ff3be68f096631425}} 
+\index{TeamState@{TeamState}!TeamState@{TeamState}}
+\index{TeamState@{TeamState}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{TeamState()}{TeamState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Team\+State\+::\+Team\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car\+One,  }\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car\+Two }\end{DoxyParamCaption})}
+
+Constructor that sets the cars of the team 
+\begin{DoxyParams}{Parameters}
+{\em car\+One} & the first car of the team \\
+\hline
+{\em car\+Two} & the second car of the team \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_team_state_a8873c04d98267ea85626cc5b71c3254f}\label{class_team_state_a8873c04d98267ea85626cc5b71c3254f}} 
+\index{TeamState@{TeamState}!TeamState@{TeamState}}
+\index{TeamState@{TeamState}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{TeamState()}{TeamState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Team\+State\+::\+Team\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_team}{Team}} $\ast$}]{teams }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_team_state_ae948d399a48d7ab16b23e50fd8d6fa56}\label{class_team_state_ae948d399a48d7ab16b23e50fd8d6fa56}} 
+\index{TeamState@{TeamState}!````~TeamState@{$\sim$TeamState}}
+\index{````~TeamState@{$\sim$TeamState}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{$\sim$TeamState()}{~TeamState()}}
+{\footnotesize\ttfamily Team\+State\+::$\sim$\+Team\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_team_state_aebbab45af7ab747feb93cb5e868cad97}\label{class_team_state_aebbab45af7ab747feb93cb5e868cad97}} 
+\index{TeamState@{TeamState}!getCarOne@{getCarOne}}
+\index{getCarOne@{getCarOne}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{getCarOne()}{getCarOne()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ Team\+State\+::get\+Car\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the first race car of the team \begin{DoxyReturn}{Returns}
+Car\+One of the team 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_team_state_a6a5318032c044b7dccb751aed8be39cf}\label{class_team_state_a6a5318032c044b7dccb751aed8be39cf}} 
+\index{TeamState@{TeamState}!getCarTwo@{getCarTwo}}
+\index{getCarTwo@{getCarTwo}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{getCarTwo()}{getCarTwo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ Team\+State\+::get\+Car\+Two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the second race car of team \begin{DoxyReturn}{Returns}
+Car two of the team 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_team_state_a924ce63a031a31bfce4df49f3bca4fa0}\label{class_team_state_a924ce63a031a31bfce4df49f3bca4fa0}} 
+\index{TeamState@{TeamState}!getTeam@{getTeam}}
+\index{getTeam@{getTeam}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{getTeam()}{getTeam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_team}{Team}} $\ast$ Team\+State\+::get\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the team \begin{DoxyReturn}{Returns}
+team 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_team_state_a0ac9ec5d0b39747e60a53cab8b6ee8a1}\label{class_team_state_a0ac9ec5d0b39747e60a53cab8b6ee8a1}} 
+\index{TeamState@{TeamState}!getTeamName@{getTeamName}}
+\index{getTeamName@{getTeamName}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{getTeamName()}{getTeamName()}}
+{\footnotesize\ttfamily string Team\+State\+::get\+Team\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the team \begin{DoxyReturn}{Returns}
+string of the teams name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_team_state_a233d86d9f95c08d7424997999539c1e4}\label{class_team_state_a233d86d9f95c08d7424997999539c1e4}} 
+\index{TeamState@{TeamState}!getTeamPoints@{getTeamPoints}}
+\index{getTeamPoints@{getTeamPoints}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{getTeamPoints()}{getTeamPoints()}}
+{\footnotesize\ttfamily int Team\+State\+::get\+Team\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the points of the team \begin{DoxyReturn}{Returns}
+int of the teams points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_team_state_a5bf7cfd2193f519615375ddd05aa5b10}\label{class_team_state_a5bf7cfd2193f519615375ddd05aa5b10}} 
+\index{TeamState@{TeamState}!getTeamState@{getTeamState}}
+\index{getTeamState@{getTeamState}!TeamState@{TeamState}}
+\doxysubsubsection{\texorpdfstring{getTeamState()}{getTeamState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_team_state}{Team\+State}} $\ast$ Team\+State\+::get\+Team\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the state of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_team_state}{Team\+State}} pointer that is stored 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Memento/\mbox{\hyperlink{_team_state_8h}{Team\+State.\+h}}\item 
+Memento/\mbox{\hyperlink{_team_state_8cpp}{Team\+State.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{class_memento}{}\doxysection{Memento Class Reference}
+\label{class_memento}\index{Memento@{Memento}}
+
+
+the memento participant of the memento design pattern  
+
+
+
+
+{\ttfamily \#include $<$Memento.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_memento_a169dbcb063ffa67a6bb4b5876de1565d}{Memento}} (\mbox{\hyperlink{class_team}{Team}} $\ast$team)
+\item 
+\mbox{\hyperlink{class_memento_add55eb39c6da2ee802fb4b2d035a09ea}{Memento}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car\+One, \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car\+Two)
+\item 
+\mbox{\hyperlink{class_memento_af680b5488989567d0f03d655c4232924}{$\sim$\+Memento}} ()
+\item 
+\mbox{\hyperlink{class_team_state}{Team\+State}} $\ast$ \mbox{\hyperlink{class_memento_a6a0ca96d41a6f585e328433d2a027ca3}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_memento_a41e2d67a8f68d915da6f80806a801ac4}{set\+State}} (\mbox{\hyperlink{class_team}{Team}} $\ast$team)
+\item 
+void \mbox{\hyperlink{class_memento_ace6a34cbb5614d8bbc9e5ee05c9f2afe}{set\+State}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car\+One, \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car\+Two)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the memento participant of the memento design pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_memento_a169dbcb063ffa67a6bb4b5876de1565d}\label{class_memento_a169dbcb063ffa67a6bb4b5876de1565d}} 
+\index{Memento@{Memento}!Memento@{Memento}}
+\index{Memento@{Memento}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{Memento()}{Memento()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Memento\+::\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_team}{Team}} $\ast$}]{team }\end{DoxyParamCaption})}
+
+Constructor to set the team 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_team}{Team}}} & object to store in the memento \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_memento_add55eb39c6da2ee802fb4b2d035a09ea}\label{class_memento_add55eb39c6da2ee802fb4b2d035a09ea}} 
+\index{Memento@{Memento}!Memento@{Memento}}
+\index{Memento@{Memento}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{Memento()}{Memento()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Memento\+::\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car\+One,  }\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car\+Two }\end{DoxyParamCaption})}
+
+Constructor that sets the cars of the team 
+\begin{DoxyParams}{Parameters}
+{\em car\+One} & the first car of the team \\
+\hline
+{\em car\+Two} & the second car of the team \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_memento_af680b5488989567d0f03d655c4232924}\label{class_memento_af680b5488989567d0f03d655c4232924}} 
+\index{Memento@{Memento}!````~Memento@{$\sim$Memento}}
+\index{````~Memento@{$\sim$Memento}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{$\sim$Memento()}{~Memento()}}
+{\footnotesize\ttfamily Memento\+::$\sim$\+Memento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_memento_a6a0ca96d41a6f585e328433d2a027ca3}\label{class_memento_a6a0ca96d41a6f585e328433d2a027ca3}} 
+\index{Memento@{Memento}!getState@{getState}}
+\index{getState@{getState}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_team_state}{Team\+State}} $\ast$ Memento\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+Returns the state of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_team_state}{Team\+State}} pointer that is stored 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_memento_ace6a34cbb5614d8bbc9e5ee05c9f2afe}\label{class_memento_ace6a34cbb5614d8bbc9e5ee05c9f2afe}} 
+\index{Memento@{Memento}!setState@{setState}}
+\index{setState@{setState}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Memento\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car\+One,  }\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car\+Two }\end{DoxyParamCaption})}
+
+Sets the cars in the teams 
+\begin{DoxyParams}{Parameters}
+{\em car\+One} & the first car of the team \\
+\hline
+{\em car\+Two} & the second car of the team \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_memento_a41e2d67a8f68d915da6f80806a801ac4}\label{class_memento_a41e2d67a8f68d915da6f80806a801ac4}} 
+\index{Memento@{Memento}!setState@{setState}}
+\index{setState@{setState}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Memento\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_team}{Team}} $\ast$}]{team }\end{DoxyParamCaption})}
+
+Sets the team to store 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_team}{Team}}} & object to store in the memento \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Memento/\mbox{\hyperlink{_memento_8h}{Memento.\+h}}\item 
+Memento/\mbox{\hyperlink{_memento_8cpp}{Memento.\+cpp}}\end{DoxyCompactItemize}

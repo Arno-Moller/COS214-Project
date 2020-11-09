@@ -1,0 +1,123 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$new$>$}\newline
+{\ttfamily \#include \char`\"{}Memento/\+Team\+State\+Caretaker.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memento/\+Memento.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memento/\+Team\+State.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memento/\+Team\+State\+Caretaker.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memento/\+Memento.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memento/\+Team\+State.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Observer/\+Pit\+Stop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Observer/\+Change\+Tires.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Observer/\+Change\+Tires.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track\+Section.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Concrete\+Track.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track\+Builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track\+Maker.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Ninety\+Degree\+Turn.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Hairpin.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+S\+\_\+\+Section.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Slight\+Turn.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Straight.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track\+Section.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Concrete\+Track.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track\+Builder.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Track\+Maker.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Ninety\+Degree\+Turn.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Hairpin.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+S\+\_\+\+Section.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Slight\+Turn.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builder/\+Straight.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Build\+Track\+Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Build\+Track\+Command.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Car\+Builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Car\+Part.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Chassie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Engine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Hub.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Race\+Car.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Race\+Car\+Builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Suspension.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Tire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Wing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Car\+Builder.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Car\+Part.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Chassie.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Engine.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Hub.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Race\+Car.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Race\+Car\+Builder.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Suspension.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Tire.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Car\+Composite/\+Wing.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+Good\+Condition.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+O\+K\+Condition.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+Bad\+Condition.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+Tire\+State.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+Tire\+State.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+Good\+Condition.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+O\+K\+Condition.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+State/\+Bad\+Condition.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Tire\+Compound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Soft\+Compound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Medium\+Compound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Hard\+Compound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Tire\+Compound.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Soft\+Compound.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Medium\+Compound.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tire\+Compound\+Strategy/\+Hard\+Compound.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prototype/\+Team.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prototype/\+Racing\+Team.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prototype/\+Team.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prototype/\+Racing\+Team.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Strategy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Sensible.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Cautious.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Aggressive.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Sensible.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Cautious.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Strategy/\+Aggressive.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Create\+Team\+Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Create\+Team\+Command.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Start\+Race\+Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Start\+Race\+Command.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Singleton/\+Singleton\+Championship.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Singleton/\+Singleton\+Championship.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Race\+Condition\+Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Race\+Condition\+Command.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Cloudy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Rainy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Sunny.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Weather.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Race.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Cloudy.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Rainy.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Sunny.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Weather.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}State\+Weather/\+Race.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Template/\+Championship.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Template/\+Constructors\+Championship.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Template/\+Championship.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Template/\+Constructors\+Championship.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Template/\+Drivers\+Championship.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Seasonal\+Results\+Command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Command/\+Seasonal\+Results\+Command.\+cpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

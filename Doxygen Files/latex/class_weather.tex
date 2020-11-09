@@ -1,0 +1,87 @@
+\hypertarget{class_weather}{}\doxysection{Weather Class Reference}
+\label{class_weather}\index{Weather@{Weather}}
+
+
+state partipant of the state design pattern  
+
+
+
+
+{\ttfamily \#include $<$Weather.\+h$>$}
+
+Inheritance diagram for Weather\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_weather}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weather_aa404c94fec05b825454a7309827767c6}{Weather}} ()
+\item 
+virtual \mbox{\hyperlink{class_weather}{Weather}} $\ast$ \mbox{\hyperlink{class_weather_a1b74b4b35c21b9a82dd7df5185bb2ec8}{change\+Weather}} ()=0
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_weather_ac90d91a062e148647f25aec676eeb29d}{get\+Weather}} ()
+\item 
+void \mbox{\hyperlink{class_weather_ad23fee37532225b1c493ccbf5d98b805}{set\+Weather}} (string)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+state partipant of the state design pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weather_aa404c94fec05b825454a7309827767c6}\label{class_weather_aa404c94fec05b825454a7309827767c6}} 
+\index{Weather@{Weather}!Weather@{Weather}}
+\index{Weather@{Weather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{Weather()}{Weather()}}
+{\footnotesize\ttfamily Weather\+::\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weather_a1b74b4b35c21b9a82dd7df5185bb2ec8}\label{class_weather_a1b74b4b35c21b9a82dd7df5185bb2ec8}} 
+\index{Weather@{Weather}!changeWeather@{changeWeather}}
+\index{changeWeather@{changeWeather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{changeWeather()}{changeWeather()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_weather}{Weather}}$\ast$ Weather\+::change\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+constructor 
+
+abstract interface to change the weather state \begin{DoxyReturn}{Returns}
+the weather state as it has changed. ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_sunny_abba42b1491052f1df0ae5bd0dbb8f1be}{Sunny}}, \mbox{\hyperlink{class_rainy_a47e693cf9c4025e53116c554f5fea25f}{Rainy}}, and \mbox{\hyperlink{class_cloudy_aa6e14fe842bb96596fc57c844d987930}{Cloudy}}.
+
+\mbox{\Hypertarget{class_weather_ac90d91a062e148647f25aec676eeb29d}\label{class_weather_ac90d91a062e148647f25aec676eeb29d}} 
+\index{Weather@{Weather}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
+{\footnotesize\ttfamily string Weather\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the race car should pit \begin{DoxyReturn}{Returns}
+the string of the weather 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weather_ad23fee37532225b1c493ccbf5d98b805}\label{class_weather_ad23fee37532225b1c493ccbf5d98b805}} 
+\index{Weather@{Weather}!setWeather@{setWeather}}
+\index{setWeather@{setWeather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{setWeather()}{setWeather()}}
+{\footnotesize\ttfamily void Weather\+::set\+Weather (\begin{DoxyParamCaption}\item[{string}]{w }\end{DoxyParamCaption})}
+
+sets the weather 
+\begin{DoxyParams}{Parameters}
+{\em weather} & string that takes in the whether of the day default weather of sunny \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State\+Weather/\mbox{\hyperlink{_weather_8h}{Weather.\+h}}\item 
+State\+Weather/\mbox{\hyperlink{_weather_8cpp}{Weather.\+cpp}}\end{DoxyCompactItemize}

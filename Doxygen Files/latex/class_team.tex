@@ -1,0 +1,389 @@
+\hypertarget{class_team}{}\doxysection{Team Class Reference}
+\label{class_team}\index{Team@{Team}}
+
+
+{\ttfamily \#include $<$Team.\+h$>$}
+
+Inheritance diagram for Team\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_team}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_team_aada295895b747960576b69d8c87a54ba}{Team}} ()
+\item 
+\mbox{\hyperlink{class_team_af637a8f1ee5b2e3e9e35121528718123}{Team}} (string \mbox{\hyperlink{class_team_aed01acb740e57971e9dcdbae0385a325}{tire\+Compound}})
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_team_ab4218fddd612d52bab47bec4feeb49de}{$\sim$\+Team}} ()
+\item 
+virtual void \mbox{\hyperlink{class_team_a236e647e36648c37e134c3f0ac5db6fd}{build\+Car}} ()=0
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_team_a6731e94e66e35416911be87e8e425fe4}{lap}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_team_a0730bbb66be2cb3a13b3ff8bf0cc371e}{set\+Tire\+Compound}} (string \mbox{\hyperlink{class_team_aed01acb740e57971e9dcdbae0385a325}{tire\+Compound}})=0
+\item 
+virtual \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_team_ab67cd28e09b26a0fdc802d8237cdc15a}{get\+Car\+One}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_car_part}{Car\+Part}} $\ast$ \mbox{\hyperlink{class_team_a0909a13007eabf08dc3720c9573950f2}{get\+Car\+One\+Part}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_team_ae9280ecd2cd46efda807aab4671450eb}{get\+Car\+Two}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_car_part}{Car\+Part}} $\ast$ \mbox{\hyperlink{class_team_ae11d7e55b1306787fb3f786b68a2f386}{get\+Car\+Two\+Part}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_team_abeeebc3962d9bcc5826bf8757df9a604}{set\+Car\+One}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$\mbox{\hyperlink{class_team_a29fbabe052c0b4012871ca608183a1f6}{car1}})=0
+\item 
+virtual void \mbox{\hyperlink{class_team_a977ef271de31679ca703aff424ef5736}{set\+Car\+Two}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$\mbox{\hyperlink{class_team_a337dc338a80e3f2a7222610fd4dba10b}{car2}})=0
+\item 
+virtual \mbox{\hyperlink{class_team}{Team}} $\ast$ \mbox{\hyperlink{class_team_a3f8fd9faa85da4cf4ae11ae38b7a012e}{clone}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_team_a9d6c8939cc11d76ae8b1e17f82e61644}{get\+Team\+Points}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_team_a1838384bbc318a21bcc800a3ab6c49cb}{set\+Team\+Points}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_team_a5a563786538ca151dce8e48fa26e472a}{set\+Team\+Points}} (int p)=0
+\item 
+virtual string \mbox{\hyperlink{class_team_aa46d101e359344a4597ca4f1960c22e9}{get\+Team\+Name}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_team_ace1d08d40014d4962565bc73e67fd78c}{set\+Team\+Name}} (string name)=0
+\item 
+virtual \mbox{\hyperlink{class_memento}{Memento}} $\ast$ \mbox{\hyperlink{class_team_aa1ccdde9afc859fe973bbb0ea7fd3387}{create\+Memento}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_team_a83d355d7728c4cddde123107a647f9db}{load\+Memento}} (\mbox{\hyperlink{class_memento}{Memento}} $\ast$m)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car_builder}{Car\+Builder}} $\ast$ \mbox{\hyperlink{class_team_a630f486f2b49f7579093fa4c922d7379}{builder1}}
+\item 
+\mbox{\hyperlink{class_car_builder}{Car\+Builder}} $\ast$ \mbox{\hyperlink{class_team_a81d80c635c1af812d6e69631ee686da8}{builder2}}
+\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_team_a29fbabe052c0b4012871ca608183a1f6}{car1}}
+\item 
+\mbox{\hyperlink{class_car_part}{Car\+Part}} $\ast$ \mbox{\hyperlink{class_team_ac9c09128d6bdb28aeeb97e50c4313f39}{car1\+Part}}
+\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_team_a337dc338a80e3f2a7222610fd4dba10b}{car2}}
+\item 
+\mbox{\hyperlink{class_car_part}{Car\+Part}} $\ast$ \mbox{\hyperlink{class_team_a79583c2361286f41d27bfd7d38c48e41}{car2\+Part}}
+\item 
+string \mbox{\hyperlink{class_team_aed01acb740e57971e9dcdbae0385a325}{tire\+Compound}}
+\item 
+int \mbox{\hyperlink{class_team_a0d305cbf0e73994a043a112d44b29fae}{team\+Points}} = 0
+\item 
+string \mbox{\hyperlink{class_team_aabaed21b9d6c458ce3211f4d1188822b}{team\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_team_aada295895b747960576b69d8c87a54ba}\label{class_team_aada295895b747960576b69d8c87a54ba}} 
+\index{Team@{Team}!Team@{Team}}
+\index{Team@{Team}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{Team()}{Team()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Team\+::\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_team_af637a8f1ee5b2e3e9e35121528718123}\label{class_team_af637a8f1ee5b2e3e9e35121528718123}} 
+\index{Team@{Team}!Team@{Team}}
+\index{Team@{Team}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{Team()}{Team()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Team\+::\+Team (\begin{DoxyParamCaption}\item[{string}]{tire\+Compound }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+Constructor that sets the tire compound 
+\begin{DoxyParams}{Parameters}
+{\em tire\+Compound} & wether the tire is soft medium or hard \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_team_ab4218fddd612d52bab47bec4feeb49de}\label{class_team_ab4218fddd612d52bab47bec4feeb49de}} 
+\index{Team@{Team}!````~Team@{$\sim$Team}}
+\index{````~Team@{$\sim$Team}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{$\sim$Team()}{~Team()}}
+{\footnotesize\ttfamily Team\+::$\sim$\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_team_a236e647e36648c37e134c3f0ac5db6fd}\label{class_team_a236e647e36648c37e134c3f0ac5db6fd}} 
+\index{Team@{Team}!buildCar@{buildCar}}
+\index{buildCar@{buildCar}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{buildCar()}{buildCar()}}
+{\footnotesize\ttfamily virtual void Team\+::build\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+destructor 
+
+Abstract interface Method that builds the car It adds all the elements to the car 
+
+Implemented in \mbox{\hyperlink{class_racing_team_aa786cb0a7d03f19e7f6b62a0f61d9713}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a3f8fd9faa85da4cf4ae11ae38b7a012e}\label{class_team_a3f8fd9faa85da4cf4ae11ae38b7a012e}} 
+\index{Team@{Team}!clone@{clone}}
+\index{clone@{clone}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_team}{Team}}$\ast$ Team\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that clones the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_team}{Team}} object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a9935a7fbf48de6f3063887c3bf6bd113}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_aa1ccdde9afc859fe973bbb0ea7fd3387}\label{class_team_aa1ccdde9afc859fe973bbb0ea7fd3387}} 
+\index{Team@{Team}!createMemento@{createMemento}}
+\index{createMemento@{createMemento}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{createMemento()}{createMemento()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_memento}{Memento}}$\ast$ Team\+::create\+Memento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that creates a memento of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_memento}{Memento}} of the team 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_ae1b3ff7620935752376b029943db2cac}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_ab67cd28e09b26a0fdc802d8237cdc15a}\label{class_team_ab67cd28e09b26a0fdc802d8237cdc15a}} 
+\index{Team@{Team}!getCarOne@{getCarOne}}
+\index{getCarOne@{getCarOne}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{getCarOne()}{getCarOne()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Team\+::get\+Car\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that returns the first car of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_race_car}{Race\+Car}} object of the first car of the team 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a3f6c400088b7c0d0f83f5822f34210b5}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a0909a13007eabf08dc3720c9573950f2}\label{class_team_a0909a13007eabf08dc3720c9573950f2}} 
+\index{Team@{Team}!getCarOnePart@{getCarOnePart}}
+\index{getCarOnePart@{getCarOnePart}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{getCarOnePart()}{getCarOnePart()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car_part}{Car\+Part}}$\ast$ Team\+::get\+Car\+One\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_aff8c0b51c64609560912d86b7fc2464b}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_ae9280ecd2cd46efda807aab4671450eb}\label{class_team_ae9280ecd2cd46efda807aab4671450eb}} 
+\index{Team@{Team}!getCarTwo@{getCarTwo}}
+\index{getCarTwo@{getCarTwo}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{getCarTwo()}{getCarTwo()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Team\+::get\+Car\+Two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that returns the second car of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_race_car}{Race\+Car}} object of the second car of the team 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_acb9192eec27dcbbb635de44e3d6de716}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_ae11d7e55b1306787fb3f786b68a2f386}\label{class_team_ae11d7e55b1306787fb3f786b68a2f386}} 
+\index{Team@{Team}!getCarTwoPart@{getCarTwoPart}}
+\index{getCarTwoPart@{getCarTwoPart}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{getCarTwoPart()}{getCarTwoPart()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car_part}{Car\+Part}}$\ast$ Team\+::get\+Car\+Two\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a0cc25b55161b92917b3eeb9fe678dc89}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_aa46d101e359344a4597ca4f1960c22e9}\label{class_team_aa46d101e359344a4597ca4f1960c22e9}} 
+\index{Team@{Team}!getTeamName@{getTeamName}}
+\index{getTeamName@{getTeamName}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{getTeamName()}{getTeamName()}}
+{\footnotesize\ttfamily virtual string Team\+::get\+Team\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that returns the teams name \begin{DoxyReturn}{Returns}
+string of the teams name 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a345c6a97c5d4a88b88f58ca007bcc067}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a9d6c8939cc11d76ae8b1e17f82e61644}\label{class_team_a9d6c8939cc11d76ae8b1e17f82e61644}} 
+\index{Team@{Team}!getTeamPoints@{getTeamPoints}}
+\index{getTeamPoints@{getTeamPoints}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{getTeamPoints()}{getTeamPoints()}}
+{\footnotesize\ttfamily virtual int Team\+::get\+Team\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that returns the teams points \begin{DoxyReturn}{Returns}
+int amount of the points the team has made 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a33d47944ffc0bd91b8358d86efbfaf47}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a6731e94e66e35416911be87e8e425fe4}\label{class_team_a6731e94e66e35416911be87e8e425fe4}} 
+\index{Team@{Team}!lap@{lap}}
+\index{lap@{lap}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{lap()}{lap()}}
+{\footnotesize\ttfamily virtual void Team\+::lap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface Method that allows both cars of the team to do laps 
+
+Implemented in \mbox{\hyperlink{class_racing_team_addc73272d7522d86b5317f41d46e05a2}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a83d355d7728c4cddde123107a647f9db}\label{class_team_a83d355d7728c4cddde123107a647f9db}} 
+\index{Team@{Team}!loadMemento@{loadMemento}}
+\index{loadMemento@{loadMemento}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{loadMemento()}{loadMemento()}}
+{\footnotesize\ttfamily virtual void Team\+::load\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_memento}{Memento}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that loads the memento that was previously stored and reinstates it \begin{DoxyReturn}{Returns}
+int amount of the points the team has made 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a1b359b12f21a75cfa50d66b88ce618ff}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_abeeebc3962d9bcc5826bf8757df9a604}\label{class_team_abeeebc3962d9bcc5826bf8757df9a604}} 
+\index{Team@{Team}!setCarOne@{setCarOne}}
+\index{setCarOne@{setCarOne}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{setCarOne()}{setCarOne()}}
+{\footnotesize\ttfamily virtual void Team\+::set\+Car\+One (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that sets the first car of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_race_car}{Race\+Car}} object of the first car of the team 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_aa84657fe5ff29dff3fc095ded887ff7f}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a977ef271de31679ca703aff424ef5736}\label{class_team_a977ef271de31679ca703aff424ef5736}} 
+\index{Team@{Team}!setCarTwo@{setCarTwo}}
+\index{setCarTwo@{setCarTwo}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{setCarTwo()}{setCarTwo()}}
+{\footnotesize\ttfamily virtual void Team\+::set\+Car\+Two (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that sets the second car of the team \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_race_car}{Race\+Car}} object of the first car of the team 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_acb64e9d69e3c9727f3581573a5559102}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_ace1d08d40014d4962565bc73e67fd78c}\label{class_team_ace1d08d40014d4962565bc73e67fd78c}} 
+\index{Team@{Team}!setTeamName@{setTeamName}}
+\index{setTeamName@{setTeamName}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{setTeamName()}{setTeamName()}}
+{\footnotesize\ttfamily virtual void Team\+::set\+Team\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that sets the teams name 
+\begin{DoxyParams}{Parameters}
+{\em name} & of the team \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_ae49960229eaf26552a2252aa32714916}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a1838384bbc318a21bcc800a3ab6c49cb}\label{class_team_a1838384bbc318a21bcc800a3ab6c49cb}} 
+\index{Team@{Team}!setTeamPoints@{setTeamPoints}}
+\index{setTeamPoints@{setTeamPoints}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{setTeamPoints()}{setTeamPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Team\+::set\+Team\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that sets the teams points 
+
+Implemented in \mbox{\hyperlink{class_racing_team_a418bedd1bf37393f9f8c0f14bc15c308}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a5a563786538ca151dce8e48fa26e472a}\label{class_team_a5a563786538ca151dce8e48fa26e472a}} 
+\index{Team@{Team}!setTeamPoints@{setTeamPoints}}
+\index{setTeamPoints@{setTeamPoints}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{setTeamPoints()}{setTeamPoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Team\+::set\+Team\+Points (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that sets the teams points 
+
+Implemented in \mbox{\hyperlink{class_racing_team_a6bba09f5a90eebcee481cccffadb148f}{Racing\+Team}}.
+
+\mbox{\Hypertarget{class_team_a0730bbb66be2cb3a13b3ff8bf0cc371e}\label{class_team_a0730bbb66be2cb3a13b3ff8bf0cc371e}} 
+\index{Team@{Team}!setTireCompound@{setTireCompound}}
+\index{setTireCompound@{setTireCompound}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{setTireCompound()}{setTireCompound()}}
+{\footnotesize\ttfamily virtual void Team\+::set\+Tire\+Compound (\begin{DoxyParamCaption}\item[{string}]{tire\+Compound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract interface method that sets the tire Compound(soft , hard , medium) 
+\begin{DoxyParams}{Parameters}
+{\em tire\+Compound} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_racing_team_a2ff4b33c631004ff63af2d5496da8742}{Racing\+Team}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_team_a630f486f2b49f7579093fa4c922d7379}\label{class_team_a630f486f2b49f7579093fa4c922d7379}} 
+\index{Team@{Team}!builder1@{builder1}}
+\index{builder1@{builder1}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{builder1}{builder1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car_builder}{Car\+Builder}}$\ast$ Team\+::builder1\hspace{0.3cm}{\ttfamily [protected]}}
+
+the builder object to build the cars ~\newline
+ \mbox{\Hypertarget{class_team_a81d80c635c1af812d6e69631ee686da8}\label{class_team_a81d80c635c1af812d6e69631ee686da8}} 
+\index{Team@{Team}!builder2@{builder2}}
+\index{builder2@{builder2}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{builder2}{builder2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car_builder}{Car\+Builder}}$\ast$ Team\+::builder2\hspace{0.3cm}{\ttfamily [protected]}}
+
+the builder object to build the cars ~\newline
+ \mbox{\Hypertarget{class_team_a29fbabe052c0b4012871ca608183a1f6}\label{class_team_a29fbabe052c0b4012871ca608183a1f6}} 
+\index{Team@{Team}!car1@{car1}}
+\index{car1@{car1}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{car1}{car1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Team\+::car1\hspace{0.3cm}{\ttfamily [protected]}}
+
+the first car that the car has \mbox{\Hypertarget{class_team_ac9c09128d6bdb28aeeb97e50c4313f39}\label{class_team_ac9c09128d6bdb28aeeb97e50c4313f39}} 
+\index{Team@{Team}!car1Part@{car1Part}}
+\index{car1Part@{car1Part}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{car1Part}{car1Part}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car_part}{Car\+Part}}$\ast$ Team\+::car1\+Part\hspace{0.3cm}{\ttfamily [protected]}}
+
+the first car that the car has \mbox{\Hypertarget{class_team_a337dc338a80e3f2a7222610fd4dba10b}\label{class_team_a337dc338a80e3f2a7222610fd4dba10b}} 
+\index{Team@{Team}!car2@{car2}}
+\index{car2@{car2}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{car2}{car2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Team\+::car2\hspace{0.3cm}{\ttfamily [protected]}}
+
+the second car that the team has ~\newline
+ \mbox{\Hypertarget{class_team_a79583c2361286f41d27bfd7d38c48e41}\label{class_team_a79583c2361286f41d27bfd7d38c48e41}} 
+\index{Team@{Team}!car2Part@{car2Part}}
+\index{car2Part@{car2Part}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{car2Part}{car2Part}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car_part}{Car\+Part}}$\ast$ Team\+::car2\+Part\hspace{0.3cm}{\ttfamily [protected]}}
+
+the first car that the car has \mbox{\Hypertarget{class_team_aabaed21b9d6c458ce3211f4d1188822b}\label{class_team_aabaed21b9d6c458ce3211f4d1188822b}} 
+\index{Team@{Team}!teamName@{teamName}}
+\index{teamName@{teamName}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{teamName}{teamName}}
+{\footnotesize\ttfamily string Team\+::team\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+the teams name ~\newline
+ \mbox{\Hypertarget{class_team_a0d305cbf0e73994a043a112d44b29fae}\label{class_team_a0d305cbf0e73994a043a112d44b29fae}} 
+\index{Team@{Team}!teamPoints@{teamPoints}}
+\index{teamPoints@{teamPoints}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{teamPoints}{teamPoints}}
+{\footnotesize\ttfamily int Team\+::team\+Points = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+the points of the team ~\newline
+ \mbox{\Hypertarget{class_team_aed01acb740e57971e9dcdbae0385a325}\label{class_team_aed01acb740e57971e9dcdbae0385a325}} 
+\index{Team@{Team}!tireCompound@{tireCompound}}
+\index{tireCompound@{tireCompound}!Team@{Team}}
+\doxysubsubsection{\texorpdfstring{tireCompound}{tireCompound}}
+{\footnotesize\ttfamily string Team\+::tire\+Compound\hspace{0.3cm}{\ttfamily [protected]}}
+
+the tire compound ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Prototype/\mbox{\hyperlink{_team_8h}{Team.\+h}}\item 
+Prototype/\mbox{\hyperlink{_team_8cpp}{Team.\+cpp}}\end{DoxyCompactItemize}

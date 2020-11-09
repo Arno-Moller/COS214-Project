@@ -1,0 +1,627 @@
+\hypertarget{class_race_car}{}\doxysection{Race\+Car Class Reference}
+\label{class_race_car}\index{RaceCar@{RaceCar}}
+
+
+This class is the product participant of the Builder Design pattern. Subject participant of the observer design Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Race\+Car.\+h$>$}
+
+Inheritance diagram for Race\+Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.882353cm]{class_race_car}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_race_car_a4fe3c3110f1bb6118b745933af942a2e}{Race\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_race}{Race}} Car object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_race_car_a929c2ed6331136005359243e11269fe1}{$\sim$\+Race\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_race}{Race}} Car object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_a5a52e9baf12b0a5ce778979562862d4c}{request}} ()
+\item 
+virtual void \mbox{\hyperlink{class_race_car_ab4aacf156736140bd69003af40507625}{lap}} ()
+\begin{DoxyCompactList}\small\item\em //the method to do a lap \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_race_car_aeaf6b916fe1042baa848733a0a2a110d}{get\+Child}} ()
+\begin{DoxyCompactList}\small\item\em Get the Child object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_ae0a0e032455499d9533e2af4d560b667}{degrade}} ()
+\begin{DoxyCompactList}\small\item\em virtual function of the degrade method \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_aaf9c73b17a91e6dc4c59d3b0a0e8a3f9}{add\+Part}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$car)
+\begin{DoxyCompactList}\small\item\em virtual method to add parts to the race car \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_race_car_a48ca8834830ee10ba3f9fcbae23afa31}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em pure virtual function of the clone method that create a clone of the car \end{DoxyCompactList}\item 
+virtual list$<$ \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ $>$ \mbox{\hyperlink{class_race_car_a3bc6d6ff7df5abddfb42698a4e3039f5}{get\+Car\+Parts}} ()
+\begin{DoxyCompactList}\small\item\em Get the Car Parts object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_ad7e81ffe6d4cb1ad5972e54c8e6053f5}{add\+Pitcrew}} (\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$pitcrew)
+\begin{DoxyCompactList}\small\item\em attach observer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_adbd436bd3ab4ff1ab2886193e484c2e9}{remove\+Pit\+Crew}} ()
+\begin{DoxyCompactList}\small\item\em detach observer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_ae87227aa2fcd28946db20b3b2aa9a58b}{notify}} ()
+\begin{DoxyCompactList}\small\item\em notify observer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ \mbox{\hyperlink{class_race_car_a0fd06d51b722f76c82b48a5d74c2fa6d}{get\+Strategy}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_strategy}{Strategy}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_ae8b7faa2ab1339050c17c860dcdc89fb}{set\+Strategy}} (\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$strat)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_strategy}{Strategy}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ \mbox{\hyperlink{class_race_car_af30fd63cd9f2dd1f21e507a9cf8d0528}{get\+Pit\+Stops}} () const
+\begin{DoxyCompactList}\small\item\em Get the Pit Stops object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_a2089328054d607dda2076692eafc9f12}{set\+Pit\+Stop}} (\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$pitstop)
+\begin{DoxyCompactList}\small\item\em Set the Pit Stop object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_race_car_aa3b1ff93d8d9f1f02107f9b1d91ae6ff}{car\+Pitted}} ()
+\begin{DoxyCompactList}\small\item\em check if the car has pitted \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_race_car_aaf1847e69596e87aae965ec60334994f}{strategy\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em check if the strategy has cha \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_race_car_a3183a1bcf9772f308d220686781bb933}{get\+Tire\+Grip}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_tire}{Tire}} Grip object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_race_car_a8335903accdeacb0751b9191170b960b}{get\+Car\+Tire\+Grip}} ()
+\begin{DoxyCompactList}\small\item\em Get the Car \mbox{\hyperlink{class_tire}{Tire}} Grip object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_race_car_a9b6ce28341e2d0119d740acc2269dc42}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the driver\+Name object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_a6b6bd90aadab1783403ae2fcc6846447}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Set the driver\+Name object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_race_car_a4e8b790d3e7ce2166921399fef7330f5}{get\+Driver\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the Driver Name object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_a84a70a82f8e380786b3a0e5a67ccbfe7}{set\+Driver\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Set the Driver Name object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_race_car_a8ec645a2372529b16c912bbc140b9e8e}{get\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Get the Points object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_race_car_a5879794a9348e9e96facded37ac124f2}{set\+Points}} (int \mbox{\hyperlink{class_race_car_a62840a99ee852b115203ded8f77333d2}{points}})
+\begin{DoxyCompactList}\small\item\em Set the Points object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_race_car_a9a542e3122c7477564fe8f6e9dfe9f41}{get\+Car\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Get the Car Points object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_race_car_a61e33bba699e2a5f7c6c3e02e5155381}{set\+Car\+Points}} (int \mbox{\hyperlink{class_race_car_a62840a99ee852b115203ded8f77333d2}{points}})
+\begin{DoxyCompactList}\small\item\em Set the Car Points object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_race_car_a30d595bd071aa7a9379c1ddc73bd2640}{print}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ \mbox{\hyperlink{class_race_car_a0d6256d06ab7681196cd89b00bb17bdf}{strategy}} = nullptr
+\begin{DoxyCompactList}\small\item\em should it print \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ \mbox{\hyperlink{class_race_car_afa0c584fc9b9ce89c3a4fd2dbbeb45b9}{pit\+Crew}} = nullptr
+\begin{DoxyCompactList}\small\item\em strategy \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_race_car_a62840a99ee852b115203ded8f77333d2}{points}} = 0
+\begin{DoxyCompactList}\small\item\em observer \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_race_car_a9767b31f05131a3d3a9e7735b39d57f5}{driver\+Name}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em driver points \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_race_car_ae2272cad85185714477f13933ee4f329}{tire\+Grip}} = 5
+\begin{DoxyCompactList}\small\item\em driver name \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tire_compound}{Tire\+Compound}} $\ast$ \mbox{\hyperlink{class_race_car_a9473e4eda38312630266756954267ad3}{compound}} = nullptr
+\begin{DoxyCompactList}\small\item\em the grip of the tire \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_race_car_aabd0a92f47584945d04f91318cbd642f}{has\+Pitted}} = false
+\begin{DoxyCompactList}\small\item\em the tire compound strategy \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_race_car_a21841a376d615fc929d6840c59032707}{changed\+Strat}} = false
+\begin{DoxyCompactList}\small\item\em has it pitted \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_race_car_aa16384f68dc5d18e7c32ae0cccdf766a}{old\+Strat}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em did the strategy change \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_race_car_a7a3bfe9188ce03d59ec1b2692cc6da73}{new\+Strat}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em name of old strat before change \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the product participant of the Builder Design pattern. Subject participant of the observer design Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_race_car_a4fe3c3110f1bb6118b745933af942a2e}\label{class_race_car_a4fe3c3110f1bb6118b745933af942a2e}} 
+\index{RaceCar@{RaceCar}!RaceCar@{RaceCar}}
+\index{RaceCar@{RaceCar}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{RaceCar()}{RaceCar()}}
+{\footnotesize\ttfamily Race\+Car\+::\+Race\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_race}{Race}} Car object. 
+
+\mbox{\Hypertarget{class_race_car_a929c2ed6331136005359243e11269fe1}\label{class_race_car_a929c2ed6331136005359243e11269fe1}} 
+\index{RaceCar@{RaceCar}!````~RaceCar@{$\sim$RaceCar}}
+\index{````~RaceCar@{$\sim$RaceCar}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{$\sim$RaceCar()}{~RaceCar()}}
+{\footnotesize\ttfamily Race\+Car\+::$\sim$\+Race\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_race}{Race}} Car object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_race_car_aaf9c73b17a91e6dc4c59d3b0a0e8a3f9}\label{class_race_car_aaf9c73b17a91e6dc4c59d3b0a0e8a3f9}} 
+\index{RaceCar@{RaceCar}!addPart@{addPart}}
+\index{addPart@{addPart}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{addPart()}{addPart()}}
+{\footnotesize\ttfamily void Race\+Car\+::add\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual method to add parts to the race car 
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_a1e4d4a6d6d9ccf788c06055bb1066a09}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_ad7e81ffe6d4cb1ad5972e54c8e6053f5}\label{class_race_car_ad7e81ffe6d4cb1ad5972e54c8e6053f5}} 
+\index{RaceCar@{RaceCar}!addPitcrew@{addPitcrew}}
+\index{addPitcrew@{addPitcrew}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{addPitcrew()}{addPitcrew()}}
+{\footnotesize\ttfamily void Race\+Car\+::add\+Pitcrew (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$}]{pitcrew }\end{DoxyParamCaption})}
+
+
+
+attach observer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitcrew} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_car_aa3b1ff93d8d9f1f02107f9b1d91ae6ff}\label{class_race_car_aa3b1ff93d8d9f1f02107f9b1d91ae6ff}} 
+\index{RaceCar@{RaceCar}!carPitted@{carPitted}}
+\index{carPitted@{carPitted}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{carPitted()}{carPitted()}}
+{\footnotesize\ttfamily bool Race\+Car\+::car\+Pitted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if the car has pitted 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_a48ca8834830ee10ba3f9fcbae23afa31}\label{class_race_car_a48ca8834830ee10ba3f9fcbae23afa31}} 
+\index{RaceCar@{RaceCar}!clone@{clone}}
+\index{clone@{clone}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Race\+Car\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+pure virtual function of the clone method that create a clone of the car 
+
+\begin{DoxyReturn}{Returns}
+Race\+Car$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_wing_a4890064b32c8301ecf991f5c54db5f96}{Wing}}, \mbox{\hyperlink{class_tire_a3e83a5781970462ab05dc12ac7b57f56}{Tire}}, \mbox{\hyperlink{class_suspension_a28d072626a00d6adfda4e97fb6587446}{Suspension}}, \mbox{\hyperlink{class_hub_a155b79fc4b5dc4a3047ce56585778ab6}{Hub}}, \mbox{\hyperlink{class_engine_a08b61facd59e629731909562ddbd11d8}{Engine}}, \mbox{\hyperlink{class_chassie_af2e9207445f5b4a0325a08ba230f3087}{Chassie}}, and \mbox{\hyperlink{class_car_part_ac2c41d03b0116ce103bd9f224660730b}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_ae0a0e032455499d9533e2af4d560b667}\label{class_race_car_ae0a0e032455499d9533e2af4d560b667}} 
+\index{RaceCar@{RaceCar}!degrade@{degrade}}
+\index{degrade@{degrade}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{degrade()}{degrade()}}
+{\footnotesize\ttfamily void Race\+Car\+::degrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual function of the degrade method 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_wing_a121424b3267270e232f79bb28c2f9b05}{Wing}}, \mbox{\hyperlink{class_tire_a937cff273e1a0b88fc684be0281b9eab}{Tire}}, \mbox{\hyperlink{class_suspension_ae4653406b64a0d5fb6b5dc3a0a4cd5fe}{Suspension}}, \mbox{\hyperlink{class_hub_a241f06dfeb04407d703bffcd643892e1}{Hub}}, \mbox{\hyperlink{class_engine_a90b092e7ecc0ff95a6215b8af047e128}{Engine}}, \mbox{\hyperlink{class_chassie_a41d386ee80eedc1ef122c8ed48f8a0db}{Chassie}}, and \mbox{\hyperlink{class_car_part_ae6d12d0d038b3dc4f67d60a0fd69e3b8}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_a3bc6d6ff7df5abddfb42698a4e3039f5}\label{class_race_car_a3bc6d6ff7df5abddfb42698a4e3039f5}} 
+\index{RaceCar@{RaceCar}!getCarParts@{getCarParts}}
+\index{getCarParts@{getCarParts}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getCarParts()}{getCarParts()}}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ $>$ Race\+Car\+::get\+Car\+Parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Car Parts object. 
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Race\+Car$\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_adaddcd347c95b22589bf577b383b5b32}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_a9a542e3122c7477564fe8f6e9dfe9f41}\label{class_race_car_a9a542e3122c7477564fe8f6e9dfe9f41}} 
+\index{RaceCar@{RaceCar}!getCarPoints@{getCarPoints}}
+\index{getCarPoints@{getCarPoints}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getCarPoints()}{getCarPoints()}}
+{\footnotesize\ttfamily int Race\+Car\+::get\+Car\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Car Points object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_a8335903accdeacb0751b9191170b960b}\label{class_race_car_a8335903accdeacb0751b9191170b960b}} 
+\index{RaceCar@{RaceCar}!getCarTireGrip@{getCarTireGrip}}
+\index{getCarTireGrip@{getCarTireGrip}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getCarTireGrip()}{getCarTireGrip()}}
+{\footnotesize\ttfamily int Race\+Car\+::get\+Car\+Tire\+Grip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Car \mbox{\hyperlink{class_tire}{Tire}} Grip object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_aeaf6b916fe1042baa848733a0a2a110d}\label{class_race_car_aeaf6b916fe1042baa848733a0a2a110d}} 
+\index{RaceCar@{RaceCar}!getChild@{getChild}}
+\index{getChild@{getChild}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ Race\+Car\+::get\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Child object. 
+
+\begin{DoxyReturn}{Returns}
+Race\+Car$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_a4e8b790d3e7ce2166921399fef7330f5}\label{class_race_car_a4e8b790d3e7ce2166921399fef7330f5}} 
+\index{RaceCar@{RaceCar}!getDriverName@{getDriverName}}
+\index{getDriverName@{getDriverName}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getDriverName()}{getDriverName()}}
+{\footnotesize\ttfamily string Race\+Car\+::get\+Driver\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Driver Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_a9b6ce28341e2d0119d740acc2269dc42}\label{class_race_car_a9b6ce28341e2d0119d740acc2269dc42}} 
+\index{RaceCar@{RaceCar}!getName@{getName}}
+\index{getName@{getName}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Race\+Car\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the driver\+Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_a1f441bdbb13fdac88e04c1ad67e70f0a}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_af30fd63cd9f2dd1f21e507a9cf8d0528}\label{class_race_car_af30fd63cd9f2dd1f21e507a9cf8d0528}} 
+\index{RaceCar@{RaceCar}!getPitStops@{getPitStops}}
+\index{getPitStops@{getPitStops}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getPitStops()}{getPitStops()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ Race\+Car\+::get\+Pit\+Stops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Pit Stops object. 
+
+\begin{DoxyReturn}{Returns}
+Pit\+Stop$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_a8ec645a2372529b16c912bbc140b9e8e}\label{class_race_car_a8ec645a2372529b16c912bbc140b9e8e}} 
+\index{RaceCar@{RaceCar}!getPoints@{getPoints}}
+\index{getPoints@{getPoints}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getPoints()}{getPoints()}}
+{\footnotesize\ttfamily int Race\+Car\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Points object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_a54356a6f48eed311d8bf7a62edc2f59f}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_a0fd06d51b722f76c82b48a5d74c2fa6d}\label{class_race_car_a0fd06d51b722f76c82b48a5d74c2fa6d}} 
+\index{RaceCar@{RaceCar}!getStrategy@{getStrategy}}
+\index{getStrategy@{getStrategy}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}} $\ast$ Race\+Car\+::get\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{class_strategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_car_a3183a1bcf9772f308d220686781bb933}\label{class_race_car_a3183a1bcf9772f308d220686781bb933}} 
+\index{RaceCar@{RaceCar}!getTireGrip@{getTireGrip}}
+\index{getTireGrip@{getTireGrip}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{getTireGrip()}{getTireGrip()}}
+{\footnotesize\ttfamily int Race\+Car\+::get\+Tire\+Grip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{class_tire}{Tire}} Grip object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_a18042def014a72c107bd3312a519358c}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_ab4aacf156736140bd69003af40507625}\label{class_race_car_ab4aacf156736140bd69003af40507625}} 
+\index{RaceCar@{RaceCar}!lap@{lap}}
+\index{lap@{lap}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{lap()}{lap()}}
+{\footnotesize\ttfamily void Race\+Car\+::lap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+//the method to do a lap 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_tire_a3b2d34b4604e8b6ea8d071f93defd4b6}{Tire}}, and \mbox{\hyperlink{class_car_part_a100fff605ee27ab5ba9909442ef92ab0}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_ae87227aa2fcd28946db20b3b2aa9a58b}\label{class_race_car_ae87227aa2fcd28946db20b3b2aa9a58b}} 
+\index{RaceCar@{RaceCar}!notify@{notify}}
+\index{notify@{notify}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Race\+Car\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+notify observer 
+
+\mbox{\Hypertarget{class_race_car_adbd436bd3ab4ff1ab2886193e484c2e9}\label{class_race_car_adbd436bd3ab4ff1ab2886193e484c2e9}} 
+\index{RaceCar@{RaceCar}!removePitCrew@{removePitCrew}}
+\index{removePitCrew@{removePitCrew}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{removePitCrew()}{removePitCrew()}}
+{\footnotesize\ttfamily void Race\+Car\+::remove\+Pit\+Crew (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+detach observer 
+
+\mbox{\Hypertarget{class_race_car_a5a52e9baf12b0a5ce778979562862d4c}\label{class_race_car_a5a52e9baf12b0a5ce778979562862d4c}} 
+\index{RaceCar@{RaceCar}!request@{request}}
+\index{request@{request}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily void Race\+Car\+::request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_race_car_a61e33bba699e2a5f7c6c3e02e5155381}\label{class_race_car_a61e33bba699e2a5f7c6c3e02e5155381}} 
+\index{RaceCar@{RaceCar}!setCarPoints@{setCarPoints}}
+\index{setCarPoints@{setCarPoints}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{setCarPoints()}{setCarPoints()}}
+{\footnotesize\ttfamily void Race\+Car\+::set\+Car\+Points (\begin{DoxyParamCaption}\item[{int}]{points }\end{DoxyParamCaption})}
+
+
+
+Set the Car Points object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_car_a84a70a82f8e380786b3a0e5a67ccbfe7}\label{class_race_car_a84a70a82f8e380786b3a0e5a67ccbfe7}} 
+\index{RaceCar@{RaceCar}!setDriverName@{setDriverName}}
+\index{setDriverName@{setDriverName}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{setDriverName()}{setDriverName()}}
+{\footnotesize\ttfamily void Race\+Car\+::set\+Driver\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the Driver Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_car_a6b6bd90aadab1783403ae2fcc6846447}\label{class_race_car_a6b6bd90aadab1783403ae2fcc6846447}} 
+\index{RaceCar@{RaceCar}!setName@{setName}}
+\index{setName@{setName}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Race\+Car\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the driver\+Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_abb1e0615222dc8af37d79c81b9ae1102}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_a2089328054d607dda2076692eafc9f12}\label{class_race_car_a2089328054d607dda2076692eafc9f12}} 
+\index{RaceCar@{RaceCar}!setPitStop@{setPitStop}}
+\index{setPitStop@{setPitStop}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{setPitStop()}{setPitStop()}}
+{\footnotesize\ttfamily void Race\+Car\+::set\+Pit\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$}]{pitstop }\end{DoxyParamCaption})}
+
+
+
+Set the Pit Stop object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitstop} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_car_a5879794a9348e9e96facded37ac124f2}\label{class_race_car_a5879794a9348e9e96facded37ac124f2}} 
+\index{RaceCar@{RaceCar}!setPoints@{setPoints}}
+\index{setPoints@{setPoints}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{setPoints()}{setPoints()}}
+{\footnotesize\ttfamily void Race\+Car\+::set\+Points (\begin{DoxyParamCaption}\item[{int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Points object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_car_part_a08f57f76ec26082399c8214cb1a04a5b}{Car\+Part}}.
+
+\mbox{\Hypertarget{class_race_car_ae8b7faa2ab1339050c17c860dcdc89fb}\label{class_race_car_ae8b7faa2ab1339050c17c860dcdc89fb}} 
+\index{RaceCar@{RaceCar}!setStrategy@{setStrategy}}
+\index{setStrategy@{setStrategy}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{setStrategy()}{setStrategy()}}
+{\footnotesize\ttfamily void Race\+Car\+::set\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_strategy}{Strategy}} $\ast$}]{strat }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{class_strategy}{Strategy}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strat} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_car_aaf1847e69596e87aae965ec60334994f}\label{class_race_car_aaf1847e69596e87aae965ec60334994f}} 
+\index{RaceCar@{RaceCar}!strategyChanged@{strategyChanged}}
+\index{strategyChanged@{strategyChanged}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{strategyChanged()}{strategyChanged()}}
+{\footnotesize\ttfamily bool Race\+Car\+::strategy\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if the strategy has cha 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_race_car_a21841a376d615fc929d6840c59032707}\label{class_race_car_a21841a376d615fc929d6840c59032707}} 
+\index{RaceCar@{RaceCar}!changedStrat@{changedStrat}}
+\index{changedStrat@{changedStrat}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{changedStrat}{changedStrat}}
+{\footnotesize\ttfamily bool Race\+Car\+::changed\+Strat = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+has it pitted 
+
+\mbox{\Hypertarget{class_race_car_a9473e4eda38312630266756954267ad3}\label{class_race_car_a9473e4eda38312630266756954267ad3}} 
+\index{RaceCar@{RaceCar}!compound@{compound}}
+\index{compound@{compound}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{compound}{compound}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tire_compound}{Tire\+Compound}}$\ast$ Race\+Car\+::compound = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the grip of the tire 
+
+\mbox{\Hypertarget{class_race_car_a9767b31f05131a3d3a9e7735b39d57f5}\label{class_race_car_a9767b31f05131a3d3a9e7735b39d57f5}} 
+\index{RaceCar@{RaceCar}!driverName@{driverName}}
+\index{driverName@{driverName}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{driverName}{driverName}}
+{\footnotesize\ttfamily string Race\+Car\+::driver\+Name = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+driver points 
+
+\mbox{\Hypertarget{class_race_car_aabd0a92f47584945d04f91318cbd642f}\label{class_race_car_aabd0a92f47584945d04f91318cbd642f}} 
+\index{RaceCar@{RaceCar}!hasPitted@{hasPitted}}
+\index{hasPitted@{hasPitted}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{hasPitted}{hasPitted}}
+{\footnotesize\ttfamily bool Race\+Car\+::has\+Pitted = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the tire compound strategy 
+
+\mbox{\Hypertarget{class_race_car_a7a3bfe9188ce03d59ec1b2692cc6da73}\label{class_race_car_a7a3bfe9188ce03d59ec1b2692cc6da73}} 
+\index{RaceCar@{RaceCar}!newStrat@{newStrat}}
+\index{newStrat@{newStrat}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{newStrat}{newStrat}}
+{\footnotesize\ttfamily string Race\+Car\+::new\+Strat = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+name of old strat before change 
+
+\mbox{\Hypertarget{class_race_car_aa16384f68dc5d18e7c32ae0cccdf766a}\label{class_race_car_aa16384f68dc5d18e7c32ae0cccdf766a}} 
+\index{RaceCar@{RaceCar}!oldStrat@{oldStrat}}
+\index{oldStrat@{oldStrat}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{oldStrat}{oldStrat}}
+{\footnotesize\ttfamily string Race\+Car\+::old\+Strat = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+did the strategy change 
+
+\mbox{\Hypertarget{class_race_car_afa0c584fc9b9ce89c3a4fd2dbbeb45b9}\label{class_race_car_afa0c584fc9b9ce89c3a4fd2dbbeb45b9}} 
+\index{RaceCar@{RaceCar}!pitCrew@{pitCrew}}
+\index{pitCrew@{pitCrew}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{pitCrew}{pitCrew}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_stop}{Pit\+Stop}}$\ast$ Race\+Car\+::pit\+Crew = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+strategy 
+
+\mbox{\Hypertarget{class_race_car_a62840a99ee852b115203ded8f77333d2}\label{class_race_car_a62840a99ee852b115203ded8f77333d2}} 
+\index{RaceCar@{RaceCar}!points@{points}}
+\index{points@{points}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily int Race\+Car\+::points = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+observer 
+
+\mbox{\Hypertarget{class_race_car_a30d595bd071aa7a9379c1ddc73bd2640}\label{class_race_car_a30d595bd071aa7a9379c1ddc73bd2640}} 
+\index{RaceCar@{RaceCar}!print@{print}}
+\index{print@{print}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{print}{print}}
+{\footnotesize\ttfamily bool Race\+Car\+::print = true}
+
+\mbox{\Hypertarget{class_race_car_a0d6256d06ab7681196cd89b00bb17bdf}\label{class_race_car_a0d6256d06ab7681196cd89b00bb17bdf}} 
+\index{RaceCar@{RaceCar}!strategy@{strategy}}
+\index{strategy@{strategy}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{strategy}{strategy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}}$\ast$ Race\+Car\+::strategy = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+should it print 
+
+\mbox{\Hypertarget{class_race_car_ae2272cad85185714477f13933ee4f329}\label{class_race_car_ae2272cad85185714477f13933ee4f329}} 
+\index{RaceCar@{RaceCar}!tireGrip@{tireGrip}}
+\index{tireGrip@{tireGrip}!RaceCar@{RaceCar}}
+\doxysubsubsection{\texorpdfstring{tireGrip}{tireGrip}}
+{\footnotesize\ttfamily int Race\+Car\+::tire\+Grip = 5\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+driver name 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Composite/\mbox{\hyperlink{_race_car_8h}{Race\+Car.\+h}}\item 
+Car\+Composite/\mbox{\hyperlink{_race_car_8cpp}{Race\+Car.\+cpp}}\end{DoxyCompactItemize}
