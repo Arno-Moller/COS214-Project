@@ -82,7 +82,6 @@ RaceCar* CarPart::getCarTire()
 int CarPart::getTireGrip() 
 {    
     return tire->getCarTireGrip();
-    // return 25;
 }
 
 string CarPart::getName() 

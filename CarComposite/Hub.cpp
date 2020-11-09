@@ -2,7 +2,7 @@
 
 Hub::Hub(): RaceCar()
 {
-	// cout << "Hub" << endl;
+
 }
 
 Hub::~Hub()

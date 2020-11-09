@@ -2,7 +2,7 @@
 
 Suspension::Suspension(): RaceCar()
 {
-	// cout << "Suspension" << endl;
+
 }
 
 Suspension::~Suspension()

@@ -30,7 +30,7 @@ class RaceCar
         virtual list<RaceCar*> getCarParts();
 
         void addPitcrew(PitStop* pitcrew);// attach Observer
-        void removePitCrew();// dettach observer
+        void removePitCrew();// detach observer
         void notify();// notify observer
 
 

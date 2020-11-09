@@ -1,6 +1,22 @@
 #include <string>
 #include <iostream>
 
+#include <iostream>
+#include <new>
+
+#include "Memento/TeamStateCaretaker.h"
+#include "Memento/Memento.h"
+#include "Memento/TeamState.h"
+
+#include "Memento/TeamStateCaretaker.cpp"
+#include "Memento/Memento.cpp"
+#include "Memento/TeamState.cpp"
+
+#include "Observer/PitStop.h"
+#include "Observer/ChangeTires.h"
+
+#include "Observer/ChangeTires.cpp"
+
 #include "Builder/Track.h"
 #include "Builder/TrackSection.h"
 #include "Builder/ConcreteTrack.h"
@@ -27,6 +43,7 @@
 
 #include "Command/Command.h"
 #include "Command/BuildTrackCommand.h"
+
 #include "Command/BuildTrackCommand.cpp"
 
 #include "CarComposite/CarBuilder.h"
@@ -51,43 +68,82 @@
 #include "CarComposite/Tire.cpp"
 #include "CarComposite/Wing.cpp"
 
-#include "Prototype/Team.h"
-#include "Prototype/Team.cpp"
-#include "Prototype/RacingTeam.h"
-#include "Prototype/RacingTeam.cpp"
+#include "TireState/GoodCondition.h"
+#include "TireState/OKCondition.h"
+#include "TireState/BadCondition.h"
+#include "TireState/TireState.h"
+
+#include "TireState/TireState.cpp"
+#include "TireState/GoodCondition.cpp"
+#include "TireState/OKCondition.cpp"
+#include "TireState/BadCondition.cpp"
 
 #include "TireCompoundStrategy/TireCompound.h"
 #include "TireCompoundStrategy/SoftCompound.h"
 #include "TireCompoundStrategy/MediumCompound.h"
 #include "TireCompoundStrategy/HardCompound.h"
+
 #include "TireCompoundStrategy/TireCompound.cpp"
 #include "TireCompoundStrategy/SoftCompound.cpp"
 #include "TireCompoundStrategy/MediumCompound.cpp"
 #include "TireCompoundStrategy/HardCompound.cpp"
 
-#include "TireState/GoodCondition.h"
-#include "TireState/GoodCondition.cpp"
-#include "TireState/BadCondition.h"
-#include "TireState/BadCondition.cpp"
-#include "TireState/OKCondition.h"
-#include "TireState/OKCondition.cpp"
-#include "TireState/TireState.h"
-#include "TireState/TireState.cpp"
+#include "Prototype/Team.h"
+#include "Prototype/RacingTeam.h"
+
+#include "Prototype/Team.cpp"
+#include "Prototype/RacingTeam.cpp"
+
+#include "Strategy/Strategy.h"
+
+#include "Strategy/Sensible.h"
+#include "Strategy/Cautious.h"
+#include "Strategy/Aggressive.h"
+
+#include "Strategy/Sensible.cpp"
+#include "Strategy/Cautious.cpp"
+#include "Strategy/Aggressive.cpp"
+
+#include "Command/CreateTeamCommand.h"
+#include "Command/CreateTeamCommand.cpp"
+
+#include "Command/StartRaceCommand.h"
+#include "Command/StartRaceCommand.cpp"
+
+#include "Singleton/SingletonChampionship.h"
+#include "Singleton/SingletonChampionship.cpp"
+
+#include "Command/RaceConditionCommand.h"
+#include "Command/RaceConditionCommand.cpp"
+
+#include "StateWeather/Cloudy.h"
+#include "StateWeather/Rainy.h"
+#include "StateWeather/Sunny.h"
+#include "StateWeather/Weather.h"
+#include "StateWeather/Race.h"
+
+#include "StateWeather/Cloudy.cpp"
+#include "StateWeather/Rainy.cpp"
+#include "StateWeather/Sunny.cpp"
+#include "StateWeather/Weather.cpp"
+#include "StateWeather/Race.cpp"
+
+#include "Template/Championship.h"
+#include "Template/ConstructorsChampionship.h"
+
+#include "Template/Championship.cpp"
+#include "Template/ConstructorsChampionship.cpp"
+#include "Template/DriversChampionship.cpp"
+
+#include "Command/SeasonalResultsCommand.h"
+#include "Command/SeasonalResultsCommand.cpp"
 
 using namespace std;
 
-int main(){
-	
-	Team *t = new RacingTeam();
-	t->setTireCompound("h");
-	t->buildCar();
-	
-	//simulate laps
-	for(int i = 0; i < 52; i++)
-		t->lap();
-	
-	
-	delete t;
+int main()
+{
+    SingletonChampionship* championship = SingletonChampionship::getInstance();
+	championship->StartChampionship();
 	return 0;
 }
 

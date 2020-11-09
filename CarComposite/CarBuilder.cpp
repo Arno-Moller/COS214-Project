@@ -7,7 +7,7 @@ CarBuilder::CarBuilder(): RaceCarBuilder()
 
 CarBuilder::~CarBuilder()
 {
-	//cars get deleted in team
+	
 }
 
 void CarBuilder::addChassis()

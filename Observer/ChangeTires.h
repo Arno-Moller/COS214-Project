@@ -4,7 +4,6 @@
 #include "PitStop.h"
 #include "../CarComposite/Tire.h"
 #include "../TireState/TireState.h"
-// #include "Strategy.h"
 
 
 class ChangeTires: public PitStop

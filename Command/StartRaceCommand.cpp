@@ -5,7 +5,6 @@ StartRaceCommand::StartRaceCommand()
 {
     constructors = new Team*[10];
     drivers = new RaceCar*[20];
-    //lap = new LapCommand();
     trackBuilder = new BuildTrackCommand();
     weather = new RaceConditionCommand();
 
@@ -37,8 +36,6 @@ StartRaceCommand::StartRaceCommand(Team** teams, BuildTrackCommand* t)
             drivers[j] = constructors[i]->getCarTwo();
             j++;
         }
-
-        //lap = new LapCommand(drivers);
     }
 }
 
@@ -62,8 +59,6 @@ StartRaceCommand::StartRaceCommand(CreateTeamCommand* teamCom, BuildTrackCommand
             drivers[j] = constructors[i]->getCarTwo();
             j++;
         }
-
-        //lap = new LapCommand(drivers);
     }
 }
 
@@ -94,14 +89,12 @@ void StartRaceCommand::execute()
 
     for(int i = 0; i < laps; i++)
     {   
-        cout << "LAP: " << i+1 << endl << endl;
+        cout << "                                    LAP NUMBER: " << i+1 << endl << endl;
 
         for(int j = 0; j < 20; j++)
         {
             double d = 0;
             double temp = 0;
-            
-            // cout << drivers[j]->getName() << " :" << endl;
 
             for(TrackSection it:track)
             {
@@ -132,9 +125,6 @@ void StartRaceCommand::execute()
     drivers->print();
 
     teamsCup->logResults();
-
-    // teamCom->restoreTeams();
-    // setTeams(teamCom->getTeams());
 }
 
 Team** StartRaceCommand::getTeams() 
@@ -156,8 +146,6 @@ void StartRaceCommand::setTeams(Team** teams)
             drivers[j] = constructors[i]->getCarTwo();
             j++;
         }
-
-        //this->lap->setCars(drivers);
     }
 }
 
