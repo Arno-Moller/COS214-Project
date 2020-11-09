@@ -45,3 +45,15 @@ int TeamState::getTeamPoints()
 {
     return points;   
 }
+
+Team* TeamState::getTeam() 
+{
+    Team* temp = new RacingTeam();
+    temp->setCarOne(carOne);
+    temp->setCarTwo(carTwo);
+    temp->setTeamName(teamName);
+    temp->setTeamPoints(points);
+    return temp;
+}
+
+

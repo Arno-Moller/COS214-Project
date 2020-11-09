@@ -26,7 +26,7 @@ void DriversChampionship::print()
         cout << "********************************************"  << endl << endl;
         cout << "\tIn place " << i+1 << " :" 
                 <<"\n\t\tTeam " << driversResults[i].teamName 
-                <<"\n\t\tDriver nr" << driversResults[i].driver  << endl;
+                <<"\n\t\tDriver: " << driversResults[i].driverName  << endl;
         cout << "\t\tTime: " << driversResults[i].time << "s" << endl;
 
         cout  << endl;

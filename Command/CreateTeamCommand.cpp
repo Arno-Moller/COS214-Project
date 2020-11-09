@@ -47,7 +47,7 @@ void CreateTeamCommand::execute()
 
     for (int i = 0; i < 10; i++)
     {
-        teamSaves[i] = new TeamStateCaretaker(new Memento(teams[i]));
+        teamSaves[i] = new TeamStateCaretaker(teams[i]->createMemento());
     }
     
 }
@@ -66,12 +66,9 @@ Team** CreateTeamCommand::getTeams()
 void CreateTeamCommand::restoreTeams() 
 {
     for (int i = 0; i < 10; i++)
-    {
-        teams[i] = new RacingTeam();
-        teams[i]->setCarOne(teamSaves[i]->getBackupTeam()->getState()->getCarOne());
-        teams[i]->setCarTwo(teamSaves[i]->getBackupTeam()->getState()->getCarTwo());
-        teams[i]->setTeamName(teamSaves[i]->getBackupTeam()->getState()->getTeamName());
+    {   
+        // teams[i] = teamSaves[i]->getBackupTeam()->getState()->getTeam();
+        teams[i]->loadMemento(teamSaves[i]->getBackupTeam());
     }
-    
 }
 

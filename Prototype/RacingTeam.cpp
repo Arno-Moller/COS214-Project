@@ -116,14 +116,11 @@ Memento* RacingTeam::createMemento()
 
 void RacingTeam::loadMemento(Memento* m) 
 {
-	delete car1;
-	delete car2;
-
 	this->car1 = m->getState()->getCarOne();
 	this->car2 = m->getState()->getCarTwo();
 
 	teamName = m->getState()->getTeamName();
-	teamPoints = m->getState()->getTeamPoints();
+	// teamPoints = m->getState()->getTeamPoints();
 }
 
 

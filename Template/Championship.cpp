@@ -37,12 +37,14 @@ void Championship::calculate()
 
     for(int i = 0 ; i < numDrivers/2 ; i++)
     {
+        driversResults[i*2].driverName = teams[i]->getCarOne()->getName();
         driversResults[i*2].teamName = teams[i]->getTeamName();
         driversResults[i*2].driver = 1;
         driversResults[i*2].team = i;
         driversResults[i*2].time = raceTimes[i*2];
         driversResults[i*2].teamObject = teams[i];
 
+        driversResults[i*2+1].driverName = teams[i]->getCarTwo()->getName();
         driversResults[i*2+1].teamName = teams[i]->getTeamName();
         driversResults[i*2+1].driver = 2;
         driversResults[i*2+1].team = i;
