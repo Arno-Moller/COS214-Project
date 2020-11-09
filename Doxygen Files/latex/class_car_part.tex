@@ -1,0 +1,386 @@
+\hypertarget{class_car_part}{}\doxysection{Car\+Part Class Reference}
+\label{class_car_part}\index{CarPart@{CarPart}}
+
+
+the composite participant of the Composite Design Pattern  
+
+
+
+
+{\ttfamily \#include $<$Car\+Part.\+h$>$}
+
+Inheritance diagram for Car\+Part\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_car_part}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car_part_af83897528a6f8692b223f73843da49fb}{Car\+Part}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Car Part object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_car_part_a491809251b4bc7c64a054d1c83baba5a}{Car\+Part}} (\mbox{\hyperlink{class_car_part}{Car\+Part}} \&)
+\begin{DoxyCompactList}\small\item\em Construct a new Car Part object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_car_part_a16042bb13dad08a0a6e0f20eff7bd53e}{$\sim$\+Car\+Part}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Car Part object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_car_part_ac2c41d03b0116ce103bd9f224660730b}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Creates a clone of \mbox{\hyperlink{class_car_part}{Car\+Part}} and return it as \mbox{\hyperlink{class_race_car}{Race\+Car}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_a1e4d4a6d6d9ccf788c06055bb1066a09}{add\+Part}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$part)
+\begin{DoxyCompactList}\small\item\em add a part of the racecar to \mbox{\hyperlink{class_car_part}{Car\+Part}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_a800f24a00226201ce179c16eb2db3725}{remove\+Part}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$part)
+\begin{DoxyCompactList}\small\item\em removes a part from the \mbox{\hyperlink{class_car_part}{Car\+Part}} list \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_car_part_aad4b6c6fb2d2077ca7ba5245683a85ef}{get\+Part}} ()
+\begin{DoxyCompactList}\small\item\em Get the Part object. \end{DoxyCompactList}\item 
+list$<$ \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ $>$ \mbox{\hyperlink{class_car_part_adaddcd347c95b22589bf577b383b5b32}{get\+Car\+Parts}} ()
+\begin{DoxyCompactList}\small\item\em Get the Car Parts object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_a100fff605ee27ab5ba9909442ef92ab0}{lap}} ()
+\begin{DoxyCompactList}\small\item\em calls the lap function of the tire part \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_ae6d12d0d038b3dc4f67d60a0fd69e3b8}{degrade}} ()
+\begin{DoxyCompactList}\small\item\em calls the \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_a0c39ea4bd374fcbc46404e531e87864c}{add\+Car\+Tire}} (\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$part)
+\begin{DoxyCompactList}\small\item\em adds the tire part \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_car_part_aa4f4ef3659cc574368ce7f37a99c0474}{get\+Car\+Tire}} ()
+\begin{DoxyCompactList}\small\item\em Get the Car \mbox{\hyperlink{class_tire}{Tire}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_part_a18042def014a72c107bd3312a519358c}{get\+Tire\+Grip}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_tire}{Tire}} Grip object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_car_part_a1f441bdbb13fdac88e04c1ad67e70f0a}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the driver\+Name object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_abb1e0615222dc8af37d79c81b9ae1102}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Set the driver\+Name object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_car_part_a54356a6f48eed311d8bf7a62edc2f59f}{get\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Get the Points object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_a08f57f76ec26082399c8214cb1a04a5b}{set\+Points}} (int \mbox{\hyperlink{class_race_car_a62840a99ee852b115203ded8f77333d2}{points}})
+\begin{DoxyCompactList}\small\item\em Set the Points object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_part_a271ce7cf77c5829ddb9fe5252e90da9e}{set\+Print}} (bool should\+It\+Print)
+\begin{DoxyCompactList}\small\item\em Set the Print object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_car_part_a7d05a5113e707a7c719a93601e91e242}{get\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Get the Print object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ $>$ \mbox{\hyperlink{class_car_part_a90e9bdeff543e2532f8b5c11cdf05d48}{parts}}
+\item 
+\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ \mbox{\hyperlink{class_car_part_a8ab02d39cb3870e1b90fc4d40b3bb3fe}{tire}}
+\begin{DoxyCompactList}\small\item\em a list of all the \mbox{\hyperlink{class_race}{Race}} Car parts \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+the composite participant of the Composite Design Pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_car_part_af83897528a6f8692b223f73843da49fb}\label{class_car_part_af83897528a6f8692b223f73843da49fb}} 
+\index{CarPart@{CarPart}!CarPart@{CarPart}}
+\index{CarPart@{CarPart}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{CarPart()}{CarPart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Car\+Part\+::\+Car\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Car Part object. 
+
+\mbox{\Hypertarget{class_car_part_a491809251b4bc7c64a054d1c83baba5a}\label{class_car_part_a491809251b4bc7c64a054d1c83baba5a}} 
+\index{CarPart@{CarPart}!CarPart@{CarPart}}
+\index{CarPart@{CarPart}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{CarPart()}{CarPart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Car\+Part\+::\+Car\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car_part}{Car\+Part}} \&}]{old\+Car }\end{DoxyParamCaption})}
+
+
+
+Construct a new Car Part object. 
+
+\mbox{\Hypertarget{class_car_part_a16042bb13dad08a0a6e0f20eff7bd53e}\label{class_car_part_a16042bb13dad08a0a6e0f20eff7bd53e}} 
+\index{CarPart@{CarPart}!````~CarPart@{$\sim$CarPart}}
+\index{````~CarPart@{$\sim$CarPart}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{$\sim$CarPart()}{~CarPart()}}
+{\footnotesize\ttfamily Car\+Part\+::$\sim$\+Car\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Car Part object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_car_part_a0c39ea4bd374fcbc46404e531e87864c}\label{class_car_part_a0c39ea4bd374fcbc46404e531e87864c}} 
+\index{CarPart@{CarPart}!addCarTire@{addCarTire}}
+\index{addCarTire@{addCarTire}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{addCarTire()}{addCarTire()}}
+{\footnotesize\ttfamily void Car\+Part\+::add\+Car\+Tire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{part }\end{DoxyParamCaption})}
+
+
+
+adds the tire part 
+
+
+\begin{DoxyParams}{Parameters}
+{\em part} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_part_a1e4d4a6d6d9ccf788c06055bb1066a09}\label{class_car_part_a1e4d4a6d6d9ccf788c06055bb1066a09}} 
+\index{CarPart@{CarPart}!addPart@{addPart}}
+\index{addPart@{addPart}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{addPart()}{addPart()}}
+{\footnotesize\ttfamily void Car\+Part\+::add\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add a part of the racecar to \mbox{\hyperlink{class_car_part}{Car\+Part}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em part} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_aaf9c73b17a91e6dc4c59d3b0a0e8a3f9}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_ac2c41d03b0116ce103bd9f224660730b}\label{class_car_part_ac2c41d03b0116ce103bd9f224660730b}} 
+\index{CarPart@{CarPart}!clone@{clone}}
+\index{clone@{clone}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ Car\+Part\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates a clone of \mbox{\hyperlink{class_car_part}{Car\+Part}} and return it as \mbox{\hyperlink{class_race_car}{Race\+Car}} object. 
+
+\begin{DoxyReturn}{Returns}
+Race\+Car$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_race_car_a48ca8834830ee10ba3f9fcbae23afa31}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_ae6d12d0d038b3dc4f67d60a0fd69e3b8}\label{class_car_part_ae6d12d0d038b3dc4f67d60a0fd69e3b8}} 
+\index{CarPart@{CarPart}!degrade@{degrade}}
+\index{degrade@{degrade}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{degrade()}{degrade()}}
+{\footnotesize\ttfamily void Car\+Part\+::degrade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_ae0a0e032455499d9533e2af4d560b667}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_adaddcd347c95b22589bf577b383b5b32}\label{class_car_part_adaddcd347c95b22589bf577b383b5b32}} 
+\index{CarPart@{CarPart}!getCarParts@{getCarParts}}
+\index{getCarParts@{getCarParts}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getCarParts()}{getCarParts()}}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ $>$ Car\+Part\+::get\+Car\+Parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Car Parts object. 
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Race\+Car$\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_a3bc6d6ff7df5abddfb42698a4e3039f5}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_aa4f4ef3659cc574368ce7f37a99c0474}\label{class_car_part_aa4f4ef3659cc574368ce7f37a99c0474}} 
+\index{CarPart@{CarPart}!getCarTire@{getCarTire}}
+\index{getCarTire@{getCarTire}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getCarTire()}{getCarTire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ Car\+Part\+::get\+Car\+Tire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Car \mbox{\hyperlink{class_tire}{Tire}} object. 
+
+\begin{DoxyReturn}{Returns}
+Race\+Car$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_part_a1f441bdbb13fdac88e04c1ad67e70f0a}\label{class_car_part_a1f441bdbb13fdac88e04c1ad67e70f0a}} 
+\index{CarPart@{CarPart}!getName@{getName}}
+\index{getName@{getName}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Car\+Part\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the driver\+Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_a9b6ce28341e2d0119d740acc2269dc42}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_aad4b6c6fb2d2077ca7ba5245683a85ef}\label{class_car_part_aad4b6c6fb2d2077ca7ba5245683a85ef}} 
+\index{CarPart@{CarPart}!getPart@{getPart}}
+\index{getPart@{getPart}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getPart()}{getPart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$ Car\+Part\+::get\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Part object. 
+
+\begin{DoxyReturn}{Returns}
+Race\+Car$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_part_a54356a6f48eed311d8bf7a62edc2f59f}\label{class_car_part_a54356a6f48eed311d8bf7a62edc2f59f}} 
+\index{CarPart@{CarPart}!getPoints@{getPoints}}
+\index{getPoints@{getPoints}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getPoints()}{getPoints()}}
+{\footnotesize\ttfamily int Car\+Part\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Points object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_a8ec645a2372529b16c912bbc140b9e8e}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_a7d05a5113e707a7c719a93601e91e242}\label{class_car_part_a7d05a5113e707a7c719a93601e91e242}} 
+\index{CarPart@{CarPart}!getPrint@{getPrint}}
+\index{getPrint@{getPrint}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getPrint()}{getPrint()}}
+{\footnotesize\ttfamily bool Car\+Part\+::get\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Print object. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_part_a18042def014a72c107bd3312a519358c}\label{class_car_part_a18042def014a72c107bd3312a519358c}} 
+\index{CarPart@{CarPart}!getTireGrip@{getTireGrip}}
+\index{getTireGrip@{getTireGrip}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{getTireGrip()}{getTireGrip()}}
+{\footnotesize\ttfamily int Car\+Part\+::get\+Tire\+Grip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{class_tire}{Tire}} Grip object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_a3183a1bcf9772f308d220686781bb933}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_a100fff605ee27ab5ba9909442ef92ab0}\label{class_car_part_a100fff605ee27ab5ba9909442ef92ab0}} 
+\index{CarPart@{CarPart}!lap@{lap}}
+\index{lap@{lap}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{lap()}{lap()}}
+{\footnotesize\ttfamily void Car\+Part\+::lap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the lap function of the tire part 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_ab4aacf156736140bd69003af40507625}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_a800f24a00226201ce179c16eb2db3725}\label{class_car_part_a800f24a00226201ce179c16eb2db3725}} 
+\index{CarPart@{CarPart}!removePart@{removePart}}
+\index{removePart@{removePart}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{removePart()}{removePart()}}
+{\footnotesize\ttfamily void Car\+Part\+::remove\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_car}{Race\+Car}} $\ast$}]{part }\end{DoxyParamCaption})}
+
+
+
+removes a part from the \mbox{\hyperlink{class_car_part}{Car\+Part}} list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em part} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_part_abb1e0615222dc8af37d79c81b9ae1102}\label{class_car_part_abb1e0615222dc8af37d79c81b9ae1102}} 
+\index{CarPart@{CarPart}!setName@{setName}}
+\index{setName@{setName}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Car\+Part\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the driver\+Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_a6b6bd90aadab1783403ae2fcc6846447}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_a08f57f76ec26082399c8214cb1a04a5b}\label{class_car_part_a08f57f76ec26082399c8214cb1a04a5b}} 
+\index{CarPart@{CarPart}!setPoints@{setPoints}}
+\index{setPoints@{setPoints}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{setPoints()}{setPoints()}}
+{\footnotesize\ttfamily void Car\+Part\+::set\+Points (\begin{DoxyParamCaption}\item[{int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Points object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_race_car_a5879794a9348e9e96facded37ac124f2}{Race\+Car}}.
+
+\mbox{\Hypertarget{class_car_part_a271ce7cf77c5829ddb9fe5252e90da9e}\label{class_car_part_a271ce7cf77c5829ddb9fe5252e90da9e}} 
+\index{CarPart@{CarPart}!setPrint@{setPrint}}
+\index{setPrint@{setPrint}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{setPrint()}{setPrint()}}
+{\footnotesize\ttfamily void Car\+Part\+::set\+Print (\begin{DoxyParamCaption}\item[{bool}]{should\+It\+Print }\end{DoxyParamCaption})}
+
+
+
+Set the Print object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\+It\+Print} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_car_part_a90e9bdeff543e2532f8b5c11cdf05d48}\label{class_car_part_a90e9bdeff543e2532f8b5c11cdf05d48}} 
+\index{CarPart@{CarPart}!parts@{parts}}
+\index{parts@{parts}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{parts}{parts}}
+{\footnotesize\ttfamily list$<$\mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$$>$ Car\+Part\+::parts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_car_part_a8ab02d39cb3870e1b90fc4d40b3bb3fe}\label{class_car_part_a8ab02d39cb3870e1b90fc4d40b3bb3fe}} 
+\index{CarPart@{CarPart}!tire@{tire}}
+\index{tire@{tire}!CarPart@{CarPart}}
+\doxysubsubsection{\texorpdfstring{tire}{tire}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_car}{Race\+Car}}$\ast$ Car\+Part\+::tire\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+a list of all the \mbox{\hyperlink{class_race}{Race}} Car parts 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Composite/\mbox{\hyperlink{_car_part_8h}{Car\+Part.\+h}}\item 
+Car\+Composite/\mbox{\hyperlink{_car_part_8cpp}{Car\+Part.\+cpp}}\end{DoxyCompactItemize}

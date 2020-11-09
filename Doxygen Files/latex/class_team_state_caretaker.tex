@@ -1,0 +1,79 @@
+\hypertarget{class_team_state_caretaker}{}\doxysection{Team\+State\+Caretaker Class Reference}
+\label{class_team_state_caretaker}\index{TeamStateCaretaker@{TeamStateCaretaker}}
+
+
+This is the caretaker participant in the memento design pattern.  
+
+
+
+
+{\ttfamily \#include $<$Team\+State\+Caretaker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_team_state_caretaker_a6e9bf4068fb57a8f2b43a9559208b482}{Team\+State\+Caretaker}} (\mbox{\hyperlink{class_memento}{Memento}} $\ast$backup\+Team)
+\item 
+\mbox{\hyperlink{class_team_state_caretaker_a8f1fdaa099ebd72e589fe7a2bd82bfec}{$\sim$\+Team\+State\+Caretaker}} ()
+\item 
+\mbox{\hyperlink{class_memento}{Memento}} $\ast$ \mbox{\hyperlink{class_team_state_caretaker_aa9dc980ad6ec0e786364763ae37360c0}{get\+Backup\+Team}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_team_state_caretaker_a282c50fdbeb04f7c3a4e6190020cf838}{set\+Backup\+Team}} (\mbox{\hyperlink{class_memento}{Memento}} $\ast$backup\+Team)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the caretaker participant in the memento design pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_team_state_caretaker_a6e9bf4068fb57a8f2b43a9559208b482}\label{class_team_state_caretaker_a6e9bf4068fb57a8f2b43a9559208b482}} 
+\index{TeamStateCaretaker@{TeamStateCaretaker}!TeamStateCaretaker@{TeamStateCaretaker}}
+\index{TeamStateCaretaker@{TeamStateCaretaker}!TeamStateCaretaker@{TeamStateCaretaker}}
+\doxysubsubsection{\texorpdfstring{TeamStateCaretaker()}{TeamStateCaretaker()}}
+{\footnotesize\ttfamily Team\+State\+Caretaker\+::\+Team\+State\+Caretaker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_memento}{Memento}} $\ast$}]{backup\+Team }\end{DoxyParamCaption})}
+
+Constructor that sets the memento object ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em backupteam} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_team_state_caretaker_a8f1fdaa099ebd72e589fe7a2bd82bfec}\label{class_team_state_caretaker_a8f1fdaa099ebd72e589fe7a2bd82bfec}} 
+\index{TeamStateCaretaker@{TeamStateCaretaker}!````~TeamStateCaretaker@{$\sim$TeamStateCaretaker}}
+\index{````~TeamStateCaretaker@{$\sim$TeamStateCaretaker}!TeamStateCaretaker@{TeamStateCaretaker}}
+\doxysubsubsection{\texorpdfstring{$\sim$TeamStateCaretaker()}{~TeamStateCaretaker()}}
+{\footnotesize\ttfamily Team\+State\+Caretaker\+::$\sim$\+Team\+State\+Caretaker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_team_state_caretaker_aa9dc980ad6ec0e786364763ae37360c0}\label{class_team_state_caretaker_aa9dc980ad6ec0e786364763ae37360c0}} 
+\index{TeamStateCaretaker@{TeamStateCaretaker}!getBackupTeam@{getBackupTeam}}
+\index{getBackupTeam@{getBackupTeam}!TeamStateCaretaker@{TeamStateCaretaker}}
+\doxysubsubsection{\texorpdfstring{getBackupTeam()}{getBackupTeam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_memento}{Memento}} $\ast$ Team\+State\+Caretaker\+::get\+Backup\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+method that returns the mento of the team \begin{DoxyReturn}{Returns}
+Mento of the backup team 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_team_state_caretaker_a282c50fdbeb04f7c3a4e6190020cf838}\label{class_team_state_caretaker_a282c50fdbeb04f7c3a4e6190020cf838}} 
+\index{TeamStateCaretaker@{TeamStateCaretaker}!setBackupTeam@{setBackupTeam}}
+\index{setBackupTeam@{setBackupTeam}!TeamStateCaretaker@{TeamStateCaretaker}}
+\doxysubsubsection{\texorpdfstring{setBackupTeam()}{setBackupTeam()}}
+{\footnotesize\ttfamily void Team\+State\+Caretaker\+::set\+Backup\+Team (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_memento}{Memento}} $\ast$}]{backup\+Team }\end{DoxyParamCaption})}
+
+reinstate the team after a race (fix the cars or do a pitstop ) 
+\begin{DoxyParams}{Parameters}
+{\em backupteam} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Memento/\mbox{\hyperlink{_team_state_caretaker_8h}{Team\+State\+Caretaker.\+h}}\item 
+Memento/\mbox{\hyperlink{_team_state_caretaker_8cpp}{Team\+State\+Caretaker.\+cpp}}\end{DoxyCompactItemize}

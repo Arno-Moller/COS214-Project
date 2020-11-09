@@ -1,0 +1,119 @@
+\hypertarget{class_tire_state}{}\doxysection{Tire\+State Class Reference}
+\label{class_tire_state}\index{TireState@{TireState}}
+
+
+The state participant of the State design pattern.  
+
+
+
+
+{\ttfamily \#include $<$Tire\+State.\+h$>$}
+
+Inheritance diagram for Tire\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tire_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tire_state_a946f2c12f428bb8c16c1eed10a44d6a2}{Tire\+State}} ()
+\item 
+virtual \mbox{\hyperlink{class_tire_state_a70b6bc9ccd2ff64bbaeb5c6be6406700}{$\sim$\+Tire\+State}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_tire_state_ac11f67140e12f7a35e46255d893d00ab}{handle}} (\mbox{\hyperlink{class_tire}{Tire}} $\ast$tire)=0
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tire_state_a1d34f5ba66280583aa4857a404db7752}{change\+Tire\+State}} (\mbox{\hyperlink{class_tire}{Tire}} $\ast$tire)=0
+\begin{DoxyCompactList}\small\item\em abstract interface to check the state of the tires \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_tire_state}{Tire\+State}} $\ast$ \mbox{\hyperlink{class_tire_state_aaaa5e11cfa2922529905c8fee8059067}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em abstract interface to change the tire state \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The state participant of the State design pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tire_state_a946f2c12f428bb8c16c1eed10a44d6a2}\label{class_tire_state_a946f2c12f428bb8c16c1eed10a44d6a2}} 
+\index{TireState@{TireState}!TireState@{TireState}}
+\index{TireState@{TireState}!TireState@{TireState}}
+\doxysubsubsection{\texorpdfstring{TireState()}{TireState()}}
+{\footnotesize\ttfamily Tire\+State\+::\+Tire\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tire_state_a70b6bc9ccd2ff64bbaeb5c6be6406700}\label{class_tire_state_a70b6bc9ccd2ff64bbaeb5c6be6406700}} 
+\index{TireState@{TireState}!````~TireState@{$\sim$TireState}}
+\index{````~TireState@{$\sim$TireState}!TireState@{TireState}}
+\doxysubsubsection{\texorpdfstring{$\sim$TireState()}{~TireState()}}
+{\footnotesize\ttfamily Tire\+State\+::$\sim$\+Tire\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+constructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tire_state_a1d34f5ba66280583aa4857a404db7752}\label{class_tire_state_a1d34f5ba66280583aa4857a404db7752}} 
+\index{TireState@{TireState}!changeTireState@{changeTireState}}
+\index{changeTireState@{changeTireState}!TireState@{TireState}}
+\doxysubsubsection{\texorpdfstring{changeTireState()}{changeTireState()}}
+{\footnotesize\ttfamily virtual void Tire\+State\+::change\+Tire\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tire}{Tire}} $\ast$}]{tire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+abstract interface to check the state of the tires 
+
+abstract interface to change the tire state ~\newline
+ \begin{DoxyReturn}{Returns}
+true if the race car should pit and false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_o_k_condition_a8565c3f719fcc30a2c43d59121eed4d6}{O\+K\+Condition}}, \mbox{\hyperlink{class_good_condition_ac19e378273c80505c21ce97c32e6b0ec}{Good\+Condition}}, and \mbox{\hyperlink{class_bad_condition_ada2c46ee808b3b6575538bbd085ab171}{Bad\+Condition}}.
+
+\mbox{\Hypertarget{class_tire_state_aaaa5e11cfa2922529905c8fee8059067}\label{class_tire_state_aaaa5e11cfa2922529905c8fee8059067}} 
+\index{TireState@{TireState}!clone@{clone}}
+\index{clone@{clone}!TireState@{TireState}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_tire_state}{Tire\+State}}$\ast$ Tire\+State\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+abstract interface to change the tire state 
+
+abstract interface to clone the \mbox{\hyperlink{class_tire_state}{Tire\+State}}. ~\newline
+ \begin{DoxyReturn}{Returns}
+a clone of the the tire\+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_o_k_condition_aca9317ff278c57861eeee02ae242b0b6}{O\+K\+Condition}}, \mbox{\hyperlink{class_good_condition_a7f14357f9f69e10dac2f252e93eac05b}{Good\+Condition}}, and \mbox{\hyperlink{class_bad_condition_a1aa4965beee42bfea60d555a2d063f5f}{Bad\+Condition}}.
+
+\mbox{\Hypertarget{class_tire_state_ac11f67140e12f7a35e46255d893d00ab}\label{class_tire_state_ac11f67140e12f7a35e46255d893d00ab}} 
+\index{TireState@{TireState}!handle@{handle}}
+\index{handle@{handle}!TireState@{TireState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual bool Tire\+State\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tire}{Tire}} $\ast$}]{tire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+destructor 
+
+Checks if the race car should pit 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_tire}{Tire}}} & this checks the state of the tire and if it is needded to be changed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the race car should pit and false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_o_k_condition_aebf97ec5e4159d28a4bd3a4471a9d3e9}{O\+K\+Condition}}, \mbox{\hyperlink{class_good_condition_a35672f6edd6ffdb27a740d313dbefe02}{Good\+Condition}}, and \mbox{\hyperlink{class_bad_condition_aefd3ab5ffb68fadc17898489dec5c13b}{Bad\+Condition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tire\+State/\mbox{\hyperlink{_tire_state_8h}{Tire\+State.\+h}}\item 
+Tire\+State/\mbox{\hyperlink{_tire_state_8cpp}{Tire\+State.\+cpp}}\end{DoxyCompactItemize}

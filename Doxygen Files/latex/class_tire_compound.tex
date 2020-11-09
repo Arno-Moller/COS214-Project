@@ -1,0 +1,187 @@
+\hypertarget{class_tire_compound}{}\doxysection{Tire\+Compound Class Reference}
+\label{class_tire_compound}\index{TireCompound@{TireCompound}}
+
+
+strategy participant of the strategy design pattern  
+
+
+
+
+{\ttfamily \#include $<$Tire\+Compound.\+h$>$}
+
+Inheritance diagram for Tire\+Compound\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tire_compound}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tire_compound_a3eb7f98ce1ae311de66063614a20554a}{Tire\+Compound}} ()
+\item 
+\mbox{\hyperlink{class_tire_compound_a1fc60674a4fa6c0e688be32539ca749b}{$\sim$\+Tire\+Compound}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tire_compound_a42f5b49cd908cdd972ef28822d5549d8}{get\+Grip}} ()=0
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tire_compound_a0e06b8eeffa1081033fcc7024f500e20}{set\+Grip}} (int \mbox{\hyperlink{class_tire_compound_affc5bee47f05d1a23961b8be93c8819d}{grip}})=0
+\item 
+virtual int \mbox{\hyperlink{class_tire_compound_a529e4309055258ef1eb653b1156a47ee}{get\+Wear}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_tire_compound_a4d8f2588a45877f4596905b3892d81bd}{set\+Wear}} (int \mbox{\hyperlink{class_tire_compound_afe6c2c99113f42073ecea346a7a25f27}{wear}})=0
+\item 
+virtual double \mbox{\hyperlink{class_tire_compound_af3e4edaadfdb7dd87f91981610ebe95c}{get\+Rate}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_tire_compound}{Tire\+Compound}} $\ast$ \mbox{\hyperlink{class_tire_compound_a8799409a4aeb07f917d7b6e157e42006}{clone}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_tire_compound_affc5bee47f05d1a23961b8be93c8819d}{grip}}
+\item 
+int \mbox{\hyperlink{class_tire_compound_afe6c2c99113f42073ecea346a7a25f27}{wear}}
+\item 
+int \mbox{\hyperlink{class_tire_compound_a1eaadff55152382fbde4aa09237d1a9e}{rate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+strategy participant of the strategy design pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tire_compound_a3eb7f98ce1ae311de66063614a20554a}\label{class_tire_compound_a3eb7f98ce1ae311de66063614a20554a}} 
+\index{TireCompound@{TireCompound}!TireCompound@{TireCompound}}
+\index{TireCompound@{TireCompound}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{TireCompound()}{TireCompound()}}
+{\footnotesize\ttfamily Tire\+Compound\+::\+Tire\+Compound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tire_compound_a1fc60674a4fa6c0e688be32539ca749b}\label{class_tire_compound_a1fc60674a4fa6c0e688be32539ca749b}} 
+\index{TireCompound@{TireCompound}!````~TireCompound@{$\sim$TireCompound}}
+\index{````~TireCompound@{$\sim$TireCompound}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{$\sim$TireCompound()}{~TireCompound()}}
+{\footnotesize\ttfamily Tire\+Compound\+::$\sim$\+Tire\+Compound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tire_compound_a8799409a4aeb07f917d7b6e157e42006}\label{class_tire_compound_a8799409a4aeb07f917d7b6e157e42006}} 
+\index{TireCompound@{TireCompound}!clone@{clone}}
+\index{clone@{clone}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_tire_compound}{Tire\+Compound}}$\ast$ Tire\+Compound\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract interface to clone the \mbox{\hyperlink{class_tire_compound}{Tire\+Compound}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_tire_compound}{Tire\+Compound}} clone 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_soft_compound_a1d50d371e2c93a7944007440e6250186}{Soft\+Compound}}, \mbox{\hyperlink{class_medium_compound_a713602d0851ccaf5d7d3ff369959b468}{Medium\+Compound}}, and \mbox{\hyperlink{class_hard_compound_aec911926df39a1be7bab71a65787222b}{Hard\+Compound}}.
+
+\mbox{\Hypertarget{class_tire_compound_a42f5b49cd908cdd972ef28822d5549d8}\label{class_tire_compound_a42f5b49cd908cdd972ef28822d5549d8}} 
+\index{TireCompound@{TireCompound}!getGrip@{getGrip}}
+\index{getGrip@{getGrip}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{getGrip()}{getGrip()}}
+{\footnotesize\ttfamily virtual int Tire\+Compound\+::get\+Grip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+destructor 
+
+abstract interface to get the grip \begin{DoxyReturn}{Returns}
+int grip of the car default value of 100 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_soft_compound_a92070c65faf0a67afd80630cfe02dfe6}{Soft\+Compound}}, \mbox{\hyperlink{class_medium_compound_aa4f0f47af375ba9603418416e8f145e1}{Medium\+Compound}}, and \mbox{\hyperlink{class_hard_compound_a06e223a56287d861f146ece823f45f57}{Hard\+Compound}}.
+
+\mbox{\Hypertarget{class_tire_compound_af3e4edaadfdb7dd87f91981610ebe95c}\label{class_tire_compound_af3e4edaadfdb7dd87f91981610ebe95c}} 
+\index{TireCompound@{TireCompound}!getRate@{getRate}}
+\index{getRate@{getRate}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{getRate()}{getRate()}}
+{\footnotesize\ttfamily virtual double Tire\+Compound\+::get\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract interface to get the rate at which tires wear \begin{DoxyReturn}{Returns}
+double rate of the car ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_soft_compound_a6a3db9bce9bc22b888bc40c5a3522eca}{Soft\+Compound}}, \mbox{\hyperlink{class_medium_compound_afcb876f6f274dbdc5e8e2fceddae1d43}{Medium\+Compound}}, and \mbox{\hyperlink{class_hard_compound_aa2b0a45a1833fd7bb3f91d929f6929cd}{Hard\+Compound}}.
+
+\mbox{\Hypertarget{class_tire_compound_a529e4309055258ef1eb653b1156a47ee}\label{class_tire_compound_a529e4309055258ef1eb653b1156a47ee}} 
+\index{TireCompound@{TireCompound}!getWear@{getWear}}
+\index{getWear@{getWear}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{getWear()}{getWear()}}
+{\footnotesize\ttfamily virtual int Tire\+Compound\+::get\+Wear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract interface to get the wear \begin{DoxyReturn}{Returns}
+int wear of the car default value of 0 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_soft_compound_a4ea02a256f5f963dea65068d6aad42ba}{Soft\+Compound}}, \mbox{\hyperlink{class_medium_compound_a31795e0b2177902e83533373d853f12a}{Medium\+Compound}}, and \mbox{\hyperlink{class_hard_compound_ae93a91f0331e2e26459743636beea093}{Hard\+Compound}}.
+
+\mbox{\Hypertarget{class_tire_compound_a0e06b8eeffa1081033fcc7024f500e20}\label{class_tire_compound_a0e06b8eeffa1081033fcc7024f500e20}} 
+\index{TireCompound@{TireCompound}!setGrip@{setGrip}}
+\index{setGrip@{setGrip}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{setGrip()}{setGrip()}}
+{\footnotesize\ttfamily virtual void Tire\+Compound\+::set\+Grip (\begin{DoxyParamCaption}\item[{int}]{grip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract interface to set the grip of the tires 
+\begin{DoxyParams}{Parameters}
+{\em grip} & int \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_soft_compound_aa22beffd0f641dbb0c7c0f4f23930aeb}{Soft\+Compound}}, \mbox{\hyperlink{class_medium_compound_a28bb09a8f20832b0b42d935eadee5b73}{Medium\+Compound}}, and \mbox{\hyperlink{class_hard_compound_a48a41b058b5d8b833b94aa724b6c1761}{Hard\+Compound}}.
+
+\mbox{\Hypertarget{class_tire_compound_a4d8f2588a45877f4596905b3892d81bd}\label{class_tire_compound_a4d8f2588a45877f4596905b3892d81bd}} 
+\index{TireCompound@{TireCompound}!setWear@{setWear}}
+\index{setWear@{setWear}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{setWear()}{setWear()}}
+{\footnotesize\ttfamily virtual void Tire\+Compound\+::set\+Wear (\begin{DoxyParamCaption}\item[{int}]{wear }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract interface to set the wear of the tires 
+\begin{DoxyParams}{Parameters}
+{\em wear} & int \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_soft_compound_a5e8ee6ae4039d67bdb0e04bdf660b8c9}{Soft\+Compound}}, \mbox{\hyperlink{class_medium_compound_a4ef7c97c52d6d53897891f9812a24ca3}{Medium\+Compound}}, and \mbox{\hyperlink{class_hard_compound_aadf202526565b1da3bb7b71d85365f13}{Hard\+Compound}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tire_compound_affc5bee47f05d1a23961b8be93c8819d}\label{class_tire_compound_affc5bee47f05d1a23961b8be93c8819d}} 
+\index{TireCompound@{TireCompound}!grip@{grip}}
+\index{grip@{grip}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{grip}{grip}}
+{\footnotesize\ttfamily int Tire\+Compound\+::grip\hspace{0.3cm}{\ttfamily [protected]}}
+
+the grip of the tire ~\newline
+ \mbox{\Hypertarget{class_tire_compound_a1eaadff55152382fbde4aa09237d1a9e}\label{class_tire_compound_a1eaadff55152382fbde4aa09237d1a9e}} 
+\index{TireCompound@{TireCompound}!rate@{rate}}
+\index{rate@{rate}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{rate}{rate}}
+{\footnotesize\ttfamily int Tire\+Compound\+::rate\hspace{0.3cm}{\ttfamily [protected]}}
+
+the rate of the tire ~\newline
+ \mbox{\Hypertarget{class_tire_compound_afe6c2c99113f42073ecea346a7a25f27}\label{class_tire_compound_afe6c2c99113f42073ecea346a7a25f27}} 
+\index{TireCompound@{TireCompound}!wear@{wear}}
+\index{wear@{wear}!TireCompound@{TireCompound}}
+\doxysubsubsection{\texorpdfstring{wear}{wear}}
+{\footnotesize\ttfamily int Tire\+Compound\+::wear\hspace{0.3cm}{\ttfamily [protected]}}
+
+the wear of the tire ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tire\+Compound\+Strategy/\mbox{\hyperlink{_tire_compound_8h}{Tire\+Compound.\+h}}\item 
+Tire\+Compound\+Strategy/\mbox{\hyperlink{_tire_compound_8cpp}{Tire\+Compound.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_strategy}{}\doxysection{Strategy Class Reference}
+\label{class_strategy}\index{Strategy@{Strategy}}
+
+
+strategy participant of the \mbox{\hyperlink{class_strategy}{Strategy}} design pattern  
+
+
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
+Inheritance diagram for Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_strategy_a2021a15bbc4f0d13f7b92f8933db2235}{Strategy}} ()
+\item 
+virtual string \mbox{\hyperlink{class_strategy_a9d08058d573c41c727e710503c1194c3}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_strategy_adaf8d80d11456cb317190b15f175804e}{type}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+strategy participant of the \mbox{\hyperlink{class_strategy}{Strategy}} design pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_strategy_a2021a15bbc4f0d13f7b92f8933db2235}\label{class_strategy_a2021a15bbc4f0d13f7b92f8933db2235}} 
+\index{Strategy@{Strategy}!Strategy@{Strategy}}
+\index{Strategy@{Strategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{Strategy()}{Strategy()}}
+{\footnotesize\ttfamily Strategy\+::\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_strategy_a9d08058d573c41c727e710503c1194c3}\label{class_strategy_a9d08058d573c41c727e710503c1194c3}} 
+\index{Strategy@{Strategy}!execute@{execute}}
+\index{execute@{execute}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual string Strategy\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+constructor 
+
+Abstract interface to execute the strategy of the way the driver wants to race. \begin{DoxyReturn}{Returns}
+string that gives information about the tires given the strategy that is used. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_sensible_acc4fe4826528dd5489ef0e6bfbdf3ea3}{Sensible}}, \mbox{\hyperlink{class_cautious_a7cba68d991b8390c7a3fee9d6dc5926f}{Cautious}}, and \mbox{\hyperlink{class_aggressive_a96e234fc6dc1d4016f9294ff340f443b}{Aggressive}}.
+
+\mbox{\Hypertarget{class_strategy_adaf8d80d11456cb317190b15f175804e}\label{class_strategy_adaf8d80d11456cb317190b15f175804e}} 
+\index{Strategy@{Strategy}!type@{type}}
+\index{type@{type}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual string Strategy\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the way the driver wants to race \begin{DoxyReturn}{Returns}
+string that displays the drivers strategy. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_sensible_a074cde51386b92a2db90c61d874506ef}{Sensible}}, \mbox{\hyperlink{class_cautious_aed2556d5e696b2648f7cfe64d757f0f1}{Cautious}}, and \mbox{\hyperlink{class_aggressive_a030ac1c627882ff7b3144922cdf557a0}{Aggressive}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Strategy/\mbox{\hyperlink{_strategy_8h}{Strategy.\+h}}\end{DoxyCompactItemize}

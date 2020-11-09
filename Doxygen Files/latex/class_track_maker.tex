@@ -1,0 +1,229 @@
+\hypertarget{class_track_maker}{}\doxysection{Track\+Maker Class Reference}
+\label{class_track_maker}\index{TrackMaker@{TrackMaker}}
+
+
+This is the client of the Composite Design Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Track\+Maker.\+h$>$}
+
+Inheritance diagram for Track\+Maker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_track_maker}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_track_maker_aac0b280277b551b54b9dcc3c5feb73c7}{Track\+Maker}} ()
+\item 
+\mbox{\hyperlink{class_track_maker_a6cf3cf221e9f3a02be2658cc333a9633}{Track\+Maker}} (string)
+\begin{DoxyCompactList}\small\item\em a default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_track_maker_a36b9cfc2f0b1326cc4e7bc6be5f9cfcd}{$\sim$\+Track\+Maker}} ()
+\item 
+void \mbox{\hyperlink{class_track_maker_a0e5bca90f6d208998ac6e0445e504c82}{add\+Ninety\+Degree}} (int)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_track_maker_a1d8ebb905cc71d4d4e4ccf3c48f33a42}{add\+Straight}} (int)
+\begin{DoxyCompactList}\small\item\em adds a \mbox{\hyperlink{class_straight}{Straight}} section to the track \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_track_maker_a32eb8ccc03759b1061163be306bcef08}{add\+Hairpin}} (int)
+\begin{DoxyCompactList}\small\item\em adds a \mbox{\hyperlink{class_hairpin}{Hairpin}} section to the track object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_track_maker_a7e12f3a5872d8fc45a33c65342899f4c}{add\+S\+\_\+section}} (int)
+\begin{DoxyCompactList}\small\item\em adds a S section to the track object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_track_maker_a15fc49f6eac03abe91ab427891c2b831}{add\+Slight\+Turn}} (int)
+\begin{DoxyCompactList}\small\item\em adds a slight turn to the track object \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_track_section}{Track\+Section}} $>$ \mbox{\hyperlink{class_track_maker_a31b8589581763027646941a753ede0c4}{get\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_track}{Track}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_track_maker_a0ebaeb92e6ddbeb66162070461660b92}{get\+Num\+Sections}} ()
+\begin{DoxyCompactList}\small\item\em Get the Num Sections object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_track_maker_a8022c9ae7e72027ebec97bce6a074177}{show\+Track}} ()
+\begin{DoxyCompactList}\small\item\em returns the number of track sections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the client of the Composite Design Pattern. 
+
+This is the concrete builder class of The Builder design pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_track_maker_aac0b280277b551b54b9dcc3c5feb73c7}\label{class_track_maker_aac0b280277b551b54b9dcc3c5feb73c7}} 
+\index{TrackMaker@{TrackMaker}!TrackMaker@{TrackMaker}}
+\index{TrackMaker@{TrackMaker}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{TrackMaker()}{TrackMaker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Track\+Maker\+::\+Track\+Maker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_track_maker_a6cf3cf221e9f3a02be2658cc333a9633}\label{class_track_maker_a6cf3cf221e9f3a02be2658cc333a9633}} 
+\index{TrackMaker@{TrackMaker}!TrackMaker@{TrackMaker}}
+\index{TrackMaker@{TrackMaker}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{TrackMaker()}{TrackMaker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Track\+Maker\+::\+Track\+Maker (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})}
+
+
+
+a default constructor 
+
+Constructor taking in a string name 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_track_maker_a36b9cfc2f0b1326cc4e7bc6be5f9cfcd}\label{class_track_maker_a36b9cfc2f0b1326cc4e7bc6be5f9cfcd}} 
+\index{TrackMaker@{TrackMaker}!````~TrackMaker@{$\sim$TrackMaker}}
+\index{````~TrackMaker@{$\sim$TrackMaker}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{$\sim$TrackMaker()}{~TrackMaker()}}
+{\footnotesize\ttfamily Track\+Maker\+::$\sim$\+Track\+Maker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_track_maker_a32eb8ccc03759b1061163be306bcef08}\label{class_track_maker_a32eb8ccc03759b1061163be306bcef08}} 
+\index{TrackMaker@{TrackMaker}!addHairpin@{addHairpin}}
+\index{addHairpin@{addHairpin}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{addHairpin()}{addHairpin()}}
+{\footnotesize\ttfamily void Track\+Maker\+::add\+Hairpin (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+adds a \mbox{\hyperlink{class_hairpin}{Hairpin}} section to the track object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_ae23e33d7d391f830ac1c8a4fe5ee8658}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a0e5bca90f6d208998ac6e0445e504c82}\label{class_track_maker_a0e5bca90f6d208998ac6e0445e504c82}} 
+\index{TrackMaker@{TrackMaker}!addNinetyDegree@{addNinetyDegree}}
+\index{addNinetyDegree@{addNinetyDegree}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{addNinetyDegree()}{addNinetyDegree()}}
+{\footnotesize\ttfamily void Track\+Maker\+::add\+Ninety\+Degree (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+adds a ninety degree turn section to the track 
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_af8c9782b1cf6109672c2de64d29218e5}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a7e12f3a5872d8fc45a33c65342899f4c}\label{class_track_maker_a7e12f3a5872d8fc45a33c65342899f4c}} 
+\index{TrackMaker@{TrackMaker}!addS\_section@{addS\_section}}
+\index{addS\_section@{addS\_section}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{addS\_section()}{addS\_section()}}
+{\footnotesize\ttfamily void Track\+Maker\+::add\+S\+\_\+section (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+adds a S section to the track object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_a946b5cf5d0e6eb22bd3c91a0f1b8dd21}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a15fc49f6eac03abe91ab427891c2b831}\label{class_track_maker_a15fc49f6eac03abe91ab427891c2b831}} 
+\index{TrackMaker@{TrackMaker}!addSlightTurn@{addSlightTurn}}
+\index{addSlightTurn@{addSlightTurn}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{addSlightTurn()}{addSlightTurn()}}
+{\footnotesize\ttfamily void Track\+Maker\+::add\+Slight\+Turn (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+adds a slight turn to the track object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_ad36e857ff99cc56f8deca224e65c88fb}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a1d8ebb905cc71d4d4e4ccf3c48f33a42}\label{class_track_maker_a1d8ebb905cc71d4d4e4ccf3c48f33a42}} 
+\index{TrackMaker@{TrackMaker}!addStraight@{addStraight}}
+\index{addStraight@{addStraight}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{addStraight()}{addStraight()}}
+{\footnotesize\ttfamily void Track\+Maker\+::add\+Straight (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+adds a \mbox{\hyperlink{class_straight}{Straight}} section to the track 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_a13a511909ba25764713dace4f0dedd39}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a0ebaeb92e6ddbeb66162070461660b92}\label{class_track_maker_a0ebaeb92e6ddbeb66162070461660b92}} 
+\index{TrackMaker@{TrackMaker}!getNumSections@{getNumSections}}
+\index{getNumSections@{getNumSections}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{getNumSections()}{getNumSections()}}
+{\footnotesize\ttfamily int Track\+Maker\+::get\+Num\+Sections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Num Sections object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_a9fa87432158a4ef8af5feaf51477dd53}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a31b8589581763027646941a753ede0c4}\label{class_track_maker_a31b8589581763027646941a753ede0c4}} 
+\index{TrackMaker@{TrackMaker}!getTrack@{getTrack}}
+\index{getTrack@{getTrack}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{getTrack()}{getTrack()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_track_section}{Track\+Section}} $>$ Track\+Maker\+::get\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{class_track}{Track}} object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Track\+Section$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_concrete_track_ad08aea0099e6a9020758510d28ad69a1}{Concrete\+Track}}.
+
+\mbox{\Hypertarget{class_track_maker_a8022c9ae7e72027ebec97bce6a074177}\label{class_track_maker_a8022c9ae7e72027ebec97bce6a074177}} 
+\index{TrackMaker@{TrackMaker}!showTrack@{showTrack}}
+\index{showTrack@{showTrack}!TrackMaker@{TrackMaker}}
+\doxysubsubsection{\texorpdfstring{showTrack()}{showTrack()}}
+{\footnotesize\ttfamily void Track\+Maker\+::show\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the number of track sections. 
+
+prints out how the track currently looks like. eg the amount of straights or hairpins 
+
+Implements \mbox{\hyperlink{class_concrete_track_aaf9b010028a9017bbe75c7448ad1b52e}{Concrete\+Track}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Builder/\mbox{\hyperlink{_track_maker_8h}{Track\+Maker.\+h}}\item 
+Builder/\mbox{\hyperlink{_track_maker_8cpp}{Track\+Maker.\+cpp}}\end{DoxyCompactItemize}
