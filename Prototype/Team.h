@@ -83,12 +83,38 @@ class Team
         */
 		virtual int getTeamPoints() = 0;
 
-	
+	    
+		/**
+        * Abstract interface method that sets the teams points 
+        */
 		virtual void setTeamPoints() = 0;
-		virtual string getTeamName() = 0;
-		virtual void setTeamName(string name) = 0;
 
+		
+		/**
+        * Abstract interface method that returns the teams name 
+		* @return string of the teams name 
+        */
+		virtual string getTeamName() = 0;
+
+		
+		/**
+        * Abstract interface method that sets the teams name
+		* @param name of the team
+        */
+		virtual void setTeamName(string name) = 0;
+        
+		
+		/**
+        * Abstract interface method that creates a memento of the team 
+		* @return Memento of the team 
+        */
 		virtual Memento* createMemento() = 0;
+
+		
+		/**
+        * Abstract interface method that loads the memento that was previously stored and reinstates it
+		* @return int amount of the points the team has made
+        */
 		virtual void loadMemento(Memento* m) = 0;
 
 

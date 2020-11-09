@@ -18,12 +18,23 @@ class TireState
         
         /**
         * Checks if the race car should pit 
+        * @param Tire this checks the state of the tire and if it is nedded to be changed . 
         * @return true if the race car should pit and false otherwise 
         */
         virtual bool handle(Tire* tire) = 0;/// abstract interface to check the state of the tires
-   
-        virtual void changeTireState(Tire* tire) = 0; /// abstract interface to change the tire state
+    
 
+        /**
+        * abstract interface to change the tire state  
+        * @return true if the race car should pit and false otherwise 
+        */
+        virtual void changeTireState(Tire* tire) = 0; /// abstract interface to change the tire state
+        
+
+        /**
+        * abstract interface to clone the TireState.   
+        * @return a clone of the the tireState
+        */
         virtual TireState* clone() = 0;
 };
 

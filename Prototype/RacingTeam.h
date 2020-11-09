@@ -94,6 +94,11 @@ public:
     void setTeamName(string name);
 
     Memento* createMemento();
+
+    /**
+    *  method that loads the memento that was previously stored and reinstates it
+	* @return int amount of the points the team has made
+    */
 	void loadMemento(Memento* m);
 
 };
