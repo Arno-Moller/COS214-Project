@@ -83,10 +83,7 @@ class SingletonChampionship
 
     private:
         static SingletonChampionship* championship;/**< The singleton object of the championship  */ 
-        CreateTeamCommand* teamCom; /**< the commands of the teams   */ 
-        BuildTrackCommand** tracks; /**< command to build the track  */ 
-        StartRaceCommand* race; /**< command to race  */ 
-        SeasonalResultsCommand* results; /**< command to get the results of the seasons  */ 
+        Command* command;
 
 };
 #endif

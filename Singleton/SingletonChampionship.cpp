@@ -20,7 +20,7 @@ SingletonChampionship::~SingletonChampionship()
 
 void SingletonChampionship::StartChampionship()
 {
-    tracks = new BuildTrackCommand*[5];
+    BuildTrackCommand** tracks = new BuildTrackCommand*[5];
 
 
     tracks[0] = new BuildTrackCommand("Europe", 10);
@@ -30,10 +30,10 @@ void SingletonChampionship::StartChampionship()
     tracks[4] = new BuildTrackCommand("Italy", 10);
 
 
-    teamCom = new CreateTeamCommand();
+    CreateTeamCommand* teamCom = new CreateTeamCommand();
     teamCom->execute();
 
-    race = new StartRaceCommand(teamCom, tracks[0]);
+    StartRaceCommand* race = new StartRaceCommand(teamCom, tracks[0]);
     for(int i = 0; i < 5; i++)
     {
         
@@ -70,7 +70,7 @@ void SingletonChampionship::StartChampionship()
         // }
     }
 
-    results = new SeasonalResultsCommand(teamCom->getTeams());
+    SeasonalResultsCommand* results = new SeasonalResultsCommand(teamCom->getTeams());
     results->execute();
 
 
