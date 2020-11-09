@@ -45,6 +45,10 @@ public:
     */
     virtual double getRate() = 0; 
 
+    /**
+    *  abstract interface to clone the TireCompound
+    * @return  TireCompound clone 
+    */
     virtual TireCompound* clone() = 0;
      
 

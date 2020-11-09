@@ -9,6 +9,14 @@ using namespace std;
 class ConstructorsChampionship:public Championship
 {
 public:
+
+    /**
+    * Constructor 
+    * @param Team 
+    * @param array of the times for each lap 
+    * @param drivers amount
+    * @param laps amount
+    */
     ConstructorsChampionship(Team** t, double** array , int drivers , int laps);
     ~ConstructorsChampionship();
 

@@ -9,9 +9,22 @@ class DriversChampionship: public Championship
 {
 
 public:
-    DriversChampionship(Team** t, double** arr , int drivers , int laps);
-    ~DriversChampionship();
 
+    /**
+    * Constructor 
+    * @param Team 
+    * @param array of the times for each lap 
+    * @param drivers amount
+    * @param laps amount
+    */
+    DriversChampionship(Team** t, double** arr , int drivers , int laps);
+    
+    ~DriversChampionship();///destructor
+
+
+    /**
+    *Prints out the results of the race for each driver
+    */
     void print();
 };
 

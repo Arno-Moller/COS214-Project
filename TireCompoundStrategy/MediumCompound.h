@@ -43,6 +43,11 @@ public:
     * 
     */
     double getRate(); 
+
+    /**
+    *  clone the TireCompound
+    * @return  TireCompound clone 
+    */
     TireCompound* clone();
    
 };

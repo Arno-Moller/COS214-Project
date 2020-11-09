@@ -7,47 +7,71 @@
 #include <iostream>
 using namespace std;
 
-struct TeamResults
+struct TeamResults///the results of the teams 
 {
-    int driver1Points;
-    int driver2Points;
-    int TeamPoints;
-    string teamName;
-    Team* teamObject;
+    int driver1Points; /// the points driver one recieved
+    int driver2Points;/// the points driver two recieved 
+    int TeamPoints; /// the points of both drivers summed together
+    string teamName; /// the teams name 
+    Team* teamObject; /// the object of the team 
 };
 
-struct Results
+struct Results /// The results Structure 
 {
-    string driverName;
-    int team ; 
-    int driver;
-    double time;
-    double TeamTime;
-    string teamName;
-    int points;
-    Team* teamObject;
+    string driverName; /// driver name 
+    int team ; /// number of team 
+    int driver; /// number of driver
+    double time; /// time 
+    double TeamTime; /// team time
+    string teamName; /// team name 
+    int points; /// amount of points recieved
+    Team* teamObject; /// The team it belongs to
 };
 
 class Championship
 {
     protected:
-        double** arr;
-        int numDrivers;
-        int numLaps;
-        Team** teams;
-        Results* driversResults;
-        TeamResults* teamResults;
-        int* pointList;
-        int pointAmount [20] = {25,18,15,12,10,8,6,4,2,1,0,0,0,0,0,0,0,0,0,0};
+        double** arr; /**< the double array of the times made by each driver for each lap   */ 
+        int numDrivers; /**< the number of drivers driving the race */ 
+        int numLaps; /**< the number of laps that the race consists of   */ 
+        Team** teams; /**< List of participating teams   */ 
+        Results* driversResults; /**< the drivers results for the race */ 
+        TeamResults* teamResults; /**< the team results of the race */ 
+        int* pointList; /**< the points list */ 
+        int pointAmount [20] = {25,18,15,12,10,8,6,4,2,1,0,0,0,0,0,0,0,0,0,0}; /**< array of points for each place  */ 
         
         
     public:
-        Championship(Team** , double** array , int drivers , int laps);///constructor 
+
+         /**
+         * Constructor 
+         * @param Team 
+         * @param array of the times for each lap 
+         * @param drivers amount
+         * @param laps amount
+         */
+        Championship(Team** , double** array , int drivers , int laps); 
+        
         virtual ~Championship();///destructor
 
+       /**
+       *Prints out the results of the race for each driver
+       */
         void calculate();
+
+       /**
+       *Prints out the results of the race for each driver
+       */
         void logResults();
+
+       /**
+       *Prints out the results of the race for each driver
+       */
         int* getTeamPoints();
+
+       /**
+       *Prints out the results of the race for each driver
+       */
         virtual void print() = 0;
     
     
