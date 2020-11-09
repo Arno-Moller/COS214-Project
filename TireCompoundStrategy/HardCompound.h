@@ -44,7 +44,7 @@ public:
     * @return  double rate of the tires
     * 
     */
-    double getRate(); /// returns the rate at wich the tire wears 
+    double getRate(); /// returns the rate at which the tire wears 
     
 
     TireCompound* clone();

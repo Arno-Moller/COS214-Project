@@ -40,7 +40,7 @@ public:
     virtual void setWear(int wear) = 0; 
 
     /**
-    *  abstract interface to get the rate at wich tires wear 
+    *  abstract interface to get the rate at which tires wear 
     * @return  double rate of the car  
     */
     virtual double getRate() = 0; 

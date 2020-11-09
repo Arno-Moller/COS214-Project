@@ -18,7 +18,7 @@ class TireState
         
         /**
         * Checks if the race car should pit 
-        * @param Tire this checks the state of the tire and if it is nedded to be changed . 
+        * @param Tire this checks the state of the tire and if it is needded to be changed. 
         * @return true if the race car should pit and false otherwise 
         */
         virtual bool handle(Tire* tire) = 0;/// abstract interface to check the state of the tires

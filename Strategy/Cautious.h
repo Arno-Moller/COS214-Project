@@ -9,7 +9,7 @@ class Cautious: public Strategy
 {
 public:
     Cautious();///constructor
-    ~Cautious();///destrcutor
+    ~Cautious();///destructor
 
     /**
     * Execute the strategy of the way the driver wants to race. 
@@ -19,7 +19,7 @@ public:
 
     /**
     * Returns the way the driver wants to race 
-    * @return string that displays the drivers startegy. 
+    * @return string that displays the drivers strategy. 
     */
     string type();
 };

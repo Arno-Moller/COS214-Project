@@ -20,7 +20,7 @@ public:
 
     /**
     * Returns the way the driver wants to race 
-    * @return string that displays the drivers startegy. 
+    * @return string that displays the drivers strategy. 
     */
     string type();
 };
