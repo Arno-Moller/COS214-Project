@@ -73,6 +73,10 @@ class SingletonChampionship
 
     private:
         static SingletonChampionship* championship;
+        CreateTeamCommand* teamCom;
+        BuildTrackCommand** tracks;
+        StartRaceCommand* race;
+        SeasonalResultsCommand* results;
 
 };
 #endif
