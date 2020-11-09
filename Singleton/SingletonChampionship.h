@@ -55,6 +55,8 @@
 
 #include "../Command/StartRaceCommand.h"
 
+#include "../Command/SeasonalResultsCommand.h"
+
 #ifndef SingletonChampionship_h
 #define SingletonChampionship_h
 
