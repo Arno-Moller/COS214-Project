@@ -89,7 +89,7 @@ void StartRaceCommand::execute()
 
     for(int i = 0; i < laps; i++)
     {   
-        cout << "LAP: " << i+1 << endl << endl;
+        cout << "                                       LAP:                                             " << i+1 << endl << endl;
 
         for(int j = 0; j < 20; j++)
         {
