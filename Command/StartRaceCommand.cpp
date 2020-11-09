@@ -5,7 +5,7 @@ StartRaceCommand::StartRaceCommand()
 {
     constructors = new Team*[10];
     drivers = new RaceCar*[20];
-    lap = new LapCommand();
+    //lap = new LapCommand();
     trackBuilder = new BuildTrackCommand();
     weather = new RaceConditionCommand();
 
@@ -38,7 +38,7 @@ StartRaceCommand::StartRaceCommand(Team** teams, BuildTrackCommand* t)
             j++;
         }
 
-        lap = new LapCommand(drivers);
+        //lap = new LapCommand(drivers);
     }
 }
 
@@ -63,7 +63,7 @@ StartRaceCommand::StartRaceCommand(CreateTeamCommand* teamCom, BuildTrackCommand
             j++;
         }
 
-        lap = new LapCommand(drivers);
+        //lap = new LapCommand(drivers);
     }
 }
 
@@ -154,7 +154,7 @@ void StartRaceCommand::setTeams(Team** teams)
             j++;
         }
 
-        this->lap->setCars(drivers);
+        //this->lap->setCars(drivers);
     }
 }
 

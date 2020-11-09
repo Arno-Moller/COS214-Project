@@ -112,9 +112,6 @@
 #include "Command/StartRaceCommand.h"
 #include "Command/StartRaceCommand.cpp"
 
-#include "Command/LapCommand.h"
-#include "Command/LapCommand.cpp"
-
 #include "Singleton/SingletonChampionship.h"
 #include "Singleton/SingletonChampionship.cpp"
 
