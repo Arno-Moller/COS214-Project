@@ -1,9 +1,9 @@
 Team Members:
     -> Theo Morkel u19002514
-    ->
-    ->
-    ->
-    ->
+    -> Louw Claassens u18000402
+    -> Luca Prenzler u18002112
+    -> Arno Moller u19324058
+    -> Douglas van Reeuwyk u19049782
 
 Folder Structure:
     Development
